@@ -10,9 +10,24 @@ It starts with OSS bounties and GitHub reward issues, but the long-term scope is
 
 🚧 **Early design / pre-MVP.**
 
-The repository currently contains the product design. The first implementation milestone is a GitHub-first radar that can run periodically with GitHub Actions and generate a current list of open bounty/reward opportunities.
+The repository began as the product design and now includes the first implementation milestone: a GitHub-first radar that can run manually with GitHub Actions and generate a current list of open bounty/reward opportunities.
 
 Nothing in this repository should currently be treated as a live or complete opportunity index.
+
+## v0.1a GitHub collector
+
+The first implementation slice is now available for manual runs. It reads the small, auditable query set in [`sources.yaml`](./sources.yaml), searches the GitHub Issues API, removes closed/stale issues, deduplicates overlapping results, and writes normalized records to [`data/opportunities.json`](./data/opportunities.json).
+
+Run it locally with Python 3.10+:
+
+```bash
+python -m pip install -r requirements.txt
+GITHUB_TOKEN=... python scripts/fetch_github.py
+```
+
+`GITHUB_TOKEN` is optional for public data, but is recommended to avoid a low unauthenticated rate limit. The collector never treats a `bounty` label alone as proof of payment: each record includes reward `provenance` (`stated`, `unverified`, or `unknown`) and `verified` remains false unless a future source can provide independent backing. If one query fails, records previously associated with that query are retained; if every query fails, the existing output is left untouched.
+
+The same collector can be run from GitHub Actions through the manual [`workflow_dispatch`](./.github/workflows/radar.yml) workflow. The workflow commits only changes to the generated JSON and intentionally has no scheduled trigger until the manual run is validated.
 
 ## What it aims to show
 

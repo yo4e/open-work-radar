@@ -1,0 +1,16 @@
+version: 1
+# Keep this list intentionally small and auditable. GitHub-only for v0.1a.
+stale_after_days: 180
+sources:
+  - id: bounty-reward-funded
+    description: Issues that mention a bounty, reward, or funding signal.
+    query: "is:issue is:open (bounty OR reward OR funded)"
+    max_pages: 2
+  - id: good-first-issue-reward
+    description: Beginner-friendly issues that also mention a reward signal.
+    query: "is:issue is:open (\"good first issue\" OR \"first issue\") (bounty OR reward OR funded)"
+    max_pages: 2
+  - id: docs-translation-reward
+    description: Documentation or translation work with a reward signal.
+    query: "is:issue is:open (documentation OR docs OR translation) (bounty OR reward OR funded)"
+    max_pages: 2
