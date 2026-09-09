@@ -1,0 +1,28 @@
+version: 1
+stale_after_days: 180
+exclude_repositories:
+  - yo4e/open-work-radar
+
+# Keep queries deliberately simple. GitHub's REST issue search does not behave
+# like the newer Issues UI for every parenthesized/OR expression, so v0.1a uses
+# small AND-style queries and deduplicates them locally. The collector then
+# requires an explicit reward amount before a candidate enters the dataset.
+sources:
+  - id: bounty
+    query: 'is:issue is:open bounty in:title,body'
+    max_pages: 1
+  - id: reward
+    query: 'is:issue is:open reward in:title,body'
+    max_pages: 1
+  - id: funded-bounty
+    query: 'is:issue is:open bounty funded in:title,body'
+    max_pages: 1
+  - id: good-first-bounty
+    query: 'is:issue is:open bounty "good first issue" in:title,body'
+    max_pages: 1
+  - id: docs-bounty
+    query: 'is:issue is:open bounty documentation in:title,body'
+    max_pages: 1
+  - id: translation-bounty
+    query: 'is:issue is:open bounty translation in:title,body'
+    max_pages: 1
