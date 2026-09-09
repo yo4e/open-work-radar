@@ -6,13 +6,41 @@ It starts with OSS bounties and GitHub reward issues, but the long-term scope is
 
 > Scan public sources → verify what is still actionable → normalize the data → show the opportunities that appear open now.
 
+> [!IMPORTANT]
+> **Open Work Radar finds bounty/reward opportunities; this repository is not itself a bounty program.** Issues in this repository describe development work on the radar and do **not** carry a reward unless an issue explicitly says otherwise. This note applies to humans and automated agents alike.
+
 ## Status
 
-🚧 **Early design / pre-MVP.**
+🚧 **Early MVP.**
 
-The repository currently contains the product design. The first implementation milestone is a GitHub-first radar that can run periodically with GitHub Actions and generate a current list of open bounty/reward opportunities.
+The first implementation milestone is a GitHub-only collector that can be run locally or through a manual GitHub Actions workflow. Scheduled collection remains intentionally disabled until the manual workflow has been validated.
 
-Nothing in this repository should currently be treated as a live or complete opportunity index.
+Nothing in this repository should currently be treated as a complete opportunity index.
+
+## v0.1a GitHub collector
+
+The collector reads the small query set in [`sources.yaml`](./sources.yaml), fetches recent open GitHub Issues, applies conservative local filtering, deduplicates overlapping results, and writes normalized records to [`data/opportunities.json`](./data/opportunities.json).
+
+v0.1a deliberately favors **precision over recall**:
+
+- closed and stale Issues are excluded;
+- this repository excludes itself from collection;
+- a reward-like label or word without an explicit amount is not enough to enter the dataset;
+- maintainer-authored reward statements are distinguished from third-party claims using GitHub `author_association`;
+- a cost, fee, credit purchase, deposit, or similar contributor expense is not treated as the reward amount;
+- explicit uncertainty such as “is this bounty still available?” or a source that says the work is unavailable produces `status: unclear` rather than `open`;
+- fields such as difficulty and AI assistability remain `unknown` when v0.1a cannot support them reliably.
+
+Run locally with Python 3.10+:
+
+```bash
+python -m pip install -r requirements.txt
+GITHUB_TOKEN=... python scripts/fetch_github.py
+```
+
+`GITHUB_TOKEN` is optional for public data but recommended because GitHub applies lower unauthenticated rate limits.
+
+The GitHub Actions workflow can be started manually with `workflow_dispatch`. It commits only `data/opportunities.json` when generated output actually changes. **No cron schedule is enabled yet.**
 
 ## What it aims to show
 
@@ -67,18 +95,17 @@ Sources will only be added when automated collection is technically and legally 
 
 ## Automation
 
-The intended default is periodic collection with **GitHub Actions**.
+The intended default is periodic collection with **GitHub Actions**, but scheduling is not enabled in v0.1a.
 
-A future scan will roughly:
+A scan roughly:
 
-1. read configured sources;
-2. fetch current opportunities;
-3. normalize them into a common schema;
-4. verify open/closed/stale status;
-5. classify basic metadata such as difficulty;
-6. preserve reward provenance;
-7. archive expired or closed items;
-8. update generated data and the public summary.
+1. reads configured sources;
+2. fetches current candidates;
+3. filters and normalizes them into a common schema;
+4. checks GitHub open/stale state and explicit availability signals;
+5. preserves reward provenance;
+6. keeps previous records from any source that failed during the current run;
+7. updates generated data only after at least one source succeeds.
 
 One broken source should not erase or invalidate the rest of the radar.
 
@@ -102,9 +129,9 @@ See [DESIGN.md](./DESIGN.md) for the current product principles, proposed data m
 
 ## Contributing
 
-The project is still at the design stage. Once the first collector exists, contributions around source discovery, normalization, stale detection, reward verification, classification, and presentation will be welcome.
+Contributions around source discovery, normalization, stale detection, reward verification, classification, and presentation are welcome.
 
-If you know of a public source of outcome-based paid work that could be collected responsibly, opening an Issue will be a useful way to suggest it once the project workflow is in place.
+If you know of a public source of outcome-based paid work that could be collected responsibly, opening an Issue is a useful way to suggest it.
 
 ## Origin
 
