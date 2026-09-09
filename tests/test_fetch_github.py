@@ -92,6 +92,13 @@ class CollectorTests(unittest.TestCase):
         item = self.issue(5, project="yo4e/open-work-radar")
         self.assertIsNone(fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, {"yo4e/open-work-radar"}))
 
+    def test_default_sources_exclude_bounty_alert_indexes(self):
+        config = Path(__file__).resolve().parents[1] / "sources.yaml"
+        sources, _, _ = fetch_github.load_config(config)
+        self.assertTrue(sources)
+        for source in sources:
+            self.assertIn("-label:bounty-alert", source["query"])
+
     def test_failed_source_preserves_previous_records(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "data.json"
