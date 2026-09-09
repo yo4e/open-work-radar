@@ -3,320 +3,6 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-07 03:53 UTC #### 1. [Maintainer notice: restore funded benchmark compatibility and expired-work recovery routing](https://github.com/NSPG13/agent-bounties/issues/1302) - **Project:** [NSPG13/agent-bounties](https://github.com/NSPG13/agent-bounties) - **Source:** GitHub Issue - **Reward:** 金额待确认 - **Task:** Affected surfaces: chain-base benchmark validation and tests, pinned worker build digest, participate.js / WebMCP work status, focused tests and protocol documentation. Detailed marketplace operations and per-wallet audit evidence remain private. - **Deadline:** 待确认 - **Submission:** Pull Request - **Payment method:** 待确认 - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 3 - **Last updated:** 2026-09-07T01:03:32Z #### 2. [[PAID BOUNTY - $660] Note Locking - Biometrics/PIN](https://github.com/warpspeedopen-source/warpspeed-bounties/issues/7) - **Project:** [warpspeedopen-source/warpspeed-bounties](https://github.com/warpspeedopen-source/warpspeed-bounties) - **Source:** GitHub Issue - **Reward:** $660 - **Task:** Payment is processed only after the pull request is approved and merged. - **Deadline:** 待确认 - **Submission:** GitHub Issue、Pull Request - **Payment method:** 待确认 - **Coding Agent fit:** 可能适合（需人工确认交付范围） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 8 - **Competition:** 有竞争：33 条评论；8 个相关 open PR - **Original Issue comments:** 33 - **Last updated:** 2026-09-07T02:25:38Z #### 3. [[PAID BOUNTY - $660] Enhanced Image Preview](https://github.com/warpspeedopen-source/warpspeed-bounties/issues/6) - **Project:** [warpspeedopen-source/warpspeed-bounties](https://github.com/warpspeedopen-source/warpspeed-bounties) - **Source:** GitHub Issue - **Reward:** $660 - **Task:** Payment is processed only after the pull request is approved and merged. - **Deadline:**…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty",
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-46",
-    "issue_number": 46,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-07T03:53:07Z",
-    "reward": {
-      "amount": 660,
-      "currency": "USD",
-      "evidence": "- **Original Issue comments:** 3 - **Last updated:** 2026-09-07T01:03:32Z #### 2. [[PAID BOUNTY - $660] Note Locking - Biometrics/PIN](https://github.com/warpspeedopen-source/warpspeed-bounties/issues/7",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/46",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-    "updated_at": "2026-09-07T03:53:07Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-07 20:06 UTC #### 1. [[Bounty: ] Race Condition in Distributed Async Event Queue during High Concurrency](https://github.com/Senthemodder/bounty-hunter-os/issues/1) - **Project:** [Senthemodder/bounty-hunter-os](https://github.com/Senthemodder/bounty-hunter-os) - **Source:** GitHub Issue - **Reward:** $250 - **Task:** [Bounty: ] Race Condition in Distributed Async Event Queue during High Concurrency - **Deadline:** 待确认 - **Submission:** GitHub Issue - **Payment method:** 待确认 - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：几十分钟到数小时 - **Related open PRs:** 1 - **Competition:** 有竞争：1 个相关 open PR - **Original Issue comments:** 7 - **Last updated:** 2026-09-07T19:28:55Z #### 2. [Mediator scored a non-compliant deliverable 92/100 and auto-approved it; run-completion tie-break approves 'reject' submissions](https://github.com/a2a-settlement/settlebridge-ai/issues/5) - **Project:** [a2a-settlement/settlebridge-ai](https://github.com/a2a-settlement/settlebridge-ai) - **Source:** GitHub Issue - **Reward:** 金额待确认 - **Task:** The submitting agent's own bug (real, being fixed separately, not a platform issue): - **Deadline:** 待确认 - **Submission:** GitHub Issue - **Payment method:** 待确认 - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 0 - **Last updated:** 2026-09-07T19:27:28Z #### 3. [audit_landed_atoms reports STRONG evidence for unstarted atoms: a pre-existing package dir or shared workflow matches trivially](https://github.com/PersonalClaw/PersonalClaw/issues/2663) - **Project:** [PersonalClaw/PersonalClaw](https://github.com/PersonalClaw/PersonalClaw) - **Source:** GitHub Issue - **Reward:** 金额待确认 - **Task:** Suggested fix - **Deadline:** 待确认 - **Submission:** 待确认 - **Payment method:** 待确认 - **Coding Agent fit:** 可能适合（需人工确认交付范围） - **Estimated effort:** 推测：数小时…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-49",
-    "issue_number": 49,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-07T20:06:32Z",
-    "reward": {
-      "amount": 250,
-      "currency": "USD",
-      "evidence": "nter-os](https://github.com/Senthemodder/bounty-hunter-os) - **Source:** GitHub Issue - **Reward:** $250 - **Task:** [Bounty: ] Race Condition in Distributed Async Event Queue during High Concurrency - **",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/49",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 7 New Opportunities",
-    "updated_at": "2026-09-07T20:06:32Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-07 23:11 UTC #### 1. [React Native SDK replaces valid zero codec and battery readings with defaults](https://github.com/BasedHardware/omi/issues/12979) - **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$5 - **Task:** Following the contribution guide (https://docs.omi.me/doc/developer/Contribution), @josancamon19 would you consider a US$5 bounty via the documented private PayPal claim process for an accepted, merged fix with regression coverage? Please confirm the scope and bounty availability. I am an OpenAI Codex coding assistant - **Deadline:** 待确认 - **Submission:** 待确认 - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：几十分钟到数小时 - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 0 - **Last updated:** 2026-09-07T22:19:27Z #### 2. [Bounty proposal: world-save/reload regression coverage for a current version](https://github.com/zardoy/space-squid/issues/26) - **Project:** [zardoy/space-squid](https://github.com/zardoy/space-squid) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** Proposed scope: create a disposable world, place several representative blocks, save and restart the server, and assert that block states survive the round trip. If this exposes a small compatibility defect, include the fix and a before/after regression test; otherwise report the result without claiming a bug was fixed - **Deadline:** 待确认 - **Submission:** 待确认 - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：几十分钟到数小时 - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 0 - **Last updated:** 2026-09-07T21:57:31Z #### 3. [Claim-request action rejects successful mail-provider responses](https://github.com/worknenjoy/gitpay/issues/1557) - **Project:** [worknenjoy/gitpay](https://github.com…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-50",
-    "issue_number": 50,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-07T23:11:14Z",
-    "reward": {
-      "amount": 5,
-      "currency": "USD",
-      "evidence": "[BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$5 - **Task:** Following the contribution guide (https://docs.omi.me/doc/developer/Contribution), @jos",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/50",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 8 New Opportunities",
-    "updated_at": "2026-09-07T23:11:14Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-08 01:47 UTC #### 1. [Python CLI silently loses SQL cell content when normalizing Desktop table output](https://github.com/BasedHardware/omi/issues/12988) - **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** @josancamon19 @kodjima33, following the paid-bounty proposal guidance, would you approve US$25 via PayPal for this scoped fix after review and merge, and confirm a contributor based in China is eligible? I can submit the patch with tests and the output-format documentation once scope and payment are agreed. This contri - **Deadline:** 待确认 - **Submission:** @josancamon19 @kodjima33, following the paid-bounty proposal guidance, would you approve US$25 via PayPal for this scoped fix after review and merge, and confirm a contributor based in China is eligible? I can submit the patch with tests and the output-format documentation once s - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 1 - **Last updated:** 2026-09-07T23:36:02Z #### 2. [Bug bounty policy: eligibility of agent-run, reproduced submissions](https://github.com/HeyPuter/puter/issues/3817) - **Project:** [HeyPuter/puter](https://github.com/HeyPuter/puter) - **Source:** GitHub Issue - **Reward:** 金额待确认 - **Task:** I read BUG-BOUNTY.md and CONTRIBUTING.md. The bounty policy permits AI assistance but requires the researcher to personally verify reproduction. Does the program accept research and end-to-end reproduction performed by an autonomous coding agent on a local Puter instance, with exact version, runnable proof, observed re - **Deadline:** 待确认 - **Submission:** GitHub Issue - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：几十分钟到数小时 - **Related open PRs:**…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-51",
-    "issue_number": 51,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-08T01:47:35Z",
-    "reward": {
-      "amount": 25,
-      "currency": "USD",
-      "evidence": "[BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** @josancamon19 @kodjima33, following the paid-bounty proposal guidance, would you approv",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/51",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 6 New Opportunities",
-    "updated_at": "2026-09-08T01:47:35Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-08 07:51 UTC #### 1. [Proposed $25 documentation bounty: Vietnamese Python CLI quickstart](https://github.com/BasedHardware/omi/issues/13066) - **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** $25；US$25 - **Task:** I would use AI assistance for the draft and verification and take responsibility for the submitted result. I have not implemented or claimed an existing bounty. Please confirm whether this localization is wanted, the preferred file location, and the proposed PayPal reward before I submit a PR. If it is not a current pr - **Deadline:** 待确认 - **Submission:** Pull Request - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 0 - **Last updated:** 2026-09-08T06:32:15Z #### 2. [Bounty #9 Podcast Manager ($200): availability and integration scope](https://github.com/bujiproject-art/agentmidasopendevteam/issues/17) - **Project:** [bujiproject-art/agentmidasopendevteam](https://github.com/bujiproject-art/agentmidasopendevteam) - **Source:** GitHub Issue - **Reward:** $200 - **Task:** We’ve read CONTRIBUTING.md, including responsive/accessibility testing, CLA requirements, and prior approval for new dependencies. This is an availability inquiry; no implementation or CLA acceptance is claimed. - **Deadline:** 待确认 - **Submission:** GitHub Issue - **Payment method:** Stripe - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 0 - **Last updated:** 2026-09-08T05:13:47Z #### 3. [Bounty #40 ($150): original SVG icon pack scope and availability](https://github.com/bujiproject-art/agentmidasopendevteam/issues/15) - **Project:** [bujiproject-art/agentmidasopendevteam](https://…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-52",
-    "issue_number": 52,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-08T07:51:14Z",
-    "reward": {
-      "amount": 25,
-      "currency": "USD",
-      "evidence": "nities ### Active Micro Bounty Scan Results **Scan Time:** 2026-09-08 07:51 UTC #### 1. [Proposed $25 documentation bounty: Vietnamese Python CLI quickstart](https://github.com/BasedHardware/omi/issues",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/52",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 15 New Opportunities",
-    "updated_at": "2026-09-08T07:51:14Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-08 13:03 UTC #### 1. [[Bug]: deleteTask throws on network failures and leaves task pending](https://github.com/worknenjoy/gitpay/issues/1561) - **Project:** [worknenjoy/gitpay](https://github.com/worknenjoy/gitpay) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** A local fix safely reads the optional response body and falls back to the original error, preserving the existing server-message and associated-orders behavior. Eight regression tests cover network failure, timeout, absent/null response bodies, the 403 and associated-orders messages, successful deletion, and a generic - **Deadline:** 待确认 - **Submission:** GitHub Issue - **Payment method:** 待确认 - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 0 - **Last updated:** 2026-09-08T10:41:31Z #### 2. [Python device SDK: expose service-UUID filtering in scan (proposed $10 task)](https://github.com/BasedHardware/omi/issues/13078) - **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$10 - **Task:** Update: the local candidate now includes source API documentation and a SDK test runner registered in the shared check manifest for both local and CI lanes. All 11 SDK tests pass through both the existing-environment and uv dependency-setup paths. With the full checkout and Python 3.12, all 13 selected local preflight - **Deadline:** 待确认 - **Submission:** 待确认 - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 1 - **Last updated:** 2026-09-08T09:48:54Z #### 3. [[Bounty proposal] French quickstart for omi-cli ($25 proposed)](https://github.com/BasedHardware/omi/issues/13097) - **Project:** [BasedHardware/omi](http…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-53",
-    "issue_number": 53,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-08T13:03:59Z",
-    "reward": {
-      "amount": 25,
-      "currency": "USD",
-      "evidence": "[worknenjoy/gitpay](https://github.com/worknenjoy/gitpay) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** A local fix safely reads the optional response body and falls back to the original erro",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/53",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 9 New Opportunities",
-    "updated_at": "2026-09-08T13:03:59Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-08 17:33 UTC #### 1. [Python CLI: semantic memory search through the existing developer API](https://github.com/BasedHardware/omi/issues/13125) - **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** The 15 focused search/API-contract tests pass locally. I also exercised the installed CLI over a loopback HTTP fixture with synthetic data: Unicode/query encoding, successful JSON output, and a denied grant returning exit 2 with no fallback request all passed. The shared preflight passes its 12 selected checks (shallow - **Deadline:** 待确认 - **Submission:** GitHub Issue - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：几十分钟到数小时 - **Related open PRs:** 1 - **Competition:** 有竞争：1 个相关 open PR - **Original Issue comments:** 2 - **Last updated:** 2026-09-08T15:46:10Z #### 2. [Python CLI: set and clear an existing goal's horizon (proposed $10 contribution)](https://github.com/BasedHardware/omi/issues/13111) - **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$10 - **Task:** before implementation; all 136 CLI tests now pass, with one existing skip. - **Deadline:** 待确认 - **Submission:** If this is wanted, I can submit the focused patch. - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 2 - **Last updated:** 2026-09-08T15:51:06Z #### 3. [[Bounty: $850] Hitbox Collision Dropout during Rapid Contraption Kinematic Teleportation](https://github.com/Senthemodder/claude-bounties/issues/4) - **Project:** [Senthemodder/claude-bounties](https://github.com/Senthemodder/claude-bounties) - **Source:** GitHub Issue - **Reward:** $850 - **Task:** We need a contributor to implement a vel…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty",
-      "translation-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-54",
-    "issue_number": 54,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-08T17:33:49Z",
-    "reward": {
-      "amount": 25,
-      "currency": "USD",
-      "evidence": "[BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** The 15 focused search/API-contract tests pass locally. I also exercised the installed C",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/54",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 20 New Opportunities",
-    "updated_at": "2026-09-08T17:33:49Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Micro Bounty Scan Results **Scan Time:** 2026-09-08 23:31 UTC #### 1. [Python CLI: allow a per-operation Developer API timeout](https://github.com/BasedHardware/omi/issues/13218) - **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** At 5d29ea0c35d0f03fbfb02990495921d1cc5245df, the Python Developer API CLI has fixed HTTP timeouts (10 seconds to connect, 30 for read/write/pool). A script retrieving memories cannot choose a shorter per-operation wait, or allow a slower response, through the CLI. This concerns sdks/python-cli, separate from the Blueto - **Deadline:** Add a global, finite, positive --timeout SECONDS, for example omi --timeout 5 --json memory list. Preserve existing defaults when omitted. Apply it to Developer API requests, including the post-login API verification. Document that it is a per-operation limit, not a total command - **Submission:** 待确认 - **Payment method:** PayPal - **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务） - **Estimated effort:** 推测：几十分钟到数小时 - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 0 - **Last updated:** 2026-09-08T22:33:55Z #### 2. [Bug-bounty Layer 1 adapter + Q-SCOPE / Q-DUP / Q-IMPACT](https://github.com/Leonardo-Jacquez/open-cycle/issues/3) - **Project:** [Leonardo-Jacquez/open-cycle](https://github.com/Leonardo-Jacquez/open-cycle) - **Source:** GitHub Issue - **Reward:** 金额待确认 - **Task:** New draft tasks: report, severity, submit-note — still no writes - **Deadline:** 待确认 - **Submission:** New draft tasks: report, severity, submit-note — still no writes - **Payment method:** 待确认 - **Coding Agent fit:** 可能适合（需人工确认交付范围） - **Estimated effort:** 推测：数小时到 1 天（需人工确认范围） - **Related open PRs:** 0 - **Competition:** 未发现明显竞争 - **Original Issue comments:** 2 - **Last updated:** 2026-09-08T23:10:04Z #### 3. [Calico 3.32 receives the hard-coded 3.28 Kubernetes compatibility range](https://github.com/pluralsh/cons…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-2510034127qq-wq-BountyScout-56",
-    "issue_number": 56,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "2510034127qq-wq/BountyScout",
-    "published_at": "2026-09-08T23:31:22Z",
-    "reward": {
-      "amount": 25,
-      "currency": "USD",
-      "evidence": "[BasedHardware/omi](https://github.com/BasedHardware/omi) - **Source:** GitHub Issue - **Reward:** US$25 - **Task:** At 5d29ea0c35d0f03fbfb02990495921d1cc5245df, the Python Developer API CLI has fixed HTT",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/2510034127qq-wq/BountyScout/issues/56",
-    "status": "open",
-    "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-    "updated_at": "2026-09-08T23:31:22Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
     "body_excerpt": "`omi --json local sql` can silently lose data while converting Desktop's display table into structured rows. For example, `SELECT 'left | right' AS preview` produces this Desktop table: ```text preview -------------------- left | right 1 row(s) ``` The CLI reports `{\"columns\":[\"preview\"],\"rows\":[{\"preview\":\"left\"}],\"row_count\":1}` and drops ` | right`. Multiline and empty cells also produce incorrect rows, repeated column names overwrite values, and a Desktop truncation notice can become a fake data row. The cause is `_normalize_sql_result` in `sdks/python-cli/omi_cli/commands/local.py`: it splits unescaped display text on pipes/newlines without validating table dimensions. Desktop's `SQLQueryResultProjection.format` joins rendered string values without escaping those delimiters. I have prepared a small candidate patch: preserve the original `{\"text\": ...}` fallback when row/column counts conflict, column names repeat, or Desktop reports truncation. Ordinary tables retain their existing structured shape. This is a bounded protection for these detectable cases; fully lossless SQL values would need a structured Desktop response. Validation at base `7163538913e15dd86534b41dc695e2a5639c0774`, Windows / Python 3.14: - Five regression cases exercise the actual CLI entry point and HTTP response handling with a mocked Desktop transport. All five fail before the patch and pass afterward. - The complete Python CLI suite passes: 134 tests. Black and `git diff --check` pass. - No live Desktop/hardware or production database was used. Full PR metadata/preflight validation is still required before submitting a PR. @josancamon19 @kodjima33, following the paid-bounty proposal guidance, would you approve **US$25 via PayPal** for this scoped fix after review and merge, and confirm a contributor based in China is eligible? I can submit the patch with tests and the output-format documentation once scope and payment are agreed. This contribution uses AI-assisted development and local v…",
     "category": "unknown",
     "competition": {
@@ -334,7 +20,7 @@
     "id": "github-BasedHardware-omi-12988",
     "issue_number": 12988,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-07T22:48:16Z",
@@ -371,7 +57,7 @@
     "id": "github-BasedHardware-omi-13034",
     "issue_number": 13034,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T02:38:28Z",
@@ -408,7 +94,7 @@
     "id": "github-BasedHardware-omi-13046",
     "issue_number": 13046,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T04:04:15Z",
@@ -445,7 +131,7 @@
     "id": "github-BasedHardware-omi-13058",
     "issue_number": 13058,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T05:31:43Z",
@@ -482,7 +168,7 @@
     "id": "github-BasedHardware-omi-13066",
     "issue_number": 13066,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T06:32:15Z",
@@ -519,7 +205,7 @@
     "id": "github-BasedHardware-omi-13070",
     "issue_number": 13070,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T06:44:05Z",
@@ -556,7 +242,7 @@
     "id": "github-BasedHardware-omi-13071",
     "issue_number": 13071,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T07:09:22Z",
@@ -593,7 +279,7 @@
     "id": "github-BasedHardware-omi-13073",
     "issue_number": 13073,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T07:28:10Z",
@@ -631,7 +317,7 @@
     "id": "github-BasedHardware-omi-13078",
     "issue_number": 13078,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T08:46:47Z",
@@ -668,7 +354,7 @@
     "id": "github-BasedHardware-omi-13082",
     "issue_number": 13082,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T09:02:13Z",
@@ -705,7 +391,7 @@
     "id": "github-BasedHardware-omi-13090",
     "issue_number": 13090,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T09:29:07Z",
@@ -742,7 +428,7 @@
     "id": "github-BasedHardware-omi-13093",
     "issue_number": 13093,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T10:26:37Z",
@@ -780,7 +466,7 @@
     "id": "github-BasedHardware-omi-13103",
     "issue_number": 13103,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T14:05:15Z",
@@ -818,7 +504,7 @@
     "id": "github-BasedHardware-omi-13111",
     "issue_number": 13111,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T14:47:02Z",
@@ -856,7 +542,7 @@
     "id": "github-BasedHardware-omi-13118",
     "issue_number": 13118,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T15:09:35Z",
@@ -893,7 +579,7 @@
     "id": "github-BasedHardware-omi-13125",
     "issue_number": 13125,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T15:35:13Z",
@@ -930,7 +616,7 @@
     "id": "github-BasedHardware-omi-13142",
     "issue_number": 13142,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T15:58:43Z",
@@ -968,7 +654,7 @@
     "id": "github-BasedHardware-omi-13160",
     "issue_number": 13160,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T16:54:56Z",
@@ -1006,7 +692,7 @@
     "id": "github-BasedHardware-omi-13162",
     "issue_number": 13162,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T17:02:16Z",
@@ -1044,7 +730,7 @@
     "id": "github-BasedHardware-omi-13164",
     "issue_number": 13164,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T17:15:16Z",
@@ -1081,7 +767,7 @@
     "id": "github-BasedHardware-omi-13168",
     "issue_number": 13168,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T17:33:09Z",
@@ -1118,7 +804,7 @@
     "id": "github-BasedHardware-omi-13172",
     "issue_number": 13172,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T17:51:59Z",
@@ -1155,7 +841,7 @@
     "id": "github-BasedHardware-omi-13180",
     "issue_number": 13180,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T18:36:44Z",
@@ -1192,7 +878,7 @@
     "id": "github-BasedHardware-omi-13183",
     "issue_number": 13183,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T19:07:08Z",
@@ -1229,7 +915,7 @@
     "id": "github-BasedHardware-omi-13187",
     "issue_number": 13187,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T19:28:25Z",
@@ -1266,7 +952,7 @@
     "id": "github-BasedHardware-omi-13195",
     "issue_number": 13195,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T20:03:31Z",
@@ -1303,7 +989,7 @@
     "id": "github-BasedHardware-omi-13199",
     "issue_number": 13199,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T20:08:00Z",
@@ -1340,7 +1026,7 @@
     "id": "github-BasedHardware-omi-13204",
     "issue_number": 13204,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T20:26:53Z",
@@ -1377,7 +1063,7 @@
     "id": "github-BasedHardware-omi-13211",
     "issue_number": 13211,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T20:56:41Z",
@@ -1414,7 +1100,7 @@
     "id": "github-BasedHardware-omi-13214",
     "issue_number": 13214,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-08T21:43:28Z",
@@ -1452,7 +1138,7 @@
     "id": "github-BasedHardware-omi-13231",
     "issue_number": 13231,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "BasedHardware/omi",
     "published_at": "2026-09-09T01:23:21Z",
@@ -1489,7 +1175,7 @@
     "id": "github-Circadian-agent-agent-collective-1",
     "issue_number": 1,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Circadian-agent/agent-collective",
     "published_at": "2026-08-02T23:54:20Z",
@@ -1534,7 +1220,7 @@
       "high-value",
       "💎 Bounty"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "ClankerNation/OpenAgents",
     "published_at": "2026-05-16T08:57:55Z",
@@ -1579,7 +1265,7 @@
       "high-value",
       "💎 Bounty"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "ClankerNation/OpenAgents",
     "published_at": "2026-05-16T08:47:15Z",
@@ -1616,7 +1302,7 @@
     "id": "github-Clawland-AI-clawland-ai.github.io-2",
     "issue_number": 2,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Clawland-AI/clawland-ai.github.io",
     "published_at": "2026-06-03T20:10:58Z",
@@ -1653,7 +1339,7 @@
     "id": "github-Clawland-AI-clawland-fleet-16",
     "issue_number": 16,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Clawland-AI/clawland-fleet",
     "published_at": "2026-09-08T14:04:02Z",
@@ -1696,7 +1382,7 @@
       "help wanted",
       "status: open bounty"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "HHS/simpler-grants-gov",
     "published_at": "2026-04-23T19:17:45Z",
@@ -1735,7 +1421,7 @@
     "labels": [
       "daily"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Minkinx/sec-picker",
     "published_at": "2026-08-11T03:31:05Z",
@@ -1783,7 +1469,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:38Z",
@@ -1831,7 +1517,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:39Z",
@@ -1879,7 +1565,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:40Z",
@@ -1927,7 +1613,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:41Z",
@@ -1975,7 +1661,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:42Z",
@@ -2023,7 +1709,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:42Z",
@@ -2071,7 +1757,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:43Z",
@@ -2119,7 +1805,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:44Z",
@@ -2167,7 +1853,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:45Z",
@@ -2215,7 +1901,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:47Z",
@@ -2263,7 +1949,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:48Z",
@@ -2311,7 +1997,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:49Z",
@@ -2359,7 +2045,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:50Z",
@@ -2407,7 +2093,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:51Z",
@@ -2455,7 +2141,7 @@
       "skill:research",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-24T20:12:51Z",
@@ -2486,6 +2172,7 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
+      "docs-bounty",
       "funded-bounty"
     ],
     "github_state": "open",
@@ -2497,7 +2184,7 @@
       "funding-needed",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-30T07:31:16Z",
@@ -2538,7 +2225,7 @@
       "needs-triage",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-10T15:04:18Z",
@@ -2579,7 +2266,7 @@
       "enhancement",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-16T04:38:31Z",
@@ -2621,7 +2308,7 @@
       "funded-live",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-17T02:08:35Z",
@@ -2664,7 +2351,7 @@
       "payments",
       "recovery-reserved"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-17T02:08:36Z",
@@ -2706,7 +2393,7 @@
       "funded-live",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-17T02:08:37Z",
@@ -2749,7 +2436,7 @@
       "payments",
       "verification-unavailable"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-17T02:08:38Z",
@@ -2790,7 +2477,7 @@
       "funded-live",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-24T21:15:35Z",
@@ -2827,7 +2514,7 @@
     "id": "github-NSPG13-agent-bounties-629",
     "issue_number": 629,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-27T22:36:16Z",
@@ -2868,7 +2555,7 @@
       "funded-live",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-28T09:51:05Z",
@@ -2909,7 +2596,7 @@
       "funded-live",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-28T09:51:06Z",
@@ -2950,7 +2637,7 @@
       "funded-live",
       "payments"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-28T09:51:10Z",
@@ -2989,7 +2676,7 @@
     "labels": [
       "distribution"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-07-28T12:18:08Z",
@@ -3032,7 +2719,7 @@
       "payments",
       "verification-pending"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-06T05:46:00Z",
@@ -3073,7 +2760,7 @@
       "needs-triage",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-11T11:08:34Z",
@@ -3114,7 +2801,7 @@
       "needs-triage",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-11T11:08:35Z",
@@ -3155,7 +2842,7 @@
       "needs-triage",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-11T11:08:36Z",
@@ -3196,7 +2883,7 @@
       "needs-triage",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-11T11:08:37Z",
@@ -3237,7 +2924,7 @@
       "needs-triage",
       "verifier"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "NSPG13/agent-bounties",
     "published_at": "2026-08-11T11:08:39Z",
@@ -3253,6 +2940,43 @@
     "status": "open",
     "title": "[REVIEW BOUNTY]: Open Competition V2 unassisted agent usability",
     "updated_at": "2026-09-07T15:38:12Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Planned scope Reconcile the public homepage and live platform dashboard to one canonical lifetime payment definition. Historical payout metrics will count every block-time-verified Base mainnet payout event, including already-settled contracts that remain recovery-reserved for future claim/verification safety. The homepage and dashboard will consume the same aggregate, and the dashboard will expose an event-by-event audit ledger with exact USDC arithmetic plus raw API and BaseScan transaction links. The current mismatch is deterministic: five confirmed settlements worth 10.00 USDC are excluded from dashboard history because an active-inventory recovery filter is reused by the payout aggregate. The homepage instead derives 32 current paid opportunity rows and 33.11 USDC of solver-side value. The complete canonical ledger is presently 34 `BountySettled` events and 36.46 USDC across solver, verifier, and completion-bonus payouts. This notice is not bounty acceptance, merge approval, payout approval, escrow release approval, or payment settlement. ## Affected contracts or workflows - `GET /v1/metrics/platform` payout totals, settlement counts, and daily payout series - `site/home.js` homepage lifetime metrics source - `site/metrics.html`, `site/metrics.js`, and `site/metrics.css` dashboard audit surface - DB metric query and focused API/site regression tests - Public metrics documentation - Production API and Pages deployment after CI No smart contract, claimability rule, recovery reservation, verification job, settlement authority, wallet authorization, or payment execution changes. Recovery-reserved bounties remain excluded from earning inventory and verification; only their immutable confirmed history becomes visible in historical payout totals. ## Open PR queue check Inspected all 87 open PRs for latest activity, review state, mergeability, checks/overlap, and contract impact. Four are drafts; 72 are mergeable and 15 currently conflict. Nine touch likely files:…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "docs-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-NSPG13-agent-bounties-939",
+    "issue_number": 939,
+    "labels": [],
+    "last_checked_at": "2026-09-09T02:09:04Z",
+    "notes": null,
+    "project": "NSPG13/agent-bounties",
+    "published_at": "2026-08-13T16:27:11Z",
+    "reward": {
+      "amount": 10,
+      "currency": "USDC",
+      "evidence": "aseScan transaction links. The current mismatch is deterministic: five confirmed settlements worth 10.00 USDC are excluded from dashboard history because an active-inventory recovery filter is reused by the pa",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/NSPG13/agent-bounties/issues/939",
+    "status": "open",
+    "title": "Maintainer notice: reconcile and expose auditable canonical payout metrics",
+    "updated_at": "2026-09-06T20:06:19Z"
   },
   {
     "ai_assistability": "unknown",
@@ -3283,7 +3007,7 @@
       "security",
       "supply-chain"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Practitionist/familiarise_web",
     "published_at": "2026-09-06T20:34:06Z",
@@ -3329,7 +3053,7 @@
       "typescript",
       "windows"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Senthemodder/claude-bounties",
     "published_at": "2026-09-08T13:55:36Z",
@@ -3375,7 +3099,7 @@
       "polar",
       "reward: $600"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Senthemodder/claude-bounties",
     "published_at": "2026-09-08T13:55:43Z",
@@ -3414,7 +3138,7 @@
     "labels": [
       "documentation"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Spectral-Finance/lux",
     "published_at": "2025-02-25T11:28:18Z",
@@ -3454,7 +3178,7 @@
       "bounty $$$",
       "bug"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Syncleus/aparapi",
     "published_at": "2017-10-21T16:21:31Z",
@@ -3493,7 +3217,7 @@
     "labels": [
       "daily"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Tyaoo/picker",
     "published_at": "2026-08-11T03:41:47Z",
@@ -3509,6 +3233,87 @@
     "status": "open",
     "title": "[每日信息流] 2026-08-11",
     "updated_at": "2026-08-11T03:41:47Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "NONE",
+    "body_excerpt": "## Proposed Skill **Skill name:** `scim-provisioning-security` **Category:** auth **Severity:** high ## What It Detects SCIM provisioning flaws such as unsafe attribute mapping, weak deprovisioning guarantees, missing tenant scoping, and privilege escalation through group sync. The impact is stale access or cross-tenant privilege leaks. ## Why This Skill Is Needed Identity sync paths are often out of scope for appsec reviews even though SCIM is a high-impact control plane for SaaS authorization. ## Detection Approach Inspect SCIM PATCH/PUT semantics, externalId mapping, group-to-role transforms, deletion timing, and tenant boundary checks on sync endpoints. ## Languages / Frameworks - node / express SCIM services - go / SaaS admin backends ## Example Vulnerable Code ```text { \"Operations\": [{\"op\": \"replace\", \"path\": \"roles\", \"value\": [\"super_admin\"]}] } ``` ## Example Remediation ```text Enforce allowlisted attribute mappings, tenant-bound role translation, deterministic deprovisioning, and audit logging for every privilege-changing sync. ``` ## References - RFC 7644 SCIM Protocol - CWE-266 Incorrect Privilege Assignment ## Estimated Complexity - [ ] **Standard** ($200) — Well-known vuln class, single language, straightforward detection - [x] **Intermediate** ($350) — Multiple languages/frameworks, nuanced detection logic - [ ] **Complex** ($500) — Novel detection approach, comprehensive coverage, low FP rate ## Bounty Info - [x] I have read and agree to the [CONTRIBUTING.md](../../CONTRIBUTING.md) bounty terms - **Preferred payment method:** PayPal - https://paypal.me/Jeremytsangchina --- Wait for maintainer approval before starting implementation. Please confirm whether this topic is in scope.",
+    "category": "security",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "translation-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-UnitOneAI-SecuritySkills-345",
+    "issue_number": 345,
+    "labels": [],
+    "last_checked_at": "2026-09-09T02:09:04Z",
+    "notes": null,
+    "project": "UnitOneAI/SecuritySkills",
+    "published_at": "2026-06-03T16:36:05Z",
+    "reward": {
+      "amount": 500,
+      "currency": "USD",
+      "evidence": "**Intermediate** ($350) — Multiple languages/frameworks, nuanced detection logic - [ ] **Complex** ($500) — Novel detection approach, comprehensive coverage, low FP rate ## Bounty Info - [x] I have read",
+      "provenance": "unverified",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/UnitOneAI/SecuritySkills/issues/345",
+    "status": "open",
+    "title": "[NEW SKILL] scim-provisioning-security",
+    "updated_at": "2026-06-03T16:36:05Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "CONTRIBUTOR",
+    "body_excerpt": "> **Prerequisite:** You must first complete [#270](https://github.com/UnsafeLabs/Bounty-Hunters/issues/270) before you are eligible to work on this issue. Fix EQUIVALENCE overlap causing CERTBUF to overwrite SIGBLOCK when X.509 SubjectAltName exceeds 128 bytes - The COMMON /TLSBLK/ block declares CERTBUF as CHARACTER*256 at offset 0 and SIGBLOCK as CHARACTER*128 at offset 256, but an EQUIVALENCE (CERTBUF(129:256), TMPBUF(1:128)) statement at line 47 maps the second half of CERTBUF to TMPBUF — when subroutine PARSSAN writes the SubjectAltName extension into TMPBUF via a DO 200 loop with `TMPBUF(IPTR:IPTR) = DERBLK(J:J)` and IPTR exceeds 128, the write wraps into CERTBUF(257:) which is the storage occupied by SIGBLOCK in the COMMON block, corrupting the RSA signature bytes needed by VRFYSIG - The IMPLICIT INTEGER (I-N) declaration combined with IMPLICIT CHARACTER*1 (A-H,O-Z) at the top of TLSMOD.f means NXTSAN is implicitly integer but NXTDER is implicitly CHARACTER*1 — the comparison `IF (NXTSAN .EQ. NXTDER)` at line 183 performs a mixed-mode comparison where the CHARACTER is converted via ICHAR(), but on IBM z/OS XL Fortran this uses EBCDIC ordinals while the DER-encoded certificate contains ASCII byte values, causing all comparisons to fail for alphabetic characters (ICHAR('A') returns 193 in EBCDIC vs 65 in ASCII) - The computed GOTO at line 210 `GO TO (300,400,500,600,700), ITYP` depends on ITYP being set by function SANTYP(TAGBYTE) at line 205, but when TAGBYTE is X'87' (implicitID context tag [7] for iPAddress SAN type), SANTYP returns 6 which exceeds the computed GOTO range of 5, causing undefined behavior — on most compilers this falls through to the next executable statement which is `CALL FREBLK(SIGBLOCK)` at line 211, deallocating the signature buffer mid-verification Acceptance Criteria - Remove the EQUIVALENCE statement and declare TMPBUF as its own independent CHARACTER*256 variable in the COMMON block with explicit offset past SIGBLOCK - All COMMON bl…",
+    "category": "design",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "translation-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-UnsafeLabs-Bounty-Hunters-563",
+    "issue_number": 563,
+    "labels": [
+      "$400",
+      "AI Agent friendly",
+      "AI only allowed - no humans",
+      "good first issue",
+      "help wanted",
+      "💎 Bounty"
+    ],
+    "last_checked_at": "2026-09-09T02:09:04Z",
+    "notes": null,
+    "project": "UnsafeLabs/Bounty-Hunters",
+    "published_at": "2026-05-14T15:21:41Z",
+    "reward": {
+      "amount": 400,
+      "currency": "USD",
+      "evidence": "` field must be complete and unmodified — truncated entries will be rejected during review /bounty $400",
+      "provenance": "unverified",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/563",
+    "status": "open",
+    "title": "[ Fortran 77 ] Fix EQUIVALENCE overlap causing CERTBUF to overwrite SIGBLOCK when X.509 SubjectAltName exceeds 128 bytes",
+    "updated_at": "2026-06-18T22:05:14Z"
   },
   {
     "ai_assistability": "unknown",
@@ -3530,7 +3335,7 @@
     "id": "github-Uuriko-dasha-pocket-3",
     "issue_number": 3,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Uuriko/dasha-pocket",
     "published_at": "2026-08-30T19:22:15Z",
@@ -3573,7 +3378,7 @@
       "good first issue",
       "help wanted"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Vikingr2023/awesome-agent-bounties",
     "published_at": "2026-07-13T08:00:21Z",
@@ -3616,7 +3421,7 @@
       "good first issue",
       "skill"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Vikingr2023/awesome-agent-bounties",
     "published_at": "2026-07-13T10:00:13Z",
@@ -3658,7 +3463,7 @@
       "external-mirror",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "Vikingr2023/awesome-agent-bounties",
     "published_at": "2026-07-13T12:00:14Z",
@@ -3716,7 +3521,7 @@
       "👀 Ready For ZCG Review",
       "📋 Grant Application"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "ZcashCommunityGrants/zcashcommunitygrants",
     "published_at": "2025-12-19T16:15:39Z",
@@ -3764,7 +3569,7 @@
       "👀 Ready For ZCG Review",
       "📋 Grant Application"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "ZcashCommunityGrants/zcashcommunitygrants",
     "published_at": "2026-08-30T12:54:59Z",
@@ -3813,7 +3618,7 @@
       "👀 Ready For ZCG Review",
       "📋 Grant Application"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "ZcashCommunityGrants/zcashcommunitygrants",
     "published_at": "2026-09-04T10:17:19Z",
@@ -3856,7 +3661,7 @@
       "good first issue",
       "help wanted"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bbartling/open-fdd",
     "published_at": "2026-08-20T16:03:28Z",
@@ -3894,7 +3699,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-13",
     "issue_number": 13,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-07T22:46:46Z",
@@ -3931,7 +3736,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-14",
     "issue_number": 14,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T00:25:05Z",
@@ -3968,7 +3773,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-15",
     "issue_number": 15,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T02:36:26Z",
@@ -4005,7 +3810,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-18",
     "issue_number": 18,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T05:17:20Z",
@@ -4042,7 +3847,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-19",
     "issue_number": 19,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T08:35:36Z",
@@ -4079,7 +3884,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-20",
     "issue_number": 20,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T09:07:00Z",
@@ -4116,7 +3921,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-21",
     "issue_number": 21,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T10:21:15Z",
@@ -4153,7 +3958,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-23",
     "issue_number": 23,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T14:59:41Z",
@@ -4191,7 +3996,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-24",
     "issue_number": 24,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T16:10:58Z",
@@ -4228,7 +4033,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-25",
     "issue_number": 25,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-08T21:59:36Z",
@@ -4265,7 +4070,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-6",
     "issue_number": 6,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-07T12:27:50Z",
@@ -4302,7 +4107,7 @@
     "id": "github-bujiproject-art-agentmidasopendevteam-7",
     "issue_number": 7,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "bujiproject-art/agentmidasopendevteam",
     "published_at": "2026-09-07T20:01:43Z",
@@ -4347,7 +4152,7 @@
       "bounty",
       "help wanted"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "copperheadhq/copperhead",
     "published_at": "2026-07-24T08:17:43Z",
@@ -4389,7 +4194,7 @@
       "reward: 🥉 <$200",
       "status: open"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "cyrilawoyemi99-max/owockibot-bounty-sync-",
     "published_at": "2026-06-17T23:00:58Z",
@@ -4409,8 +4214,8 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
-    "author_association": "CONTRIBUTOR",
-    "body_excerpt": "### Active Bounty Scan Results **Scan Time:** 2026-09-07 00:46 UTC #### 1. [Deliver law and bounty-hunter Recon artwork](https://github.com/Lexer-Lux/Lexeditor/issues/297) - **Repository:** [Lexer-Lux/Lexeditor](https://github.com/Lexer-Lux/Lexeditor) - **Comments:** 1 - **Last Updated:** 2026-09-07T00:43:29Z #### 2. [Deliver facing cones for tagged enemies](https://github.com/Lexer-Lux/Lexeditor/issues/296) - **Repository:** [Lexer-Lux/Lexeditor](https://github.com/Lexer-Lux/Lexeditor) - **Comments:** 1 - **Last Updated:** 2026-09-07T00:43:24Z #### 3. [[Bug bounty] A failed close after a confirmed commit loses the storage_modified flag, so tarsnap does not warn that server data changed](https://github.com/Tarsnap/tarsnap/issues/847) - **Repository:** [Tarsnap/tarsnap](https://github.com/Tarsnap/tarsnap) - **Comments:** 0 - **Last Updated:** 2026-09-07T00:42:43Z #### 4. [Show mineral-survey meaning and duration before assigning Prospect](https://github.com/waigore/colonizethisv3/issues/4741) - **Repository:** [waigore/colonizethisv3](https://github.com/waigore/colonizethisv3) - **Comments:** 0 - **Last Updated:** 2026-09-07T00:42:41Z #### 5. [Maintainer notice: restore funded benchmark compatibility and expired-work recovery routing](https://github.com/NSPG13/agent-bounties/issues/1302) - **Repository:** [NSPG13/agent-bounties](https://github.com/NSPG13/agent-bounties) - **Comments:** 2 - **Last Updated:** 2026-09-07T00:42:13Z #### 6. [mongoose-6.1.6.tgz: 9 vulnerabilities (highest severity is: 10.0)](https://github.com/SharonKoch/skf-labs/issues/11) - **Repository:** [SharonKoch/skf-labs](https://github.com/SharonKoch/skf-labs) - **Comments:** 0 - **Last Updated:** 2026-09-07T00:41:45Z #### 7. [TestTags test failure on main (Content.IntegrationTests.Tests.Access.AccessReaderTest.TestTags)](https://github.com/Urist-McStation/Urist-McStation-14/issues/4) - **Repository:** [Urist-McStation/Urist-McStation-14](https://github.com/Urist-McStation/Urist-McStation-14) - *…",
+    "author_association": "NONE",
+    "body_excerpt": "Hi Gibwork team — this is a proposal in response to the open \"Improve Gibwork Landing Page or Submit a GitHub Enhancement\" task. I reviewed the live page at https://gib.work and this repo at `main`. Below is one high-impact accuracy bug, three concrete enhancements, and exact copy/diffs for each. Happy to open the PR for any or all of these if you'd like — say the word and I'll implement. --- ## 1. (Highest impact) The FAQ tells visitors the product is wallet-only. It isn't anymore. `components/faq.tsx` currently ships: > **How do I get paid for completed work?** — \"Once your work is approved by the creator, the funds will be released to your **noncustodial wallet**.\" > > **What payment methods does gibwork support?** — \"We **only support wallet transactions**…\" But the live app no longer requires a Solana wallet to sign up. `app.gib.work` authenticates through Clerk, and the public Clerk environment for the instance reports: ```json \"email_address\": { \"enabled\": true, \"required\": true, \"used_for_first_factor\": true, \"first_factors\": [\"email_code\"], \"verify_at_sign_up\": true }, \"web3_wallet\": { \"enabled\": false, \"required\": false, \"used_for_first_factor\": false } ``` with OAuth enabled for `google`, `github`, `x`, `discord`, `apple`, `linkedin_oidc`, and sign-up `mode: \"public\"`. So: **email/OAuth sign-in is the first factor and web3 wallet login is disabled entirely** — yet the marketing site's only stated answer to \"how do I get paid / what do you support\" is \"wallet only.\" Why this matters commercially: the single biggest objection for a non-crypto freelancer is \"I don't have a Solana wallet, so this isn't for me.\" The landing page currently *confirms* that objection at the exact moment a visitor is looking for a reason to bounce. Meanwhile the product has already solved it. This is free conversion left on the table. **Suggested replacement copy (drop-in for `components/faq.tsx`):** - **\"Do I need a crypto wallet to start?\"** \"No. Sign up in seconds with email,…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -4423,72 +4228,31 @@
       "funded-bounty"
     ],
     "github_state": "open",
-    "id": "github-dev-kp-eloper-BountyScout-1341",
-    "issue_number": 1341,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "id": "github-gibwork-gibwork-website-170",
+    "issue_number": 170,
+    "labels": [],
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
-    "project": "dev-kp-eloper/BountyScout",
-    "published_at": "2026-09-07T00:46:26Z",
+    "project": "gibwork/gibwork-website",
+    "published_at": "2026-08-06T17:04:20Z",
     "reward": {
-      "amount": 65,
+      "amount": 73,
       "currency": "USD",
-      "evidence": ".com/Tarsnap/kivaloo) - **Comments:** 0 - **Last Updated:** 2026-09-07T00:10:40Z #### 9. [[Bounty: $65] Add loading and empty states to the shop products grid](https://github.com/Movalabs-crew/mova-stor",
+      "evidence": ".gib.work/api/explore` currently returns **460 indexed tasks, 454 of them closed, totalling roughly $73.7K in posted rewards (~$72.6K on closed work)**. That is a far better badge than \"Introducing\": `",
       "provenance": "unverified",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/dev-kp-eloper/BountyScout/issues/1341",
+    "source_url": "https://github.com/gibwork/gibwork-website/issues/170",
     "status": "open",
-    "title": "🎯 Bounty Alert: 10 New Opportunityies found",
-    "updated_at": "2026-09-07T00:46:26Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "CONTRIBUTOR",
-    "body_excerpt": "### Active Bounty Scan Results **Scan Time:** 2026-07-20 23:58 UTC #### 1. [Bounty spawn announce timeout leaves an orphaned, un-checkable bounty announcement on the board](https://github.com/GOF2BountyBot/BountyBot-Reborn-SamX/issues/57) - **Repository:** [GOF2BountyBot/BountyBot-Reborn-SamX](https://github.com/GOF2BountyBot/BountyBot-Reborn-SamX) - **Comments:** 0 - **Last Updated:** 2026-07-20T23:51:45Z #### 2. [Translation ES-AR](https://github.com/Pandarix/BetterArcheology-MultiLoaded/issues/54) - **Repository:** [Pandarix/BetterArcheology-MultiLoaded](https://github.com/Pandarix/BetterArcheology-MultiLoaded) - **Comments:** 0 - **Last Updated:** 2026-07-20T23:49:15Z #### 3. [DLT Earth Bounty – ACM0014 & VMR0015 dMRV policies ready for review](https://github.com/hashgraph/guardian/issues/6387) - **Repository:** [hashgraph/guardian](https://github.com/hashgraph/guardian) - **Comments:** 0 - **Last Updated:** 2026-07-20T23:39:59Z #### 4. [[Bug bounty] localized Windows WSL errors are corrupted in install diagnostics](https://github.com/monk-io/monk-plugin/issues/60) - **Repository:** [monk-io/monk-plugin](https://github.com/monk-io/monk-plugin) - **Comments:** 2 - **Last Updated:** 2026-07-20T23:37:08Z #### 5. [$5,000 clean-room reproduction bounty: Bernstein obstacle and curved Hertz results](https://github.com/DomTheDeveloper/crl/issues/103) - **Repository:** [DomTheDeveloper/crl](https://github.com/DomTheDeveloper/crl) - **Comments:** 3 - **Last Updated:** 2026-07-20T23:23:01Z #### 6. [Implement PayPal Sandbox Payment Flow for MergeOS Project Funding, MRG Token Minting, Admin Review, and Public Proof Ledger - 1000 MRG Bounty](https://github.com/mergeos-bounties/mergeos/issues/7) - **Repository:** [mergeos-bounties/mergeos](https://github.com/mergeos-bounties/mergeos) - **Comments:** 11 - **Last Updated:** 2026-07-20T22:47:57Z #### 7. [🎯 Bounty Alert: 31 New Opportunities — 2026-07-20 23:09 UTC](https://github.com/greyw0rks/bountyscout/issues/337) - **Reposito…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "translation-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-dev-kp-eloper-BountyScout-550",
-    "issue_number": 550,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "dev-kp-eloper/BountyScout",
-    "published_at": "2026-07-20T23:58:34Z",
-    "reward": {
-      "amount": 5000,
-      "currency": "USD",
-      "evidence": "ithub.com/monk-io/monk-plugin) - **Comments:** 2 - **Last Updated:** 2026-07-20T23:37:08Z #### 5. [$5,000 clean-room reproduction bounty: Bernstein obstacle and curved Hertz results](https://github.com/Dom",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/dev-kp-eloper/BountyScout/issues/550",
-    "status": "open",
-    "title": "🎯 Bounty Alert: 8 New Opportunityies found",
-    "updated_at": "2026-07-21T00:00:27Z"
+    "title": "Landing page misstates how sign-up and payouts work (says wallet-only; app is now email/OAuth via Clerk) + missing mobile app, live stats, and dark-mode themeColor",
+    "updated_at": "2026-09-05T16:29:46Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "NONE",
-    "body_excerpt": "### Active Bounty Scan Results **Scan Time:** 2026-09-08 18:18 UTC #### 1. [[Bounty] [Bounty: $450] Deploy Script Fails with ENOENT on Windows 11 (Development Pack P](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1235) - **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza) - **Comments:** 4 - **Last Updated:** 2026-09-08T18:18:06Z #### 2. [[Lesson] 运维小课 ×2：iap tcp forwarding + numpy 上传带宽 / docker compose](https://github.com/Ikalus1988/MisakaNet/issues/1572) - **Repository:** [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) - **Comments:** 5 - **Last Updated:** 2026-09-08T18:13:58Z #### 3. [Published $25 external-PR CI task: documentation fallback scope](https://github.com/liana-banyan/librarian-mcp/issues/2) - **Repository:** [liana-banyan/librarian-mcp](https://github.com/liana-banyan/librarian-mcp) - **Comments:** 2 - **Last Updated:** 2026-09-08T18:11:26Z #### 4. [WHOOP weekly summary consumes only the first collection page](https://github.com/BasedHardware/omi/issues/13174) - **Repository:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Comments:** 0 - **Last Updated:** 2026-09-08T18:08:01Z #### 5. [fix(supervisor): stale terminal TaskRun blocks already_running gate and stalls issue progression indefinitely](https://github.com/xsovad06/sova/issues/984) - **Repository:** [xsovad06/sova](https://github.com/xsovad06/sova) - **Comments:** 0 - **Last Updated:** 2026-09-08T18:04:38Z #### 6. [[Bounty] [Bounty: $500] Custom Block Definition Fails Schema Validation in Bedrock 1.26.3](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1234) - **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza) - **Comments:** 0 - **Last Updated:** 2026-09-08T18:00:05Z #### 7. [Red-teaming event with a purpose-built AI chatbot target](https://github.com/cherry-bisht/elixir-memb-26/issues/33) - **Repository:** [cherry-b…",
+    "body_excerpt": "**Platform URL:** https://deskcrew.io/earn **Category:** `agent-task-marketplace` **Payment rail:** USDC on Base, Polygon, Sei, Avalanche, and Solana. A bounty always pays out on the chain it was funded on; there is no cross-chain conversion. Payment settles directly to the wallet that paid the entry fee. **Credibility:** early **verifiedAt:** 2026-08-19 --- ### What is it DeskCrew is a support helpdesk whose ticket queue is open to anonymous AI agents. A business attaches a cash bounty to a real support ticket it needs answered. Any agent can pay a small per-action fee to submit a draft answer. A human at that business reviews the drafts and approves one, and the approved agent is paid in USDC on-chain. Unlike generic agent bounty boards, the work is a single vertical: answering real customer support questions for real businesses. The full public record of every question, the accepted answer, the approving business, and the settlement transaction is published at https://deskcrew.io/answers ### How agents earn here 1. Get a wallet that can receive USDC on the target bounty's payout chain. EVM chains use a `0x…` address; Solana uses a base58 address. A wallet on the wrong chain cannot be paid for that bounty. 2. Fund it with a few dollars of USDC. That covers dozens of attempts. 3. Read the open board. `GET https://deskcrew.io/api/arena/board` is free, needs no auth, and returns every open bounty with its reward, its payout chain, and how many agents have already entered. 4. Submit an answer by calling `draft_reply` on a ticket id, either over the x402 HTTP door or the MCP server. The endpoint replies 402 with the price and accepted networks; pay and retry with the `X-PAYMENT` header. Machine descriptor: https://deskcrew.io/.well-known/x402 5. A human at the business approves or rejects. On approval, 85% of the bounty is sent to the wallet that paid the entry fee, on the chain the bounty was funded on. **Human touches required: zero.** No account, no email, no API k…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -4498,69 +4262,28 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "docs-bounty"
+      "funded-bounty"
     ],
     "github_state": "open",
-    "id": "github-freedom-winds-BountyScout-1011",
-    "issue_number": 1011,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "id": "github-gigs-sh-gigs-sh-5",
+    "issue_number": 5,
+    "labels": [],
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
-    "project": "freedom-winds/BountyScout",
-    "published_at": "2026-09-08T18:18:26Z",
+    "project": "gigs-sh/gigs-sh",
+    "published_at": "2026-08-19T13:43:20Z",
     "reward": {
-      "amount": 450,
+      "amount": 1,
       "currency": "USD",
-      "evidence": "und ### Active Bounty Scan Results **Scan Time:** 2026-09-08 18:18 UTC #### 1. [[Bounty] [Bounty: $450] Deploy Script Fails with ENOENT on Windows 11 (Development Pack P](https://github.com/zhangjiayang",
+      "evidence": "non-refundable if not selected. - Agent share: **85%** of the bounty. Average bounty is currently **$1.00**, so an approved answer pays about **$0.85**. - Board-wide human approval rate: **21%** across **1",
       "provenance": "unverified",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/freedom-winds/BountyScout/issues/1011",
+    "source_url": "https://github.com/gigs-sh/gigs-sh/issues/5",
     "status": "open",
-    "title": "🎯 Bounty Alert: 20 New Opportunityies found",
-    "updated_at": "2026-09-08T18:18:26Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Bounty Scan Results **Scan Time:** 2026-09-08 23:49 UTC #### 1. [Bounty proposal: preserve dropped stack counts during survival pickup](https://github.com/zardoy/space-squid/issues/35) - **Repository:** [zardoy/space-squid](https://github.com/zardoy/space-squid) - **Comments:** 1 - **Last Updated:** 2026-09-08T23:45:41Z #### 2. [Bug-bounty Layer 1 adapter + Q-SCOPE / Q-DUP / Q-IMPACT](https://github.com/Leonardo-Jacquez/open-cycle/issues/3) - **Repository:** [Leonardo-Jacquez/open-cycle](https://github.com/Leonardo-Jacquez/open-cycle) - **Comments:** 5 - **Last Updated:** 2026-09-08T23:40:16Z #### 3. [Python CLI silently loses SQL cell content when normalizing Desktop table output](https://github.com/BasedHardware/omi/issues/12988) - **Repository:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Comments:** 2 - **Last Updated:** 2026-09-08T23:40:03Z #### 4. [🎯 Micro Bounty Alert: 4 New Opportunities](https://github.com/2510034127qq-wq/BountyScout/issues/56) - **Repository:** [2510034127qq-wq/BountyScout](https://github.com/2510034127qq-wq/BountyScout) - **Comments:** 0 - **Last Updated:** 2026-09-08T23:31:22Z #### 5. [[Bug bounty] tarsnap -c segfaults when an mtree pathname escape decodes to NUL](https://github.com/Tarsnap/tarsnap/issues/874) - **Repository:** [Tarsnap/tarsnap](https://github.com/Tarsnap/tarsnap) - **Comments:** 0 - **Last Updated:** 2026-09-08T23:25:51Z #### 6. [feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing](https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/9) - **Repository:** [iyeanur6-cyber/ultimate-ai-platform](https://github.com/iyeanur6-cyber/ultimate-ai-platform) - **Comments:** 3 - **Last Updated:** 2026-09-08T23:24:21Z #### 7. [Bounty proposal: compare metrics since_timestamp by instant rather than ISO text](https://github.com/liana-banyan/librarian-mcp/issues/20) - **Repository:** [liana-banyan/librarian-mcp](https://github.com/liana-banyan/librar…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-freedom-winds-BountyScout-1013",
-    "issue_number": 1013,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "freedom-winds/BountyScout",
-    "published_at": "2026-09-08T23:49:49Z",
-    "reward": {
-      "amount": 150,
-      "currency": "USD",
-      "evidence": "Tarsnap/tarsnap) - **Comments:** 0 - **Last Updated:** 2026-09-08T23:25:51Z #### 6. [feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing](https://github.co",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/freedom-winds/BountyScout/issues/1013",
-    "status": "open",
-    "title": "🎯 Bounty Alert: 9 New Opportunityies found",
-    "updated_at": "2026-09-08T23:49:49Z"
+    "title": "[gig] DeskCrew Bounty Board",
+    "updated_at": "2026-09-05T20:56:52Z"
   },
   {
     "ai_assistability": "unknown",
@@ -4582,7 +4305,7 @@
     "id": "github-gleephoenixcrew-glee-operator-tools-12",
     "issue_number": 12,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "gleephoenixcrew/glee-operator-tools",
     "published_at": "2026-08-26T13:46:06Z",
@@ -4598,6 +4321,45 @@
     "status": "open",
     "title": "Opportunity acquisition v0: grants, credits, bounties, and open-infrastructure funding",
     "updated_at": "2026-08-26T13:47:47Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "**Type:** Bug **Reporter:** `anon-e29f1c89` **Submitted:** 2026-06-12 23:16:58 UTC **Server version:** 0.18.3 **Mods loaded:** 119 **Dimension:** multiworld:spawn **Biome:** minecraft:plains **Coords:** -337.5, 130.0, 272.2 **TPS:** ``` Overall: 20.0 TPS (16.23 ms/tick avg, last 100 ticks) ``` ## Description 10k wallet quest doesn't reward key ## Pokémon party ``` 1. Garchomp L87 2. Arcanine L68 3. Sneasler L66 4. Iron Leaves L74 5. Archaludon L74 6. Aegislash L70 ``` ## Recent chat (last 20 lines) ``` (no recent chat) ``` ## Server log (tail 30 lines) ``` [12Jun2026 23:15:59.668] [Server thread/INFO] [rbrctai/]: STARTED SHOWDOWN RESPONSE [12Jun2026 23:15:59.668] [Server thread/INFO] [rbrctai/]: SCORING SWITCHES [12Jun2026 23:15:59.668] [Server thread/INFO] [rbrctai/]: Possible Switch: -> Quinn [Normal]'s Kommo-o -> Score: 0 [12Jun2026 23:15:59.668] [Server thread/INFO] [rbrctai/]: DECIDING MOVE FOR translation{key='cobblemon.battle.owned_pokemon', args=[translation{key='trainer.rctmod.bt_09_dragon.name', fallback='Quinn [Normal]', args=[]}, translation{key='cobblemon.species.dragonite.name', args=[]}]} [12Jun2026 23:15:59.669] [Server thread/INFO] [rbrctai/]: earthquake -> Against: AppaStoppaaa's Garchomp -> Score: 6 -> Damage: 36 -> Will Tera false [12Jun2026 23:15:59.669] [Server thread/INFO] [rbrctai/]: icespinner -> Against: AppaStoppaaa's Garchomp -> Score: 6 -> Damage: 115 -> Will Tera false [12Jun2026 23:15:59.669] [Server thread/INFO] [rbrctai/]: dragonclaw -> Against: AppaStoppaaa's Garchomp -> Score: 0 -> Damage: 86 -> Will Tera false [12Jun2026 23:15:59.669] [Server thread/INFO] [rbrctai/]: dragondance -> Against: AppaStoppaaa's Garchomp -> Score: -19 -> Damage: 0 -> Will Tera false [12Jun2026 23:15:59.669] [Server thread/INFO] [rbrctai/]: CHOOSEN BEST MOVE earthquake -> AppaStoppaaa's Garchomp -> 36 dmg [12Jun2026 23:16:05.769] [Server thread/INFO] [rbrctai/]: STARTED SHOWDOWN RESPONSE [12Jun2026 23:16:05.769] [Server thread/INFO] [rbrctai/]: SCORING S…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "translation-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-hspahic-cs-cobblemon-server-200",
+    "issue_number": 200,
+    "labels": [
+      "bug"
+    ],
+    "last_checked_at": "2026-09-09T02:09:04Z",
+    "notes": null,
+    "project": "hspahic-cs/cobblemon-server",
+    "published_at": "2026-06-12T23:16:59Z",
+    "reward": {
+      "amount": 50,
+      "currency": "USD",
+      "evidence": "[Server thread/INFO] [cobblemon_bridge/]: npc-defeat: trainer=<unknown> player=AppaStoppaaa bounty=$50 (x1.0) [12Jun2026 23:16:36.216] [Server thread/WARN] [net.minecraft.world.level.entity.PersistentEn",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/hspahic-cs/cobblemon-server/issues/200",
+    "status": "open",
+    "title": "[bug] 10k wallet quest doesn't reward key — by anon-e29f1c89",
+    "updated_at": "2026-06-15T11:10:52Z"
   },
   {
     "ai_assistability": "unknown",
@@ -4619,7 +4381,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
     "issue_number": 14,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-13T06:49:24Z",
@@ -4650,13 +4412,14 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
+      "bounty",
       "good-first-bounty"
     ],
     "github_state": "open",
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
     "issue_number": 9,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-12T17:52:37Z",
@@ -4695,7 +4458,7 @@
     "id": "github-kwizzlesurp10-ctrl-x402-mcp-494",
     "issue_number": 494,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "kwizzlesurp10-ctrl/x402-mcp",
     "published_at": "2026-08-26T15:06:21Z",
@@ -4734,7 +4497,7 @@
     "id": "github-kwizzlesurp10-ctrl-x402-mcp-495",
     "issue_number": 495,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "kwizzlesurp10-ctrl/x402-mcp",
     "published_at": "2026-08-26T15:06:28Z",
@@ -4773,7 +4536,7 @@
     "id": "github-kwizzlesurp10-ctrl-x402-mcp-496",
     "issue_number": 496,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "kwizzlesurp10-ctrl/x402-mcp",
     "published_at": "2026-08-26T15:06:36Z",
@@ -4811,7 +4574,7 @@
     "id": "github-liana-banyan-librarian-mcp-19",
     "issue_number": 19,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "liana-banyan/librarian-mcp",
     "published_at": "2026-09-08T19:38:43Z",
@@ -4848,7 +4611,7 @@
     "id": "github-liana-banyan-librarian-mcp-2",
     "issue_number": 2,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "liana-banyan/librarian-mcp",
     "published_at": "2026-09-08T16:06:09Z",
@@ -4864,6 +4627,43 @@
     "status": "open",
     "title": "Published $25 external-PR CI task: documentation fallback scope",
     "updated_at": "2026-09-08T20:01:30Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "NONE",
+    "body_excerpt": "I reproduced a filtering error in `metrics.summary(since_timestamp)` at commit 34171265fa755be9cd8b286f85645b6986f9cba7. The tool documents an inclusive ISO timestamp, but the implementation compares timestamp strings lexicographically. With one measurement at `2026-09-08T12:00:00+00:00`, importing the actual metrics module and using an isolated temporary JSONL file gives: | since_timestamp | Expected calls | Actual calls | |---|---:|---:| | `2026-09-08T13:00:00+02:00` (11:00 UTC) | 1 | 0 | | `2026-09-08T11:00:00-02:00` (13:00 UTC) | 0 | 1 | | `2026-09-08T12:00:00Z` (same instant) | 1 | 0 | This can exclude matching measurements or include older measurements, affecting every downstream aggregate. It is separate from the malformed-JSONL issue #17; the input here is valid JSONL throughout. Would you approve a US$25 code bounty for parsing ISO timestamps and comparing instants, with regression tests for positive/negative offsets, equivalent UTC formats, fractional seconds, and inclusive boundaries? I propose leaving the output schema and JSONL loader unchanged; timestamp validation behavior can follow your preferred contract. BOUNTIES.md lists PayPal and Net-30 after acceptance, and states that the founder approves each rate. Please confirm the amount and scope, and the exact contributor grant required for this task, before I prepare a full PR. This proposal does not sign or accept a grant.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-liana-banyan-librarian-mcp-20",
+    "issue_number": 20,
+    "labels": [],
+    "last_checked_at": "2026-09-09T02:09:04Z",
+    "notes": null,
+    "project": "liana-banyan/librarian-mcp",
+    "published_at": "2026-09-08T22:09:59Z",
+    "reward": {
+      "amount": 25,
+      "currency": "USD",
+      "evidence": "from the malformed-JSONL issue #17; the input here is valid JSONL throughout. Would you approve a US$25 code bounty for parsing ISO timestamps and comparing instants, with regression tests for positive/n",
+      "provenance": "unverified",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/liana-banyan/librarian-mcp/issues/20",
+    "status": "open",
+    "title": "Bounty proposal: compare metrics since_timestamp by instant rather than ISO text",
+    "updated_at": "2026-09-08T23:14:57Z"
   },
   {
     "ai_assistability": "unknown",
@@ -4886,7 +4686,7 @@
     "id": "github-liana-banyan-librarian-mcp-22",
     "issue_number": 22,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "liana-banyan/librarian-mcp",
     "published_at": "2026-09-09T01:05:28Z",
@@ -4923,7 +4723,7 @@
     "id": "github-liana-banyan-librarian-mcp-8",
     "issue_number": 8,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "liana-banyan/librarian-mcp",
     "published_at": "2026-09-08T16:50:37Z",
@@ -4960,7 +4760,7 @@
     "id": "github-liubaining-louis-louis-os-344",
     "issue_number": 344,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "liubaining-louis/louis-os",
     "published_at": "2026-08-10T17:28:57Z",
@@ -4998,7 +4798,7 @@
     "id": "github-markabramov1993-arbitr-1",
     "issue_number": 1,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "markabramov1993/arbitr",
     "published_at": "2026-09-04T13:22:24Z",
@@ -5038,7 +4838,7 @@
       "bounty",
       "enhancement"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "microg/GmsCore",
     "published_at": "2025-03-31T02:15:48Z",
@@ -5077,7 +4877,7 @@
     "labels": [
       "bounty"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "microg/GmsCore",
     "published_at": "2025-04-06T09:44:38Z",
@@ -5117,7 +4917,7 @@
       "bounty",
       "open"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "mister3ai-cmyk/ngp-sovereign-synesis-bounties",
     "published_at": "2026-08-20T00:35:30Z",
@@ -5156,7 +4956,7 @@
     "labels": [
       "Bounty#6"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "moorcheh-ai/memanto",
     "published_at": "2026-07-22T18:52:55Z",
@@ -5193,7 +4993,7 @@
     "id": "github-mysubb01-apify-github-issue-scout-2",
     "issue_number": 2,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "mysubb01/apify-github-issue-scout",
     "published_at": "2026-05-23T12:56:59Z",
@@ -5230,7 +5030,7 @@
     "id": "github-pluralsh-console-4213",
     "issue_number": 4213,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "pluralsh/console",
     "published_at": "2026-09-08T21:00:34Z",
@@ -5267,7 +5067,7 @@
     "id": "github-stratumpraxis-stratum-praxis-141",
     "issue_number": 141,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "stratumpraxis/stratum-praxis",
     "published_at": "2026-09-08T05:52:48Z",
@@ -5304,7 +5104,7 @@
     "id": "github-tdpeta754-design-ai-micropayment-network-1",
     "issue_number": 1,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "tdpeta754-design/ai-micropayment-network",
     "published_at": "2026-09-08T12:20:45Z",
@@ -5341,7 +5141,7 @@
     "id": "github-teamleaderleo-bot-observatory-36",
     "issue_number": 36,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "teamleaderleo/bot-observatory",
     "published_at": "2026-08-27T19:44:01Z",
@@ -5385,7 +5185,7 @@
       "community",
       "feature-request"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "tenstorrent/tt-metal",
     "published_at": "2026-08-21T22:56:24Z",
@@ -5422,7 +5222,7 @@
     "id": "github-tscircuit-matchpack-12",
     "issue_number": 12,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "tscircuit/matchpack",
     "published_at": "2025-08-30T15:51:34Z",
@@ -5438,45 +5238,6 @@
     "status": "open",
     "title": "Propose/implement a solution to bad layout",
     "updated_at": "2026-09-09T00:05:59Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "### Active Bounty Scan Results **Scan Time:** 2026-09-08 18:18 UTC #### 1. [🎯 Bounty Alert: 20 New Opportunityies found](https://github.com/freedom-winds/BountyScout/issues/1011) - **Repository:** [freedom-winds/BountyScout](https://github.com/freedom-winds/BountyScout) - **Comments:** 0 - **Last Updated:** 2026-09-08T18:18:26Z #### 2. [[Bounty] [Bounty: $450] Deploy Script Fails with ENOENT on Windows 11 (Development Pack P](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1235) - **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza) - **Comments:** 4 - **Last Updated:** 2026-09-08T18:18:06Z #### 3. [[Lesson] 运维小课 ×2：iap tcp forwarding + numpy 上传带宽 / docker compose](https://github.com/Ikalus1988/MisakaNet/issues/1572) - **Repository:** [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) - **Comments:** 5 - **Last Updated:** 2026-09-08T18:13:58Z #### 4. [Published $25 external-PR CI task: documentation fallback scope](https://github.com/liana-banyan/librarian-mcp/issues/2) - **Repository:** [liana-banyan/librarian-mcp](https://github.com/liana-banyan/librarian-mcp) - **Comments:** 2 - **Last Updated:** 2026-09-08T18:11:26Z #### 5. [WHOOP weekly summary consumes only the first collection page](https://github.com/BasedHardware/omi/issues/13174) - **Repository:** [BasedHardware/omi](https://github.com/BasedHardware/omi) - **Comments:** 0 - **Last Updated:** 2026-09-08T18:08:01Z #### 6. [fix(supervisor): stale terminal TaskRun blocks already_running gate and stalls issue progression indefinitely](https://github.com/xsovad06/sova/issues/984) - **Repository:** [xsovad06/sova](https://github.com/xsovad06/sova) - **Comments:** 0 - **Last Updated:** 2026-09-08T18:04:38Z #### 7. [[Bounty] [Bounty: $500] Custom Block Definition Fails Schema Validation in Bedrock 1.26.3](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1234) - **Repository:** [zhangjiayang6835-cyber/bounty-plaza](http…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-vansh-09-BountyScout-1088",
-    "issue_number": 1088,
-    "labels": [
-      "bounty-alert"
-    ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
-    "notes": null,
-    "project": "vansh-09/BountyScout",
-    "published_at": "2026-09-08T18:18:36Z",
-    "reward": {
-      "amount": 450,
-      "currency": "USD",
-      "evidence": "BountyScout) - **Comments:** 0 - **Last Updated:** 2026-09-08T18:18:26Z #### 2. [[Bounty] [Bounty: $450] Deploy Script Fails with ENOENT on Windows 11 (Development Pack P](https://github.com/zhangjiayang",
-      "provenance": "unverified",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/vansh-09/BountyScout/issues/1088",
-    "status": "open",
-    "title": "🎯 Bounty Alert: 20 New Opportunityies found",
-    "updated_at": "2026-09-08T18:18:36Z"
   },
   {
     "ai_assistability": "unknown",
@@ -5508,7 +5269,7 @@
       "react-native",
       "typescript"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "warpspeedopen-source/warpspeed-bounties",
     "published_at": "2026-05-28T19:31:57Z",
@@ -5558,7 +5319,7 @@
       "prisma",
       "typescript"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "warpspeedopen-source/warpspeed-bounties",
     "published_at": "2026-05-28T19:40:03Z",
@@ -5595,7 +5356,7 @@
     "id": "github-worknenjoy-gitpay-1561",
     "issue_number": 1561,
     "labels": [],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "worknenjoy/gitpay",
     "published_at": "2026-09-08T10:41:31Z",
@@ -5635,7 +5396,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-07T19:28:41Z",
@@ -5676,7 +5437,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T13:54:26Z",
@@ -5716,7 +5477,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T13:54:29Z",
@@ -5757,7 +5518,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:26Z",
@@ -5772,7 +5533,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1227",
     "status": "open",
     "title": "[Bounty] [Bounty: $350] CI Build Pipeline Fails: Missing Block Families after Cleaning _t",
-    "updated_at": "2026-09-09T01:37:15Z"
+    "updated_at": "2026-09-09T01:52:37Z"
   },
   {
     "ai_assistability": "unknown",
@@ -5798,7 +5559,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:26Z",
@@ -5813,7 +5574,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1228",
     "status": "open",
     "title": "[Bounty] [Bounty: $450] Custom Humanoid NPC Texture Scrambled / Left Arm & Leg Mirrored I",
-    "updated_at": "2026-09-09T01:37:13Z"
+    "updated_at": "2026-09-09T01:52:39Z"
   },
   {
     "ai_assistability": "unknown",
@@ -5839,7 +5600,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:27Z",
@@ -5854,7 +5615,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1229",
     "status": "open",
     "title": "[Bounty] [Bounty: $600] Write Node.js Script to Programmatically Generate Ruby Toolset Te",
-    "updated_at": "2026-09-09T01:37:09Z"
+    "updated_at": "2026-09-09T01:52:34Z"
   },
   {
     "ai_assistability": "unknown",
@@ -5880,7 +5641,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:27Z",
@@ -5895,7 +5656,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1230",
     "status": "open",
     "title": "[Bounty] [Bounty: $550] Build Script Deploys Unexpanded Templates Directly to Com.mojang",
-    "updated_at": "2026-09-09T01:37:11Z"
+    "updated_at": "2026-09-09T01:52:32Z"
   },
   {
     "ai_assistability": "unknown",
@@ -5921,7 +5682,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:28Z",
@@ -5936,7 +5697,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1231",
     "status": "open",
     "title": "[Bounty] [Bounty: $400] Script API Custom Slash Command Throws Unhandled Startup Exceptio",
-    "updated_at": "2026-09-09T01:37:04Z"
+    "updated_at": "2026-09-09T01:52:28Z"
   },
   {
     "ai_assistability": "unknown",
@@ -5962,7 +5723,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:28Z",
@@ -5977,7 +5738,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1232",
     "status": "open",
     "title": "[Bounty] [Bounty: $650] Optimize Dynamic Voxel Display Entities to Prevent Massive Draw C",
-    "updated_at": "2026-09-09T01:37:07Z"
+    "updated_at": "2026-09-09T01:52:30Z"
   },
   {
     "ai_assistability": "unknown",
@@ -6003,7 +5764,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:29Z",
@@ -6018,7 +5779,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1233",
     "status": "open",
     "title": "[Bounty] [Bounty: $850] Hitbox Collision Dropout during Rapid Contraption Kinematic Telep",
-    "updated_at": "2026-09-09T01:37:02Z"
+    "updated_at": "2026-09-09T01:52:26Z"
   },
   {
     "ai_assistability": "unknown",
@@ -6044,7 +5805,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:29Z",
@@ -6059,7 +5820,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1234",
     "status": "open",
     "title": "[Bounty] [Bounty: $500] Custom Block Definition Fails Schema Validation in Bedrock 1.26.3",
-    "updated_at": "2026-09-09T01:37:00Z"
+    "updated_at": "2026-09-09T01:52:23Z"
   },
   {
     "ai_assistability": "unknown",
@@ -6085,7 +5846,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-08T17:49:30Z",
@@ -6100,7 +5861,7 @@
     "source_url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1235",
     "status": "open",
     "title": "[Bounty] [Bounty: $450] Deploy Script Fails with ENOENT on Windows 11 (Development Pack P",
-    "updated_at": "2026-09-09T01:36:58Z"
+    "updated_at": "2026-09-09T01:52:21Z"
   },
   {
     "ai_assistability": "unknown",
@@ -6125,7 +5886,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-07-13T10:41:48Z",
@@ -6165,7 +5926,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-07-13T10:41:50Z",
@@ -6205,7 +5966,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-07-13T13:08:18Z",
@@ -6245,7 +6006,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-07-21T04:33:44Z",
@@ -6285,7 +6046,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-07-22T22:56:58Z",
@@ -6325,7 +6086,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-07-27T07:53:29Z",
@@ -6365,7 +6126,7 @@
       "bounty",
       "real"
     ],
-    "last_checked_at": "2026-09-09T01:41:59Z",
+    "last_checked_at": "2026-09-09T02:09:04Z",
     "notes": null,
     "project": "zhangjiayang6835-cyber/bounty-plaza",
     "published_at": "2026-09-03T06:16:57Z",
