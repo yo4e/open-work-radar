@@ -96,6 +96,17 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(metadata["currency"], "CAD")
         self.assertEqual(metadata["provenance"], "stated")
 
+    def test_reward_parser_does_not_treat_required_credit_purchase_as_reward(self):
+        metadata = fetch_github.reward_metadata(
+            "Bounty available",
+            "Contributor must buy $20 of credits before testing.",
+            [],
+        )
+        self.assertIsNone(metadata["amount"])
+        self.assertIsNone(metadata["currency"])
+        self.assertEqual(metadata["provenance"], "unverified")
+        self.assertFalse(metadata["verified"])
+
     def test_atomic_write_keeps_existing_file_when_all_sources_fail(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

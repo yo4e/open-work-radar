@@ -34,7 +34,19 @@ DEFAULT_MAX_PAGES = 2
 DEFAULT_STALE_AFTER_DAYS = 180
 MAX_BODY_EXCERPT = 2_000
 
-REWARD_TERMS = re.compile(r"\b(?:bounty|bounties|reward|rewards|funded|funding|paid|payment|prize)\b", re.I)
+REWARD_TERMS = re.compile(
+    r"\b(?:bounty|bounties|reward|rewards|funded|funding|paid|payment|payout|"
+    r"compensation|stipend|grant|prize)\b",
+    re.I,
+)
+REWARD_EXPENSE_TERMS = re.compile(
+    r"\b(?:buy|bought|buying|purchase|purchases|purchasing|cost|costs|fee|fees|"
+    r"credit|credits|subscription|subscriptions|deposit|deposits|spend|spending|"
+    r"expense|expenses|price|prices|charge|charges|charged)\b"
+    r"|\b(?:must\s+pay|pay\s+(?:for|to|before))\b",
+    re.I,
+)
+REWARD_AMOUNT_CONTEXT_CHARS = 120
 MONEY_PATTERNS = (
     # Word guards keep hexadecimal hashes such as ``97ca54895cad24`` from
     # being mistaken for a CAD amount while still accepting ``CAD24``.
@@ -263,16 +275,43 @@ def numeric_amount(value: str) -> int | float | None:
     return int(parsed) if parsed.is_integer() else parsed
 
 
+def _nearest_term_distance(pattern: re.Pattern[str], text: str, position: int, limit: int) -> int | None:
+    start = max(0, position - limit)
+    end = min(len(text), position + limit)
+    distances = []
+    for match in pattern.finditer(text, start, end):
+        if match.start() <= position <= match.end():
+            distances.append(0)
+        else:
+            distances.append(min(abs(position - match.start()), abs(position - match.end())))
+    return min(distances) if distances else None
+
+
+def _is_reward_amount_context(text: str, match: re.Match[str]) -> bool:
+    """Return whether a money amount is explicitly tied to a reward claim.
+
+    Money in an issue is not necessarily money *for the contributor*.  Require
+    a nearby reward term and prefer it over nearby purchase/expense language so
+    costs such as ``buy $20 of credits`` cannot become stated rewards.
+    """
+    position = match.start()
+    reward_distance = _nearest_term_distance(REWARD_TERMS, text, position, REWARD_AMOUNT_CONTEXT_CHARS)
+    if reward_distance is None:
+        return False
+    expense_distance = _nearest_term_distance(REWARD_EXPENSE_TERMS, text, position, REWARD_AMOUNT_CONTEXT_CHARS)
+    return expense_distance is None or reward_distance < expense_distance
+
+
 def reward_metadata(title: str, body: str, labels: list[str]) -> dict[str, Any]:
     text = f"{title}\n{body}"
     label_text = " ".join(labels)
     matches: list[re.Match[str]] = []
     for pattern in MONEY_PATTERNS:
-        match = pattern.search(text)
-        if match:
-            matches.append(match)
-    if matches:
-        match = matches[0]
+        matches.extend(pattern.finditer(text))
+    matches.sort(key=lambda match: match.start())
+    for match in matches:
+        if not _is_reward_amount_context(text, match):
+            continue
         currency = normalize_currency(match.group("currency"))
         amount = numeric_amount(match.group("amount"))
         start = max(0, match.start() - 100)
