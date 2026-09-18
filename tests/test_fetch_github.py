@@ -317,6 +317,241 @@ class CollectorTests(unittest.TestCase):
                 fetch_github.collect(self.sources(directory), output, client, now=self.NOW)
             self.assertEqual(output.read_text(), original)
 
+    def test_body_pr_submitted_is_excluded(self):
+        item = self.issue(
+            9814,
+            project="HHS/simpler-grants-gov",
+            title="Bounty: $50",
+            body="Please fix docs.\nPR submitted.\nBounty: $50",
+        )
+        record = fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, set())
+        self.assertIsNotNone(record)
+        self.assertIsNone(fetch_github.second_stage(record, item, {}, self.NOW))
+
+    def test_open_pr_fixes_issue_is_excluded(self):
+        item = self.issue(14, project="iyeanur6-cyber/ultimate-ai-platform", title="Bounty: $25", body="Bounty: $25")
+        record = fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, set())
+        signals = {
+            "timeline": [
+                {
+                    "event": "cross-referenced",
+                    "source": {
+                        "issue": {
+                            "state": "open",
+                            "title": "Implement bounty",
+                            "body": "Fixes #14",
+                            "html_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/pull/41",
+                            "pull_request": {"url": "https://api.github.com/repos/x/pulls/41"},
+                        }
+                    },
+                }
+            ],
+            "comments": [],
+        }
+        self.assertIsNone(fetch_github.second_stage(record, item, signals, self.NOW))
+
+    def test_harmless_pr_mention_does_not_exclude(self):
+        item = self.issue(14, project="example/project", title="Bounty: $25", body="Bounty: $25")
+        record = fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, set())
+        signals = {
+            "timeline": [
+                {
+                    "event": "cross-referenced",
+                    "source": {
+                        "issue": {
+                            "state": "open",
+                            "title": "Docs tweak",
+                            "body": "See also #14 for context.",
+                            "html_url": "https://github.com/example/project/pull/99",
+                            "pull_request": {"url": "https://api.github.com/repos/example/project/pulls/99"},
+                        }
+                    },
+                }
+            ],
+            "comments": [],
+        }
+        kept = fetch_github.second_stage(record, item, signals, self.NOW)
+        self.assertIsNotNone(kept)
+        self.assertEqual(kept["status"], "open")
+
+    def test_closed_pr_does_not_exclude(self):
+        item = self.issue(14, project="example/project", title="Bounty: $25", body="Bounty: $25")
+        record = fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, set())
+        signals = {
+            "timeline": [
+                {
+                    "event": "cross-referenced",
+                    "source": {
+                        "issue": {
+                            "state": "closed",
+                            "title": "Attempt",
+                            "body": "Fixes #14",
+                            "html_url": "https://github.com/example/project/pull/41",
+                            "pull_request": {"url": "https://api.github.com/repos/example/project/pulls/41"},
+                        }
+                    },
+                }
+            ],
+            "comments": [],
+        }
+        kept = fetch_github.second_stage(record, item, signals, self.NOW)
+        self.assertIsNotNone(kept)
+
+    def test_draft_pr_referencing_issue_is_excluded(self):
+        item = self.issue(9, project="iyeanur6-cyber/ultimate-ai-platform", title="Bounty: $25", body="Bounty: $25")
+        record = fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, set())
+        signals = {
+            "timeline": [],
+            "comments": [{"body": "Opened draft PR. Fixes #9", "html_url": "https://github.com/x/issues/9#issuecomment-1"}],
+        }
+        self.assertIsNone(fetch_github.second_stage(record, item, signals, self.NOW))
+
+    def test_expired_deadline_is_excluded(self):
+        item = self.issue(
+            1609,
+            project="moorcheh-ai/memanto",
+            title="Bounty: $40",
+            body="Please ship the patch.\nBounty: $40\nsubmission deadline of 2026-09-15 23:59 UTC",
+        )
+        now = dt.datetime(2026, 9, 17, 0, 0, tzinfo=dt.timezone.utc)
+        record = fetch_github.normalize_issue(item, "one", "2026-09-17T00:00:00Z", now, 180, set())
+        self.assertEqual(record["deadline"], "2026-09-15T23:59:00Z")
+        self.assertIsNone(fetch_github.second_stage(record, item, {}, now))
+
+    def test_unclear_bounty_without_maintainer_confirm_is_excluded(self):
+        item = self.issue(
+            34,
+            project="cxlinux-ai/cx-distro",
+            title="Bounty: $25",
+            body="$25 upon merge. Please confirm.",
+        )
+        record = fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, set())
+        signals = {
+            "comments": [
+                {"body": "is the bounty still active?", "author_association": "NONE"},
+                {"body": "yeah is this still funded", "author_association": "CONTRIBUTOR"},
+            ]
+        }
+        self.assertTrue(fetch_github.availability_unclear(item["body"], signals))
+        self.assertIsNone(fetch_github.second_stage(record, item, signals, self.NOW))
+
+    def test_multi_claim_comments_without_pr_are_kept(self):
+        item = self.issue(
+            2155,
+            project="Scottcjn/rustchain-bounties",
+            title="Bounty: $100",
+            body="Bounty: $100 for the parser fix.",
+        )
+        record = fetch_github.normalize_issue(item, "one", "2026-09-09T01:00:00Z", self.NOW, 180, set())
+        signals = {
+            "comments": [
+                {"body": "/attempt #2155", "author_association": "NONE"},
+                {"body": "/claim I want this", "author_association": "NONE"},
+                {"body": "also /try", "author_association": "CONTRIBUTOR"},
+            ],
+            "timeline": [],
+        }
+        kept = fetch_github.second_stage(record, item, signals, self.NOW)
+        self.assertIsNotNone(kept)
+        self.assertEqual(kept["status"], "open")
+
+    def test_timestamp_only_rescan_keeps_truthful_last_checked_at(self):
+        item = self.issue(3, project="Henry00IS/ShapeEditor", title="Bounty: $25")
+        old = fetch_github.normalize_issue(item, "one", "2026-09-08T00:00:00Z", self.NOW, 180, set())
+        new = fetch_github.normalize_issue(item, "one", "2026-09-17T07:00:00Z", self.NOW, 180, set())
+        self.assertNotEqual(old["last_checked_at"], new["last_checked_at"])
+        stable = fetch_github.apply_freshness([new], [old])
+        self.assertEqual(stable[0]["last_checked_at"], "2026-09-17T07:00:00Z")
+        self.assertEqual(stable[0]["last_changed_at"], "2026-09-08T00:00:00Z")
+        self.assertEqual(fetch_github._substantive(stable[0]), fetch_github._substantive(old))
+
+    def test_search_uses_configured_max_pages(self):
+        seen = []
+
+        class TrackingClient:
+            def search_issues(self, query, max_pages=1):
+                seen.append(max_pages)
+                return iter([])
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sources.yaml"
+            path.write_text(
+                "stale_after_days: 180\nexclude_repositories: []\nsources:\n"
+                "  - id: one\n    query: one\n    max_pages: 2\n",
+                encoding="utf-8",
+            )
+            output = Path(directory) / "data.json"
+            fetch_github.collect(path, output, TrackingClient(), now=self.NOW)
+        self.assertEqual(seen, [2])
+
+    def test_shapeeditor_preserved_when_it_falls_out_of_search_window(self):
+        shape = self.issue(3, project="Henry00IS/ShapeEditor", title="Bounty: $25")
+        other = self.issue(8, project="example/other", title="Bounty: $40")
+
+        class WindowClient:
+            def __init__(self):
+                self.calls = {"one": 0, "two": 0}
+
+            def search_issues(self, query, max_pages=1):
+                self.calls[query] = self.calls.get(query, 0) + 1
+                if query != "one":
+                    return iter([])
+                if self.calls[query] == 1:
+                    return iter([shape])
+                return iter([other])
+
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "data.json"
+            client = WindowClient()
+            fetch_github.collect(self.sources(directory), output, client, now=self.NOW)
+            first = json.loads(output.read_text())
+            self.assertEqual({r["issue_number"] for r in first}, {3})
+            fetch_github.collect(self.sources(directory), output, client, now=self.NOW)
+            second = json.loads(output.read_text())
+            self.assertEqual({r["issue_number"] for r in second}, {3, 8})
+            shape_row = next(r for r in second if r["issue_number"] == 3)
+            self.assertEqual(shape_row["project"], "Henry00IS/ShapeEditor")
+            self.assertEqual(shape_row["status"], "open")
+
+    def test_unknown_timezone_deadline_is_left_unknown(self):
+        self.assertIsNone(fetch_github.parse_deadline("deadline 2026-09-15 23:59 MARS"))
+        jst = fetch_github.parse_deadline("submission deadline of 2026-09-15 23:59 JST")
+        self.assertEqual(jst, dt.datetime(2026, 9, 15, 14, 59, tzinfo=dt.timezone.utc))
+        utc = fetch_github.parse_deadline("submission deadline of 2026-09-15 23:59 UTC")
+        self.assertEqual(utc, dt.datetime(2026, 9, 15, 23, 59, tzinfo=dt.timezone.utc))
+
+    def test_lifecycle_fetch_failure_preserves_prior_and_avoids_false_open(self):
+        item = self.issue(3, project="Henry00IS/ShapeEditor", title="Bounty: $25")
+
+        class FailLifecycle:
+            def search_issues(self, query, max_pages=1):
+                return iter([item])
+
+            def lifecycle_signals(self, project, number):
+                raise fetch_github.LifecycleUnavailable("timeout")
+
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "data.json"
+            old = fetch_github.normalize_issue(item, "one", "2026-09-08T00:00:00Z", self.NOW, 180, set())
+            output.write_text(json.dumps([old]), encoding="utf-8")
+            count, successful, failed = fetch_github.collect(
+                self.sources(directory), output, FailLifecycle(), now=self.NOW
+            )
+            records = json.loads(output.read_text())
+            self.assertEqual(failed, [])
+            self.assertGreaterEqual(successful, 1)
+            self.assertEqual({r["issue_number"] for r in records}, {3})
+            self.assertEqual(records[0]["last_checked_at"], "2026-09-08T00:00:00Z")
+
+            blank = Path(directory) / "blank.json"
+            fetch_github.collect(self.sources(directory), blank, FailLifecycle(), now=self.NOW)
+            self.assertEqual(json.loads(blank.read_text()), [])
+
+    def test_last_page_from_link(self):
+        link = '<https://api.github.com/x?page=2>; rel="next", <https://api.github.com/x?page=7>; rel="last"'
+        self.assertEqual(fetch_github.last_page_from_link(link), 7)
+        self.assertIsNone(fetch_github.last_page_from_link(""))
+
 
 if __name__ == "__main__":
     unittest.main()
