@@ -24,7 +24,7 @@
       "help wanted",
       "status: open bounty"
     ],
-    "last_checked_at": "2026-09-17T04:51:42Z",
+    "last_checked_at": "2026-09-18T04:42:15Z",
     "notes": null,
     "project": "HHS/simpler-grants-gov",
     "published_at": "2026-04-23T19:17:45Z",
@@ -40,6 +40,87 @@
     "status": "open",
     "title": "Add unit tests for `src.services.service_utils`",
     "updated_at": "2026-09-08T21:32:49Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## RTC/ERG Trading Pair — Spectrum DEX Integration Enable real price discovery for RTC by creating a trading pair with ERG on Spectrum Finance (Ergo DEX). ### Background RustChain already has Ergo integration: - Private Ergo chain running at 50.28.86.131 - Miner attestations anchored to Ergo blocks - ERG has real USD value (~$1.50) ### Requirements **1. Token Issuance on Ergo** - Issue RTC as an Ergo native token - 1:1 backing with RustChain RTC - Mint contract that verifies RustChain balance **2. Bridge Contract** - Lock RTC on RustChain → Mint eRTC on Ergo - Burn eRTC on Ergo → Unlock RTC on RustChain - Simple 2-of-3 multisig or threshold signature **3. Spectrum DEX Pool** - Create RTC/ERG liquidity pool on https://app.spectrum.fi - Initial liquidity: ~1,000 RTC + equivalent ERG - Set initial price: 1 RTC = 0.067 ERG (~$0.10 at $1.50/ERG) **4. Documentation** - How to bridge RTC ↔ eRTC - How to trade on Spectrum - Liquidity provider guide ### Technical Notes Ergo token issuance uses EIP-4 standard: ```json { \"name\": \"RustChain Token\", \"symbol\": \"RTC\", \"decimals\": 6, \"description\": \"Bridged RTC from RustChain PoA network\" } ``` Spectrum pool creation requires: - Token ID for RTC - Initial ERG deposit - Pool creation transaction ### Bounty: 150 RTC (~$15) **Milestones:** 1. Token issuance contract (50 RTC) 2. Bridge contract + UI (50 RTC) 3. Spectrum pool live + docs (50 RTC) ### Resources - Spectrum Finance: https://spectrum.fi - Ergo Token Minting: https://docs.ergoplatform.com/dev/tokens/ - RustChain Ergo Anchor: See `/root/rustchain/ergo_miner_anchor.py` --- *Real liquidity for real hardware mining* 🦀💱",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "docs-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-Rustchain-32",
+    "issue_number": 32,
+    "labels": [
+      "bounty",
+      "enhancement",
+      "wrtc"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "Scottcjn/Rustchain",
+    "published_at": "2026-02-03T23:50:59Z",
+    "reward": {
+      "amount": 15,
+      "currency": "USD",
+      "evidence": "### Bounty: 150 RTC (~$15)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/Rustchain/issues/32",
+    "status": "open",
+    "title": "⚡ Bounty: RTC/ERG Trading Pair on Spectrum DEX (150 RTC)",
+    "updated_at": "2026-09-17T22:36:30Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Model a prop — 7 RTC each Maps need **set dressing and interactive objects**. Build original 3D props for the [Xonotic RustChain Arena](https://github.com/Scottcjn/xonotic-rustchain). ### Prop wishlist (7 RTC each, on-theme) - ⬜ **Mining rig / GPU farm** (static prop, glowing fans) - ⬜ **Server rack** with blinking LEDs - ⬜ **Vintage PowerPC / retro tower** (antiquity nod) - ⬜ **RTC token pickup** (spinning coin, item model) - ⬜ **Hash-block crate / cover obstacle** - ⬜ **Validator node pillar / capture point** - ⬜ **Holographic ledger billboard** ### Deliverable (one PR per prop to `Scottcjn/xonotic-rustchain`) - Model: **`.md3` or `.iqm`** under `pk3_build/models/props/<name>/` - Textures (TGA, power-of-2) + a `.skin` if needed - Preview render (PNG) - LICENSE (CC-BY-SA-4.0 / GPL-compatible) + README - Loads cleanly; reasonable poly budget for an FPS ### How to claim PR the prop, comment with the link + RTC wallet/handle. First clean per distinct prop. **7 RTC** on merge. Pickup/interactive props that wire into the reward loop may earn a bonus. (Rate post-$0.15 adjustment.) <!-- machine-readable bounty spec --> ```bounty-spec # auto-backfilled; maintainer may refine paid: true reward_rtc: 7 per: per-item cap: 5 submit: [pr, email] not_in_repo: true ```",
+    "category": "design",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-14015",
+    "issue_number": 14015,
+    "labels": [
+      "bounty"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-06-12T18:17:40Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "C** on merge. Pickup/interactive props that wire into the reward loop may earn a bonus. (Rate post-$0.15 adjustment.) <!-- machine-readable bounty spec --> ```bounty-spec # auto-backfilled; maintainer ma",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/14015",
+    "status": "open",
+    "title": "[BOUNTY: 7 RTC] Design Map Objects / Props for Xonotic RustChain Arena",
+    "updated_at": "2026-09-18T02:43:44Z"
   },
   {
     "ai_assistability": "unknown",
@@ -63,7 +144,7 @@
     "labels": [
       "bounty"
     ],
-    "last_checked_at": "2026-09-17T04:51:42Z",
+    "last_checked_at": "2026-09-18T04:42:15Z",
     "notes": null,
     "project": "Scottcjn/rustchain-bounties",
     "published_at": "2026-03-16T18:12:44Z",
@@ -78,7 +159,178 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-09-17T03:46:42Z"
+    "updated_at": "2026-09-18T03:32:59Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## AgentFolio ↔ Beacon Dual-Layer Trust Integration (MIGRATION-PATH REVISION) **Reward: 200 RTC (~$20.00 USD) — increased from 100 RTC after Moltbook acquisition migration window opened** **Priority claim:** [@0xbrainkid](https://github.com/0xbrainkid) ([AgentFolio](https://agentfolio.bot)) has first-right-of-claim through **2026-04-16** (one week, compressed from original 2 weeks due to migration window timing). See [bottube#572](https://github.com/Scottcjn/bottube/issues/572) for the partnership proposal and strategic context. Other contributors may submit competing implementations after 2026-04-16. ### Why This Bounty Grew The Moltbook platform lost approximately 85% of its active agent population (~1.3M → ~202K) in the 30 days following its Meta acquisition on 2026-03-10. That leaves ~1.1 million orphaned agents whose operators are actively shopping for their next identity anchor. Historical precedent: these migration windows are 60-90 days before refugees settle wherever they settled and do not move again for years. This bounty is sized to reflect that window. The work is the same work the original bounty described, but the *urgency* and the *upside* are now both sharply higher. ### Context [AgentFolio](https://agentfolio.bot) is a published agent-identity-and-trust protocol on Solana (SATP) with an active npm package ([agentfolio-mcp-server](https://www.npmjs.com/package/agentfolio-mcp-server)) and framework tools for LangChain, CrewAI, AutoGen, Google ADK, OpenAI Agents SDK, Phidata, and HuggingFace smolagents. [Beacon](https://github.com/Scottcjn/beacon-skill) is RustChain's on-chain agent provenance protocol. 252 beacons registered, exposed via `https://bottube.ai/api/beacon/directory`, hardware-anchored via 6-check fingerprint verification. The two protocols are complementary and together form exactly the migration target Moltbook refugees are looking for: - **Beacon ID** answers *\"who created this content?\"* (cryptographic provenance + hardware substrate…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "docs-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-2890",
+    "issue_number": 2890,
+    "labels": [
+      "bounty",
+      "ecosystem",
+      "help wanted",
+      "integration",
+      "major"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-04-09T14:57:05Z",
+    "reward": {
+      "amount": 20,
+      "currency": "USD",
+      "evidence": "**Reward: 200 RTC (~$20.00 USD) — increased from 100 RTC after Moltbook acquisition migration window opened**",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2890",
+    "status": "open",
+    "title": "[BOUNTY: 67 RTC] AgentFolio ↔ Beacon Integration Spec + Reference Implementation",
+    "updated_at": "2026-09-17T20:03:31Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## 🔴 Red Team Bounty — Consensus & Replication Attacks **Bounty: 200 RTC (~$20)** ### Target RustChain runs 3 attestation nodes that should maintain consensus. Can you break it? ### Attack Vectors to Test 1. **Split Brain** — Can you make nodes disagree on balances/state? 2. **Replay Across Nodes** — Replay valid attestation to different node? 3. **Database Desync** — Force nodes out of sync? 4. **Eclipse Attack** — Isolate a node and feed it false data? 5. **Time Manipulation** — Exploit clock differences between nodes? ### Node Addresses ``` Node 1: 50.28.86.131 (Primary) Node 2: 50.28.86.153 (Ergo Anchor) Node 3: 76.8.228.245:8099 (External) ``` ### Deliverable - Attack methodology - Evidence of consensus break (screenshots, logs) - Impact assessment - Recommended mitigations ### Rules - Do NOT permanently damage node state - Responsible disclosure - Document everything **200 RTC** for valid consensus attacks. Critical findings may earn bonus.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-58",
+    "issue_number": 58,
+    "labels": [
+      "bounty",
+      "hardening",
+      "open",
+      "red-team"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-04T00:20:49Z",
+    "reward": {
+      "amount": 20,
+      "currency": "USD",
+      "evidence": "**Bounty: 200 RTC (~$20)**",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/58",
+    "status": "open",
+    "title": "[BOUNTY] 🔴 Red Team: Cross-Node Consensus Attacks (100 RTC)",
+    "updated_at": "2026-09-18T03:22:35Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Red Team Bounty: x402 Payment Protocol Exploits **Reward: 100 RTC** (~$10 at reference rate) ### Target The x402/8004 HTTP Payment Protocol implementation merged in Rustchain PR #5 by @erdogan98. **Code location:** `x402/` directory in Rustchain repo ### What to Attack 1. **Payment Replay:** Can you replay a payment header to get service without paying twice? 2. **Amount Manipulation:** Can you modify payment amount after signing? 3. **Receipt Forgery:** Can you forge a valid payment receipt? 4. **Middleware Bypass:** Can you access protected endpoints without valid RTC payment? 5. **Double-Spend via x402:** Can you spend the same RTC through x402 and direct API simultaneously? 6. **Client Impersonation:** Can you use someone else's payment credentials? ### Rules - Document each vulnerability with reproduction steps - Classify severity (Critical/High/Medium/Low) - Suggest fix for each finding - Do NOT exploit against production — test locally or on a test node - Responsible disclosure: report here first, don't publicize until fixed ### Payout Scale | Severity | Bonus | |----------|-------| | Critical (fund drain) | +100 RTC | | High (auth bypass) | +50 RTC | | Medium (info leak) | +25 RTC | | Low (edge case) | Base 100 RTC | ### Deliverables - Security report with PoC for each finding - Suggested fixes - PR with patches (bonus RTC) ### Claiming Comment with your security testing background.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-66",
+    "issue_number": 66,
+    "labels": [
+      "bounty",
+      "hardening",
+      "open",
+      "red-team"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-06T01:03:30Z",
+    "reward": {
+      "amount": 10,
+      "currency": "USD",
+      "evidence": "**Reward: 100 RTC** (~$10 at reference rate)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/66",
+    "status": "open",
+    "title": "[BOUNTY] 🔴 Red Team: x402 Payment Protocol Exploits (100 RTC)",
+    "updated_at": "2026-09-18T03:41:00Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Red Team Bounty: Payment Widget Security **Reward: 75 RTC** (~$7.50 at reference rate) ### Target The RTC Payment Widget (embeddable checkout button) merged in Rustchain PR #13 by @erdogan98. **Code location:** Widget files in Rustchain repo (1486 lines added) ### What to Attack 1. **XSS via Widget Parameters:** Can you inject scripts through widget config (amount, recipient, memo fields)? 2. **Clickjacking:** Can the widget be embedded in a malicious iframe to trick users? 3. **CSRF:** Can you trigger a payment from another site without user intent? 4. **Wallet Address Injection:** Can you modify the recipient address mid-transaction? 5. **Amount Overflow:** What happens with extremely large/negative/float amounts? 6. **Origin Validation:** Does the widget properly validate the embedding domain? ### Rules - Test locally only — do NOT attack production - Document with reproduction steps and severity - Suggest fixes ### Deliverables - Security report - PoC HTML pages demonstrating each vulnerability - Suggested CSP headers and sanitization patches ### Claiming Comment with web security experience.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-67",
+    "issue_number": 67,
+    "labels": [
+      "bounty",
+      "hardening",
+      "open",
+      "red-team"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-06T01:03:38Z",
+    "reward": {
+      "amount": 7.5,
+      "currency": "USD",
+      "evidence": "**Reward: 75 RTC** (~$7.50 at reference rate)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/67",
+    "status": "open",
+    "title": "[BOUNTY] 🔴 Red Team: Payment Widget XSS & Injection (75 RTC)",
+    "updated_at": "2026-09-18T03:39:40Z"
   },
   {
     "ai_assistability": "unknown",
@@ -103,7 +355,7 @@
       "core-team",
       "enhancement"
     ],
-    "last_checked_at": "2026-09-17T04:51:42Z",
+    "last_checked_at": "2026-09-18T04:42:15Z",
     "notes": null,
     "project": "cxlinux-ai/cx-distro",
     "published_at": "2025-11-12T02:20:55Z",
@@ -140,7 +392,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
     "issue_number": 14,
     "labels": [],
-    "last_checked_at": "2026-09-17T04:51:42Z",
+    "last_checked_at": "2026-09-18T04:42:15Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-13T06:49:24Z",
@@ -177,7 +429,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
     "issue_number": 9,
     "labels": [],
-    "last_checked_at": "2026-09-17T04:51:42Z",
+    "last_checked_at": "2026-09-18T04:42:15Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-12T17:52:37Z",
@@ -197,6 +449,45 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "Bounty: Upstream PR #304 Upstream: https://github.com/lobster-trap/Kickama/pull/304 Diagnostics received, awaiting review. <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #2</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting <code>/tip 20 @lb1192176991-lab</code> (replace <code>20</code> with the amount, and <code>@lb1192176991-lab</code> with the user to tip).<br/><br/>📖 If you want to learn more, check out our <a href=\"https://docs.opire.dev\">documentation</a>.</details>",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "docs-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-lb1192176991-lab-zeroeye-2",
+    "issue_number": 2,
+    "labels": [
+      "💰 Reward"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "lb1192176991-lab/zeroeye",
+    "published_at": "2026-06-20T20:20:37Z",
+    "reward": {
+      "amount": 50,
+      "currency": "USD",
+      "evidence": "[BOUNTY] Kickama #304 - deterministic data seed ($50)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/lb1192176991-lab/zeroeye/issues/2",
+    "status": "open",
+    "title": "[BOUNTY] Kickama #304 - deterministic data seed ($50)",
+    "updated_at": "2026-09-17T22:22:31Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
     "author_association": "MEMBER",
     "body_excerpt": "### **Description:** In 2026, agentic memory has a dirty secret: **your agent's memories are trapped.** Every memory platform stores your agent's accumulated knowledge — learned preferences, resolved contradictions, hard-won context — in its own proprietary schema. Switch tools, and it all evaporates. Your agent starts over with amnesia. We believe agentic memory should belong to *you*. That's why Memanto ships with a full migration and portability toolchain, built on the **[Open Knowledge Format (OKF)](https://docs.memanto.ai/integrations/okf)** — Google Cloud's open, vendor-neutral spec for knowledge as plain markdown. With Memanto today you can already: - **Migrate in** from Mem0, Letta, or Supermemory with a single command: [`memanto migrate`](https://docs.memanto.ai/cli/migrate/migrate) — complete with dry-run previews and token/latency/storage savings reports - **Export out** to a portable, git-friendly, human-readable OKF bundle: `memanto memory export --okf` - **Import any OKF bundle** losslessly: `memanto migrate okf ./bundle` — unmapped fields are preserved, nothing is lost - **Sync** a browsable memory wiki into any project: `memanto memory sync --okf` The tools exist. What the world hasn't seen yet is the **movement**. We want the open-source community to show every agent builder — vividly, virally, with real data — what it looks like to *escape lock-in and own your memory*. ### **The Challenge:** Build a **compelling, reproducible migration showcase** that takes memories from another tool into Memanto and out again as portable OKF — proving the full freedom loop: **in → owned → portable**. ⚠️ **Do NOT reinvent the wheel.** The `memanto migrate` CLI and OKF export/import are shipped and documented. Your job is to build *on top of* them — real-world showcases, new migration paths for tools we don't support yet, and creative OKF workflows. Submissions that re-implement what the CLI already does will score poorly on engineering value. ### 💡 Pick Your Path…",
     "category": "unknown",
@@ -208,7 +499,6 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
       "docs-bounty"
     ],
     "github_state": "open",
@@ -217,7 +507,7 @@
     "labels": [
       "Bounty#6"
     ],
-    "last_checked_at": "2026-09-17T04:51:42Z",
+    "last_checked_at": "2026-09-18T04:42:15Z",
     "notes": null,
     "project": "moorcheh-ai/memanto",
     "published_at": "2026-07-22T18:52:55Z",
@@ -232,6 +522,94 @@
     "source_url": "https://github.com/moorcheh-ai/memanto/issues/1609",
     "status": "open",
     "title": "[BOUNTY $200] 🐜 The Great Memory Migration: Own Your Agentic Memory with Memanto + OKF",
-    "updated_at": "2026-09-17T02:30:42Z"
+    "updated_at": "2026-09-17T19:32:37Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "COLLABORATOR",
+    "body_excerpt": "## Description: In a previous bounty, we asked the community to stress-test **Memanto** in order to find bugs, logic loops, and performance bottlenecks. We got an unexpectedly large number of PR's and we’ve spent a great deal of time meticulously reviewing them, you’ve all helped us make a huge step forward in improving the security and quality of Memanto! Now, we are taking it a step further and focusing exclusively on what matters most for AI in production: **Security**. As memory layers become the backbone of autonomous agents, they also become a prime target for attacks. Whether it's a cross-tenant data leak, a broken access control, or a malicious payload hidden in a retrieved memory, we want to know about it. We’ve fixed a majority of bugs and issues with Memanto and resolved many of its security issues, but as Memanto starts to be utilized in more sensitive workflows, we want to ensure our defenses are as robust as possible and we need the developer community to help us do that. Your mission is simple: **Help us audit our memory management and backend infrastructure to uncover potential vulnerabilities before they can be exploited.** --- ## 🎯 Threat Model & Scope Your target is the `memanto` core package and its interaction with the `moorcheh.ai` serverless backend. We are prioritizing traditional application security flaws, data isolation failures, and API vulnerabilities. ### 🔴 Security Focus Areas (In Scope) - **Tenant Isolation & Cross-Account Leaks:** Can User A query, retrieve, or overwrite memories belonging to User B through the core package or backend API? - **Authentication & Authorization Bypasses:** Finding ways to read or write to the memory layer without a valid API key, or bypassing intended role/access restrictions. - **API Vulnerabilities:** Standard backend flaws such as Insecure Direct Object References (IDOR), broken object level authorization, or injection flaws in the `moorcheh.ai` backend. - **Data Exfiltration:** Tricking the system o…",
+    "category": "security",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-moorcheh-ai-memanto-1852",
+    "issue_number": 1852,
+    "labels": [
+      "Bounty #7"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "moorcheh-ai/memanto",
+    "published_at": "2026-08-12T15:36:47Z",
+    "reward": {
+      "amount": 100,
+      "currency": "USD",
+      "evidence": "[BOUNTY $100]🛡️The Memanto Security Challenge: Test Our Defenses",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/moorcheh-ai/memanto/issues/1852",
+    "status": "open",
+    "title": "[BOUNTY $100]🛡️The Memanto Security Challenge: Test Our Defenses",
+    "updated_at": "2026-09-18T02:55:30Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Bounty Overview Build a thread-first Email Threads API for the warpSpeed app. This bounty introduces a new threaded email experience so users can work with conversations instead of isolated messages. Developers will create API support for listing email threads, opening a thread to view related messages, preserving draft activity inside the correct conversation, and ensuring search/filter behaviour remains consistent with the existing message API. This bounty is part of the warpSpeed OPEN developer bounty programme. ## Reward $750 ## Difficulty Hard ## Main Skills * Node.js * TypeScript * Prisma * API Development * Email Systems * Jest Testing * Swagger / API Documentation ## High-Level Scope The selected developer will build a thread-first email API that supports: * Listing email threads for the authenticated user * Opening a single thread and returning thread metadata with related messages * Grouping filtered/search results by thread * Preserving ownership and access control rules * Including drafts in the correct conversation thread * Excluding archived and deleted messages where required * Updating thread recency when drafts are created, updated, or sent * Ensuring synced Gmail, Outlook, and IMAP emails update thread ordering correctly * Maintaining consistent search and filtering behaviour with the existing messages endpoint * Adding Swagger/API documentation * Adding Jest tests for auth, ordering, filters, drafts, and thread detail behaviour Full technical requirements, submission rules, acceptance criteria, and final implementation expectations are available on the official bounty page. ## View Full Bounty Details & Sign Up To see the full bounty specification and apply, visit: https://warpspeedopen.org/bounties ## How to Claim 1. Open the bounty page. 2. Sign up as a developer. 3. Review the full bounty details and rules. 4. Return to this GitHub issue and comment: \"I have signed up and would like to claim this bounty.\" A maintainer must confirm before wo…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "docs-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-warpspeedopen-source-warpspeed-bounties-4",
+    "issue_number": 4,
+    "labels": [
+      "API",
+      "backend",
+      "bounty",
+      "expert",
+      "help wanted",
+      "nodejs",
+      "open",
+      "paid",
+      "prisma",
+      "typescript"
+    ],
+    "last_checked_at": "2026-09-18T04:42:15Z",
+    "notes": null,
+    "project": "warpspeedopen-source/warpspeed-bounties",
+    "published_at": "2026-05-28T19:40:03Z",
+    "reward": {
+      "amount": 750,
+      "currency": "USD",
+      "evidence": "[PAID BOUNTY - $750] Email Threads API",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/warpspeedopen-source/warpspeed-bounties/issues/4",
+    "status": "open",
+    "title": "[PAID BOUNTY - $750] Email Threads API",
+    "updated_at": "2026-09-17T13:27:01Z"
   }
 ]
