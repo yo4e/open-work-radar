@@ -24,7 +24,7 @@
       "help wanted",
       "status: open bounty"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "HHS/simpler-grants-gov",
     "published_at": "2026-04-23T19:17:45Z",
@@ -65,7 +65,7 @@
       "enhancement",
       "wrtc"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "Scottcjn/Rustchain",
     "published_at": "2026-02-03T23:50:59Z",
@@ -80,7 +80,7 @@
     "source_url": "https://github.com/Scottcjn/Rustchain/issues/32",
     "status": "open",
     "title": "⚡ Bounty: RTC/ERG Trading Pair on Spectrum DEX (150 RTC)",
-    "updated_at": "2026-09-17T22:36:30Z"
+    "updated_at": "2026-09-19T19:19:31Z"
   },
   {
     "ai_assistability": "unknown",
@@ -104,7 +104,7 @@
     "labels": [
       "bounty"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "Scottcjn/rustchain-bounties",
     "published_at": "2026-03-16T18:12:44Z",
@@ -119,7 +119,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-09-19T03:30:10Z"
+    "updated_at": "2026-09-20T03:46:22Z"
   },
   {
     "ai_assistability": "unknown",
@@ -147,7 +147,7 @@
       "integration",
       "major"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "Scottcjn/rustchain-bounties",
     "published_at": "2026-04-09T14:57:05Z",
@@ -187,7 +187,7 @@
       "core-team",
       "enhancement"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "cxlinux-ai/cx-distro",
     "published_at": "2025-11-12T02:20:55Z",
@@ -224,7 +224,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
     "issue_number": 14,
     "labels": [],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-13T06:49:24Z",
@@ -261,7 +261,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
     "issue_number": 9,
     "labels": [],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-12T17:52:37Z",
@@ -277,6 +277,44 @@
     "status": "open",
     "title": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
     "updated_at": "2026-09-08T23:24:21Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Goal Build and publicly demonstrate one real AI-agent integration using the published [@kushbitx/sdk](https://www.npmjs.com/package/@kushbitx/sdk). ## Reward - **50 USDC on Base** for the first assigned submission that satisfies every acceptance criterion. - Up to **5 USDC test-cost reimbursement** is available only if the maintainer approves the paid test in advance. - No payment, wallet funding, or private key is required for the free acceptance path. ## Claim before starting Comment with: 1. Your GitHub repository or developer profile. 2. The agent framework you will use. 3. A short implementation plan. **Wait until a maintainer assigns this issue to you.** Work started before assignment is not guaranteed a reward. Only one bounty award is available. ## Required deliverables - A public repository containing the working integration. - Install the public package with npm install @kushbitx/sdk. - Use an AI agent or agent framework, not only a standalone manual script. - Run the free token preview and one SpendGuard evaluation. - Discover at least one x402 payment challenge without signing or paying. - Include reproducible setup and run instructions. - Include sample output with secrets, private keys, wallet addresses used for testing, and personal data removed. - Open a pull request or comment here with the repository link and a short test report. ## Acceptance criteria The KushBitx maintainer must be able to reproduce the integration from the submitted instructions. The code must not request, expose, store, or commit a private key. It must not claim that SpendGuard executes or blocks a transaction by itself; enforcement belongs to the signing or execution layer. Eligible frameworks include Coinbase AgentKit, LangChain, OpenAI Agents SDK, MCP-compatible agents, or a comparable documented agent runtime. ## Optional paid validation A paid request is **not required**. If proposed, obtain written approval here before spending. Reimbursement is capped at 5 USDC and r…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-kushBitxHQ-kushbitx-sdk-1",
+    "issue_number": 1,
+    "labels": [],
+    "last_checked_at": "2026-09-20T04:53:35Z",
+    "notes": null,
+    "project": "kushBitxHQ/kushbitx-sdk",
+    "published_at": "2026-09-19T13:59:34Z",
+    "reward": {
+      "amount": 50,
+      "currency": "USDC",
+      "evidence": "$50 USDC bounty: integrate @kushbitx/sdk with an AI agent",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/kushBitxHQ/kushbitx-sdk/issues/1",
+    "status": "open",
+    "title": "$50 USDC bounty: integrate @kushbitx/sdk with an AI agent",
+    "updated_at": "2026-09-20T04:33:49Z"
   },
   {
     "ai_assistability": "unknown",
@@ -300,7 +338,7 @@
     "labels": [
       "💰 Reward"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "lb1192176991-lab/zeroeye",
     "published_at": "2026-06-20T20:20:37Z",
@@ -339,7 +377,7 @@
     "labels": [
       "Bounty#6"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "moorcheh-ai/memanto",
     "published_at": "2026-07-22T18:52:55Z",
@@ -387,7 +425,7 @@
       "prisma",
       "typescript"
     ],
-    "last_checked_at": "2026-09-19T04:36:17Z",
+    "last_checked_at": "2026-09-20T04:53:35Z",
     "notes": null,
     "project": "warpspeedopen-source/warpspeed-bounties",
     "published_at": "2026-05-28T19:40:03Z",
