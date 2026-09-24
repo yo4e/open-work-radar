@@ -3,350 +3,6 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed PHP person-to-person wallet transfer from one authorized GCash transaction-history/detail surface.** Folder: `banks/ph/gcash/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. Maya wallet and Maya Bank, and InstaPay/PESONet transfer types, must not be conflated; explicitly select one product and flow. ### Demand rationale The 2026-08-05 snapshot records $13.02m of standing PHP book liquidity and 108,934 ad-activity units. The directly observed label `Gcash` represents 11.82% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, stat…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-10",
-    "issue_number": 10,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:33Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] GCash — PHP / PH",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/10",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] GCash — PHP / PH",
-    "updated_at": "2026-09-22T19:01:33Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed INR domestic bank-account transfer from one authorized ICICI Bank transaction-history/detail surface.** Folder: `banks/in/icici/`. Start with one IMPS or other account-transfer type exposing stable destination evidence. UPI is optional only with justified identity/status semantics; do not infer bank-specific share from UPI or IMPS totals. ### Demand rationale The 2026-08-05 snapshot records $18.75m of standing INR book liquidity and 175,730 ad-activity units. Selection is maintainer judgment, not measured bank-specific market share. The September Binance sample contains 3,894 UPI-labelled ads and 1,870 IMPS-labelled ads among 5,242 INR ads; labels overlap. A new bank is a useful independent path, but this does not confer UPI-wide coverage. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status me…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-11",
-    "issue_number": 11,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:35Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] ICICI Bank — INR / IN",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/11",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] ICICI Bank — INR / IN",
-    "updated_at": "2026-09-22T19:01:35Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed USD domestic bank-account transfer from one authorized ABA Bank transaction-history/detail surface.** Folder: `banks/kh/aba/`. Domestic USD only. KHQR, Bakong and KHR are separate capabilities, not implied by this account-transfer parser. ### Demand rationale The 2026-08-05 snapshot records $54.56m of standing USD book liquidity and 200,839 ad-activity units. The directly observed label `ABA` represents 4.98% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Independent September Binance snapshot: ABA appears on 222 distinct USD ads among 2,341 USD ads; labels overlap. USD demand is not restricted to US banks. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-12",
-    "issue_number": 12,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:38Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] ABA Bank — USD / KH",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/12",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] ABA Bank — USD / KH",
-    "updated_at": "2026-09-22T19:01:38Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed BDT person-to-person wallet transfer from one authorized bKash transaction-history/detail surface.** Folder: `banks/bd/bkash/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $7.40m of standing BDT book liquidity and 76,080 ad-activity units. The directly observed label `bKash` represents 43.24% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE, signer or paym…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-13",
-    "issue_number": 13,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:41Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] bKash — BDT / BD",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/13",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] bKash — BDT / BD",
-    "updated_at": "2026-09-22T19:01:41Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed KES person-to-person wallet transfer from one authorized Safaricom M-Pesa transaction-history/detail surface.** Folder: `banks/ke/mpesa/`. Kenya Send Money only. Exclude PayBill, Buy Goods/till, cash-out and other countries. The separate MpesaPaybill activity is not included in this bounty. SMS alone is not source authentication. ### Demand rationale The 2026-08-05 snapshot records $12.83m of standing KES book liquidity and 49,919 ad-activity units. The directly observed label `MPesaKenya` represents 19.37% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production servi…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-14",
-    "issue_number": 14,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:43Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] Safaricom M-Pesa — KES / KE",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/14",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] Safaricom M-Pesa — KES / KE",
-    "updated_at": "2026-09-22T19:01:43Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed KZT domestic bank-account transfer from one authorized Kaspi Bank transaction-history/detail surface.** Folder: `banks/kz/kaspi/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $12.95m of standing KZT book liquidity and 35,793 ad-activity units. The directly observed label `Kaspi Bank` represents 24.05% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE, signe…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-15",
-    "issue_number": 15,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:46Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] Kaspi Bank — KZT / KZ",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/15",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] Kaspi Bank — KZT / KZ",
-    "updated_at": "2026-09-22T19:01:46Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed MXN domestic bank-account transfer from one authorized BBVA Mexico transaction-history/detail surface.** Folder: `banks/mx/bbva/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $7.24m of standing MXN book liquidity and 52,728 ad-activity units. The directly observed label `BBVA Bank` represents 8.88% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE, signer o…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-16",
-    "issue_number": 16,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:48Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] BBVA Mexico — MXN / MX",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/16",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] BBVA Mexico — MXN / MX",
-    "updated_at": "2026-09-22T19:01:48Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed PEN domestic bank-account transfer from one authorized Banco de Credito del Peru transaction-history/detail surface.** Folder: `banks/pe/bcp/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $6.21m of standing PEN book liquidity and 62,166 ad-activity units. The directly observed label `BancoDeCredito` represents 13.71% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, exten…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-17",
-    "issue_number": 17,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:51Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] Banco de Credito del Peru — PEN / PE",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/17",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] Banco de Credito del Peru — PEN / PE",
-    "updated_at": "2026-09-22T19:01:51Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
     "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed TRY domestic bank-account transfer from one authorized Ziraat Bank transaction-history/detail surface.** Folder: `banks/tr/ziraat/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $11.45m of standing TRY book liquidity and 52,817 ad-activity units. The directly observed label `Ziraat` represents 11.2% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE, signer o…",
     "category": "unknown",
     "competition": {
@@ -369,7 +25,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:53Z",
@@ -412,7 +68,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:56Z",
@@ -455,7 +111,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:59Z",
@@ -498,7 +154,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:01Z",
@@ -541,7 +197,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:04Z",
@@ -584,7 +240,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:06Z",
@@ -627,7 +283,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:09Z",
@@ -670,7 +326,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:11Z",
@@ -713,7 +369,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:13Z",
@@ -756,7 +412,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:16Z",
@@ -799,7 +455,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:18Z",
@@ -842,7 +498,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:20Z",
@@ -885,7 +541,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:23Z",
@@ -928,7 +584,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:25Z",
@@ -971,7 +627,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:27Z",
@@ -1014,7 +670,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:29Z",
@@ -1057,7 +713,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:32Z",
@@ -1100,7 +756,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:34Z",
@@ -1143,7 +799,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:37Z",
@@ -1186,7 +842,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:40Z",
@@ -1229,7 +885,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:42Z",
@@ -1272,7 +928,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:45Z",
@@ -1288,49 +944,6 @@
     "status": "open",
     "title": "[$150 bounty · funding pending] PayMe Hong Kong — HKD / HK",
     "updated_at": "2026-09-22T19:02:45Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed NGN person-to-person wallet transfer from one authorized OPay transaction-history/detail surface.** Folder: `banks/ng/opay/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $46.55m of standing NGN book liquidity and 331,237 ad-activity units. The directly observed label `Opay` represents 12.34% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE, signer or payme…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-4",
-    "issue_number": 4,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:00:40Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] OPay — NGN / Nigeria",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/4",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] OPay — NGN / Nigeria",
-    "updated_at": "2026-09-22T19:00:40Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1358,7 +971,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:47Z",
@@ -1401,7 +1014,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:50Z",
@@ -1444,7 +1057,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:53Z",
@@ -1487,7 +1100,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:55Z",
@@ -1530,7 +1143,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:58Z",
@@ -1573,7 +1186,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:00Z",
@@ -1616,7 +1229,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:03Z",
@@ -1659,7 +1272,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:05Z",
@@ -1702,7 +1315,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:07Z",
@@ -1745,7 +1358,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:10Z",
@@ -1761,49 +1374,6 @@
     "status": "open",
     "title": "[$150 bounty · funding pending] NayaPay — PKR / PK",
     "updated_at": "2026-09-22T19:03:10Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed PKR person-to-person wallet transfer from one authorized Easypaisa transaction-history/detail surface.** Folder: `banks/pk/easypaisa/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $13.56m of standing PKR book liquidity and 303,908 ad-activity units. The directly observed label `EasypaisaPK` represents 16.04% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-5",
-    "issue_number": 5,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:20Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] Easypaisa — PKR / PK",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/5",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] Easypaisa — PKR / PK",
-    "updated_at": "2026-09-22T19:01:20Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1831,7 +1401,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:12Z",
@@ -1874,7 +1444,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:14Z",
@@ -1917,7 +1487,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:16Z",
@@ -1960,7 +1530,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:19Z",
@@ -2003,7 +1573,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:21Z",
@@ -2046,7 +1616,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:23Z",
@@ -2089,7 +1659,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:26Z",
@@ -2132,7 +1702,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:28Z",
@@ -2175,7 +1745,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:30Z",
@@ -2218,7 +1788,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:34Z",
@@ -2239,7 +1809,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed UAH domestic bank-account transfer from one authorized PrivatBank transaction-history/detail surface.** Folder: `banks/ua/privatbank/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. Distinguish IBAN/account transfers from card transfers; masked card suffixes and display names are not unique payee identifiers. ### Demand rationale The 2026-08-05 snapshot records $17.87m of standing UAH book liquidity and 299,760 ad-activity units. The directly observed label `PrivatBank` represents 8.55% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance,…",
+    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed UAH domestic transfer from one authorized Monobank transaction-history/detail surface.** Folder: `banks/ua/monobank/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. Distinguish IBAN/account transfers from card-to-card transfers; masked card suffixes and display names are not unique payer or payee identifiers. If the chosen surface does not expose enough evidence to determine the counterparty and completed status, fail closed. ### Demand rationale The 2026-08-05 snapshot records $17.87m of standing UAH book liquidity and 299,760 ad-activity units. The directly observed `Monobank` label represents 20.11% of the stored UAH payment-method activity. This is a single-label signal; Monobank aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, syntheti…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -2261,22 +1831,22 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:22Z",
     "reward": {
       "amount": 200,
       "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] PrivatBank — UAH / UA",
+      "evidence": "[$200 bounty · funding pending] Monobank — UAH / UA",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
     "source_url": "https://github.com/0xSachinK/openplaid/issues/6",
     "status": "open",
-    "title": "[$200 bounty · funding pending] PrivatBank — UAH / UA",
-    "updated_at": "2026-09-22T19:01:22Z"
+    "title": "[$200 bounty · funding pending] Monobank — UAH / UA",
+    "updated_at": "2026-09-23T19:30:22Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2304,7 +1874,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:36Z",
@@ -2347,7 +1917,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:38Z",
@@ -2390,7 +1960,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:41Z",
@@ -2433,7 +2003,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:43Z",
@@ -2449,135 +2019,6 @@
     "status": "open",
     "title": "[$150 bounty · funding pending] ACLEDA Bank — USD / KH",
     "updated_at": "2026-09-22T19:03:43Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed IDR domestic bank-account transfer from one authorized BCA transaction-history/detail surface.** Folder: `banks/id/bca/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $12.96m of standing IDR book liquidity and 246,210 ad-activity units. The directly observed label `BCAMobile` represents 7.05% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE, signer or payme…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-7",
-    "issue_number": 7,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:25Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] BCA — IDR / ID",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/7",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] BCA — IDR / ID",
-    "updated_at": "2026-09-22T19:01:25Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed VND domestic bank-account transfer from one authorized Vietcombank transaction-history/detail surface.** Folder: `banks/vn/vietcombank/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. Generic Vietnam bank-transfer labels do not establish this bank's market share or coverage. ### Demand rationale The 2026-08-05 snapshot records $27.76m of standing VND book liquidity and 153,786 ad-activity units. The directly observed label `Vietcombank` represents 1.73% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestam…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-8",
-    "issue_number": 8,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:27Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] Vietcombank — VND / VN",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/8",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] Vietcombank — VND / VN",
-    "updated_at": "2026-09-22T19:01:27Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed COP domestic bank-account transfer from one authorized Bancolombia transaction-history/detail surface.** Folder: `banks/co/bancolombia/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. Bre-B key transfers need separate key-to-recipient evidence; a memo/key alone is insufficient. DaviPlata and Davivienda are distinct account products; no duplicate award for the same implementation or capture. ### Demand rationale The 2026-08-05 snapshot records $9.19m of standing COP book liquidity and 139,938 ad-activity units. The directly observed label `BancolombiaSA` represents 18.13% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justifie…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-0xSachinK-openplaid-9",
-    "issue_number": 9,
-    "labels": [
-      "$200",
-      "Merit",
-      "funding-pending",
-      "integration",
-      "round-1"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "0xSachinK/openplaid",
-    "published_at": "2026-09-22T19:01:30Z",
-    "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "[$200 bounty · funding pending] Bancolombia — COP / CO",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/0xSachinK/openplaid/issues/9",
-    "status": "open",
-    "title": "[$200 bounty · funding pending] Bancolombia — COP / CO",
-    "updated_at": "2026-09-22T19:01:30Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2601,7 +2042,7 @@
     "labels": [
       "bounty"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "Scottcjn/rustchain-bounties",
     "published_at": "2026-03-16T18:12:44Z",
@@ -2616,7 +2057,50 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-09-23T03:39:26Z"
+    "updated_at": "2026-09-24T03:30:34Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Bounty: Profile README Mention **Reward**: 2 RTC | **Difficulty**: Easy | **Time**: ~5 minutes | **Multi-claim**: Yes ### What to do Add a mention of RustChain to your GitHub profile README (the repo named your-username/your-username). Could be: - \"Contributor to RustChain\" with link - A badge or shield - A mention in your interests/projects section ### Acceptance criteria - [ ] RustChain mentioned in your profile README - [ ] Link to Scottcjn/Rustchain included - [ ] Profile link posted as comment here ### How to claim Post your profile link as a comment. 2 RTC per person. **Reward**: 2 RTC (~$0.20) | **Multi-claim**",
+    "category": "docs",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-515",
+    "issue_number": 515,
+    "labels": [
+      "bounty",
+      "community",
+      "micro",
+      "open",
+      "propagation"
+    ],
+    "last_checked_at": "2026-09-24T04:48:58Z",
+    "notes": null,
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-03-01T04:13:08Z",
+    "reward": {
+      "amount": 0.2,
+      "currency": "USD",
+      "evidence": "**Reward**: 2 RTC (~$0.20) | **Multi-claim**",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
+    "status": "open",
+    "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
+    "updated_at": "2026-09-24T01:11:30Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2638,7 +2122,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
     "issue_number": 14,
     "labels": [],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-13T06:49:24Z",
@@ -2675,7 +2159,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
     "issue_number": 9,
     "labels": [],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-12T17:52:37Z",
@@ -2714,7 +2198,7 @@
     "labels": [
       "💰 Reward"
     ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
+    "last_checked_at": "2026-09-24T04:48:58Z",
     "notes": null,
     "project": "lb1192176991-lab/zeroeye",
     "published_at": "2026-06-20T20:20:37Z",
@@ -2730,130 +2214,5 @@
     "status": "open",
     "title": "[BOUNTY] Kickama #304 - deterministic data seed ($50)",
     "updated_at": "2026-09-23T00:46:20Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "Bounty: Upstream PR #306 Upstream: https://github.com/lobster-trap/Kickama/pull/306 Diagnostics received, awaiting review. <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #4</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting <code>/tip 20 @lb1192176991-lab</code> (replace <code>20</code> with the amount, and <code>@lb1192176991-lab</code> with the user to tip).<br/><br/>📖 If you want to learn more, check out our <a href=\"https://docs.opire.dev\">documentation</a>.</details>",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-lb1192176991-lab-zeroeye-4",
-    "issue_number": 4,
-    "labels": [],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "lb1192176991-lab/zeroeye",
-    "published_at": "2026-06-20T20:20:39Z",
-    "reward": {
-      "amount": 40,
-      "currency": "USD",
-      "evidence": "[BOUNTY] Kickama #306 - dry-run mode ($40)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/lb1192176991-lab/zeroeye/issues/4",
-    "status": "open",
-    "title": "[BOUNTY] Kickama #306 - dry-run mode ($40)",
-    "updated_at": "2026-09-21T12:20:20Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "COLLABORATOR",
-    "body_excerpt": "## Description: In a previous bounty, we asked the community to stress-test **Memanto** in order to find bugs, logic loops, and performance bottlenecks. We got an unexpectedly large number of PR's and we’ve spent a great deal of time meticulously reviewing them, you’ve all helped us make a huge step forward in improving the security and quality of Memanto! Now, we are taking it a step further and focusing exclusively on what matters most for AI in production: **Security**. As memory layers become the backbone of autonomous agents, they also become a prime target for attacks. Whether it's a cross-tenant data leak, a broken access control, or a malicious payload hidden in a retrieved memory, we want to know about it. We’ve fixed a majority of bugs and issues with Memanto and resolved many of its security issues, but as Memanto starts to be utilized in more sensitive workflows, we want to ensure our defenses are as robust as possible and we need the developer community to help us do that. Your mission is simple: **Help us audit our memory management and backend infrastructure to uncover potential vulnerabilities before they can be exploited.** --- ## 🎯 Threat Model & Scope Your target is the `memanto` core package and its interaction with the `moorcheh.ai` serverless backend. We are prioritizing traditional application security flaws, data isolation failures, and API vulnerabilities. ### 🔴 Security Focus Areas (In Scope) - **Tenant Isolation & Cross-Account Leaks:** Can User A query, retrieve, or overwrite memories belonging to User B through the core package or backend API? - **Authentication & Authorization Bypasses:** Finding ways to read or write to the memory layer without a valid API key, or bypassing intended role/access restrictions. - **API Vulnerabilities:** Standard backend flaws such as Insecure Direct Object References (IDOR), broken object level authorization, or injection flaws in the `moorcheh.ai` backend. - **Data Exfiltration:** Tricking the system o…",
-    "category": "security",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty",
-      "reward"
-    ],
-    "github_state": "open",
-    "id": "github-moorcheh-ai-memanto-1852",
-    "issue_number": 1852,
-    "labels": [
-      "Bounty #7"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "moorcheh-ai/memanto",
-    "published_at": "2026-08-12T15:36:47Z",
-    "reward": {
-      "amount": 100,
-      "currency": "USD",
-      "evidence": "[BOUNTY $100]🛡️The Memanto Security Challenge: Test Our Defenses",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/moorcheh-ai/memanto/issues/1852",
-    "status": "open",
-    "title": "[BOUNTY $100]🛡️The Memanto Security Challenge: Test Our Defenses",
-    "updated_at": "2026-09-23T02:15:59Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## Bounty Overview Build a thread-first Email Threads API for the warpSpeed app. This bounty introduces a new threaded email experience so users can work with conversations instead of isolated messages. Developers will create API support for listing email threads, opening a thread to view related messages, preserving draft activity inside the correct conversation, and ensuring search/filter behaviour remains consistent with the existing message API. This bounty is part of the warpSpeed OPEN developer bounty programme. ## Reward $750 ## Difficulty Hard ## Main Skills * Node.js * TypeScript * Prisma * API Development * Email Systems * Jest Testing * Swagger / API Documentation ## High-Level Scope The selected developer will build a thread-first email API that supports: * Listing email threads for the authenticated user * Opening a single thread and returning thread metadata with related messages * Grouping filtered/search results by thread * Preserving ownership and access control rules * Including drafts in the correct conversation thread * Excluding archived and deleted messages where required * Updating thread recency when drafts are created, updated, or sent * Ensuring synced Gmail, Outlook, and IMAP emails update thread ordering correctly * Maintaining consistent search and filtering behaviour with the existing messages endpoint * Adding Swagger/API documentation * Adding Jest tests for auth, ordering, filters, drafts, and thread detail behaviour Full technical requirements, submission rules, acceptance criteria, and final implementation expectations are available on the official bounty page. ## View Full Bounty Details & Sign Up To see the full bounty specification and apply, visit: https://warpspeedopen.org/bounties ## How to Claim 1. Open the bounty page. 2. Sign up as a developer. 3. Review the full bounty details and rules. 4. Return to this GitHub issue and comment: \"I have signed up and would like to claim this bounty.\" A maintainer must confirm before wo…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-warpspeedopen-source-warpspeed-bounties-4",
-    "issue_number": 4,
-    "labels": [
-      "API",
-      "backend",
-      "bounty",
-      "expert",
-      "help wanted",
-      "nodejs",
-      "open",
-      "paid",
-      "prisma",
-      "typescript"
-    ],
-    "last_checked_at": "2026-09-23T04:44:03Z",
-    "notes": null,
-    "project": "warpspeedopen-source/warpspeed-bounties",
-    "published_at": "2026-05-28T19:40:03Z",
-    "reward": {
-      "amount": 750,
-      "currency": "USD",
-      "evidence": "[PAID BOUNTY - $750] Email Threads API",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/warpspeedopen-source/warpspeed-bounties/issues/4",
-    "status": "open",
-    "title": "[PAID BOUNTY - $750] Email Threads API",
-    "updated_at": "2026-09-21T16:26:13Z"
   }
 ]
