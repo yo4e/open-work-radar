@@ -14,19 +14,19 @@ exclude_repositories:
 sources:
   - id: bounty
     query: 'is:issue is:open bounty in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: reward
     query: 'is:issue is:open reward in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: funded-bounty
     query: 'is:issue is:open bounty funded in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: good-first-bounty
     query: 'is:issue is:open bounty "good first issue" in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: docs-bounty
     query: 'is:issue is:open bounty documentation in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: translation-bounty
     query: 'is:issue is:open bounty translation in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2

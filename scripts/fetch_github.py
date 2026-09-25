@@ -56,6 +56,44 @@ CONTRIBUTOR_PAYMENT = re.compile(
     re.I | re.S,
 )
 DIRECT_TITLE_AMOUNT = re.compile(r"\b(?:bounty|reward|prize)\b\s*[:-]?\s*\d[\d,]*(?:\.\d+)?", re.I)
+PR_SUBMITTED = re.compile(r"\bPR submitted\b|\bpull request (?:has been )?submitted\b", re.I)
+FIXES_ISSUE = re.compile(r"\b(?:fixes|closes|resolves)\s+#(?P<n>\d+)\b", re.I)
+DEADLINE = re.compile(
+    r"(?:submission\s+)?deadline(?:\s+of|\s*[:=])?\s*"
+    r"(?P<date>\d{4}-\d{2}-\d{2})(?:[ T](?P<time>\d{2}:\d{2})(?::\d{2})?)?"
+    r"(?:\s*(?P<tz>UTC|GMT|Z|JST|EST|EDT|PST|PDT|CST|CDT|MST|MDT|CET|CEST|BST|[+-]\d{2}:?\d{2}))?",
+    re.I,
+)
+KNOWN_TZ_OFFSETS = {
+    "UTC": dt.timedelta(0),
+    "GMT": dt.timedelta(0),
+    "Z": dt.timedelta(0),
+    "JST": dt.timedelta(hours=9),
+    "EST": dt.timedelta(hours=-5),
+    "EDT": dt.timedelta(hours=-4),
+    "PST": dt.timedelta(hours=-8),
+    "PDT": dt.timedelta(hours=-7),
+    "CST": dt.timedelta(hours=-6),
+    "CDT": dt.timedelta(hours=-5),
+    "MST": dt.timedelta(hours=-7),
+    "MDT": dt.timedelta(hours=-6),
+    "CET": dt.timedelta(hours=1),
+    "CEST": dt.timedelta(hours=2),
+    "BST": dt.timedelta(hours=1),
+}
+TZ_TAIL = re.compile(r"\s*([A-Za-z]{2,5}|[+-]\d{2}:?\d{2})")
+LINK_LAST = re.compile(r'<[^>]*[?&]page=(\d+)[^>]*>\s*;\s*rel="last"', re.I)
+STILL_ACTIVE_Q = re.compile(
+    r"\b(?:is|whether)\s+(?:this|the)\s+bounty\s+still\s+(?:active|available|funded)\b"
+    r"|\bstill\s+(?:active|available)\b.{0,60}\bbounty\b"
+    r"|\bbounty\s+still\s+(?:active|available)\b",
+    re.I,
+)
+MAINTAINER_CONFIRM = re.compile(
+    r"\b(?:still\s+(?:active|available|funded|open)|bounty\s+is\s+(?:still\s+)?(?:active|open|funded))\b",
+    re.I,
+)
+CLAIM_ONLY = re.compile(r"(?:^|\s)(?:/try|/attempt|/claim)\b", re.I)
 DIRECT_REWARD_PREFIX = re.compile(
     r"^\s*(?:#{1,6}\s*)?(?:[-*]\s*)?(?:\*\*)?"
     r"(?:bounty|reward(?!/)|prize|payment|payout|compensation|solver\s+reward|target\s+solver\s+reward)\b",
@@ -77,8 +115,18 @@ class SourceFetchError(CollectorError):
     pass
 
 
+class LifecycleUnavailable(CollectorError):
+    """Lifecycle evidence could not be fetched; do not treat as 'no PRs'."""
+
+    pass
+
+
 class SearchClient(Protocol):
     def search_issues(self, query: str, max_pages: int = 1) -> Iterable[dict[str, Any]]: ...
+
+
+class LifecycleClient(Protocol):
+    def lifecycle_signals(self, project: str, number: int) -> dict[str, Any]: ...
 
 
 class GitHubClient:
@@ -108,6 +156,67 @@ class GitHubClient:
             if not items or len(items) < PER_PAGE or (isinstance(total, int) and page * PER_PAGE >= total):
                 break
 
+    def lifecycle_signals(self, project: str, number: int) -> dict[str, Any]:
+        """Newest-biased comment/timeline fetch for retained candidates only.
+
+        GitHub lists comments/timeline oldest-first. A single first page can miss
+        the current work state on busy issues, so we also fetch the last page when
+        Link headers say more exist. HTTP/network failure raises rather than
+        returning empty evidence.
+        """
+        if "/" not in project:
+            return {"comments": [], "timeline": []}
+        owner, repo = project.split("/", 1)
+        try:
+            comments = self._newest_biased(
+                f"{self.api_url}/repos/{owner}/{repo}/issues/{number}/comments",
+                per_page=100,
+            )
+            timeline = self._newest_biased(
+                f"{self.api_url}/repos/{owner}/{repo}/issues/{number}/timeline",
+                per_page=100,
+                headers={"Accept": "application/vnd.github+json"},
+            )
+        except (requests.RequestException, LifecycleUnavailable) as exc:
+            raise LifecycleUnavailable(str(exc)) from exc
+        return {"comments": comments, "timeline": timeline}
+
+    def _newest_biased(self, url: str, per_page: int = 100, headers: dict[str, str] | None = None) -> list[dict[str, Any]]:
+        try:
+            first = self.session.get(url, params={"per_page": per_page, "page": 1}, timeout=self.timeout, headers=headers)
+        except requests.RequestException as exc:
+            raise LifecycleUnavailable(str(exc)) from exc
+        if not first.ok:
+            raise LifecycleUnavailable(f"GitHub API HTTP {first.status_code}: {first.text[:300]}")
+        rows = first.json()
+        if not isinstance(rows, list):
+            raise LifecycleUnavailable(f"expected a list from {url}")
+        items = [x for x in rows if isinstance(x, dict)]
+        last_page = last_page_from_link(first.headers.get("Link") or "")
+        if last_page and last_page > 1:
+            try:
+                last = self.session.get(
+                    url, params={"per_page": per_page, "page": last_page}, timeout=self.timeout, headers=headers
+                )
+            except requests.RequestException as exc:
+                raise LifecycleUnavailable(str(exc)) from exc
+            if not last.ok:
+                raise LifecycleUnavailable(f"GitHub API HTTP {last.status_code}: {last.text[:300]}")
+            extra = last.json()
+            if not isinstance(extra, list):
+                raise LifecycleUnavailable(f"expected a list from {url} page {last_page}")
+            seen = {id(x) for x in items}
+            keys = {(x.get("id"), x.get("url"), x.get("html_url")) for x in items}
+            for row in extra:
+                if not isinstance(row, dict):
+                    continue
+                key = (row.get("id"), row.get("url"), row.get("html_url"))
+                if key in keys or id(row) in seen:
+                    continue
+                items.append(row)
+                keys.add(key)
+        return items
+
 
 def now_utc() -> dt.datetime:
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
@@ -115,6 +224,17 @@ def now_utc() -> dt.datetime:
 
 def iso_z(value: dt.datetime) -> str:
     return value.isoformat().replace("+00:00", "Z")
+
+
+def last_page_from_link(link_header: str) -> int | None:
+    match = LINK_LAST.search(link_header or "")
+    if not match:
+        return None
+    try:
+        page = int(match.group(1))
+    except ValueError:
+        return None
+    return page if page > 0 else None
 
 
 def parse_time(value: Any) -> dt.datetime | None:
@@ -141,7 +261,7 @@ def load_config(path: Path) -> tuple[list[dict[str, Any]], int, set[str]]:
     sources, seen = [], set()
     for item in raw["sources"]:
         source_id, query = str(item.get("id", "")).strip(), str(item.get("query", "")).strip()
-        pages = int(item.get("max_pages", 1))
+        pages = int(item.get("max_pages", 2))
         if not source_id or not query or source_id in seen or not 1 <= pages <= 10:
             raise CollectorError(f"invalid source entry: {item!r}")
         seen.add(source_id)
@@ -290,17 +410,160 @@ def normalize_issue(item: dict[str, Any], source_id: str, checked_at: str, now: 
     reward = reward_metadata(title, body, labels, association)
     if candidate_classification(title, body, labels, association, reward) != "maintainer_reward_offer":
         return None
+    deadline = parse_deadline(body, title)
     return {
         "id": f"github-{project.replace('/', '-')}-{number}", "source": "github", "source_url": url,
         "title": title, "project": project, "issue_number": number, "category": category(title, labels),
         "status": "open", "github_state": "open",
-        "reward": reward, "difficulty": "unknown", "ai_assistability": "unknown", "deadline": None,
+        "reward": reward, "difficulty": "unknown", "ai_assistability": "unknown",
+        "deadline": iso_z(deadline) if deadline else None,
         "competition": {"attempts": None, "claims": None, "open_prs": None},
         "assignees": assignees,
         "labels": labels, "author_association": association, "body_excerpt": compact(body),
         "published_at": item.get("created_at"), "updated_at": item.get("updated_at"), "last_checked_at": checked_at,
         "discovery_sources": [source_id], "notes": None,
     }
+
+
+def _tz_offset(token: str) -> dt.timedelta | None:
+    raw = (token or "").strip()
+    if not raw:
+        return dt.timedelta(0)
+    named = KNOWN_TZ_OFFSETS.get(raw.upper())
+    if named is not None:
+        return named
+    match = re.fullmatch(r"([+-])(\d{2}):?(\d{2})", raw)
+    if not match:
+        return None
+    sign = 1 if match.group(1) == "+" else -1
+    return dt.timedelta(hours=sign * int(match.group(2)), minutes=sign * int(match.group(3)))
+
+
+def parse_deadline(body: str, title: str = "") -> dt.datetime | None:
+    """Parse a deadline only when the timezone is explicit and understood.
+
+    Unknown trailing timezone text (for example `JST` if it were not mapped, or
+    `FOO`) must not be silently treated as UTC.
+    """
+    text = f"{title}\n{body}"
+    match = DEADLINE.search(text)
+    if not match:
+        return None
+    dangling = TZ_TAIL.match(text[match.end():])
+    tz = match.group("tz")
+    if dangling and not tz:
+        return None
+    offset = _tz_offset(tz or "")
+    if offset is None:
+        return None
+    date, time_part = match.group("date"), match.group("time") or "23:59"
+    try:
+        naive = dt.datetime.fromisoformat(f"{date}T{time_part}:00")
+    except ValueError:
+        return None
+    return (naive - offset).replace(tzinfo=dt.timezone.utc)
+
+
+def _source_issue(event: dict[str, Any]) -> dict[str, Any]:
+    src = event.get("source") or {}
+    issue = src.get("issue") if isinstance(src, dict) else None
+    return issue if isinstance(issue, dict) else {}
+
+
+def _pr_attaches_work(issue_number: int, src: dict[str, Any], event: dict[str, Any]) -> bool:
+    text = " ".join(
+        str(x or "")
+        for x in (src.get("title"), src.get("body"), event.get("body"), src.get("html_url"))
+    )
+    hit = FIXES_ISSUE.search(text)
+    return bool(hit) and int(hit.group("n")) == issue_number
+
+
+def linked_work_prs(issue_number: int, body: str, signals: dict[str, Any]) -> list[str]:
+    """Currently active work PRs attached to this issue.
+
+    A timeline cross-reference whose source happens to be a PR is not enough:
+    closed/rejected PRs and mere mentions must not suppress an actionable issue.
+    """
+    found: list[str] = []
+    if PR_SUBMITTED.search(body or ""):
+        found.append("body:PR submitted")
+    for ev in signals.get("timeline") or []:
+        if not isinstance(ev, dict):
+            continue
+        src = _source_issue(ev)
+        if not src.get("pull_request"):
+            continue
+        if str(src.get("state") or "").lower() != "open":
+            continue
+        if not _pr_attaches_work(issue_number, src, ev):
+            continue
+        found.append(str(src.get("html_url") or src.get("url") or "timeline-pr"))
+    for comment in signals.get("comments") or []:
+        text = str(comment.get("body") or "")
+        hit = FIXES_ISSUE.search(text)
+        if hit and int(hit.group("n")) == issue_number:
+            found.append(str(comment.get("html_url") or "comment-fixes"))
+    return found
+
+
+def availability_unclear(body: str, signals: dict[str, Any]) -> bool:
+    comments = signals.get("comments") or []
+    questions = STILL_ACTIVE_Q.search(body or "")
+    maintainer_ok = False
+    for comment in comments:
+        text = str(comment.get("body") or "")
+        assoc = str(comment.get("author_association") or "NONE").upper()
+        if STILL_ACTIVE_Q.search(text):
+            questions = True
+        if assoc in MAINTAINERS and MAINTAINER_CONFIRM.search(text):
+            maintainer_ok = True
+    return bool(questions) and not maintainer_ok
+
+
+def second_stage(record: dict[str, Any], item: dict[str, Any], signals: dict[str, Any], now: dt.datetime) -> dict[str, Any] | None:
+    """Comment/PR/deadline checks on first-stage keepers only. Multi-claim comments do not exclude."""
+    body = str(item.get("body") or record.get("body_excerpt") or "")
+    number = int(record["issue_number"])
+    deadline = parse_deadline(body, str(record.get("title") or ""))
+    if deadline and deadline < now:
+        return None
+    if deadline:
+        record = dict(record)
+        record["deadline"] = iso_z(deadline)
+    if linked_work_prs(number, body, signals):
+        return None
+    if availability_unclear(body, signals):
+        record = dict(record)
+        record["status"] = "unclear"
+        return None
+    return record
+
+
+def _substantive(record: dict[str, Any]) -> str:
+    payload = {k: v for k, v in record.items() if k not in {"last_checked_at", "last_changed_at"}}
+    return json.dumps(payload, sort_keys=True, default=str)
+
+
+def apply_freshness(records: list[dict[str, Any]], existing: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep last_checked_at as the real check time; track last_changed_at separately."""
+    old = {r.get("source_url"): r for r in existing if r.get("source_url")}
+    out = []
+    for rec in records:
+        rec = dict(rec)
+        prev = old.get(rec.get("source_url"))
+        checked = rec.get("last_checked_at")
+        if prev and _substantive(prev) == _substantive(rec):
+            rec["last_changed_at"] = prev.get("last_changed_at") or prev.get("last_checked_at")
+        else:
+            rec["last_changed_at"] = checked
+        out.append(rec)
+    return out
+
+
+def stabilize_checked_at(records: list[dict[str, Any]], existing: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Back-compat alias: freshness is truthful; material change time is separate."""
+    return apply_freshness(records, existing)
 
 
 def merge_records(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -334,9 +597,35 @@ def collect(sources_path: Path, output_path: Path, client: SearchClient, now: dt
     sources, stale, excluded = load_config(sources_path)
     existing, now = load_existing(output_path), now or now_utc()
     fresh, successful, failed = [], set(), []
+    evaluated_urls: set[str] = set()
+    lifecycle_blocked: set[str] = set()
     for source in sources:
         try:
-            records = [r for item in client.search_issues(source["query"], source["max_pages"]) if (r := normalize_issue(item, source["id"], iso_z(now), now, stale, excluded))]
+            kept = []
+            for item in client.search_issues(source["query"], source["max_pages"]):
+                rec = normalize_issue(item, source["id"], iso_z(now), now, stale, excluded)
+                url = str((rec or {}).get("source_url") or item.get("html_url") or "")
+                signals = item.get("_lifecycle")
+                getter = getattr(client, "lifecycle_signals", None)
+                lifecycle_failed = False
+                if rec and signals is None and callable(getter):
+                    try:
+                        signals = getter(rec["project"], rec["issue_number"]) or {}
+                    except Exception:
+                        lifecycle_failed = True
+                if rec and lifecycle_failed:
+                    if url:
+                        lifecycle_blocked.add(url)
+                    continue
+                if rec:
+                    if url:
+                        evaluated_urls.add(url)
+                    rec = second_stage(rec, item, signals or {}, now)
+                    if rec:
+                        kept.append(rec)
+                elif url:
+                    evaluated_urls.add(url)
+            records = kept
             fresh.extend(records)
             successful.add(source["id"])
             print(f"{source['id']}: kept {len(records)} candidates", file=sys.stderr)
@@ -345,8 +634,16 @@ def collect(sources_path: Path, output_path: Path, client: SearchClient, now: dt
             print(f"warning: {source['id']} failed: {exc}", file=sys.stderr)
     if not successful:
         raise CollectorError("all sources failed; existing output was left unchanged" if existing else "all sources failed; no output was written")
-    preserved = [old for old in existing if not old.get("discovery_sources") or set(old.get("discovery_sources", [])) & set(failed)]
+    preserved = []
+    for old in existing:
+        url = old.get("source_url")
+        if not url or url in evaluated_urls:
+            continue
+        srcs = set(old.get("discovery_sources") or [])
+        if url in lifecycle_blocked or srcs & set(failed) or srcs & successful or not srcs:
+            preserved.append(old)
     output = merge_records([*fresh, *preserved])
+    output = apply_freshness(output, existing)
     write_json(output_path, output)
     return len(output), len(successful), failed
 
