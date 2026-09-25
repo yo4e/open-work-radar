@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Collect conservative GitHub bounty/reward candidates into normalized JSON."""
+"""Hardened GitHub opportunity collector for issue #14.
+
+The bulk of the parser/classifier lives in ``fetch_github_core``.  This module
+adds the bounded refresh semantics learned from real scheduled runs: direct
+revalidation for records that fall out of search windows, conservative PR and
+deadline handling, and commit-worthy output that ignores check-time-only churn.
+"""
 
 from __future__ import annotations
 
@@ -7,347 +13,323 @@ import argparse
 import datetime as dt
 import json
 import os
-import re
 import sys
-import tempfile
 from pathlib import Path
-from typing import Any, Iterable, Protocol
+from typing import Any, Iterable
 
-import requests
-import yaml
+try:
+    from . import fetch_github_core as core
+except ImportError:  # pragma: no cover - used when executed as a script
+    import fetch_github_core as core
 
-API_URL = "https://api.github.com"
-PER_PAGE = 100
-BODY_LIMIT = 2000
-MAINTAINERS = {"OWNER", "MEMBER", "COLLABORATOR"}
-REWARD = re.compile(r"\b(?:bounty|bounties|reward|rewards|payout|payouts|compensation|stipend|grant|prize|paid)\b", re.I)
-EXPENSE = re.compile(r"\b(?:buy|purchase|cost|fee|fees|credit|credits|subscription|deposit|spend|expense|charge|gas)\b|\b(?:must\s+pay|pay\s+(?:for|to|before))\b", re.I)
-UNAVAILABLE = re.compile(r"(?:current\s+work\s+state|lifecycle|work\s+state)\s*[:=-]\s*(?:\*{1,2})?\s*`?(?:unavailable|in[_ -]?progress|claimed|submitted|verification[_ -]?pending)`?|\b(?:bounty|reward)\s+(?:is\s+)?(?:closed|unavailable|no\s+longer\s+available)\b|\bno\s+longer\s+accepting\b", re.I)
-QUESTION = re.compile(r"\b(?:is|whether)\s+(?:this|the)\s+(?:bounty|reward)\s+still\s+available\b|\bcould\s+you\s+confirm\b.{0,120}\b(?:bounty|reward)\b.{0,80}\bavailable\b", re.I | re.S)
-PROPOSAL = re.compile(
-    r"\b(?:proposed|proposal|would\s+you|could\s+you|consider|approve|sponsor)\b.{0,160}\b(?:bounty|reward|paid|payment|compensation)\b"
-    r"|\b(?:bounty|reward|paid|payment|compensation)\b.{0,160}\b(?:proposed|proposal|would\s+you|could\s+you|consider|approve|sponsor)\b",
-    re.I | re.S,
-)
-SECONDARY_SOURCE = re.compile(
-    r"外部\s*bounty\s*任务镜像"
-    r"|###\s*赏金平台\s*/\s*platform\b.{0,400}###\s*原始链接\s*/\s*source url\b"
-    r"|\b(?:github\s+)?issue\s+is\s+(?:a\s+)?mirrored\s+(?:board\s+)?thread\b",
-    re.I | re.S,
-)
-EXTERNAL_REFERENCE = re.compile(r"^\s*##\s+(?:current external state|verified live opportunities)\b", re.I | re.M)
-NOT_ACTIONABLE_TITLE = re.compile(r"^\s*\[(?:draft|quarantined|unfunded)\b", re.I)
-NOT_ACTIONABLE = re.compile(
-    r"^\s*(?:>\s*)?(?:\*\*)?unfunded\s+precommit\b"
-    r"|\b(?:this\s+issue|this\s+bounty)\s+is\s+not\s+(?:yet\s+)?(?:funded|claimable|live)\b"
-    r"|\bnot\s+funded\s+or\s+claimable\b"
-    r"|\bfunding\s+needed\s*\.\s*do\s+not\s+start\s+expecting\s+payment\b"
-    r"|\bdo\s+not\s+claim\b"
-    r"|\bdo\s+not\b.{0,100}\bstart\s+implementation\b"
-    r"|\bbecomes\s+paid\s+work\s+only\s+after\b"
-    r"|\bdo\s+not\s+announce\b.{0,100}\bas\s+live\b",
-    re.I | re.M | re.S,
-)
-NOT_ACTIONABLE_LABELS = {"funding-needed", "verification-pending"}
-INDIRECT = re.compile(r"^\s*\[META\]|\bgross\s+margin\b", re.I)
-CONTRIBUTOR_PAYMENT = re.compile(
-    r"\bpay\s*:\s*(?:send\s+)?(?:USDC|USDT|USD|EUR|GBP|BTC|ETH|SOL)\b.{0,120}\bto\s+payto\b"
-    r"|\btx\s+hash\s+to\s+payto\b",
-    re.I | re.S,
-)
-DIRECT_TITLE_AMOUNT = re.compile(r"\b(?:bounty|reward|prize)\b\s*[:-]?\s*\d[\d,]*(?:\.\d+)?", re.I)
-DIRECT_REWARD_PREFIX = re.compile(
-    r"^\s*(?:#{1,6}\s*)?(?:[-*]\s*)?(?:\*\*)?"
-    r"(?:bounty|reward(?!/)|prize|payment|payout|compensation|solver\s+reward|target\s+solver\s+reward)\b",
-    re.I,
-)
-CURRENCY = r"(?:US\$|\$|USD|CAD|AUD|EUR|€|GBP|£|JPY|USDC|USDT|BTC|ETH|SOL)"
-AMOUNT = r"(?:\d[\d,]*(?:\.\d{1,8})?)"
-MONEY = (
-    re.compile(rf"(?<![A-Za-z0-9])(?P<currency>{CURRENCY})\s*(?P<amount>{AMOUNT})(?![A-Za-z0-9])", re.I),
-    re.compile(rf"(?<![A-Za-z0-9])(?P<amount>{AMOUNT})\s*(?P<currency>{CURRENCY})(?![A-Za-z0-9])", re.I),
-)
+# Preserve the existing module API for callers/tests while overriding the few
+# pieces whose semantics are intentionally hardened below.
+for _name in dir(core):
+    if not _name.startswith("__"):
+        globals()[_name] = getattr(core, _name)
+
+# Real daily-run review found planned/unfunded offers carrying this label.
+core.NOT_ACTIONABLE_LABELS.add("funding-pending")
 
 
-class CollectorError(RuntimeError):
-    pass
+class DirectValidationUnavailable(core.CollectorError):
+    """A retained candidate could not be directly revalidated."""
 
 
-class SourceFetchError(CollectorError):
-    pass
+def parse_deadline(body: str, title: str = "") -> dt.datetime | None:
+    """Parse only deadlines whose timezone is explicit and understood.
 
-
-class SearchClient(Protocol):
-    def search_issues(self, query: str, max_pages: int = 1) -> Iterable[dict[str, Any]]: ...
-
-
-class GitHubClient:
-    def __init__(self, token: str | None = None, api_url: str = API_URL, timeout: int = 30) -> None:
-        self.api_url, self.timeout = api_url.rstrip("/"), timeout
-        self.session = requests.Session()
-        self.session.headers.update({"Accept": "application/vnd.github+json", "User-Agent": "open-work-radar/0.1a", "X-GitHub-Api-Version": "2022-11-28"})
-        if token:
-            self.session.headers["Authorization"] = f"Bearer {token}"
-
-    def search_issues(self, query: str, max_pages: int = 1) -> Iterable[dict[str, Any]]:
-        for page in range(1, max_pages + 1):
-            try:
-                response = self.session.get(f"{self.api_url}/search/issues", params={"q": query, "sort": "updated", "order": "desc", "per_page": PER_PAGE, "page": page}, timeout=self.timeout)
-            except requests.RequestException as exc:
-                raise SourceFetchError(str(exc)) from exc
-            if not response.ok:
-                reset = response.headers.get("X-RateLimit-Reset")
-                suffix = f"; rate-limit reset epoch {reset}" if reset else ""
-                raise SourceFetchError(f"GitHub API HTTP {response.status_code}{suffix}: {response.text[:500]}")
-            payload = response.json()
-            items = payload.get("items")
-            if not isinstance(items, list):
-                raise SourceFetchError(f"search response for {query!r} did not contain items")
-            yield from (item for item in items if isinstance(item, dict))
-            total = payload.get("total_count")
-            if not items or len(items) < PER_PAGE or (isinstance(total, int) and page * PER_PAGE >= total):
-                break
-
-
-def now_utc() -> dt.datetime:
-    return dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-
-
-def iso_z(value: dt.datetime) -> str:
-    return value.isoformat().replace("+00:00", "Z")
-
-
-def parse_time(value: Any) -> dt.datetime | None:
-    try:
-        return dt.datetime.fromisoformat(str(value).replace("Z", "+00:00")).astimezone(dt.timezone.utc)
-    except (TypeError, ValueError):
-        return None
-
-
-def compact(text: str, limit: int = BODY_LIMIT) -> str:
-    text = re.sub(r"\s+", " ", text).strip()
-    return text if len(text) <= limit else text[: limit - 1].rstrip() + "…"
-
-
-def load_config(path: Path) -> tuple[list[dict[str, Any]], int, set[str]]:
-    try:
-        raw = yaml.safe_load(path.read_text(encoding="utf-8"))
-    except (OSError, yaml.YAMLError) as exc:
-        raise CollectorError(f"could not read {path}: {exc}") from exc
-    if not isinstance(raw, dict) or not isinstance(raw.get("sources"), list):
-        raise CollectorError("sources.yaml must contain a sources list")
-    stale = int(raw.get("stale_after_days", 180))
-    excluded = {str(x).lower() for x in raw.get("exclude_repositories", [])}
-    sources, seen = [], set()
-    for item in raw["sources"]:
-        source_id, query = str(item.get("id", "")).strip(), str(item.get("query", "")).strip()
-        pages = int(item.get("max_pages", 1))
-        if not source_id or not query or source_id in seen or not 1 <= pages <= 10:
-            raise CollectorError(f"invalid source entry: {item!r}")
-        seen.add(source_id)
-        sources.append({"id": source_id, "query": query, "max_pages": pages})
-    return sources, stale, excluded
-
-
-def load_existing(path: Path) -> list[dict[str, Any]]:
-    if not path.exists():
-        return []
-    try:
-        value = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise CollectorError(f"invalid existing output; refusing to overwrite {path}") from exc
-    if not isinstance(value, list) or not all(isinstance(x, dict) for x in value):
-        raise CollectorError("existing output must be a JSON list")
-    return value
-
-
-def repo_name(item: dict[str, Any]) -> str:
-    match = re.search(r"/repos/([^/]+/[^/]+)$", str(item.get("repository_url") or ""))
-    return match.group(1) if match else "unknown/unknown"
-
-
-def distance(pattern: re.Pattern[str], text: str, pos: int, radius: int = 120) -> int | None:
-    matches = list(pattern.finditer(text, max(0, pos - radius), min(len(text), pos + radius)))
-    return min((min(abs(pos - m.start()), abs(pos - m.end())) for m in matches), default=None)
-
-
-def reward_from_match(match: re.Match[str], text: str, association: str) -> dict[str, Any]:
-    amount = float(match.group("amount").replace(",", ""))
-    amount = int(amount) if amount.is_integer() else amount
-    currency_token = match.group("currency").upper()
-    if currency_token in {"$", "US$"}:
-        stablecoin = re.match(r"\s*(USDC|USDT)\b", text[match.end():match.end() + 12], re.I)
-        currency = stablecoin.group(1).upper() if stablecoin else "USD"
-    else:
-        currency = {"€": "EUR", "£": "GBP"}.get(currency_token, currency_token)
-    start, end = max(0, match.start() - 100), min(len(text), match.end() + 100)
-    return {
-        "amount": amount,
-        "currency": currency,
-        "provenance": "stated" if association in MAINTAINERS else "unverified",
-        "verified": False,
-        "evidence": compact(text[start:end], 260),
-    }
-
-
-def reward_metadata(title: str, body: str, labels: list[str], association: str) -> dict[str, Any]:
-    text, label_text = f"{title}\n{body}", " ".join(labels)
-
-    title_matches = sorted((m for pattern in MONEY for m in pattern.finditer(title)), key=lambda m: m.start())
-    for match in title_matches:
-        reward_d = distance(REWARD, title, match.start(), radius=80)
-        if reward_d is not None and reward_d <= 50:
-            return reward_from_match(match, title, association)
-
-    for line in body.splitlines():
-        if not DIRECT_REWARD_PREFIX.search(line):
-            continue
-        line_matches = sorted((m for pattern in MONEY for m in pattern.finditer(line)), key=lambda m: m.start())
-        if line_matches:
-            return reward_from_match(line_matches[0], line, association)
-
-    matches = sorted((m for pattern in MONEY for m in pattern.finditer(text)), key=lambda m: m.start())
-    for match in matches:
-        reward_d, expense_d = distance(REWARD, text, match.start()), distance(EXPENSE, text, match.start())
-        if reward_d is None or (expense_d is not None and expense_d <= reward_d):
-            continue
-        return reward_from_match(match, text, association)
-
-    signal = REWARD.search(text)
-    if signal:
-        return {"amount": None, "currency": None, "provenance": "unverified", "verified": False, "evidence": compact(text[max(0, signal.start()-80):signal.end()+120], 240)}
-    if REWARD.search(label_text):
-        return {"amount": None, "currency": None, "provenance": "unverified", "verified": False, "evidence": f"label signal: {compact(label_text, 160)}"}
-    return {"amount": None, "currency": None, "provenance": "unknown", "verified": False, "evidence": None}
-
-
-def category(title: str, labels: list[str]) -> str:
-    text = f"{title} {' '.join(labels)}".lower()
-    for value, terms in (("translation", ("translation", "localization", "i18n", "l10n")), ("docs", ("documentation", "docs", "readme")), ("design", ("design", "ux", "ui")), ("security", ("security", "vulnerability", "cve"))):
-        if any(term in text for term in terms):
-            return value
-    return "unknown"
-
-
-def direct_reward_offer(title: str, body: str) -> bool:
-    if DIRECT_TITLE_AMOUNT.search(title):
-        return True
-    for pattern in MONEY:
-        for match in pattern.finditer(title):
-            reward_d = distance(REWARD, title, match.start(), radius=80)
-            if reward_d is not None and reward_d <= 50:
-                return True
-    for line in body.splitlines():
-        if DIRECT_REWARD_PREFIX.search(line) and any(pattern.search(line) for pattern in MONEY):
-            return True
-    return False
-
-
-def candidate_classification(title: str, body: str, labels: list[str], association: str, reward: dict[str, Any]) -> str:
+    A bare date/time can be meaningful to a human but is unsafe to expire
+    automatically because the source's timezone is unknown.
+    """
     text = f"{title}\n{body}"
-    label_set = {label.lower() for label in labels}
-    if reward["amount"] is None:
-        return "no_explicit_reward_amount"
-    if float(reward["amount"]) <= 0:
-        return "non_positive_reward"
-    if "external-mirror" in label_set or "bounty-alert" in label_set or SECONDARY_SOURCE.search(text):
-        return "secondary_source"
-    if QUESTION.search(text):
-        return "availability_inquiry"
-    if UNAVAILABLE.search(text) or NOT_ACTIONABLE_TITLE.search(title) or NOT_ACTIONABLE.search(text) or label_set & NOT_ACTIONABLE_LABELS:
-        return "not_actionable"
-    if association not in MAINTAINERS:
-        return "contributor_proposal" if PROPOSAL.search(text) else "third_party_claim"
-    if CONTRIBUTOR_PAYMENT.search(body):
-        return "contributor_payment_required"
-    if INDIRECT.search(title):
-        return "indirect_or_meta"
-    if EXTERNAL_REFERENCE.search(body):
-        return "secondary_reference"
-    if not direct_reward_offer(title, body):
-        return "incidental_reward_mention"
-    return "maintainer_reward_offer"
-
-
-def normalize_issue(item: dict[str, Any], source_id: str, checked_at: str, now: dt.datetime, stale_days: int, excluded: set[str]) -> dict[str, Any] | None:
-    if str(item.get("state", "")).lower() != "open" or item.get("pull_request"):
+    match = core.DEADLINE.search(text)
+    if not match or not match.group("tz"):
         return None
-    updated = parse_time(item.get("updated_at"))
-    if stale_days and updated and now - updated > dt.timedelta(days=stale_days):
+    dangling = core.TZ_TAIL.match(text[match.end():])
+    if dangling:
         return None
-    project = repo_name(item)
-    if project.lower() in excluded:
+    offset = core._tz_offset(match.group("tz"))
+    if offset is None:
         return None
-    number, url = item.get("number"), str(item.get("html_url") or "")
-    if not isinstance(number, int) or not url:
-        return None
-    title, body = str(item.get("title") or ""), str(item.get("body") or "")
-    assignees = sorted(str(x.get("login")) for x in item.get("assignees", []) if isinstance(x, dict) and x.get("login"))
-    if assignees:
-        return None
-    labels = sorted(str(x.get("name")) for x in item.get("labels", []) if isinstance(x, dict) and x.get("name"))
-    association = str(item.get("author_association") or "NONE").upper()
-    reward = reward_metadata(title, body, labels, association)
-    if candidate_classification(title, body, labels, association, reward) != "maintainer_reward_offer":
-        return None
-    return {
-        "id": f"github-{project.replace('/', '-')}-{number}", "source": "github", "source_url": url,
-        "title": title, "project": project, "issue_number": number, "category": category(title, labels),
-        "status": "open", "github_state": "open",
-        "reward": reward, "difficulty": "unknown", "ai_assistability": "unknown", "deadline": None,
-        "competition": {"attempts": None, "claims": None, "open_prs": None},
-        "assignees": assignees,
-        "labels": labels, "author_association": association, "body_excerpt": compact(body),
-        "published_at": item.get("created_at"), "updated_at": item.get("updated_at"), "last_checked_at": checked_at,
-        "discovery_sources": [source_id], "notes": None,
-    }
-
-
-def merge_records(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
-    merged: dict[str, dict[str, Any]] = {}
-    for record in records:
-        url = record["source_url"]
-        if url not in merged:
-            merged[url] = dict(record)
-        else:
-            sources = set(merged[url].get("discovery_sources", [])) | set(record.get("discovery_sources", []))
-            merged[url].update(record)
-            merged[url]["discovery_sources"] = sorted(sources)
-    return sorted(merged.values(), key=lambda x: x["source_url"])
-
-
-def write_json(path: Path, records: list[dict[str, Any]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    handle = tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False)
-    temp = Path(handle.name)
+    date = match.group("date")
+    time_part = match.group("time") or "23:59"
     try:
-        with handle:
-            json.dump(records, handle, ensure_ascii=False, indent=2, sort_keys=True)
-            handle.write("\n")
-        os.replace(temp, path)
-    except OSError as exc:
-        temp.unlink(missing_ok=True)
-        raise CollectorError(f"could not write {path}: {exc}") from exc
+        naive = dt.datetime.fromisoformat(f"{date}T{time_part}:00")
+    except ValueError:
+        return None
+    return (naive - offset).replace(tzinfo=dt.timezone.utc)
 
 
-def collect(sources_path: Path, output_path: Path, client: SearchClient, now: dt.datetime | None = None) -> tuple[int, int, list[str]]:
-    sources, stale, excluded = load_config(sources_path)
-    existing, now = load_existing(output_path), now or now_utc()
-    fresh, successful, failed = [], set(), []
+core.parse_deadline = parse_deadline
+
+
+def linked_work_prs(issue_number: int, body: str, signals: dict[str, Any]) -> list[str]:
+    """Return only actual, open PRs that attach work to this issue.
+
+    Body text such as ``PR submitted`` and ordinary comments containing
+    ``Fixes #N`` are hints, not proof.  GitHub timeline evidence must identify an
+    open PR whose closing keyword points at the issue.
+    """
+    found: list[str] = []
+    for event in signals.get("timeline") or []:
+        if not isinstance(event, dict):
+            continue
+        source = core._source_issue(event)
+        if not source.get("pull_request"):
+            continue
+        if str(source.get("state") or "").lower() != "open":
+            continue
+        if not core._pr_attaches_work(issue_number, source, event):
+            continue
+        found.append(str(source.get("html_url") or source.get("url") or "timeline-pr"))
+    return found
+
+
+core.linked_work_prs = linked_work_prs
+
+
+def availability_unclear(body: str, signals: dict[str, Any]) -> bool:
+    """Treat the newest visible availability signal as authoritative enough.
+
+    Lifecycle comments arrive oldest-to-newest.  A maintainer confirmation can
+    clear an earlier question, while a newer unanswered question restores the
+    unclear state.
+    """
+    unclear = bool(core.STILL_ACTIVE_Q.search(body or ""))
+    for comment in signals.get("comments") or []:
+        if not isinstance(comment, dict):
+            continue
+        text = str(comment.get("body") or "")
+        association = str(comment.get("author_association") or "NONE").upper()
+        if core.STILL_ACTIVE_Q.search(text):
+            unclear = True
+        if association in core.MAINTAINERS and core.MAINTAINER_CONFIRM.search(text):
+            unclear = False
+    return unclear
+
+
+core.availability_unclear = availability_unclear
+
+
+class GitHubClient(core.GitHubClient):
+    """GitHub client with bounded direct issue revalidation."""
+
+    def fetch_issue(self, project: str, number: int) -> dict[str, Any] | None:
+        if "/" not in project:
+            return None
+        owner, repo = project.split("/", 1)
+        try:
+            response = self.session.get(
+                f"{self.api_url}/repos/{owner}/{repo}/issues/{number}",
+                timeout=self.timeout,
+            )
+        except core.requests.RequestException as exc:
+            raise DirectValidationUnavailable(str(exc)) from exc
+        if response.status_code in {404, 410}:
+            return None
+        if not response.ok:
+            raise DirectValidationUnavailable(
+                f"GitHub API HTTP {response.status_code}: {response.text[:300]}"
+            )
+        payload = response.json()
+        if not isinstance(payload, dict):
+            raise DirectValidationUnavailable("direct issue lookup did not return an object")
+        return payload
+
+
+def _lifecycle_signals(
+    client: Any,
+    record: dict[str, Any],
+    item: dict[str, Any],
+    cache: dict[tuple[str, int], dict[str, Any]],
+) -> dict[str, Any]:
+    supplied = item.get("_lifecycle")
+    if supplied is not None:
+        return supplied if isinstance(supplied, dict) else {}
+    key = (str(record["project"]), int(record["issue_number"]))
+    if key in cache:
+        return cache[key]
+    getter = getattr(client, "lifecycle_signals", None)
+    if not callable(getter):
+        signals: dict[str, Any] = {}
+    else:
+        try:
+            signals = getter(*key) or {}
+        except Exception as exc:
+            raise DirectValidationUnavailable(str(exc)) from exc
+        if not isinstance(signals, dict):
+            signals = {}
+    cache[key] = signals
+    return signals
+
+
+def _evaluate_issue(
+    item: dict[str, Any],
+    source_ids: Iterable[str],
+    client: Any,
+    checked_at: str,
+    now: dt.datetime,
+    stale_days: int,
+    excluded: set[str],
+    lifecycle_cache: dict[tuple[str, int], dict[str, Any]],
+) -> dict[str, Any] | None:
+    ids = sorted({str(value) for value in source_ids if value})
+    source_id = ids[0] if ids else "direct-revalidation"
+    record = core.normalize_issue(item, source_id, checked_at, now, stale_days, excluded)
+    if record is None:
+        return None
+    signals = _lifecycle_signals(client, record, item, lifecycle_cache)
+    record = core.second_stage(record, item, signals, now)
+    if record is not None:
+        record["discovery_sources"] = ids or [source_id]
+    return record
+
+
+def _commit_projection(records: list[dict[str, Any]]) -> str:
+    """Canonical representation used to decide whether Git data changed.
+
+    ``last_checked_at`` is operational freshness, not a material opportunity
+    change.  ``last_changed_at`` remains included.
+    """
+    projected = []
+    for record in records:
+        projected.append({k: v for k, v in record.items() if k != "last_checked_at"})
+    projected.sort(key=lambda row: str(row.get("source_url") or ""))
+    return json.dumps(projected, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def _write_status(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+LAST_RUN_STATUS: dict[str, Any] = {}
+
+
+def collect(
+    sources_path: Path,
+    output_path: Path,
+    client: Any,
+    now: dt.datetime | None = None,
+    *,
+    status_path: Path | None = None,
+) -> tuple[int, int, list[str]]:
+    """Collect actionable rows with bounded revalidation of search-window misses."""
+    global LAST_RUN_STATUS
+
+    sources, stale_days, excluded = core.load_config(sources_path)
+    existing = core.load_existing(output_path)
+    now = now or core.now_utc()
+    checked_at = core.iso_z(now)
+
+    fresh: list[dict[str, Any]] = []
+    successful: set[str] = set()
+    failed: list[str] = []
+    evaluated_urls: set[str] = set()
+    lifecycle_cache: dict[tuple[str, int], dict[str, Any]] = {}
+
     for source in sources:
         try:
-            records = [r for item in client.search_issues(source["query"], source["max_pages"]) if (r := normalize_issue(item, source["id"], iso_z(now), now, stale, excluded))]
-            fresh.extend(records)
+            kept = 0
+            for item in client.search_issues(source["query"], source["max_pages"]):
+                url = str(item.get("html_url") or "")
+                try:
+                    record = _evaluate_issue(
+                        item,
+                        [source["id"]],
+                        client,
+                        checked_at,
+                        now,
+                        stale_days,
+                        excluded,
+                        lifecycle_cache,
+                    )
+                except DirectValidationUnavailable:
+                    # A lifecycle lookup failure is not evidence that a new item
+                    # is actionable.  Existing rows are handled below.
+                    continue
+                if url:
+                    evaluated_urls.add(url)
+                if record is not None:
+                    fresh.append(record)
+                    kept += 1
             successful.add(source["id"])
-            print(f"{source['id']}: kept {len(records)} candidates", file=sys.stderr)
-        except SourceFetchError as exc:
+            print(f"{source['id']}: kept {kept} candidates", file=sys.stderr)
+        except core.SourceFetchError as exc:
             failed.append(source["id"])
             print(f"warning: {source['id']} failed: {exc}", file=sys.stderr)
+
     if not successful:
-        raise CollectorError("all sources failed; existing output was left unchanged" if existing else "all sources failed; no output was written")
-    preserved = [old for old in existing if not old.get("discovery_sources") or set(old.get("discovery_sources", [])) & set(failed)]
-    output = merge_records([*fresh, *preserved])
-    write_json(output_path, output)
+        raise core.CollectorError(
+            "all sources failed; existing output was left unchanged"
+            if existing
+            else "all sources failed; no output was written"
+        )
+
+    fresh_urls = {str(row.get("source_url") or "") for row in fresh}
+    preserved: list[dict[str, Any]] = []
+    direct_getter = getattr(client, "fetch_issue", None)
+    failed_set = set(failed)
+
+    for old in existing:
+        url = str(old.get("source_url") or "")
+        if not url or url in fresh_urls or url in evaluated_urls:
+            continue
+
+        source_ids = {str(value) for value in old.get("discovery_sources") or [] if value}
+        # If every known discovery path failed, absence from search means nothing.
+        if source_ids and source_ids <= failed_set:
+            preserved.append(old)
+            continue
+
+        project = str(old.get("project") or "")
+        number = old.get("issue_number")
+        if not callable(direct_getter) or not project or not isinstance(number, int):
+            preserved.append(old)
+            continue
+
+        try:
+            item = direct_getter(project, number)
+            if item is None:
+                continue
+            record = _evaluate_issue(
+                item,
+                source_ids,
+                client,
+                checked_at,
+                now,
+                stale_days,
+                excluded,
+                lifecycle_cache,
+            )
+        except DirectValidationUnavailable:
+            preserved.append(old)
+            continue
+        if record is not None:
+            fresh.append(record)
+            fresh_urls.add(url)
+
+    output = core.merge_records([*fresh, *preserved])
+    output = core.apply_freshness(output, existing)
+
+    substantive_changed = (
+        not output_path.exists()
+        or _commit_projection(output) != _commit_projection(existing)
+    )
+    if substantive_changed:
+        core.write_json(output_path, output)
+
+    LAST_RUN_STATUS = {
+        "checked_at": checked_at,
+        "opportunity_count": len(output),
+        "successful_sources": sorted(successful),
+        "failed_sources": sorted(failed),
+        "substantive_changed": substantive_changed,
+    }
+    if status_path is not None:
+        _write_status(status_path, LAST_RUN_STATUS)
+
     return len(output), len(successful), failed
 
 
@@ -355,13 +337,23 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--sources", type=Path, default=Path("sources.yaml"))
     parser.add_argument("--output", type=Path, default=Path("data/opportunities.json"))
+    parser.add_argument("--status-output", type=Path)
     args = parser.parse_args(argv)
     try:
-        count, successful, failed = collect(args.sources, args.output, GitHubClient(os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")))
-    except CollectorError as exc:
+        count, successful, failed = collect(
+            args.sources,
+            args.output,
+            GitHubClient(os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")),
+            status_path=args.status_output,
+        )
+    except core.CollectorError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
-    print(f"wrote {count} opportunities from {successful} successful sources" + (f"; failed: {', '.join(failed)}" if failed else ""))
+    verb = "updated" if LAST_RUN_STATUS.get("substantive_changed") else "checked"
+    print(
+        f"{verb} {count} opportunities from {successful} successful sources"
+        + (f"; failed: {', '.join(failed)}" if failed else "")
+    )
     return 0
 
 
