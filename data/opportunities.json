@@ -3,6 +3,49 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
+    "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed PEN domestic bank-account transfer from one authorized Banco de Credito del Peru transaction-history/detail surface.** Folder: `banks/pe/bcp/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $6.21m of standing PEN book liquidity and 62,166 ad-activity units. The directly observed label `BancoDeCredito` represents 13.71% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, exten…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-0xSachinK-openplaid-17",
+    "issue_number": 17,
+    "labels": [
+      "$200",
+      "Merit",
+      "funding-pending",
+      "integration",
+      "round-1"
+    ],
+    "last_checked_at": "2026-09-25T04:56:33Z",
+    "notes": null,
+    "project": "0xSachinK/openplaid",
+    "published_at": "2026-09-22T19:01:51Z",
+    "reward": {
+      "amount": 200,
+      "currency": "USD",
+      "evidence": "[$200 bounty · funding pending] Banco de Credito del Peru — PEN / PE",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/0xSachinK/openplaid/issues/17",
+    "status": "open",
+    "title": "[$200 bounty · funding pending] Banco de Credito del Peru — PEN / PE",
+    "updated_at": "2026-09-22T19:01:51Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
     "body_excerpt": "## $200 USD planned bounty — NOT FUNDED Part of the **$10,000 OpenPlaid round: 60 integrations, maximum $200 per integration**. Funding planned for **2026-09-24 (Asia/Bangkok)**. No funds are deposited/escrowed today. Do not start paid work in reliance on this listing until @0xSachinK posts funding confirmation. One award cap per integration, not per PR, account or report. ### Narrow deliverable **One completed TRY domestic bank-account transfer from one authorized Ziraat Bank transaction-history/detail surface.** Folder: `banks/tr/ziraat/`. Exclude card purchases, cash deposits/withdrawals, remittances, bill payments and merchant collections. Document the chosen transfer type; other types remain unsupported. ### Demand rationale The 2026-08-05 snapshot records $11.45m of standing TRY book liquidity and 52,817 ad-activity units. The directly observed label `Ziraat` represents 11.2% of the stored currency payment-method activity. This is a conservative single-label signal; aliases are not summed or treated as distinct integrations. Source: stored P2P Army snapshot (2026-08-05), and accepted direct Binance collector snapshot (2026-09-01) where stated. Standing liquidity is **not traded volume**, ad activity is not a dollar amount, and method shares are not transfer-value shares. These are historical prioritization signals, not guaranteed coverage or revenue. Provider access and parser feasibility must be established by the contributor. ### Acceptance 1. Follow `AGENTS.md`, `skills/contribute-bank/SKILL.md`, `docs/privacy.md` and `docs/evidence.md`. Original MIT-compatible JS/TS only; no copied private Peer code, fixtures or bank credentials. 2. Supply one pure deterministic parser, manifest, acquisition instructions, synthetic fixtures and justified expected outputs. Document amount units, currency, payer/payee identity provenance, ID scope, status meaning, timestamp/time zone and limitations. Keep the scope small; no production service, SDK, extension, TEE, signer o…",
     "category": "unknown",
     "competition": {
@@ -25,7 +68,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:53Z",
@@ -68,7 +111,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:56Z",
@@ -111,7 +154,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:59Z",
@@ -154,7 +197,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:01Z",
@@ -197,7 +240,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:04Z",
@@ -240,7 +283,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:06Z",
@@ -283,7 +326,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:09Z",
@@ -326,7 +369,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:11Z",
@@ -369,7 +412,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:13Z",
@@ -412,7 +455,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:16Z",
@@ -455,7 +498,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:18Z",
@@ -498,7 +541,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:20Z",
@@ -541,7 +584,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:23Z",
@@ -584,7 +627,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:25Z",
@@ -627,7 +670,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:27Z",
@@ -670,7 +713,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:29Z",
@@ -713,7 +756,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:32Z",
@@ -756,7 +799,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:34Z",
@@ -799,7 +842,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:37Z",
@@ -842,7 +885,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:40Z",
@@ -885,7 +928,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:42Z",
@@ -928,7 +971,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:45Z",
@@ -971,7 +1014,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:47Z",
@@ -1014,7 +1057,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:50Z",
@@ -1057,7 +1100,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:53Z",
@@ -1100,7 +1143,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:55Z",
@@ -1143,7 +1186,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:02:58Z",
@@ -1186,7 +1229,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:00Z",
@@ -1229,7 +1272,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:03Z",
@@ -1272,7 +1315,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:05Z",
@@ -1315,7 +1358,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:07Z",
@@ -1358,7 +1401,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:10Z",
@@ -1401,7 +1444,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:12Z",
@@ -1444,7 +1487,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:14Z",
@@ -1487,7 +1530,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:16Z",
@@ -1530,7 +1573,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:19Z",
@@ -1573,7 +1616,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:21Z",
@@ -1616,7 +1659,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:23Z",
@@ -1659,7 +1702,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:26Z",
@@ -1702,7 +1745,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:28Z",
@@ -1745,7 +1788,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:30Z",
@@ -1788,7 +1831,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:34Z",
@@ -1831,7 +1874,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:01:22Z",
@@ -1874,7 +1917,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:36Z",
@@ -1917,7 +1960,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:38Z",
@@ -1960,7 +2003,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:41Z",
@@ -2003,7 +2046,7 @@
       "integration",
       "round-1"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "0xSachinK/openplaid",
     "published_at": "2026-09-22T19:03:43Z",
@@ -2042,7 +2085,7 @@
     "labels": [
       "bounty"
     ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "Scottcjn/rustchain-bounties",
     "published_at": "2026-03-16T18:12:44Z",
@@ -2057,50 +2100,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-09-24T03:30:34Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## Bounty: Profile README Mention **Reward**: 2 RTC | **Difficulty**: Easy | **Time**: ~5 minutes | **Multi-claim**: Yes ### What to do Add a mention of RustChain to your GitHub profile README (the repo named your-username/your-username). Could be: - \"Contributor to RustChain\" with link - A badge or shield - A mention in your interests/projects section ### Acceptance criteria - [ ] RustChain mentioned in your profile README - [ ] Link to Scottcjn/Rustchain included - [ ] Profile link posted as comment here ### How to claim Post your profile link as a comment. 2 RTC per person. **Reward**: 2 RTC (~$0.20) | **Multi-claim**",
-    "category": "docs",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-Scottcjn-rustchain-bounties-515",
-    "issue_number": 515,
-    "labels": [
-      "bounty",
-      "community",
-      "micro",
-      "open",
-      "propagation"
-    ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
-    "notes": null,
-    "project": "Scottcjn/rustchain-bounties",
-    "published_at": "2026-03-01T04:13:08Z",
-    "reward": {
-      "amount": 0.2,
-      "currency": "USD",
-      "evidence": "**Reward**: 2 RTC (~$0.20) | **Multi-claim**",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
-    "status": "open",
-    "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
-    "updated_at": "2026-09-24T01:11:30Z"
+    "updated_at": "2026-09-25T03:47:37Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2122,7 +2122,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
     "issue_number": 14,
     "labels": [],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-13T06:49:24Z",
@@ -2159,7 +2159,7 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
     "issue_number": 9,
     "labels": [],
-    "last_checked_at": "2026-09-24T04:48:58Z",
+    "last_checked_at": "2026-09-25T04:56:33Z",
     "notes": null,
     "project": "iyeanur6-cyber/ultimate-ai-platform",
     "published_at": "2026-07-12T17:52:37Z",
@@ -2175,44 +2175,5 @@
     "status": "open",
     "title": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
     "updated_at": "2026-09-08T23:24:21Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "Bounty: Upstream PR #304 Upstream: https://github.com/lobster-trap/Kickama/pull/304 Diagnostics received, awaiting review. <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #2</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting <code>/tip 20 @lb1192176991-lab</code> (replace <code>20</code> with the amount, and <code>@lb1192176991-lab</code> with the user to tip).<br/><br/>📖 If you want to learn more, check out our <a href=\"https://docs.opire.dev\">documentation</a>.</details>",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-lb1192176991-lab-zeroeye-2",
-    "issue_number": 2,
-    "labels": [
-      "💰 Reward"
-    ],
-    "last_checked_at": "2026-09-24T04:48:58Z",
-    "notes": null,
-    "project": "lb1192176991-lab/zeroeye",
-    "published_at": "2026-06-20T20:20:37Z",
-    "reward": {
-      "amount": 50,
-      "currency": "USD",
-      "evidence": "[BOUNTY] Kickama #304 - deterministic data seed ($50)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/lb1192176991-lab/zeroeye/issues/2",
-    "status": "open",
-    "title": "[BOUNTY] Kickama #304 - deterministic data seed ($50)",
-    "updated_at": "2026-09-23T00:46:20Z"
   }
 ]
