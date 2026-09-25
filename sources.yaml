@@ -8,25 +8,29 @@ exclude_repositories:
 # small AND-style queries and deduplicates them locally. The collector then
 # requires an explicit reward amount before a candidate enters the dataset.
 #
+# Two pages are intentionally bounded coverage, not a completeness guarantee.
+# Existing rows that fall out of the search window are directly revalidated
+# before they are kept or removed.
+#
 # `bounty-alert` is used by secondary index/scanner repositories that publish
 # roundup Issues containing links to many other opportunities. Those are useful
 # sources for humans, but they are not themselves actionable work items.
 sources:
   - id: bounty
     query: 'is:issue is:open bounty in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: reward
     query: 'is:issue is:open reward in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: funded-bounty
     query: 'is:issue is:open bounty funded in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: good-first-bounty
     query: 'is:issue is:open bounty "good first issue" in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: docs-bounty
     query: 'is:issue is:open bounty documentation in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2
   - id: translation-bounty
     query: 'is:issue is:open bounty translation in:title,body -label:bounty-alert'
-    max_pages: 1
+    max_pages: 2

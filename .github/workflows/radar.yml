@@ -30,17 +30,38 @@ jobs:
       - name: Run collector tests
         run: |
           python -m unittest discover -s tests -v
-          python -m py_compile scripts/__init__.py scripts/fetch_github.py tests/test_fetch_github.py
+          python -m py_compile scripts/__init__.py scripts/fetch_github.py scripts/fetch_github_core.py tests/test_fetch_github.py tests/test_issue14.py
 
       - name: Collect GitHub opportunities
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/fetch_github.py
+        run: |
+          python scripts/fetch_github.py \
+            --status-output "${RUNNER_TEMP}/open-work-radar-refresh.json"
 
-      - name: Commit generated data when changed
+      - name: Publish refresh status in run summary
+        if: always()
+        run: |
+          if [ -f "${RUNNER_TEMP}/open-work-radar-refresh.json" ]; then
+            echo '## Refresh status' >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat "${RUNNER_TEMP}/open-work-radar-refresh.json" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload refresh status
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: refresh-status-${{ github.run_id }}
+          path: ${{ runner.temp }}/open-work-radar-refresh.json
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Commit generated data when materially changed
         run: |
           if git diff --quiet -- data/opportunities.json; then
-            echo "No generated data changes."
+            echo "No material generated data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
