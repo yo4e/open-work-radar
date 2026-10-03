@@ -72,6 +72,38 @@ class Issue17RealDataTests(unittest.TestCase):
         )
         self.assertIsNotNone(self.normalize(item))
 
+    def test_mandaputtra_issue_10_prize_pool_is_ignored(self):
+        item = self.issue(
+            10,
+            project="mandaputtra/ping-pong-pay",
+            title="T&C compliance: AI disclosure, registration, demo video, eligibility",
+            body=(
+                "## Parent #1\n"
+                "## What to build\n"
+                "Satisfy the Metropolis Hackathon Terms & Conditions (`docs/terms-and-conditions.md`) as mandatory requirements, not nice-to-haves.\n"
+                "## Notes\n"
+                "- Prize pool is stated as $145,000 for the hackathon overall.\n"
+                "- Please submit your demo video and repo link."
+            ),
+        )
+        self.assertIsNone(self.normalize(item))
+
+    def test_prize_pool_mention_does_not_block_legitimate_task_reward(self):
+        item = self.issue(
+            11,
+            project="example/project",
+            title="Implement task with specific bounty",
+            body=(
+                "## Hackathon Info\n"
+                "- Prize pool is stated as $145,000 for the hackathon overall.\n"
+                "## Task Reward\n"
+                "- Bounty: $500 for implementing this specific issue."
+            ),
+        )
+        record = self.normalize(item)
+        self.assertIsNotNone(record)
+        self.assertEqual(record["reward"]["amount"], 500)
+
 
 if __name__ == "__main__":
     unittest.main()

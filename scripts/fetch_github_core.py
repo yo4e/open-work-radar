@@ -21,6 +21,7 @@ PER_PAGE = 100
 BODY_LIMIT = 2000
 MAINTAINERS = {"OWNER", "MEMBER", "COLLABORATOR"}
 REWARD = re.compile(r"\b(?:bounty|bounties|reward|rewards|payout|payouts|compensation|stipend|grant|prize|paid)\b", re.I)
+PRIZE_POOL_LINE = re.compile(r"\bprize\s+pool\b", re.I)
 EXPENSE = re.compile(r"\b(?:buy|purchase|cost|fee|fees|credit|credits|subscription|deposit|spend|expense|charge|gas)\b|\b(?:must\s+pay|pay\s+(?:for|to|before))\b", re.I)
 UNAVAILABLE = re.compile(r"(?:current\s+work\s+state|lifecycle|work\s+state)\s*[:=-]\s*(?:\*{1,2})?\s*`?(?:unavailable|in[_ -]?progress|claimed|submitted|verification[_ -]?pending)`?|\b(?:bounty|reward)\s+(?:is\s+)?(?:closed|unavailable|no\s+longer\s+available)\b|\bno\s+longer\s+accepting\b", re.I)
 QUESTION = re.compile(r"\b(?:is|whether)\s+(?:this|the)\s+(?:bounty|reward)\s+still\s+available\b|\bcould\s+you\s+confirm\b.{0,120}\b(?:bounty|reward)\b.{0,80}\bavailable\b", re.I | re.S)
@@ -320,6 +321,8 @@ def reward_metadata(title: str, body: str, labels: list[str], association: str) 
             return reward_from_match(match, title, association)
 
     for line in body.splitlines():
+        if PRIZE_POOL_LINE.search(line):
+            continue
         if not DIRECT_REWARD_PREFIX.search(line):
             continue
         line_matches = sorted((m for pattern in MONEY for m in pattern.finditer(line)), key=lambda m: m.start())
@@ -328,6 +331,14 @@ def reward_metadata(title: str, body: str, labels: list[str], association: str) 
 
     matches = sorted((m for pattern in MONEY for m in pattern.finditer(text)), key=lambda m: m.start())
     for match in matches:
+        # check if this match is on a line containing 'prize pool'
+        line_start = text.rfind('\n', 0, match.start()) + 1
+        line_end = text.find('\n', match.start())
+        if line_end == -1:
+            line_end = len(text)
+        match_line = text[line_start:line_end]
+        if PRIZE_POOL_LINE.search(match_line):
+            continue
         reward_d, expense_d = distance(REWARD, text, match.start()), distance(EXPENSE, text, match.start())
         if reward_d is None or (expense_d is not None and expense_d <= reward_d):
             continue
