@@ -13,16 +13,14 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
-      "good-first-bounty",
-      "reward"
+      "good-first-bounty"
     ],
     "github_state": "open",
     "id": "github-MyZubster-Ecosystem-myzubster-1439",
     "issue_number": 1439,
     "labels": [],
-    "last_changed_at": "2026-10-03T05:17:59Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_changed_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,8 +62,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-10-03T05:17:59Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_changed_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -83,7 +81,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-10-03T04:08:05Z"
+    "updated_at": "2026-10-04T04:40:24Z"
   },
   {
     "ai_assistability": "unknown",
@@ -110,7 +108,7 @@
       "content"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -157,7 +155,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -180,12 +178,58 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Achievement: Bug Hunter **Reward**: 3 RTC | **Multi-claim**: Yes ### How to earn Find and report a **real, reproducible bug** in any Scottcjn repository. ### Acceptance criteria - [ ] Bug is real and reproducible - [ ] Filed as a proper issue with steps to reproduce - [ ] Not a duplicate of an existing issue - [ ] Includes environment info (OS, version, etc.) ### How to claim File a bug issue, then comment here with the link. 3 RTC if confirmed valid. **Reward**: 3 RTC (~$0.30) | **Multi-claim**",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-520",
+    "issue_number": 520,
+    "labels": [
+      "bounty",
+      "community",
+      "open",
+      "standard"
+    ],
+    "last_changed_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-03-01T04:13:51Z",
+    "reward": {
+      "amount": 0.3,
+      "currency": "USD",
+      "evidence": "**Reward**: 3 RTC (~$0.30) | **Multi-claim**",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/520",
+    "status": "open",
+    "title": "[Achievement] Bug Hunter - Find a Real Bug - 2 RTC",
+    "updated_at": "2026-10-04T05:49:23Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
     "author_association": "NONE",
     "body_excerpt": "hi, Thanks for the code! I got a 'Error making POST request to https://www.udio.com/api/generate-proxy: 500 Server Error: Internal Server Error for url: https://www.udio.com/api/generate-proxy' both in my local IDE and the colab you provided. Is this the server problem? <br/> <hr/> <details><summary>This repo is using Opire - what does it means? 👇</summary><br/>💸Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount)<br/>💪 If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #7</code> either in the PR description or in a PR's comment<br/><br/>👀 Also, everyone can tip any user commenting <code>/tip 20 @luoshangxuan1992</code> (replace <code>20</code> with the amount, and <code>@luoshangxuan1992</code> with the user to tip)<br/><br/>If you want to learn more, go to our <a href=\"https://docs.opire.dev\">documentation</a></details>",
     "category": "unknown",
     "competition": {
-      "attempts": 27,
-      "claims": 15,
+      "attempts": 28,
+      "claims": 16,
       "open_prs": null
     },
     "deadline": null,
@@ -199,8 +243,8 @@
     "labels": [
       "💰 Reward"
     ],
-    "last_changed_at": "2026-10-03T05:17:59Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_changed_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HW8CK374Y67WDDZG22BYVZQ4"
@@ -247,7 +291,7 @@
       "medium"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -290,7 +334,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -333,8 +377,8 @@
       "Type: enhancement",
       "💰 Reward"
     ],
-    "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_changed_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HTN11YX5NYSS7GGB3SHNCJSS"
@@ -355,7 +399,7 @@
     "source_url": "https://github.com/trovu/trovu/issues/329",
     "status": "open",
     "title": "Open target URLs not in PWA but in default browser",
-    "updated_at": "2026-10-01T04:31:54Z"
+    "updated_at": "2026-10-03T20:32:10Z"
   },
   {
     "ai_assistability": "unknown",
@@ -377,8 +421,8 @@
     "id": "github-zkp2p-peer-link-64",
     "issue_number": 64,
     "labels": [],
-    "last_changed_at": "2026-10-03T05:17:59Z",
-    "last_checked_at": "2026-10-03T05:17:59Z",
+    "last_changed_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-04T05:51:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -396,6 +440,6 @@
     "source_url": "https://github.com/zkp2p/peer-link/issues/64",
     "status": "open",
     "title": "Peer Link bounties — $1,000 across 20 banks ($50 each)",
-    "updated_at": "2026-10-02T12:10:37Z"
+    "updated_at": "2026-10-03T16:50:55Z"
   }
 ]
