@@ -94,9 +94,10 @@ MAINTAINER_CONFIRM = re.compile(
     re.I,
 )
 CLAIM_ONLY = re.compile(r"(?:^|\s)(?:/try|/attempt|/claim)\b", re.I)
+PRIZE_POOL = re.compile(r"\bprize\s+pool\b", re.I)
 DIRECT_REWARD_PREFIX = re.compile(
     r"^\s*(?:#{1,6}\s*)?(?:[-*]\s*)?(?:\*\*)?"
-    r"(?:bounty|reward(?!/)|prize|payment|payout|compensation|solver\s+reward|target\s+solver\s+reward)\b",
+    r"(?:bounty|reward(?!/)|prize(?!\s+pool\b)|payment|payout|compensation|solver\s+reward|target\s+solver\s+reward)\b",
     re.I,
 )
 CURRENCY = r"(?:US\$|\$|USD|CAD|AUD|EUR|€|GBP|£|JPY|USDC|USDT|BTC|ETH|SOL)"
@@ -320,7 +321,7 @@ def reward_metadata(title: str, body: str, labels: list[str], association: str) 
             return reward_from_match(match, title, association)
 
     for line in body.splitlines():
-        if not DIRECT_REWARD_PREFIX.search(line):
+        if not DIRECT_REWARD_PREFIX.search(line) or PRIZE_POOL.search(line):
             continue
         line_matches = sorted((m for pattern in MONEY for m in pattern.finditer(line)), key=lambda m: m.start())
         if line_matches:
@@ -330,6 +331,9 @@ def reward_metadata(title: str, body: str, labels: list[str], association: str) 
     for match in matches:
         reward_d, expense_d = distance(REWARD, text, match.start()), distance(EXPENSE, text, match.start())
         if reward_d is None or (expense_d is not None and expense_d <= reward_d):
+            continue
+        pool_d = distance(PRIZE_POOL, text, match.start(), radius=80)
+        if pool_d is not None and pool_d <= 40:
             continue
         return reward_from_match(match, text, association)
 
@@ -358,6 +362,8 @@ def direct_reward_offer(title: str, body: str) -> bool:
             if reward_d is not None and reward_d <= 50:
                 return True
     for line in body.splitlines():
+        if PRIZE_POOL.search(line):
+            continue
         if DIRECT_REWARD_PREFIX.search(line) and any(pattern.search(line) for pattern in MONEY):
             return True
     return False
