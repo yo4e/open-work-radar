@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -62,8 +62,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_changed_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -81,7 +81,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-10-04T04:40:24Z"
+    "updated_at": "2026-10-05T04:27:33Z"
   },
   {
     "ai_assistability": "unknown",
@@ -108,7 +108,7 @@
       "content"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -154,8 +154,8 @@
       "open",
       "propagation"
     ],
-    "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_changed_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -173,7 +173,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
     "status": "open",
     "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
-    "updated_at": "2026-09-30T03:09:44Z"
+    "updated_at": "2026-10-04T13:19:08Z"
   },
   {
     "ai_assistability": "unknown",
@@ -200,8 +200,8 @@
       "open",
       "standard"
     ],
-    "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_changed_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -219,7 +219,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/520",
     "status": "open",
     "title": "[Achievement] Bug Hunter - Find a Real Bug - 2 RTC",
-    "updated_at": "2026-10-04T05:49:23Z"
+    "updated_at": "2026-10-05T03:38:16Z"
   },
   {
     "ai_assistability": "unknown",
@@ -243,8 +243,8 @@
     "labels": [
       "💰 Reward"
     ],
-    "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_changed_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HW8CK374Y67WDDZG22BYVZQ4"
@@ -265,7 +265,7 @@
     "source_url": "https://github.com/flowese/UdioWrapper/issues/7",
     "status": "open",
     "title": "500 Server Error - Auto Solve hcapcha",
-    "updated_at": "2026-10-02T11:01:11Z"
+    "updated_at": "2026-10-05T04:34:22Z"
   },
   {
     "ai_assistability": "unknown",
@@ -290,8 +290,8 @@
       "bounty",
       "medium"
     ],
-    "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_changed_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -309,7 +309,7 @@
     "source_url": "https://github.com/illbnm/homelab-stack/issues/13",
     "status": "open",
     "title": "[BOUNTY $80] Notifications — 统一通知中心 (Gotify + Apprise)",
-    "updated_at": "2026-09-27T15:53:47Z"
+    "updated_at": "2026-10-04T10:03:19Z"
   },
   {
     "ai_assistability": "unknown",
@@ -334,7 +334,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -377,8 +377,8 @@
       "Type: enhancement",
       "💰 Reward"
     ],
-    "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_changed_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HTN11YX5NYSS7GGB3SHNCJSS"
@@ -399,7 +399,7 @@
     "source_url": "https://github.com/trovu/trovu/issues/329",
     "status": "open",
     "title": "Open target URLs not in PWA but in default browser",
-    "updated_at": "2026-10-03T20:32:10Z"
+    "updated_at": "2026-10-04T19:08:08Z"
   },
   {
     "ai_assistability": "unknown",
@@ -415,14 +415,15 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
+      "bounty",
       "funded-bounty"
     ],
     "github_state": "open",
     "id": "github-zkp2p-peer-link-64",
     "issue_number": 64,
     "labels": [],
-    "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-04T05:51:16Z",
+    "last_changed_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-05T05:37:56Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -440,6 +441,6 @@
     "source_url": "https://github.com/zkp2p/peer-link/issues/64",
     "status": "open",
     "title": "Peer Link bounties — $1,000 across 20 banks ($50 each)",
-    "updated_at": "2026-10-03T16:50:55Z"
+    "updated_at": "2026-10-04T16:47:30Z"
   }
 ]
