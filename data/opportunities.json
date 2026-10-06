@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -62,8 +62,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_changed_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -81,7 +81,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-10-05T04:27:33Z"
+    "updated_at": "2026-10-06T05:14:09Z"
   },
   {
     "ai_assistability": "unknown",
@@ -108,7 +108,7 @@
       "content"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -155,7 +155,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -200,8 +200,8 @@
       "open",
       "standard"
     ],
-    "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_changed_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -219,7 +219,53 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/520",
     "status": "open",
     "title": "[Achievement] Bug Hunter - Find a Real Bug - 2 RTC",
-    "updated_at": "2026-10-05T03:38:16Z"
+    "updated_at": "2026-10-05T09:52:04Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## 🏆 Bounty: 1 SOL **Film a real demo of osModa self-healing after destructive deletion. Upload to YouTube. Earn 1 SOL.** --- ## The Demo **Title:** \"I Mass Deleted My Server's Nginx Config. Watch What Happens.\" **Format:** 45-90 second screen recording with real camera filming your laptop/monitor. Uncut, no fakes. **Hook (first 3 seconds):** \"What happens when I `rm -rf /etc/nginx` on an AI-managed server?\" ### What to show: 1. **Setup:** osModa running on a real server (use `spawn.os.moda` to provision, or install via `curl -sSL https://raw.githubusercontent.com/bolivian-peru/os-moda/main/scripts/install.sh | bash`) 2. **The destruction:** Run `rm -rf /etc/nginx` (or another critical config) on camera 3. **The recovery:** Show the watchdog catching it. Show the AI diagnosing it. Show NixOS rolling back. Show nginx coming back online. 4. **The proof:** Show the timestamp — total downtime. Show the hash-chained audit log entry with the AI's reasoning. 5. **The punchline:** \"Try this on your Ubuntu server. I dare you.\" ### What makes this demoable (verified working): - ✅ **SafeSwitch + NixOS rollback** — calls real `nix-env --rollback` + `switch-to-configuration switch` - ✅ **Autopilot watchers** — real health checks (systemd unit, TCP port, HTTP GET) with escalation (restart → rollback → notify) - ✅ **Hash-chained audit log** — every action logged with SHA-256 chain, tamper-evident - ✅ **Approval gate** — destructive commands blocked until approved (35 dangerous patterns detected) - ✅ **194 tests passing** across 10 Rust crates ### Requirements: - [ ] Real camera filming real screen (not just screen recording — we want to see the laptop/monitor) - [ ] Uncut deletion → recovery sequence (no jump cuts during the critical moment) - [ ] Show the audit log after recovery - [ ] Show the timestamp / total downtime - [ ] Upload to YouTube (public, not unlisted) - [ ] Minimum 720p quality - [ ] Link osModa repo and `spawn.os.moda` in description - [ ] Post the YouTube link…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-bolivian-peru-os-moda-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "good first issue",
+      "testing",
+      "video-demo"
+    ],
+    "last_changed_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "bolivian-peru/os-moda",
+    "published_at": "2026-03-01T05:41:36Z",
+    "reward": {
+      "amount": 1,
+      "currency": "SOL",
+      "evidence": "🏆 BOUNTY (1 SOL): Film \"I Deleted My Nginx Config — Watch What Happens\" Demo",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/bolivian-peru/os-moda/issues/2",
+    "status": "open",
+    "title": "🏆 BOUNTY (1 SOL): Film \"I Deleted My Nginx Config — Watch What Happens\" Demo",
+    "updated_at": "2026-10-06T04:29:40Z"
   },
   {
     "ai_assistability": "unknown",
@@ -244,7 +290,7 @@
       "💰 Reward"
     ],
     "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HW8CK374Y67WDDZG22BYVZQ4"
@@ -291,7 +337,7 @@
       "medium"
     ],
     "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -315,6 +361,47 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
+    "body_excerpt": "60## Architecture & Feature Requirement We need to expand the UltimateAI action subsystem by introducing a headless `LibreOfficeAutomationTool` module. This tool will run safely inside containerized or local server-side environments to convert, manipulate, and generate enterprise documents (DOCX, XLSX, PDF) on behalf of AI requests. ### Core Acceptance Criteria: 1. **Zero-Trust Hard Boundary Gatekeeper:** Enforce a hard budget constraint of **$150 maximum compute allocation limits** per session window to prevent resource exploitation or billing leaks. 2. **Strict Multi-Payload Size Defense:** Reject individual input payloads exceeding **5MB** using explicit `StandardCharsets.UTF_8` evaluation. 3. **Path Protection:** Restrict document generation strictly inside the managed directory base path (`ultimate-managed-workspaces`). 4. **Parallel Stream Harvesting:** Read Process output (stdout/stderr) via independent daemon runner threads to eliminate OS pipe deadlocks. 5. **Auto-Teardown Mechanism:** Ensure all compiled or converted files are purged from volatile server storage in a `finally` block post-execution. ###Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "good-first-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
+    "issue_number": 9,
+    "labels": [],
+    "last_changed_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "iyeanur6-cyber/ultimate-ai-platform",
+    "published_at": "2026-07-12T17:52:37Z",
+    "reward": {
+      "amount": 150,
+      "currency": "USD",
+      "evidence": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/9",
+    "status": "open",
+    "title": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
+    "updated_at": "2026-09-08T23:24:21Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
     "body_excerpt": "## Parent #1 ## What to build Satisfy the Metropolis Hackathon Terms & Conditions (`docs/terms-and-conditions.md`) as mandatory requirements, not nice-to-haves. Disqualification is the failure mode here. Scope is deliberately limited to the compliance gates that issue #7 does NOT already cover — #7 owns README content, demo video script, and the bounty checklist. ## Acceptance criteria From §4.1.1 — mandatory submission contents: - [x] Open source license present (MIT, added) - [ ] README states that AI coding tools were used, naming which (§4.1.4 — mandatory disclosure, currently a disqualification risk) - [ ] Public repo, commit history spanning the build window (1 Sep–13 Oct 2026) - [ ] Monad mainnet or testnet deployment evidenced by transaction hashes (§4.1.3, §9.2) From §4.1.2 and §9.4 — demo video: - [ ] Recorded, publicly accessible, **≤ 3 minutes hard** (§9.4), showing the product in actual operation including a real Monad transaction (§4.1.2) - [ ] Demonstrates a *successful* top-up, not the 503 out-of-stock path (#3 blocker) From §2 and §4.2 — eligibility and registration: - [ ] Team registered on hackathon.monad.xyz, 1–5 members (§2.4) - [ ] Primary contact designated as the prize recipient (§2.4, §6.1 — prizes paid to this wallet) - [ ] Team eligible: 18+, no sanctions-list jurisdiction (§2.1, §2.2) - [ ] Registered for exactly one track, submitting one project (§2.5 — multiple submissions disqualify) - [ ] Deadline booked: 13 Oct 2026, 11:59 PM ET, submitted via the website only (§4.2) ## Blocked by - #3 — the demo video needs a funded relayer to show a real successful payment ## Notes Prize pool is stated as $145,000 in T&C §3.2 but $250,000+ on the website; §3.2 notes sponsor bounties are added later. Plan against the T&C figure. The exact submission checklist on hackathon.monad.xyz is still login-gated and unread — confirm against it before submitting.",
     "category": "unknown",
     "competition": {
@@ -333,8 +420,8 @@
     "labels": [
       "ready-for-agent"
     ],
-    "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_changed_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -352,7 +439,7 @@
     "source_url": "https://github.com/mandaputtra/ping-pong-pay/issues/10",
     "status": "open",
     "title": "T&C compliance: AI disclosure, registration, demo video, eligibility",
-    "updated_at": "2026-09-30T03:10:22Z"
+    "updated_at": "2026-10-05T11:18:02Z"
   },
   {
     "ai_assistability": "unknown",
@@ -378,7 +465,7 @@
       "💰 Reward"
     ],
     "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HTN11YX5NYSS7GGB3SHNCJSS"
@@ -415,15 +502,15 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
-      "funded-bounty"
+      "funded-bounty",
+      "reward"
     ],
     "github_state": "open",
     "id": "github-zkp2p-peer-link-64",
     "issue_number": 64,
     "labels": [],
-    "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-05T05:37:56Z",
+    "last_changed_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-06T06:19:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -441,6 +528,6 @@
     "source_url": "https://github.com/zkp2p/peer-link/issues/64",
     "status": "open",
     "title": "Peer Link bounties — $1,000 across 20 banks ($50 each)",
-    "updated_at": "2026-10-04T16:47:30Z"
+    "updated_at": "2026-10-06T03:59:53Z"
   }
 ]
