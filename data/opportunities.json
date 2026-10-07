@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -62,8 +62,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_changed_at": "2026-10-07T05:57:50Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -81,7 +81,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-10-06T05:14:09Z"
+    "updated_at": "2026-10-07T04:42:10Z"
   },
   {
     "ai_assistability": "unknown",
@@ -108,7 +108,7 @@
       "content"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -142,7 +142,8 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty"
+      "bounty",
+      "reward"
     ],
     "github_state": "open",
     "id": "github-Scottcjn-rustchain-bounties-515",
@@ -154,8 +155,8 @@
       "open",
       "propagation"
     ],
-    "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_changed_at": "2026-10-07T05:57:50Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -173,7 +174,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
     "status": "open",
     "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
-    "updated_at": "2026-10-04T13:19:08Z"
+    "updated_at": "2026-10-07T04:22:34Z"
   },
   {
     "ai_assistability": "unknown",
@@ -201,7 +202,7 @@
       "standard"
     ],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -220,6 +221,50 @@
     "status": "open",
     "title": "[Achievement] Bug Hunter - Find a Real Bug - 2 RTC",
     "updated_at": "2026-10-05T09:52:04Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "Handing Carmen three terrorist heads pays out $20,000 instead of $30,000. One or two heads pay correctly; three loses exactly one head's bounty. The reporter's own guess — that $20,000 is a per-slot money limit — is **correct**, and the slot is `MAX_MONEY_PER_SLOT`. ## Reproducing 1. Start the quest, meet Carmen, and collect at least three terrorist heads. 2. Give the heads to Carmen and change sector (the payout happens on the sector change). 3. Talk to Carmen in C13 to collect. | Heads | Owed | Player receives | Lost | |---|---|---|---| | 1 | $10,000 | $10,000 | — | | 2 | $20,000 | $20,000 | — | | 3 | $30,000 | **$20,000** | $10,000 | | 4 | $40,000 | **$20,000** | $20,000 | One and two heads fit in a single pocket stack, which is why the bug only appears at three. ## Root cause: the bounty is physical money objects, not an amount The payout is not a transaction. `src/game/Strategic/Strategic_Event_Handler.cc:813-831` credits the **profile** a scalar: ```cpp if (gMercProfiles[ CARMEN ].bNPCData2 > 0) { if (gMercProfiles[ CARMEN ].uiMoney < 10000) uiAmount = 0; else uiAmount = gMercProfiles[ CARMEN ].uiMoney; uiAmount += 10000 * gMercProfiles[ CARMEN ].bNPCData2; // $10k per head SetMoneyInSoldierProfile( CARMEN, uiAmount ); gMercProfiles[ CARMEN ].bNPCData2 = 0; ... } ``` So 3 heads is correctly recorded as $30,000. Nothing is lost here. The money becomes objects when Carmen is spawned into a sector. `CopyProfileItems` (`src/game/Tactical/Soldier_Create.cc:2059-2069`) splits the scalar into pocket-sized stacks: ```cpp for (UINT32 money_left = p.uiMoney; money_left > 0;) { INT8 const slot_id = FindEmptySlotWithin(&s, POCK1POS, POCK12POS); if (slot_id == NO_SLOT) break; UINT32 const slot_limit = MoneySlotLimit(slot_id); UINT32 const slot_amount = std::min(money_left, slot_limit); CreateMoney(slot_amount, slot); money_left -= slot_amount; } ``` `MoneySlotLimit` (`src/game/Tactical/Items.cc:325-335`) caps a stack at `MAX_MONEY_PER_SLOT` = **20000** (`src/game/Tactical…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-adhikasp-ja2-pecel-bakwan-300",
+    "issue_number": 300,
+    "labels": [
+      "bug",
+      "tactical"
+    ],
+    "last_changed_at": "2026-10-07T05:57:50Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "adhikasp/ja2-pecel-bakwan",
+    "published_at": "2026-10-05T15:38:22Z",
+    "reward": {
+      "amount": 20000,
+      "currency": "USD",
+      "evidence": "bug: Carmen pays $20,000 for three heads - the head bounty is gifted as a single money slot",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/adhikasp/ja2-pecel-bakwan/issues/300",
+    "status": "open",
+    "title": "bug: Carmen pays $20,000 for three heads - the head bounty is gifted as a single money slot",
+    "updated_at": "2026-10-07T00:51:56Z"
   },
   {
     "ai_assistability": "unknown",
@@ -247,7 +292,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -274,8 +319,8 @@
     "body_excerpt": "hi, Thanks for the code! I got a 'Error making POST request to https://www.udio.com/api/generate-proxy: 500 Server Error: Internal Server Error for url: https://www.udio.com/api/generate-proxy' both in my local IDE and the colab you provided. Is this the server problem? <br/> <hr/> <details><summary>This repo is using Opire - what does it means? 👇</summary><br/>💸Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount)<br/>💪 If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #7</code> either in the PR description or in a PR's comment<br/><br/>👀 Also, everyone can tip any user commenting <code>/tip 20 @luoshangxuan1992</code> (replace <code>20</code> with the amount, and <code>@luoshangxuan1992</code> with the user to tip)<br/><br/>If you want to learn more, go to our <a href=\"https://docs.opire.dev\">documentation</a></details>",
     "category": "unknown",
     "competition": {
-      "attempts": 28,
-      "claims": 16,
+      "attempts": 29,
+      "claims": 17,
       "open_prs": null
     },
     "deadline": null,
@@ -289,8 +334,8 @@
     "labels": [
       "💰 Reward"
     ],
-    "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_changed_at": "2026-10-07T05:57:50Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HW8CK374Y67WDDZG22BYVZQ4"
@@ -311,7 +356,7 @@
     "source_url": "https://github.com/flowese/UdioWrapper/issues/7",
     "status": "open",
     "title": "500 Server Error - Auto Solve hcapcha",
-    "updated_at": "2026-10-05T04:34:22Z"
+    "updated_at": "2026-10-06T18:41:08Z"
   },
   {
     "ai_assistability": "unknown",
@@ -337,7 +382,7 @@
       "medium"
     ],
     "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -378,7 +423,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -421,7 +466,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -465,7 +510,7 @@
       "💰 Reward"
     ],
     "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HTN11YX5NYSS7GGB3SHNCJSS"
@@ -502,15 +547,14 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "funded-bounty",
-      "reward"
+      "funded-bounty"
     ],
     "github_state": "open",
     "id": "github-zkp2p-peer-link-64",
     "issue_number": 64,
     "labels": [],
-    "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-06T06:19:00Z",
+    "last_changed_at": "2026-10-07T05:57:50Z",
+    "last_checked_at": "2026-10-07T05:57:50Z",
     "notes": null,
     "platform_sources": [
       "github"
