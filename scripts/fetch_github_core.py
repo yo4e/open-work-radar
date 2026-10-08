@@ -21,6 +21,8 @@ PER_PAGE = 100
 BODY_LIMIT = 2000
 MAINTAINERS = {"OWNER", "MEMBER", "COLLABORATOR"}
 REWARD = re.compile(r"\b(?:bounty|bounties|reward|rewards|payout|payouts|compensation|stipend|grant|prize|paid)\b", re.I)
+PRIZE_POOL = re.compile(r"\b(?:prize\s+pools?|total\s+prize\s+money|total\s+prizes)\b", re.I)
+TASK_REWARD = re.compile(r"\b(?:bounty|bounties|reward|rewards|payment|payout|payouts|compensation|stipend|grant|prize|paid)\b", re.I)
 EXPENSE = re.compile(r"\b(?:buy|purchase|cost|fee|fees|credit|credits|subscription|deposit|spend|expense|charge|gas)\b|\b(?:must\s+pay|pay\s+(?:for|to|before))\b", re.I)
 UNAVAILABLE = re.compile(r"(?:current\s+work\s+state|lifecycle|work\s+state)\s*[:=-]\s*(?:\*{1,2})?\s*`?(?:unavailable|in[_ -]?progress|claimed|submitted|verification[_ -]?pending)`?|\b(?:bounty|reward)\s+(?:is\s+)?(?:closed|unavailable|no\s+longer\s+available)\b|\bno\s+longer\s+accepting\b", re.I)
 QUESTION = re.compile(r"\b(?:is|whether)\s+(?:this|the)\s+(?:bounty|reward)\s+still\s+available\b|\bcould\s+you\s+confirm\b.{0,120}\b(?:bounty|reward)\b.{0,80}\bavailable\b", re.I | re.S)
@@ -205,17 +207,37 @@ class GitHubClient:
             extra = last.json()
             if not isinstance(extra, list):
                 raise LifecycleUnavailable(f"expected a list from {url} page {last_page}")
-            seen = {id(x) for x in items}
-            keys = {(x.get("id"), x.get("url"), x.get("html_url")) for x in items}
+            keys = {key for x in items if (key := lifecycle_event_key(x)) is not None}
             for row in extra:
                 if not isinstance(row, dict):
                     continue
-                key = (row.get("id"), row.get("url"), row.get("html_url"))
-                if key in keys or id(row) in seen:
+                key = lifecycle_event_key(row)
+                if key is not None and key in keys:
                     continue
                 items.append(row)
-                keys.add(key)
+                if key is not None:
+                    keys.add(key)
         return items
+
+
+def lifecycle_event_key(row: dict[str, Any]) -> tuple | None:
+    """Only deduplicate evidence with a usable event identity.
+
+    Cross-references have no top-level ID/URL. Their source and event timestamp
+    identify the occurrence; insufficient identity must never discard evidence.
+    """
+    for field in ("id", "url", "html_url"):
+        value = row.get(field)
+        if isinstance(value, (str, int)) and value:
+            return (row.get("event"), field, value)
+    source = row.get("source")
+    issue = source.get("issue") if isinstance(source, dict) else None
+    if isinstance(issue, dict) and row.get("event") and row.get("created_at"):
+        for field in ("id", "url", "html_url"):
+            value = issue.get(field)
+            if isinstance(value, (str, int)) and value:
+                return (row["event"], "source.issue", field, value, row["created_at"])
+    return None
 
 
 def now_utc() -> dt.datetime:
@@ -310,19 +332,62 @@ def reward_from_match(match: re.Match[str], text: str, association: str) -> dict
     }
 
 
+def task_reward_text(text: str) -> str:
+    """Mask event-pool amounts, retaining separate task offers on the same line.
+
+    Match offsets stay unchanged. A money mention on a pool line needs a closer
+    independent reward anchor; blanket line exclusion would lose valid bounties.
+    Use the same text for amount extraction and direct-offer classification.
+    """
+    result = []
+    for line in text.splitlines(keepends=True):
+        pools = list(PRIZE_POOL.finditer(line))
+        if not pools:
+            result.append(line)
+            continue
+        anchors = [m for m in TASK_REWARD.finditer(line)
+                   if not any(p.start() <= m.start() < p.end() for p in pools)]
+        def gap(left: re.Match[str], right: re.Match[str]) -> int:
+            return max(0, left.start() - right.end(), right.start() - left.end())
+        masked = list(line)
+        for pattern in MONEY:
+            for money in pattern.finditer(line):
+                pool_gap = min(gap(money, pool) for pool in pools)
+                task_gap = min((gap(money, anchor) for anchor in anchors), default=float("inf"))
+                if pool_gap <= task_gap:
+                    masked[money.start():money.end()] = " " * (money.end() - money.start())
+        for pool in pools:
+            masked[pool.start():pool.end()] = " " * (pool.end() - pool.start())
+        result.append("".join(masked))
+    return "".join(result)
+
+
+def reward_offer_lines(body: str) -> Iterable[str]:
+    for line in body.splitlines():
+        if PRIZE_POOL.search(line):
+            # A pool note can precede a separate explicit offer on this line.
+            yield from re.split(r";|\.(?=\s|$)", line)
+        else:
+            yield line
+
+
 def reward_metadata(title: str, body: str, labels: list[str], association: str) -> dict[str, Any]:
+    original_title, original_text = title, f"{title}\n{body}"
+    offer_lines = list(reward_offer_lines(body))
+    title, body = task_reward_text(title), task_reward_text(body)
     text, label_text = f"{title}\n{body}", " ".join(labels)
 
     title_matches = sorted((m for pattern in MONEY for m in pattern.finditer(title)), key=lambda m: m.start())
     for match in title_matches:
         reward_d = distance(REWARD, title, match.start(), radius=80)
         if reward_d is not None and reward_d <= 50:
-            return reward_from_match(match, title, association)
+            return reward_from_match(match, original_title, association)
 
-    for line in body.splitlines():
-        if not DIRECT_REWARD_PREFIX.search(line):
+    for line in offer_lines:
+        masked_line = task_reward_text(line)
+        if not DIRECT_REWARD_PREFIX.search(masked_line):
             continue
-        line_matches = sorted((m for pattern in MONEY for m in pattern.finditer(line)), key=lambda m: m.start())
+        line_matches = sorted((m for pattern in MONEY for m in pattern.finditer(masked_line)), key=lambda m: m.start())
         if line_matches:
             return reward_from_match(line_matches[0], line, association)
 
@@ -331,7 +396,7 @@ def reward_metadata(title: str, body: str, labels: list[str], association: str) 
         reward_d, expense_d = distance(REWARD, text, match.start()), distance(EXPENSE, text, match.start())
         if reward_d is None or (expense_d is not None and expense_d <= reward_d):
             continue
-        return reward_from_match(match, text, association)
+        return reward_from_match(match, original_text, association)
 
     signal = REWARD.search(text)
     if signal:
@@ -350,6 +415,8 @@ def category(title: str, labels: list[str]) -> str:
 
 
 def direct_reward_offer(title: str, body: str) -> bool:
+    offer_lines = list(reward_offer_lines(body))
+    title, body = task_reward_text(title), task_reward_text(body)
     if DIRECT_TITLE_AMOUNT.search(title):
         return True
     for pattern in MONEY:
@@ -357,7 +424,8 @@ def direct_reward_offer(title: str, body: str) -> bool:
             reward_d = distance(REWARD, title, match.start(), radius=80)
             if reward_d is not None and reward_d <= 50:
                 return True
-    for line in body.splitlines():
+    for line in offer_lines:
+        line = task_reward_text(line)
         if DIRECT_REWARD_PREFIX.search(line) and any(pattern.search(line) for pattern in MONEY):
             return True
     return False

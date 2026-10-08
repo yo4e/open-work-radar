@@ -1,0 +1,52 @@
+[
+  {
+    "event": "cross-referenced",
+    "created_at": "2026-07-11T15:10:58Z",
+    "updated_at": "2026-07-11T15:10:58Z",
+    "source": {
+      "type": "issue",
+      "issue": {
+        "url": "https://api.github.com/repos/flowese/UdioWrapper/issues/42",
+        "html_url": "https://github.com/flowese/UdioWrapper/pull/42",
+        "id": 4862859471,
+        "number": 42,
+        "title": "Fix #7: Auto-solve hCaptcha with integrated solver & retry logic",
+        "state": "open",
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/flowese/UdioWrapper/pulls/42",
+          "html_url": "https://github.com/flowese/UdioWrapper/pull/42",
+          "diff_url": "https://github.com/flowese/UdioWrapper/pull/42.diff",
+          "patch_url": "https://github.com/flowese/UdioWrapper/pull/42.patch",
+          "merged_at": null
+        },
+        "body": "## Summary\n\nFixes #7 - 500 Server Error caused by hCaptcha challenges on Udio API.\n\nThis PR adds a fully integrated hCaptcha auto-solving system that actually works end-to-end, unlike the existing open PRs (#36-40) which either don't integrate the solver or have incomplete implementations.\n\n## Changes\n\n### New: `udio_wrapper/hcaptcha_solver.py`\n- `HCaptchaSolver` class with full hCaptcha solving pipeline\n- **Capsolver** support (CAPSOLVER_API_KEY env var) - most reliable for hCaptcha\n- **2captcha** support (CAPTCHA_API_KEY env var) - budget-friendly alternative\n- **Manual token input** fallback when no API key is configured\n- Dynamic sitekey extraction from Udio homepage (with fallback)\n- Token caching (110s TTL) to minimize API calls\n\n### Modified: `udio_wrapper/__init__.py`\n- **`make_request()`**: Automatic h-captcha-response header injection for POST requests\n- **Retry logic**: Detects 403/500/503 errors, clears cached token, retries with fresh solve\n- **Exponential backoff** on network/HTTP failures\n- **New constructor params**: `captcha_api_key` and `captcha_service` for simple setup\n- **Backward compatible**: Works without captcha key (falls back to manual input)\n\n## Usage\n\n```python\n# With Capsolver (recommended)\nfrom udio_wrapper import UdioWrapper\nwrapper = UdioWrapper(auth_token=\"your_token\", captcha_api_key=\"caps-...\")\n\n# With 2captcha\nwrapper = UdioWrapper(auth_token=\"your_token\", captcha_api_key=\"2cap-...\", captcha_service=\"2captcha\")\n\n# With env var\nexport CAPSOLVER_API_KEY=caps-...\nwrapper = UdioWrapper(auth_token=\"your_token\")\n\n# Without API key (manual input)\nwrapper = UdioWrapper(auth_token=\"your_token\")  # will prompt for token\nresult = wrapper.create_song(\"a happy jazz song\")\n```\n\n## Why this PR should be merged\n\n1. **Actually integrated** - Unlike #40 which adds a standalone solver file that's never imported\n2. **Functioning retry** - Detects failures, refreshes token, retries automatically\n3. **Multi-service** - Supports both Capsolver and 2captcha\n4. **Fallback chain** - Capsolver → 2captcha → manual input\n5. **Clean code** - Single class, clear responsibilities, no global state\n6. **Documented** - Clear error messages guide users through setup\n\n/claim #7\n\n---\nCloses #7"
+      }
+    }
+  },
+  {
+    "event": "cross-referenced",
+    "created_at": "2026-09-24T08:11:44Z",
+    "updated_at": "2026-09-24T08:11:44Z",
+    "source": {
+      "type": "issue",
+      "issue": {
+        "url": "https://api.github.com/repos/flowese/UdioWrapper/issues/50",
+        "html_url": "https://github.com/flowese/UdioWrapper/pull/50",
+        "id": 5565319737,
+        "number": 50,
+        "title": "fix: auto-solve hCaptcha to resolve 500 Server Error on generate-proxy (fixes #7)",
+        "state": "open",
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/flowese/UdioWrapper/pulls/50",
+          "html_url": "https://github.com/flowese/UdioWrapper/pull/50",
+          "diff_url": "https://github.com/flowese/UdioWrapper/pull/50.diff",
+          "patch_url": "https://github.com/flowese/UdioWrapper/pull/50.patch",
+          "merged_at": null
+        },
+        "body": "## What & Why\n\nUdio's `/generate-proxy` endpoint returns **HTTP 500** when its backend cannot verify a valid hCaptcha token (issue #7). This PR reproduces the web frontend's invisible-hCaptcha step programmatically: on a captcha-related failure it solves the challenge, injects the token, and retries.\n\n## Changes\n\n- **`udio_wrapper/hcaptcha_solver.py`** (new): solves the invisible hCaptcha challenge for `https://www.udio.com` (sitekey `2945592b-1928-43a9-8473-7e7fed3d752e`, verified from the live udio.com JS bundle) via **2captcha** or **Capsolver**. Configurable through constructor args or `CAPTCHA_API_KEY` / `CAPSOLVER_API_KEY` env vars.\n- **`UdioWrapper.make_request`**: now detects 403/500/503 captcha failures, refreshes the token, and retries with backoff (up to 3 attempts).\n- The solved token is injected as the `h-captcha-response` header and (for POSTs) as `captchaToken` in the payload.\n- **Graceful degradation**: with no API key the wrapper still retries on 5xx/403 and prints a hint, so existing code keeps working unchanged.\n\n## Usage\n\n```python\n# 2captcha\nudio_wrapper = UdioWrapper(auth_token, captcha_api_key=\"YOUR_2CAPTCHA_KEY\", captcha_service=\"2captcha\")\n# or Capsolver\nudio_wrapper = UdioWrapper(auth_token, captcha_api_key=\"YOUR_CAPSOLVER_KEY\", captcha_service=\"capsolver\")\n```\n\n## Test\n\nVerified with mocked requests: a 500 captcha response triggers token refresh + retry and succeeds on the second attempt; the token is correctly injected into both the header and the POST payload.\n\n/claim #7"
+      }
+    }
+  }
+]

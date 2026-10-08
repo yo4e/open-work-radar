@@ -1,0 +1,17 @@
+{
+  "number": 10,
+  "state": "open",
+  "title": "T&C compliance: AI disclosure, registration, demo video, eligibility",
+  "body": "## Parent\n#1\n\n## What to build\nSatisfy the Metropolis Hackathon Terms & Conditions (`docs/terms-and-conditions.md`) as\nmandatory requirements, not nice-to-haves. Disqualification is the failure mode here. Scope\nis deliberately limited to the compliance gates that issue #7 does NOT already cover — #7 owns\nREADME content, demo video script, and the bounty checklist.\n\n## Acceptance criteria\n\nFrom §4.1.1 — mandatory submission contents:\n- [x] Open source license present (MIT, added)\n- [ ] README states that AI coding tools were used, naming which (§4.1.4 — mandatory disclosure, currently a disqualification risk)\n- [ ] Public repo, commit history spanning the build window (1 Sep–13 Oct 2026)\n- [ ] Monad mainnet or testnet deployment evidenced by transaction hashes (§4.1.3, §9.2)\n\nFrom §4.1.2 and §9.4 — demo video:\n- [ ] Recorded, publicly accessible, **≤ 3 minutes hard** (§9.4), showing the product in actual operation including a real Monad transaction (§4.1.2)\n- [ ] Demonstrates a *successful* top-up, not the 503 out-of-stock path (#3 blocker)\n\nFrom §2 and §4.2 — eligibility and registration:\n- [ ] Team registered on hackathon.monad.xyz, 1–5 members (§2.4)\n- [ ] Primary contact designated as the prize recipient (§2.4, §6.1 — prizes paid to this wallet)\n- [ ] Team eligible: 18+, no sanctions-list jurisdiction (§2.1, §2.2)\n- [ ] Registered for exactly one track, submitting one project (§2.5 — multiple submissions disqualify)\n- [ ] Deadline booked: 13 Oct 2026, 11:59 PM ET, submitted via the website only (§4.2)\n\n## Blocked by\n- #3 — the demo video needs a funded relayer to show a real successful payment\n\n## Notes\nPrize pool is stated as $145,000 in T&C §3.2 but $250,000+ on the website; §3.2 notes sponsor\nbounties are added later. Plan against the T&C figure.\n\nThe exact submission checklist on hackathon.monad.xyz is still login-gated and unread — confirm\nagainst it before submitting.\n",
+  "html_url": "https://github.com/mandaputtra/ping-pong-pay/issues/10",
+  "repository_url": "https://api.github.com/repos/mandaputtra/ping-pong-pay",
+  "labels": [
+    {
+      "name": "ready-for-agent"
+    }
+  ],
+  "assignees": [],
+  "author_association": "OWNER",
+  "created_at": "2026-09-29T09:48:18Z",
+  "updated_at": "2026-10-05T11:18:02Z"
+}

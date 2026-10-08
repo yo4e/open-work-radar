@@ -124,6 +124,17 @@ A scan roughly:
 
 One broken source should not erase or invalidate the rest of the radar.
 
+Lifecycle evidence is bounded: the collector reads the first and last pages of
+GitHub comments and timeline events, so work PRs appearing only on intermediate
+pages can still be missed. Cross-reference events without a top-level ID are
+deduplicated by event type, source issue identity, and event creation time;
+events without enough identity are retained.
+
+Reward parsing excludes amounts attributed to an event's prize pool in both
+titles and bodies, while keeping separately stated task rewards, including on
+the same line. This remains an English keyword/context heuristic, not semantic
+verification of funding or a payout guarantee.
+
 ## What this project is not
 
 Open Work Radar is a **discovery and evaluation tool**, not an automated application bot.
