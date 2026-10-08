@@ -1,0 +1,111 @@
+[
+  {
+    "event": "cross-referenced",
+    "created_at": "2024-04-18T20:56:22Z",
+    "updated_at": "2024-04-18T20:56:22Z",
+    "source": {
+      "type": "issue",
+      "issue": {
+        "url": "https://api.github.com/repos/flowese/UdioWrapper/issues/6",
+        "html_url": "https://github.com/flowese/UdioWrapper/issues/6",
+        "id": 2249593910,
+        "number": 6,
+        "title": "TypeError: 'module' object is not callable",
+        "state": "closed",
+        "body": "How do you solve the problem !\r\nTypeError: 'module' object is not callable\n<br/>\n<hr/>\n\n<details><summary>This repo is using Opire - what does it means? 👇</summary><br/>💸Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount)<br/>💪 If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #6</code> either in the PR description or in a PR's comment<br/><br/>👀 Also, everyone can tip any user commenting <code>/tip 20 @su161021</code> (replace <code>20</code> with the amount, and <code>@su161021</code> with the user to tip)<br/><br/>If you want to learn more, go to our <a href=\"https://docs.opire.dev\">documentation</a></details>"
+      }
+    }
+  },
+  {
+    "event": "cross-referenced",
+    "created_at": "2024-04-18T20:56:35Z",
+    "updated_at": "2024-04-18T20:56:35Z",
+    "source": {
+      "type": "issue",
+      "issue": {
+        "url": "https://api.github.com/repos/flowese/UdioWrapper/issues/5",
+        "html_url": "https://github.com/flowese/UdioWrapper/issues/5",
+        "id": 2249593444,
+        "number": 5,
+        "title": "The python package I installed is not working ",
+        "state": "closed",
+        "body": "TypeError: 'module' object is not callable\n<br/>\n<hr/>\n\n<details><summary>This repo is using Opire - what does it means? 👇</summary><br/>💸Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount)<br/>💪 If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #5</code> either in the PR description or in a PR's comment<br/><br/>👀 Also, everyone can tip any user commenting <code>/tip 20 @su161021</code> (replace <code>20</code> with the amount, and <code>@su161021</code> with the user to tip)<br/><br/>If you want to learn more, go to our <a href=\"https://docs.opire.dev\">documentation</a></details>"
+      }
+    }
+  },
+  {
+    "event": "cross-referenced",
+    "created_at": "2024-07-20T18:22:01Z",
+    "updated_at": "2024-07-20T18:22:01Z",
+    "source": {
+      "type": "issue",
+      "issue": {
+        "url": "https://api.github.com/repos/flowese/UdioWrapper/issues/14",
+        "html_url": "https://github.com/flowese/UdioWrapper/pull/14",
+        "id": 2421005252,
+        "number": 14,
+        "title": "Martin pull request (Added nginx server for reverse proxy)",
+        "state": "open",
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/flowese/UdioWrapper/pulls/14",
+          "html_url": "https://github.com/flowese/UdioWrapper/pull/14",
+          "diff_url": "https://github.com/flowese/UdioWrapper/pull/14.diff",
+          "patch_url": "https://github.com/flowese/UdioWrapper/pull/14.patch",
+          "merged_at": null
+        },
+        "body": "/claim #7 "
+      }
+    }
+  },
+  {
+    "event": "cross-referenced",
+    "created_at": "2026-03-27T10:10:44Z",
+    "updated_at": "2026-03-27T10:10:44Z",
+    "source": {
+      "type": "issue",
+      "issue": {
+        "url": "https://api.github.com/repos/flowese/UdioWrapper/issues/18",
+        "html_url": "https://github.com/flowese/UdioWrapper/pull/18",
+        "id": 4151258921,
+        "number": 18,
+        "title": "[minerador] Resolve generic_api_2:01HW8CK374Y67WDDZG22BYVZQ4",
+        "state": "closed",
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/flowese/UdioWrapper/pulls/18",
+          "html_url": "https://github.com/flowese/UdioWrapper/pull/18",
+          "diff_url": "https://github.com/flowese/UdioWrapper/pull/18.diff",
+          "patch_url": "https://github.com/flowese/UdioWrapper/pull/18.patch",
+          "merged_at": null
+        },
+        "body": "Automated PR for task generic_api_2:01HW8CK374Y67WDDZG22BYVZQ4\n\nIssue: #7\n"
+      }
+    }
+  },
+  {
+    "event": "cross-referenced",
+    "created_at": "2026-04-06T12:02:07Z",
+    "updated_at": "2026-04-06T12:02:07Z",
+    "source": {
+      "type": "issue",
+      "issue": {
+        "url": "https://api.github.com/repos/flowese/UdioWrapper/issues/19",
+        "html_url": "https://github.com/flowese/UdioWrapper/pull/19",
+        "id": 4211498417,
+        "number": 19,
+        "title": "feat: Add NoPechA hCaptcha auto-solve integration",
+        "state": "open",
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/flowese/UdioWrapper/pulls/19",
+          "html_url": "https://github.com/flowese/UdioWrapper/pull/19",
+          "diff_url": "https://github.com/flowese/UdioWrapper/pull/19.diff",
+          "patch_url": "https://github.com/flowese/UdioWrapper/pull/19.patch",
+          "merged_at": null
+        },
+        "body": "# NoPechA hCaptcha Auto-Solve Integration for UdioWrapper\r\n\r\n## 🎯 Problem Solved\r\n\r\nUdio introduced hCaptcha protection in April 2024, which caused 500 Server Error when making API requests. Multiple contributors have attempted Selenium-based workarounds, but these still required frequent manual intervention.\r\n\r\nThis PR provides a robust solution with automatic hCaptcha solving using NoPechA's AI-powered service.\r\n\r\n## ✨ Features Added\r\n\r\n### 1. Hybrid Mode (`udio_wrapper_hybrid.py`)\r\n- Smart auto-detection of hCaptcha blocks\r\n- Seamless fallback to headless browser when needed\r\n- Playwright integration\r\n- Token injection into forms after solving\r\n\r\n### 2. NoPechA Client (`nopecha_client.py`)\r\n- General-purpose hCaptcha solver client\r\n- Automatic retry logic with exponential backoff\r\n- Quota management and detailed logging\r\n\r\n### 3. Easy Configuration\r\n```python\r\nclient = UdioWrapperHybrid(\r\n    auth_token=\"your_token\",\r\n    nopecha_api_key=\"your_nopecha_key\",\r\n    enable_browser_fallback=True,\r\n    max_retry_attempts=3\r\n)\r\n```\r\n\r\n<h2 style=\"box-sizing: border-box; color: rgb(60, 60, 67); font-family: Inter, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: -0.15px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">💰 Cost Analysis</h2>\r\nMetric | Value\r\n-- | --\r\nNoPechA Pricing | $1 USD = ~90,000 solutions\r\nCost per solve | ~$0.000011\r\nHeavy usage (10 songs/day) | ~$0.067/month\r\n\r\n<p style=\"box-sizing: border-box; margin: 0px; color: rgb(60, 60, 67); font-family: Inter, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.15px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">Even heavy users pay less than<span> </span><strong style=\"box-sizing: border-box;\">7 cents per month!</strong></p>\r\n\r\n\r\n🔧 Installation\r\n\r\npip install requests aiohttp playwright\r\nplaywright install chromium\r\nexport UDIO_AUTH_TOKEN=\"your_sb-api-auth-token\"\r\nexport NOPECHA_API_KEY=\"your_nopecha_key\"\r\n\r\n📚 Documentation\r\nREADME_HYBRID.md - Complete user guide\r\nnopecha_client.py - SDK with examples\r\nudio_wrapper_hybrid.py - Hybrid mode implementation\r\n\r\n\r\n🙏 Acknowledgments\r\nThanks to Flowese for the original UdioWrapper, jfarre20 for extensive research in Issue #7, and Pikachubolk for inspiring this NoPechA integration approach.\r\n\r\n📋 Related Issues\r\nFixes: #7 (500 Server Error - Auto Solve hcapcha)\r\n\r\nReady to bring UdioWrapper back to life! 🎵"
+      }
+    }
+  }
+]
