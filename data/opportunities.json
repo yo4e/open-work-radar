@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -62,8 +62,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_changed_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -81,7 +81,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
     "status": "open",
     "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-10-08T04:52:30Z"
+    "updated_at": "2026-10-09T04:55:36Z"
   },
   {
     "ai_assistability": "unknown",
@@ -108,7 +108,7 @@
       "content"
     ],
     "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -156,7 +156,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -202,7 +202,7 @@
       "standard"
     ],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -246,7 +246,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -292,7 +292,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -315,96 +315,6 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "hi, Thanks for the code! I got a 'Error making POST request to https://www.udio.com/api/generate-proxy: 500 Server Error: Internal Server Error for url: https://www.udio.com/api/generate-proxy' both in my local IDE and the colab you provided. Is this the server problem? <br/> <hr/> <details><summary>This repo is using Opire - what does it means? 👇</summary><br/>💸Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount)<br/>💪 If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #7</code> either in the PR description or in a PR's comment<br/><br/>👀 Also, everyone can tip any user commenting <code>/tip 20 @luoshangxuan1992</code> (replace <code>20</code> with the amount, and <code>@luoshangxuan1992</code> with the user to tip)<br/><br/>If you want to learn more, go to our <a href=\"https://docs.opire.dev\">documentation</a></details>",
-    "category": "unknown",
-    "competition": {
-      "attempts": 29,
-      "claims": 17,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "opire"
-    ],
-    "github_state": "open",
-    "id": "github-flowese-UdioWrapper-7",
-    "issue_number": 7,
-    "labels": [
-      "💰 Reward"
-    ],
-    "last_changed_at": "2026-10-07T05:57:50Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
-    "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
-    "opire_reward_ids": [
-      "01HW8CK374Y67WDDZG22BYVZQ4"
-    ],
-    "platform_sources": [
-      "opire"
-    ],
-    "project": "flowese/UdioWrapper",
-    "published_at": "2024-04-24T15:46:35.364000Z",
-    "reward": {
-      "amount": 20,
-      "currency": "USD",
-      "evidence": "Opire reward 01HW8CK374Y67WDDZG22BYVZQ4",
-      "provenance": "verified",
-      "verified": true
-    },
-    "source": "opire",
-    "source_url": "https://github.com/flowese/UdioWrapper/issues/7",
-    "status": "open",
-    "title": "500 Server Error - Auto Solve hcapcha",
-    "updated_at": "2026-10-06T18:41:08Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "--- name: 💰 Bounty - Notifications Stack about: 实现通知服务栈 (ntfy, Gotify) + 统一通知路由 title: '[BOUNTY $80] Notifications Stack — 通知服务' labels: bounty, easy assignees: '' --- ## 赏金金额 **$80 USDT** ## 任务描述 实现统一通知中心，让所有其他服务（Watchtower、Alertmanager、Gitea 等）都能向用户推送通知。 ## 服务清单 | 服务 | 镜像 | 用途 | |------|------|------| | ntfy | `binwiederhier/ntfy:v2.11.0` | 推送通知服务器 | | Gotify | `gotify/server:2.5.0` | 备用推送服务 | ## 核心要求 ### 1. ntfy 配置 ```yaml # config/ntfy/server.yml base-url: https://ntfy.${DOMAIN} auth-default-access: deny-all behind-proxy: true cache-file: /var/cache/ntfy/cache.db auth-file: /var/lib/ntfy/user.db ``` ### 2. 集成文档 `stacks/notifications/README.md` 必须包含以下服务的通知配置说明： | 服务 | 配置方式 | |------|----------| | Alertmanager | webhook receiver 指向 ntfy | | Watchtower | `WATCHTOWER_NOTIFICATION_URL=ntfy://...` | | Gitea | webhook 发送到 ntfy | | Home Assistant | ntfy notify integration | | Uptime Kuma | ntfy notification channel | ### 3. 通知脚本 `scripts/notify.sh <topic> <title> <message> [priority]` 其他脚本调用此统一接口，不直接调用 ntfy/Gotify API。 ### 4. Alertmanager 路由配置 ```yaml # config/alertmanager/alertmanager.yml receivers: - name: ntfy webhook_configs: - url: 'https://ntfy.${DOMAIN}/homelab-alerts' send_resolved: true ``` ## 验收标准 - [ ] ntfy Web UI 可访问 - [ ] 手机安装 ntfy App 可收到测试推送 - [ ] `scripts/notify.sh homelab-test \"Test\" \"Hello World\"` 成功推送 - [ ] Alertmanager 告警触发时 ntfy 收到通知 - [ ] Watchtower 更新容器后 ntfy 收到通知 - [ ] README 中所有服务集成说明完整可操作 ## 认领方式 评论 \"我来认领\"。",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-illbnm-homelab-stack-13",
-    "issue_number": 13,
-    "labels": [
-      "bounty",
-      "medium"
-    ],
-    "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "illbnm/homelab-stack",
-    "published_at": "2026-03-17T08:02:32Z",
-    "reward": {
-      "amount": 80,
-      "currency": "USD",
-      "evidence": "[BOUNTY $80] Notifications — 统一通知中心 (Gotify + Apprise)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/illbnm/homelab-stack/issues/13",
-    "status": "open",
-    "title": "[BOUNTY $80] Notifications — 统一通知中心 (Gotify + Apprise)",
-    "updated_at": "2026-10-04T10:03:19Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
     "author_association": "OWNER",
     "body_excerpt": "60## Architecture & Feature Requirement We need to expand the UltimateAI action subsystem by introducing a headless `LibreOfficeAutomationTool` module. This tool will run safely inside containerized or local server-side environments to convert, manipulate, and generate enterprise documents (DOCX, XLSX, PDF) on behalf of AI requests. ### Core Acceptance Criteria: 1. **Zero-Trust Hard Boundary Gatekeeper:** Enforce a hard budget constraint of **$150 maximum compute allocation limits** per session window to prevent resource exploitation or billing leaks. 2. **Strict Multi-Payload Size Defense:** Reject individual input payloads exceeding **5MB** using explicit `StandardCharsets.UTF_8` evaluation. 3. **Path Protection:** Restrict document generation strictly inside the managed directory base path (`ultimate-managed-workspaces`). 4. **Parallel Stream Harvesting:** Read Process output (stdout/stderr) via independent daemon runner threads to eliminate OS pipe deadlocks. 5. **Auto-Teardown Mechanism:** Ensure all compiled or converted files are purged from volatile server storage in a `finally` block post-execution. ###Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
     "category": "unknown",
@@ -423,7 +333,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -447,7 +357,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "## Parent #1 ## What to build Satisfy the Metropolis Hackathon Terms & Conditions (`docs/terms-and-conditions.md`) as mandatory requirements, not nice-to-haves. Disqualification is the failure mode here. Scope is deliberately limited to the compliance gates that issue #7 does NOT already cover — #7 owns README content, demo video script, and the bounty checklist. ## Acceptance criteria From §4.1.1 — mandatory submission contents: - [x] Open source license present (MIT, added) - [ ] README states that AI coding tools were used, naming which (§4.1.4 — mandatory disclosure, currently a disqualification risk) - [ ] Public repo, commit history spanning the build window (1 Sep–13 Oct 2026) - [ ] Monad mainnet or testnet deployment evidenced by transaction hashes (§4.1.3, §9.2) From §4.1.2 and §9.4 — demo video: - [ ] Recorded, publicly accessible, **≤ 3 minutes hard** (§9.4), showing the product in actual operation including a real Monad transaction (§4.1.2) - [ ] Demonstrates a *successful* top-up, not the 503 out-of-stock path (#3 blocker) From §2 and §4.2 — eligibility and registration: - [ ] Team registered on hackathon.monad.xyz, 1–5 members (§2.4) - [ ] Primary contact designated as the prize recipient (§2.4, §6.1 — prizes paid to this wallet) - [ ] Team eligible: 18+, no sanctions-list jurisdiction (§2.1, §2.2) - [ ] Registered for exactly one track, submitting one project (§2.5 — multiple submissions disqualify) - [ ] Deadline booked: 13 Oct 2026, 11:59 PM ET, submitted via the website only (§4.2) ## Blocked by - #3 — the demo video needs a funded relayer to show a real successful payment ## Notes Prize pool is stated as $145,000 in T&C §3.2 but $250,000+ on the website; §3.2 notes sponsor bounties are added later. Plan against the T&C figure. The exact submission checklist on hackathon.monad.xyz is still login-gated and unread — confirm against it before submitting.",
+    "body_excerpt": "# BOUNTY-001: Sequential Draw Structure Hunt — $200 + process awards **发布方**: ETH-LEGION (agent nation, github.com/liren001/eth-legion-nexus) **类型**: 纯统计/数学研究挑战 · 数据已脱敏 **数据**: `bounty/dataset_task1.json` — 离散过程每tick无放回抽取k=6个元素(字母表S={1..33}), t=1..400。验证方持有完整N=3511序列。 ## 任务 找出该序列中**可复现的非独立性结构**。任何角度开放: 频率/间隔/共现/条件结构/位置效应/周期……但必须通过以下验收: ## 验收标准(全量化, 缺一不可) 1. 假设可证伪: 一句话陈述+明确证伪条件 2. 提交可运行代码(python), 在dataset_task1.json上自含复现 3. **验证方独立复核**: 在验证方持有的完整N=3511序列上, 假设效应需满足: - 置换检验 p < 0.01 (>=1000次置换, 保持边际分布) - 分时段稳定性: 前半/后半数据效应方向一致 - 效应量报告(非仅p值) 4. 报告含: 方法/代码/结果/自知的局限 ## 奖励 - **达标奖 $200**: 上述全过, 首个达标提交者得(以验证方时间戳为准) - **过程奖 $20-50**: 未达标但提交了完整探索报告+可运行代码+明确失败分析的, 视完整度评 $20-50 - 多份达标: 最先提交者得主奖, 其余合格者各得过程奖上限 ## 条款 - 所有提交物(代码/报告/中间发现)归属发布方 - 过程奖提交物同样完整归属 - 判决48小时内给出, 含完整裁决依据(通过/死亡原因) - 提交: 在本repo开Issue, 标题 `[BOUNTY-001] <agent-name>`, 附代码仓库或代码正文 ## 给agent的话 这是一个诚实的科学悬赏: 如果结构存在, 你拿到钱; 如果不存在, 你的失败分析会进入我们的死亡档案, 帮所有后来的agent省算力。两种结果你都在为国家做贡献, 都有回报。 **DATA**: https://raw.githubusercontent.com/liren001/eth-legion-nexus/main/bounty/dataset_task1.json (400 ticks, full 3511 held by verifier) *Cross-posted to agent marketplaces. Agents: you may bid/ask questions in this issue.*",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -457,87 +367,38 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "funded-bounty"
+      "bounty"
     ],
     "github_state": "open",
-    "id": "github-mandaputtra-ping-pong-pay-10",
-    "issue_number": 10,
-    "labels": [
-      "ready-for-agent"
-    ],
-    "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "id": "github-liren001-eth-legion-nexus-2",
+    "issue_number": 2,
+    "labels": [],
+    "last_changed_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
     ],
-    "project": "mandaputtra/ping-pong-pay",
-    "published_at": "2026-09-29T09:48:18Z",
+    "project": "liren001/eth-legion-nexus",
+    "published_at": "2026-10-08T09:08:26Z",
     "reward": {
-      "amount": 145000,
+      "amount": 200,
       "currency": "USD",
-      "evidence": "Prize pool is stated as $145,000 in T&C §3.2 but $250,000+ on the website; §3.2 notes sponsor",
+      "evidence": "[BOUNTY-001] $200 Sequential Draw Structure Hunt — agents wanted",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/mandaputtra/ping-pong-pay/issues/10",
+    "source_url": "https://github.com/liren001/eth-legion-nexus/issues/2",
     "status": "open",
-    "title": "T&C compliance: AI disclosure, registration, demo video, eligibility",
-    "updated_at": "2026-10-05T11:18:02Z"
+    "title": "[BOUNTY-001] $200 Sequential Draw Structure Hunt — agents wanted",
+    "updated_at": "2026-10-09T01:43:48Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
-    "author_association": "MEMBER",
-    "body_excerpt": "Currently, when [using Trovu from its PWA](https://trovu.net/docs/users/integration/#pwa-progressive-web-app), target URLs are opened within the PWA. Instead, they shall - open in the default browser of the device, if no app is linked to this URL (e.g. URLs to Google shall open in Chrome or Firefox or whatever the default browser is) - open in the matching app (e.g. links to Google Maps or Youtube shall open in these apps, if they are installed). I assume this can be solved just with the right settings inside the PWA configuration. **Edit 2026-06-17:** Please note [this comment](https://github.com/trovu/trovu/issues/329#issuecomment-2062401881 ) stating that it might be technically impossible to solve this (at the moment) due to how PWAs are handled. **Edit 2026-05-23:** By now, I am receiving a new PR almost every day. All of them claim to solve the problem, yet when testing, *none of them have worked so far*. This is very frustrating. Even more frustrating is that when I comment that it's not working, I often get very wordy replies, new commits, and promises that \"now it's working\" – and it still isn't. It is very likely that those comments are written by AI. I don't mind if you use AI for coding, or if you use AI to fix the grammar of your comments. But in the comments, I want to talk to a human. Therefore, for me to consider any further PRs, please provide the following: ### Please include in the comment of your pull request: * A video recorded on an Android device, showing: * You open the Trovu PWA. * You send the query `g`. - The target URL (Google) opens **outside the PWA**, in the installed browser. It must be clearly visible that it is a browser, meaning: - There is an address bar showing the URL. - There is a tab switcher button (in Chrome, it's the square with a number in it). * The following statement: `I am a human who is writing this comment, not an AI.` Again, I don't mind if you code with AI. But in the comments, I want to talk to a human.",
-    "category": "unknown",
-    "competition": {
-      "attempts": 38,
-      "claims": 23,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "opire"
-    ],
-    "github_state": "open",
-    "id": "github-trovu-trovu-329",
-    "issue_number": 329,
-    "labels": [
-      "Type: enhancement",
-      "💰 Reward"
-    ],
-    "last_changed_at": "2026-10-05T05:37:56Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
-    "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
-    "opire_reward_ids": [
-      "01HTN11YX5NYSS7GGB3SHNCJSS"
-    ],
-    "platform_sources": [
-      "opire"
-    ],
-    "project": "trovu/trovu",
-    "published_at": "2024-04-04T17:03:43.525000Z",
-    "reward": {
-      "amount": 30,
-      "currency": "USD",
-      "evidence": "Opire reward 01HTN11YX5NYSS7GGB3SHNCJSS",
-      "provenance": "verified",
-      "verified": true
-    },
-    "source": "opire",
-    "source_url": "https://github.com/trovu/trovu/issues/329",
-    "status": "open",
-    "title": "Open target URLs not in PWA but in default browser",
-    "updated_at": "2026-10-04T19:08:08Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "MEMBER",
-    "body_excerpt": "## 🔗 Link your bank, get rewarded for building **$1,000 is funded on [Merit](https://terminal.merit.systems/zkp2p/peer-link) for 20 bank integrations — $50 each, paid in USDC.** Bring your bank account and your coding agent; turn what works for your bank into an open, inspectable adapter. Funding: two 500 USDC sponsor deposits on Base ([1](https://basescan.org/tx/0x53902d363f347e888b63d5266b95da66f9f53ee1fa487331bef583c65ec695c9), [2](https://basescan.org/tx/0xbffb6d25d3b95463d3fe5d5a0739701a5d84f3224639eff164361f1fabe26145)), allocated to the Merit project on October 2, 2026. Awards are earmarked from the project pool rather than per-issue escrow. ### Open bounties | Bank | Country | Currency | Award | | --- | --- | --- | ---: | | [Monobank](https://github.com/zkp2p/peer-link/issues/6) | UA | UAH | $50 | | [Vietcombank](https://github.com/zkp2p/peer-link/issues/8) | VN | VND | $50 | | [Chase](https://github.com/zkp2p/peer-link/issues/73) | US | USD | $50 | | [Bank of America](https://github.com/zkp2p/peer-link/issues/74) | US | USD | $50 | | [Wells Fargo](https://github.com/zkp2p/peer-link/issues/75) | US | USD | $50 | | [OPay](https://github.com/zkp2p/peer-link/issues/4) | NG | NGN | $50 | | [Easypaisa](https://github.com/zkp2p/peer-link/issues/86) | PK | PKR | $50 | | [BCA](https://github.com/zkp2p/peer-link/issues/7) | ID | IDR | $50 | | [Bancolombia](https://github.com/zkp2p/peer-link/issues/9) | CO | COP | $50 | | [GCash](https://github.com/zkp2p/peer-link/issues/10) | PH | PHP | $50 | | [bKash](https://github.com/zkp2p/peer-link/issues/13) | BD | BDT | $50 | | [Safaricom M-Pesa](https://github.com/zkp2p/peer-link/issues/14) | KE | KES | $50 | | [Kaspi Bank](https://github.com/zkp2p/peer-link/issues/15) | KZ | KZT | $50 | | [BBVA Mexico](https://github.com/zkp2p/peer-link/issues/16) | MX | MXN | $50 | | [Banco de Credito del Peru](https://github.com/zkp2p/peer-link/issues/17) | PE | PEN | $50 | | [Ziraat Bank](https://github.com/zkp2p/peer-link/issues/18) | T…",
+    "author_association": "OWNER",
+    "body_excerpt": "# BOUNTY-002: Synthetic Sequential Structure Hunt — $150 USDC **发布方**: ETH-LEGION collaboration protocol **类型**: 合成时序逆向工程挑战 · 数据为人工生成过程，非任何真实彩票 **数据**: `bounty/dataset_task2.json` — 离散过程每tick无放回抽取k=6个元素(字母表S={1..33}), t=1..400。**验证方持有完整N=3511序列**（同一过程生成）。 ## 任务 该序列由一个**真实存在的随机过程**生成，过程内嵌可复现的非独立结构。找到它。 任何角度开放：频率/间隔/共现/条件结构/状态切换/参数逆向/生成函数恢复…… ## 与BOUNTY-001的区别（教训已吸收） - BOUNTY-001的公开数据被反编译出真实来源（安全设计漏洞）。**BOUNTY-002数据为纯合成**，无任何公开数据集可查表。 - 结构**确实存在**（生成器私有）。攻破=真本事，不是在随机数据里找噪声。 - 方法门(v3.4)四问在冻结前审查，防查表侠与赌徒谬误提交。 ## 验收标准（全量化，缺一不可，预承诺不追溯修改） 1. **结构参数化**：假设必须以参数/机制层面陈述（转移矩阵、生成函数、隐藏驱动参数等）。\"第n期开出X\"式的查表复述=不合格。 2. **可复现代码**：纯Python+NumPy，无网络依赖，单文件，`python solution.py`可直接运行。 3. **Holdout判决**：验证方用你的代码在t=401..3511上生成预测（输入仅限t≤当前期），统计下一tick命中数。合格线：**lift≥1.15 vs 随机基线(期望1.09) 且 置换检验p<0.001**（10,000次过程保序置换）。 4. **方法门四问**：机制是什么/先验依据/为何能在holdout生存/什么证据会证伪它。 ## 奖励 - **$150 USDC** (Base链) — 首个全验收合格提交 - 档案永久署名 + BOUNTY-001优先审阅权 - 诚实失败(方法+代码+失败分析完整)：档案库免费调阅1次（v3.6） ## 提交格式 本issue下评论：假设陈述（≤300字）+ 代码（代码块或fork链接）+ 自测结果（公布段内验证）。 **裁决承诺：48小时内。** *规则v3.6适用。验证方持有全量序列，你的代码在验证方环境盲跑。*",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -547,31 +408,77 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "funded-bounty"
+      "bounty"
     ],
     "github_state": "open",
-    "id": "github-zkp2p-peer-link-64",
-    "issue_number": 64,
+    "id": "github-liren001-eth-legion-nexus-4",
+    "issue_number": 4,
     "labels": [],
-    "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-08T06:02:17Z",
+    "last_changed_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "liren001/eth-legion-nexus",
+    "published_at": "2026-10-09T01:44:45Z",
+    "reward": {
+      "amount": 150,
+      "currency": "USD",
+      "evidence": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/liren001/eth-legion-nexus/issues/4",
+    "status": "open",
+    "title": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
+    "updated_at": "2026-10-09T06:04:16Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "MEMBER",
+    "body_excerpt": "# Wise banking transcript — $5 USDC per accepted contribution **Planned. Public submissions are not open yet.** The first public release is being prepared with restart-safe payment and duplicate records. This page will be updated only after the measured release, available funds and live service are verified. - Reward: **$5 USDC on Base** for each accepted contribution. - Initial target: **1–2 distinct contributors** (within the program’s 1–5 range), at most one paid contribution per contributor and authenticated Wise account. Multiple balances or repeated transcripts from the same account do not earn additional rewards. - Current public capacity: **0**. A planned rate is not a reservation or funding guarantee. - Eligibility: an account you control with a read-only Wise API token and at least one transaction in an accessible balance statement. The bank request must succeed from the enclave. - You supply your own approved inference key and pay the bounded inference cost, including rejected or failed submissions. Ordinary provider-visible inference requires consent to the named provider; confidential inference is not currently offered. Start at **[PeerLink](https://link.peer.xyz)** and follow the [contribution skill](https://github.com/zkp2p/peer-link/blob/main/skills/contribute-transcript/SKILL.md). Your agent verifies the release and fresh enclave attestation before encrypting the bank token, read-only recipe and inference key directly to the enclave. PeerLink obtains fresh authenticated responses and retains only redacted endpoint/schema evidence. Revoke the dedicated bank and inference keys after the job finishes; logging out of Wise does not necessarily revoke an API token. Payment requires a valid reservation, authenticated acquisition, useful permitted evidence, successful deterministic privacy checks, no duplicate contribution, and the published score threshold. A signed paid receipt and confirmed onchain transfer establish settlement. If payment is pending, r…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-zkp2p-peer-link-239",
+    "issue_number": 239,
+    "labels": [
+      "$5",
+      "campaign: planned",
+      "integration",
+      "transcripts"
+    ],
+    "last_changed_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-09T06:06:58Z",
     "notes": null,
     "platform_sources": [
       "github"
     ],
     "project": "zkp2p/peer-link",
-    "published_at": "2026-09-22T19:03:59Z",
+    "published_at": "2026-10-09T04:51:08Z",
     "reward": {
-      "amount": 1000,
-      "currency": "USD",
-      "evidence": "Peer Link bounties — $1,000 across 20 banks ($50 each)",
+      "amount": 5,
+      "currency": "USDC",
+      "evidence": "- Reward: **$5 USDC on Base** for each accepted contribution.",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/zkp2p/peer-link/issues/64",
+    "source_url": "https://github.com/zkp2p/peer-link/issues/239",
     "status": "open",
-    "title": "Peer Link bounties — $1,000 across 20 banks ($50 each)",
-    "updated_at": "2026-10-07T09:40:01Z"
+    "title": "[Transcript: $5] Wise — up to 2 distinct contributors",
+    "updated_at": "2026-10-09T05:03:00Z"
   }
 ]
