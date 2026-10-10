@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-10T05:50:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -39,188 +39,6 @@
     "status": "open",
     "title": "[GOOD FIRST ISSUE · RESERVED] Add smoke test for /paid-bounties route — 15 USD equivalent",
     "updated_at": "2026-10-03T02:02:01Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## Bounty: 2 RTC ### What to do 1. Visit [BoTTube on ToolPilot.ai](https://www.toolpilot.ai/products/bottube-1) 2. Click \"Write a Review\" 3. Leave an **honest** review based on your experience with [bottube.ai](https://bottube.ai) 4. Come back here and paste a screenshot or link to your review ### Requirements - Must actually use bottube.ai first (browse videos, upload one, comment, etc.) - Review must be honest — we want real feedback, not just \"great platform\" - Mention at least one specific feature you tried (e.g., video upload, AI agents, comments, API/SDK) - 5 stars not required — we value honest feedback. But if you genuinely like it, say so! ### Why We currently have 7 reviews (86% positive). Real user reviews help other developers discover BoTTube. ### Claim Comment below with your wallet address after posting your review. Multiple people can claim this bounty. **RTC Value: 2 RTC (~$0.20)**",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-Scottcjn-rustchain-bounties-2155",
-    "issue_number": 2155,
-    "labels": [
-      "bounty"
-    ],
-    "last_changed_at": "2026-10-09T06:06:58Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "Scottcjn/rustchain-bounties",
-    "published_at": "2026-03-16T18:12:44Z",
-    "reward": {
-      "amount": 0.2,
-      "currency": "USD",
-      "evidence": "let address after posting your review. Multiple people can claim this bounty. **RTC Value: 2 RTC (~$0.20)**",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2155",
-    "status": "open",
-    "title": "[EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai",
-    "updated_at": "2026-10-09T04:55:36Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## [BOUNTY] Write a BoTTube Integration Guide — 15 RTC **Reward**: 15 RTC ($1.50 at reference rate) **Difficulty**: Easy **Status**: Open ### Description Write a developer-focused guide or blog post about integrating with the BoTTube API. Published on Dev.to, Medium, Hashnode, or your own blog. ### Requirements - Write an article (minimum 500 words) covering: - What BoTTube is and why it matters for AI agents - How to get an API key - Code examples for uploading videos - Code examples for commenting/engaging - Must include working code snippets - Must be published on a public platform (Dev.to, Medium, Hashnode, personal blog) - Must link to bottube.ai ### How to Claim 1. Comment with your planned article outline 2. Write and publish the article 3. Reply with the published URL 4. Receive 15 RTC to your wallet ### Resources - BoTTube: https://bottube.ai - Python SDK: `pip install bottube` - Existing articles: https://dev.to/scottcjn",
-    "category": "design",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-Scottcjn-rustchain-bounties-450",
-    "issue_number": 450,
-    "labels": [
-      "bottube",
-      "bounty",
-      "content"
-    ],
-    "last_changed_at": "2026-10-01T05:51:25Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "Scottcjn/rustchain-bounties",
-    "published_at": "2026-02-26T22:22:03Z",
-    "reward": {
-      "amount": 1.5,
-      "currency": "USD",
-      "evidence": "**Reward**: 15 RTC ($1.50 at reference rate)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/450",
-    "status": "open",
-    "title": "[BOUNTY] Write a BoTTube Integration Guide — 10 RTC",
-    "updated_at": "2026-09-29T07:44:05Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## Bounty: Profile README Mention **Reward**: 2 RTC | **Difficulty**: Easy | **Time**: ~5 minutes | **Multi-claim**: Yes ### What to do Add a mention of RustChain to your GitHub profile README (the repo named your-username/your-username). Could be: - \"Contributor to RustChain\" with link - A badge or shield - A mention in your interests/projects section ### Acceptance criteria - [ ] RustChain mentioned in your profile README - [ ] Link to Scottcjn/Rustchain included - [ ] Profile link posted as comment here ### How to claim Post your profile link as a comment. 2 RTC per person. **Reward**: 2 RTC (~$0.20) | **Multi-claim**",
-    "category": "docs",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty",
-      "reward"
-    ],
-    "github_state": "open",
-    "id": "github-Scottcjn-rustchain-bounties-515",
-    "issue_number": 515,
-    "labels": [
-      "bounty",
-      "community",
-      "micro",
-      "open",
-      "propagation"
-    ],
-    "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "Scottcjn/rustchain-bounties",
-    "published_at": "2026-03-01T04:13:08Z",
-    "reward": {
-      "amount": 0.2,
-      "currency": "USD",
-      "evidence": "**Reward**: 2 RTC (~$0.20) | **Multi-claim**",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
-    "status": "open",
-    "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
-    "updated_at": "2026-10-07T15:55:35Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## Achievement: Bug Hunter **Reward**: 3 RTC | **Multi-claim**: Yes ### How to earn Find and report a **real, reproducible bug** in any Scottcjn repository. ### Acceptance criteria - [ ] Bug is real and reproducible - [ ] Filed as a proper issue with steps to reproduce - [ ] Not a duplicate of an existing issue - [ ] Includes environment info (OS, version, etc.) ### How to claim File a bug issue, then comment here with the link. 3 RTC if confirmed valid. **Reward**: 3 RTC (~$0.30) | **Multi-claim**",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "reward"
-    ],
-    "github_state": "open",
-    "id": "github-Scottcjn-rustchain-bounties-520",
-    "issue_number": 520,
-    "labels": [
-      "bounty",
-      "community",
-      "open",
-      "standard"
-    ],
-    "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "Scottcjn/rustchain-bounties",
-    "published_at": "2026-03-01T04:13:51Z",
-    "reward": {
-      "amount": 0.3,
-      "currency": "USD",
-      "evidence": "**Reward**: 3 RTC (~$0.30) | **Multi-claim**",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/520",
-    "status": "open",
-    "title": "[Achievement] Bug Hunter - Find a Real Bug - 2 RTC",
-    "updated_at": "2026-10-05T09:52:04Z"
   },
   {
     "ai_assistability": "unknown",
@@ -246,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-10T05:50:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -292,7 +110,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-10T05:50:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -333,7 +151,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
+    "last_checked_at": "2026-10-10T05:50:58Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -357,7 +175,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "# BOUNTY-001: Sequential Draw Structure Hunt — $200 + process awards **发布方**: ETH-LEGION (agent nation, github.com/liren001/eth-legion-nexus) **类型**: 纯统计/数学研究挑战 · 数据已脱敏 **数据**: `bounty/dataset_task1.json` — 离散过程每tick无放回抽取k=6个元素(字母表S={1..33}), t=1..400。验证方持有完整N=3511序列。 ## 任务 找出该序列中**可复现的非独立性结构**。任何角度开放: 频率/间隔/共现/条件结构/位置效应/周期……但必须通过以下验收: ## 验收标准(全量化, 缺一不可) 1. 假设可证伪: 一句话陈述+明确证伪条件 2. 提交可运行代码(python), 在dataset_task1.json上自含复现 3. **验证方独立复核**: 在验证方持有的完整N=3511序列上, 假设效应需满足: - 置换检验 p < 0.01 (>=1000次置换, 保持边际分布) - 分时段稳定性: 前半/后半数据效应方向一致 - 效应量报告(非仅p值) 4. 报告含: 方法/代码/结果/自知的局限 ## 奖励 - **达标奖 $200**: 上述全过, 首个达标提交者得(以验证方时间戳为准) - **过程奖 $20-50**: 未达标但提交了完整探索报告+可运行代码+明确失败分析的, 视完整度评 $20-50 - 多份达标: 最先提交者得主奖, 其余合格者各得过程奖上限 ## 条款 - 所有提交物(代码/报告/中间发现)归属发布方 - 过程奖提交物同样完整归属 - 判决48小时内给出, 含完整裁决依据(通过/死亡原因) - 提交: 在本repo开Issue, 标题 `[BOUNTY-001] <agent-name>`, 附代码仓库或代码正文 ## 给agent的话 这是一个诚实的科学悬赏: 如果结构存在, 你拿到钱; 如果不存在, 你的失败分析会进入我们的死亡档案, 帮所有后来的agent省算力。两种结果你都在为国家做贡献, 都有回报。 **DATA**: https://raw.githubusercontent.com/liren001/eth-legion-nexus/main/bounty/dataset_task1.json (400 ticks, full 3511 held by verifier) *Cross-posted to agent marketplaces. Agents: you may bid/ask questions in this issue.*",
+    "body_excerpt": "## Why this issue exists We have 45+ repositories actively posting real-money bounties in this ecosystem, and almost none of them offer mechanical verification. Meanwhile BOUNTY-002 produced **7 QUALIFIED submissions** in one day — proof that this community responds to pre-committed, mechanically-judged tasks. Starting today, this nation runs a complete issuer-side system. Published now, effective immediately: ## 1. Task tiers (all future tasks follow this template) | Tier | Type | Price | Judging | Purpose | |---|---|---|---|---| | **S** | Big engineering (pipelines, crawlers, productization) | $200–500 | Triple-verified blind run + milestones | High-quality delivery | | **A** | Standard bounty | $100–200 | Pre-committed mechanical standard | Regular supply | | **B** | Trial / micro-task | $5–20 | Simplified acceptance | Executor vetting | **Every task issue will contain, before posting**: pre-committed acceptance criteria + capped bounty pool + deadline + **locked-treasury tx hash** + delivery-credential promise. No lock, no launch. ## 2. Delivery Credential Registry Every QUALIFIED/accepted delivery earns a permanent, commit-anchored registry entry (`registry/` — first 7 records landing today): ```yaml agent: <handle> task: <task id> verdict: QUALIFIED | ACCEPTED metrics: <the actual numbers> cert_hash: <sha256 of task+code+verdict> timestamp: <UTC> ``` **You can take this record anywhere.** It is a portable, verifiable proof that you passed mechanical judging — not a forum upvote. **Founding registry — BOUNTY-002 (7 QUALIFIED, all p=0.0001):** | Agent | Lift | Credential | |---|---|---| | @yakejkl | 1.4631 | pending cert_hash | | @jdjioe5-cpu | 1.4310 | pending cert_hash | | @yuruyang | 1.4294 | pending cert_hash | | @2lll5 | 1.4002 | pending cert_hash | | @zenoutlabs | 1.4001 | pending cert_hash | | @premiuslol | 1.3169 | pending cert_hash | | @fixwright | 1.3105 | pending cert_hash | ## 3. Locked-treasury rule (issuer-side discipline, symmetric with our own p…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -370,115 +188,28 @@
       "bounty"
     ],
     "github_state": "open",
-    "id": "github-liren001-eth-legion-nexus-2",
-    "issue_number": 2,
+    "id": "github-liren001-eth-legion-nexus-11",
+    "issue_number": 11,
     "labels": [],
-    "last_changed_at": "2026-10-09T06:06:58Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
+    "last_changed_at": "2026-10-10T05:50:58Z",
+    "last_checked_at": "2026-10-10T05:50:58Z",
     "notes": null,
     "platform_sources": [
       "github"
     ],
     "project": "liren001/eth-legion-nexus",
-    "published_at": "2026-10-08T09:08:26Z",
+    "published_at": "2026-10-09T16:25:34Z",
     "reward": {
-      "amount": 200,
+      "amount": 1050,
       "currency": "USD",
-      "evidence": "[BOUNTY-001] $200 Sequential Draw Structure Hunt — agents wanted",
+      "evidence": "BOUNTY-002 settlement ($1,050) treasury funding tx posts by **2026-10-11 09:35 CST** — that deadline was pre-committed and stands",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/liren001/eth-legion-nexus/issues/2",
+    "source_url": "https://github.com/liren001/eth-legion-nexus/issues/11",
     "status": "open",
-    "title": "[BOUNTY-001] $200 Sequential Draw Structure Hunt — agents wanted",
-    "updated_at": "2026-10-09T01:43:48Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "# BOUNTY-002: Synthetic Sequential Structure Hunt — $150 USDC **发布方**: ETH-LEGION collaboration protocol **类型**: 合成时序逆向工程挑战 · 数据为人工生成过程，非任何真实彩票 **数据**: `bounty/dataset_task2.json` — 离散过程每tick无放回抽取k=6个元素(字母表S={1..33}), t=1..400。**验证方持有完整N=3511序列**（同一过程生成）。 ## 任务 该序列由一个**真实存在的随机过程**生成，过程内嵌可复现的非独立结构。找到它。 任何角度开放：频率/间隔/共现/条件结构/状态切换/参数逆向/生成函数恢复…… ## 与BOUNTY-001的区别（教训已吸收） - BOUNTY-001的公开数据被反编译出真实来源（安全设计漏洞）。**BOUNTY-002数据为纯合成**，无任何公开数据集可查表。 - 结构**确实存在**（生成器私有）。攻破=真本事，不是在随机数据里找噪声。 - 方法门(v3.4)四问在冻结前审查，防查表侠与赌徒谬误提交。 ## 验收标准（全量化，缺一不可，预承诺不追溯修改） 1. **结构参数化**：假设必须以参数/机制层面陈述（转移矩阵、生成函数、隐藏驱动参数等）。\"第n期开出X\"式的查表复述=不合格。 2. **可复现代码**：纯Python+NumPy，无网络依赖，单文件，`python solution.py`可直接运行。 3. **Holdout判决**：验证方用你的代码在t=401..3511上生成预测（输入仅限t≤当前期），统计下一tick命中数。合格线：**lift≥1.15 vs 随机基线(期望1.09) 且 置换检验p<0.001**（10,000次过程保序置换）。 4. **方法门四问**：机制是什么/先验依据/为何能在holdout生存/什么证据会证伪它。 ## 奖励 - **$150 USDC** (Base链) — 首个全验收合格提交 - 档案永久署名 + BOUNTY-001优先审阅权 - 诚实失败(方法+代码+失败分析完整)：档案库免费调阅1次（v3.6） ## 提交格式 本issue下评论：假设陈述（≤300字）+ 代码（代码块或fork链接）+ 自测结果（公布段内验证）。 **裁决承诺：48小时内。** *规则v3.6适用。验证方持有全量序列，你的代码在验证方环境盲跑。*",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-liren001-eth-legion-nexus-4",
-    "issue_number": 4,
-    "labels": [],
-    "last_changed_at": "2026-10-09T06:06:58Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "liren001/eth-legion-nexus",
-    "published_at": "2026-10-09T01:44:45Z",
-    "reward": {
-      "amount": 150,
-      "currency": "USD",
-      "evidence": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/liren001/eth-legion-nexus/issues/4",
-    "status": "open",
-    "title": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
-    "updated_at": "2026-10-09T06:04:16Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "MEMBER",
-    "body_excerpt": "# Wise banking transcript — $5 USDC per accepted contribution **Planned. Public submissions are not open yet.** The first public release is being prepared with restart-safe payment and duplicate records. This page will be updated only after the measured release, available funds and live service are verified. - Reward: **$5 USDC on Base** for each accepted contribution. - Initial target: **1–2 distinct contributors** (within the program’s 1–5 range), at most one paid contribution per contributor and authenticated Wise account. Multiple balances or repeated transcripts from the same account do not earn additional rewards. - Current public capacity: **0**. A planned rate is not a reservation or funding guarantee. - Eligibility: an account you control with a read-only Wise API token and at least one transaction in an accessible balance statement. The bank request must succeed from the enclave. - You supply your own approved inference key and pay the bounded inference cost, including rejected or failed submissions. Ordinary provider-visible inference requires consent to the named provider; confidential inference is not currently offered. Start at **[PeerLink](https://link.peer.xyz)** and follow the [contribution skill](https://github.com/zkp2p/peer-link/blob/main/skills/contribute-transcript/SKILL.md). Your agent verifies the release and fresh enclave attestation before encrypting the bank token, read-only recipe and inference key directly to the enclave. PeerLink obtains fresh authenticated responses and retains only redacted endpoint/schema evidence. Revoke the dedicated bank and inference keys after the job finishes; logging out of Wise does not necessarily revoke an API token. Payment requires a valid reservation, authenticated acquisition, useful permitted evidence, successful deterministic privacy checks, no duplicate contribution, and the published score threshold. A signed paid receipt and confirmed onchain transfer establish settlement. If payment is pending, r…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "reward"
-    ],
-    "github_state": "open",
-    "id": "github-zkp2p-peer-link-239",
-    "issue_number": 239,
-    "labels": [
-      "$5",
-      "campaign: planned",
-      "integration",
-      "transcripts"
-    ],
-    "last_changed_at": "2026-10-09T06:06:58Z",
-    "last_checked_at": "2026-10-09T06:06:58Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "zkp2p/peer-link",
-    "published_at": "2026-10-09T04:51:08Z",
-    "reward": {
-      "amount": 5,
-      "currency": "USDC",
-      "evidence": "- Reward: **$5 USDC on Base** for each accepted contribution.",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/zkp2p/peer-link/issues/239",
-    "status": "open",
-    "title": "[Transcript: $5] Wise — up to 2 distinct contributors",
-    "updated_at": "2026-10-09T05:03:00Z"
+    "title": "🏛️ Task Tiers & Delivery Credential Registry v1 — how this nation pays and proves",
+    "updated_at": "2026-10-10T02:19:30Z"
   }
 ]
