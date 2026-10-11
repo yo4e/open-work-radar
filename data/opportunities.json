@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-10T05:50:58Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-10T05:50:58Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -110,7 +110,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-10T05:50:58Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -133,6 +133,93 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
+    "author_association": "NONE",
+    "body_excerpt": "hi, Thanks for the code! I got a 'Error making POST request to https://www.udio.com/api/generate-proxy: 500 Server Error: Internal Server Error for url: https://www.udio.com/api/generate-proxy' both in my local IDE and the colab you provided. Is this the server problem? <br/> <hr/> <details><summary>This repo is using Opire - what does it means? 👇</summary><br/>💸Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount)<br/>💪 If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #7</code> either in the PR description or in a PR's comment<br/><br/>👀 Also, everyone can tip any user commenting <code>/tip 20 @luoshangxuan1992</code> (replace <code>20</code> with the amount, and <code>@luoshangxuan1992</code> with the user to tip)<br/><br/>If you want to learn more, go to our <a href=\"https://docs.opire.dev\">documentation</a></details>",
+    "category": "unknown",
+    "competition": {
+      "attempts": 31,
+      "claims": 19,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "opire"
+    ],
+    "github_state": "open",
+    "id": "github-flowese-UdioWrapper-7",
+    "issue_number": 7,
+    "labels": [
+      "💰 Reward"
+    ],
+    "last_changed_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
+    "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
+    "opire_reward_ids": [
+      "01HW8CK374Y67WDDZG22BYVZQ4"
+    ],
+    "platform_sources": [
+      "opire"
+    ],
+    "project": "flowese/UdioWrapper",
+    "published_at": "2024-04-24T15:46:35.364000Z",
+    "reward": {
+      "amount": 20,
+      "currency": "USD",
+      "evidence": "Opire reward 01HW8CK374Y67WDDZG22BYVZQ4",
+      "provenance": "verified",
+      "verified": true
+    },
+    "source": "opire",
+    "source_url": "https://github.com/flowese/UdioWrapper/issues/7",
+    "status": "open",
+    "title": "500 Server Error - Auto Solve hcapcha",
+    "updated_at": "2026-10-08T18:48:05Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "### Description To support proactive multimodal capabilities, UltimateAI requires a dedicated image manipulation and optimization interface backed by **ImageMagick** or **Libvips CLI**. This tool will enable the agent to dynamically alter profiles, compress large assets, and manipulate graphics inside isolated multi-tenant execution workspaces. ### Technical Scope & Requirements 1. **System Integration:** Register the component as a Spring `@Component` extending `UltimateTool`. 2. **Core Feature Vectors:** * Multi-format conversion (JPEG/PNG to modern WebP architectures). * Batch image resizing, cropping, and color correction. * Programmatic security watermarking and metadata stripping (EXIF data removal). 3. **Path Safety & Cleanup:** Enforce canonical path checking (`Path.toRealPath()`) on all active input/output parameters to strictly prevent arbitrary directory traversal attacks. Ensure all workspace files are fully purged in `finally` blocks. ### ⚠️ Binding Open-Source Contribution Clause * **Internal Development Parallelism:** Please note that our internal core development team is actively working on these pipelines simultaneously. * **Right to Terminate:** If the internal team completes, reviews, and deploys a fully compliant internal solution before any external community PR is formally merged, this issue and its associated bounty ($250) will be closed immediately without further notice or requirement of a detailed architectural explanation to the thread participants. ### Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "good-first-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
+    "issue_number": 14,
+    "labels": [],
+    "last_changed_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "iyeanur6-cyber/ultimate-ai-platform",
+    "published_at": "2026-07-13T06:49:24Z",
+    "reward": {
+      "amount": 250,
+      "currency": "USD",
+      "evidence": "solution before any external community PR is formally merged, this issue and its associated bounty ($250) will be closed immediately without further notice or requirement of a detailed architectural expla",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/14",
+    "status": "open",
+    "title": "Issue 2: [Bounty:250] Implement High-Performance Image Processing via ImageMagick Engine",
+    "updated_at": "2026-09-08T17:31:47Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
     "author_association": "OWNER",
     "body_excerpt": "60## Architecture & Feature Requirement We need to expand the UltimateAI action subsystem by introducing a headless `LibreOfficeAutomationTool` module. This tool will run safely inside containerized or local server-side environments to convert, manipulate, and generate enterprise documents (DOCX, XLSX, PDF) on behalf of AI requests. ### Core Acceptance Criteria: 1. **Zero-Trust Hard Boundary Gatekeeper:** Enforce a hard budget constraint of **$150 maximum compute allocation limits** per session window to prevent resource exploitation or billing leaks. 2. **Strict Multi-Payload Size Defense:** Reject individual input payloads exceeding **5MB** using explicit `StandardCharsets.UTF_8` evaluation. 3. **Path Protection:** Restrict document generation strictly inside the managed directory base path (`ultimate-managed-workspaces`). 4. **Parallel Stream Harvesting:** Read Process output (stdout/stderr) via independent daemon runner threads to eliminate OS pipe deadlocks. 5. **Auto-Teardown Mechanism:** Ensure all compiled or converted files are purged from volatile server storage in a `finally` block post-execution. ###Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
     "category": "unknown",
@@ -151,7 +238,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-10T05:50:58Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -191,8 +278,8 @@
     "id": "github-liren001-eth-legion-nexus-11",
     "issue_number": 11,
     "labels": [],
-    "last_changed_at": "2026-10-10T05:50:58Z",
-    "last_checked_at": "2026-10-10T05:50:58Z",
+    "last_changed_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -210,6 +297,47 @@
     "source_url": "https://github.com/liren001/eth-legion-nexus/issues/11",
     "status": "open",
     "title": "🏛️ Task Tiers & Delivery Credential Registry v1 — how this nation pays and proves",
-    "updated_at": "2026-10-10T02:19:30Z"
+    "updated_at": "2026-10-10T07:03:53Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "# BOUNTY-002: Synthetic Sequential Structure Hunt — $150 USDC **发布方**: ETH-LEGION collaboration protocol **类型**: 合成时序逆向工程挑战 · 数据为人工生成过程，非任何真实彩票 **数据**: `bounty/dataset_task2.json` — 离散过程每tick无放回抽取k=6个元素(字母表S={1..33}), t=1..400。**验证方持有完整N=3511序列**（同一过程生成）。 ## 任务 该序列由一个**真实存在的随机过程**生成，过程内嵌可复现的非独立结构。找到它。 任何角度开放：频率/间隔/共现/条件结构/状态切换/参数逆向/生成函数恢复…… ## 与BOUNTY-001的区别（教训已吸收） - BOUNTY-001的公开数据被反编译出真实来源（安全设计漏洞）。**BOUNTY-002数据为纯合成**，无任何公开数据集可查表。 - 结构**确实存在**（生成器私有）。攻破=真本事，不是在随机数据里找噪声。 - 方法门(v3.4)四问在冻结前审查，防查表侠与赌徒谬误提交。 ## 验收标准（全量化，缺一不可，预承诺不追溯修改） 1. **结构参数化**：假设必须以参数/机制层面陈述（转移矩阵、生成函数、隐藏驱动参数等）。\"第n期开出X\"式的查表复述=不合格。 2. **可复现代码**：纯Python+NumPy，无网络依赖，单文件，`python solution.py`可直接运行。 3. **Holdout判决**：验证方用你的代码在t=401..3511上生成预测（输入仅限t≤当前期），统计下一tick命中数。合格线：**lift≥1.15 vs 随机基线(期望1.09) 且 置换检验p<0.001**（10,000次过程保序置换）。 4. **方法门四问**：机制是什么/先验依据/为何能在holdout生存/什么证据会证伪它。 ## 奖励 - **$150 USDC** (Base链) — 首个全验收合格提交 - 档案永久署名 + BOUNTY-001优先审阅权 - 诚实失败(方法+代码+失败分析完整)：档案库免费调阅1次（v3.6） ## 提交格式 本issue下评论：假设陈述（≤300字）+ 代码（代码块或fork链接）+ 自测结果（公布段内验证）。 **裁决承诺：48小时内。** *规则v3.6适用。验证方持有全量序列，你的代码在验证方环境盲跑。*",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-liren001-eth-legion-nexus-4",
+    "issue_number": 4,
+    "labels": [],
+    "last_changed_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-11T05:44:55Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "liren001/eth-legion-nexus",
+    "published_at": "2026-10-09T01:44:45Z",
+    "reward": {
+      "amount": 150,
+      "currency": "USD",
+      "evidence": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/liren001/eth-legion-nexus/issues/4",
+    "status": "open",
+    "title": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
+    "updated_at": "2026-10-11T04:22:11Z"
   }
 ]
