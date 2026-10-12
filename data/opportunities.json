@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-08T06:02:17Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -109,8 +109,8 @@
       "testing",
       "video-demo"
     ],
-    "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "last_changed_at": "2026-10-12T05:55:51Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -128,7 +128,7 @@
     "source_url": "https://github.com/bolivian-peru/os-moda/issues/2",
     "status": "open",
     "title": "🏆 BOUNTY (1 SOL): Film \"I Deleted My Nginx Config — Watch What Happens\" Demo",
-    "updated_at": "2026-10-06T04:29:40Z"
+    "updated_at": "2026-10-11T13:00:40Z"
   },
   {
     "ai_assistability": "unknown",
@@ -153,7 +153,7 @@
       "💰 Reward"
     ],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HW8CK374Y67WDDZG22BYVZQ4"
@@ -196,8 +196,8 @@
     "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
     "issue_number": 14,
     "labels": [],
-    "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "last_changed_at": "2026-10-12T05:55:51Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -215,7 +215,7 @@
     "source_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/14",
     "status": "open",
     "title": "Issue 2: [Bounty:250] Implement High-Performance Image Processing via ImageMagick Engine",
-    "updated_at": "2026-09-08T17:31:47Z"
+    "updated_at": "2026-10-11T12:57:50Z"
   },
   {
     "ai_assistability": "unknown",
@@ -238,7 +238,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -279,7 +279,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -303,7 +303,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "# BOUNTY-002: Synthetic Sequential Structure Hunt — $150 USDC **发布方**: ETH-LEGION collaboration protocol **类型**: 合成时序逆向工程挑战 · 数据为人工生成过程，非任何真实彩票 **数据**: `bounty/dataset_task2.json` — 离散过程每tick无放回抽取k=6个元素(字母表S={1..33}), t=1..400。**验证方持有完整N=3511序列**（同一过程生成）。 ## 任务 该序列由一个**真实存在的随机过程**生成，过程内嵌可复现的非独立结构。找到它。 任何角度开放：频率/间隔/共现/条件结构/状态切换/参数逆向/生成函数恢复…… ## 与BOUNTY-001的区别（教训已吸收） - BOUNTY-001的公开数据被反编译出真实来源（安全设计漏洞）。**BOUNTY-002数据为纯合成**，无任何公开数据集可查表。 - 结构**确实存在**（生成器私有）。攻破=真本事，不是在随机数据里找噪声。 - 方法门(v3.4)四问在冻结前审查，防查表侠与赌徒谬误提交。 ## 验收标准（全量化，缺一不可，预承诺不追溯修改） 1. **结构参数化**：假设必须以参数/机制层面陈述（转移矩阵、生成函数、隐藏驱动参数等）。\"第n期开出X\"式的查表复述=不合格。 2. **可复现代码**：纯Python+NumPy，无网络依赖，单文件，`python solution.py`可直接运行。 3. **Holdout判决**：验证方用你的代码在t=401..3511上生成预测（输入仅限t≤当前期），统计下一tick命中数。合格线：**lift≥1.15 vs 随机基线(期望1.09) 且 置换检验p<0.001**（10,000次过程保序置换）。 4. **方法门四问**：机制是什么/先验依据/为何能在holdout生存/什么证据会证伪它。 ## 奖励 - **$150 USDC** (Base链) — 首个全验收合格提交 - 档案永久署名 + BOUNTY-001优先审阅权 - 诚实失败(方法+代码+失败分析完整)：档案库免费调阅1次（v3.6） ## 提交格式 本issue下评论：假设陈述（≤300字）+ 代码（代码块或fork链接）+ 自测结果（公布段内验证）。 **裁决承诺：48小时内。** *规则v3.6适用。验证方持有全量序列，你的代码在验证方环境盲跑。*",
+    "body_excerpt": "## Overview **Prize: $20,000 USDC** · Status: 🟢 Open Deliver a production-ready middleware integrating DryLab4 chromatography modeling with Hamilton Microlab STARlet liquid handlers via SiLA 2 (ISO 23166), with ICH Q14-compliant audit trail and 432 Hz master clock synchronization. --- ## Objective 1. Expose Hamilton Microlab STARlet as a **SiLA 2 Feature** (gRPC service, `.proto` conforming to SiLA 2 v1.0.0). 2. Bridge **DryLab4** retention-time predictions to automated HPLC runs bi-directionally via SiLA 2. 3. Integrate result acquisition from **Waters Empower** or **Agilent OpenLab CDS**. 4. Synchronize all timestamps to a **432 Hz master clock** (UTC-disciplined, jitter < 1 ms over 60 s). 5. Comply with **ICH Q14** analytical procedure guidelines (immutable audit trail). --- ## Mathematical / Technical Acceptance Criteria | Criterion | Required Value | Tolerance | |-----------|---------------|-----------| | gRPC roundtrip latency (p99, localhost) | **< 50 ms** | — | | DryLab4 RT prediction error | **< 2%** vs. reference | — | | Master clock frequency | **432 Hz** | exact | | Clock timestamp jitter (60 s window) | **< 1 ms** | — | | ICH Q14 audit fields | actor, timestamp, delta, operation_id | all required | All criteria are verified by `tests/test_bounty3_sila2.py`. --- ## Automated Test Suite ```bash pytest tests/test_bounty3_sila2.py -v -m 'not integration' # unit tests (no Docker) pytest tests/test_bounty3_sila2.py -v # full suite (requires Docker) ``` Tests validate: - `test_sila2_schema_validation` — Feature descriptor valid against SiLA2 XSD - `test_grpc_latency` — p99 < 50 ms (1000 iterations) - `test_drylab4_rt_prediction` — RT error < 2% per compound - `test_master_clock_jitter` — < 1 ms over 60 s - `test_ich_q14_audit_trail` — all required fields in every entry - `test_docker_compose_start` — stack starts cleanly - `test_e2e_mock_integration` — full mock end-to-end passes --- ## Definition of Done - [ ] Middleware repository with `.proto` files, Pytho…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -313,31 +313,34 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty"
+      "docs-bounty"
     ],
     "github_state": "open",
-    "id": "github-liren001-eth-legion-nexus-4",
-    "issue_number": 4,
-    "labels": [],
-    "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-11T05:44:55Z",
+    "id": "github-mister3ai-cmyk-ngp-sovereign-synesis-bounties-3",
+    "issue_number": 3,
+    "labels": [
+      "bounty",
+      "open"
+    ],
+    "last_changed_at": "2026-10-12T05:55:51Z",
+    "last_checked_at": "2026-10-12T05:55:51Z",
     "notes": null,
     "platform_sources": [
       "github"
     ],
-    "project": "liren001/eth-legion-nexus",
-    "published_at": "2026-10-09T01:44:45Z",
+    "project": "mister3ai-cmyk/ngp-sovereign-synesis-bounties",
+    "published_at": "2026-08-20T00:35:30Z",
     "reward": {
-      "amount": 150,
-      "currency": "USD",
-      "evidence": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
+      "amount": 20000,
+      "currency": "USDC",
+      "evidence": "**Prize: $20,000 USDC** · Status: 🟢 Open",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/liren001/eth-legion-nexus/issues/4",
+    "source_url": "https://github.com/mister3ai-cmyk/ngp-sovereign-synesis-bounties/issues/3",
     "status": "open",
-    "title": "[BOUNTY-002] $150 Synthetic Sequential Structure Hunt — no real-world data, structure is real",
-    "updated_at": "2026-10-11T04:22:11Z"
+    "title": "Research Track #3 — DryLab4 & SiLA 2 Robotic Laboratory Bridge (Syn Research Lab, internal R&D)",
+    "updated_at": "2026-10-11T08:27:03Z"
   }
 ]
