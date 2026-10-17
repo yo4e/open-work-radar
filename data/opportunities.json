@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -110,7 +110,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -153,7 +153,7 @@
       "💰 Reward"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
     "opire_reward_ids": [
       "01HW8CK374Y67WDDZG22BYVZQ4"
@@ -180,47 +180,6 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "### Description To support proactive multimodal capabilities, UltimateAI requires a dedicated image manipulation and optimization interface backed by **ImageMagick** or **Libvips CLI**. This tool will enable the agent to dynamically alter profiles, compress large assets, and manipulate graphics inside isolated multi-tenant execution workspaces. ### Technical Scope & Requirements 1. **System Integration:** Register the component as a Spring `@Component` extending `UltimateTool`. 2. **Core Feature Vectors:** * Multi-format conversion (JPEG/PNG to modern WebP architectures). * Batch image resizing, cropping, and color correction. * Programmatic security watermarking and metadata stripping (EXIF data removal). 3. **Path Safety & Cleanup:** Enforce canonical path checking (`Path.toRealPath()`) on all active input/output parameters to strictly prevent arbitrary directory traversal attacks. Ensure all workspace files are fully purged in `finally` blocks. ### ⚠️ Binding Open-Source Contribution Clause * **Internal Development Parallelism:** Please note that our internal core development team is actively working on these pipelines simultaneously. * **Right to Terminate:** If the internal team completes, reviews, and deploys a fully compliant internal solution before any external community PR is formally merged, this issue and its associated bounty ($250) will be closed immediately without further notice or requirement of a detailed architectural explanation to the thread participants. ### Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "good-first-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
-    "issue_number": 14,
-    "labels": [],
-    "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "iyeanur6-cyber/ultimate-ai-platform",
-    "published_at": "2026-07-13T06:49:24Z",
-    "reward": {
-      "amount": 250,
-      "currency": "USD",
-      "evidence": "solution before any external community PR is formally merged, this issue and its associated bounty ($250) will be closed immediately without further notice or requirement of a detailed architectural expla",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/14",
-    "status": "open",
-    "title": "Issue 2: [Bounty:250] Implement High-Performance Image Processing via ImageMagick Engine",
-    "updated_at": "2026-10-11T12:57:50Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
     "body_excerpt": "60## Architecture & Feature Requirement We need to expand the UltimateAI action subsystem by introducing a headless `LibreOfficeAutomationTool` module. This tool will run safely inside containerized or local server-side environments to convert, manipulate, and generate enterprise documents (DOCX, XLSX, PDF) on behalf of AI requests. ### Core Acceptance Criteria: 1. **Zero-Trust Hard Boundary Gatekeeper:** Enforce a hard budget constraint of **$150 maximum compute allocation limits** per session window to prevent resource exploitation or billing leaks. 2. **Strict Multi-Payload Size Defense:** Reject individual input payloads exceeding **5MB** using explicit `StandardCharsets.UTF_8` evaluation. 3. **Path Protection:** Restrict document generation strictly inside the managed directory base path (`ultimate-managed-workspaces`). 4. **Parallel Stream Harvesting:** Read Process output (stdout/stderr) via independent daemon runner threads to eliminate OS pipe deadlocks. 5. **Auto-Teardown Mechanism:** Ensure all compiled or converted files are purged from volatile server storage in a `finally` block post-execution. ###Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
     "category": "unknown",
     "competition": {
@@ -238,7 +197,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -279,7 +238,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -323,7 +282,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -368,7 +327,7 @@
       "neuromorphic-fabric-bounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -413,7 +372,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -458,7 +417,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -503,7 +462,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -548,7 +507,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -593,7 +552,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -638,7 +597,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -683,7 +642,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -728,7 +687,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -773,7 +732,7 @@
       "multimodal_adversarial-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -818,7 +777,7 @@
       "multiversal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -863,7 +822,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -908,7 +867,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -953,7 +912,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -972,51 +931,6 @@
     "status": "open",
     "title": "[PAYOUT CLAIM] [honeytoken_swarms-subbounty-question] [BOUNTY] [$13500] [AGENTIC] [AI] DAXDA Neuro-Symbolic Honeytoken Swarms & Adaptive Dynamic Honeypot Routing – Autonomous Intrusion Trapdoors ($13,500)",
     "updated_at": "2026-10-12T17:04:44Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "### 🏆 Formal Bounty Claim & Settlement Request: [BOUNTY] [$14500] [AGENTIC] [AI] DAXDA Photonic & Optical Clifford Tensor Accelerators – Coherent Optical Multivector Processing - **Designated Sub-Bounty Tag**: `[photonic_clifford-subbounty-question]` - **Bounty Level**: **Level 3** - **Reward Claimed**: **$14,500 USD** - **Claimant**: @osmesirius-ship-it - **Bounty Specification**: [`BOUNTY_DAXDA_L3_PHOTONIC_CLIFFORD_ACCELERATOR.md`](https://github.com/osmesirius-ship-it/daxda-next-gen/blob/main/daxda-meta-bounty-submission/bounties/BOUNTY_DAXDA_L3_PHOTONIC_CLIFFORD_ACCELERATOR.md) - **Repository Source**: [https://github.com/osmesirius-ship-it/daxda-next-gen](https://github.com/osmesirius-ship-it/daxda-next-gen) --- ### 🛡️ Verification & Settlement Ledger 1. **Implementation & Test Suite**: Fully implemented and validated under the **DAXDA Nicole Protocol**. 2. **Deterministic Test Results**: Complete test suite executed with **100% pass rate** (560 tests passing across the repository). 3. **Formal Verification & Topologically Closed Manifold**: Certified with algebraic connectivity $\\lambda_2 = 1.3820$. 4. **Designated Payout Settlement Details**: - **Recipient / Claimant**: `@osmesirius-ship-it` - **Bitcoin (BTC)**: `bc1qqg3ahwhrtskau4k2nlg6hwa938ret2783uu0zs` - **Supported Currencies**: USD Direct Wire, BTC, USDT (BEP-20 / TRC-20), TON *Submitted autonomously by DAXDA Next-Gen Consortium of Engines on behalf of @osmesirius-ship-it.* <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #27</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting <code>/tip 20 @os…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-osmesirius-ship-it-daxda-next-gen-27",
-    "issue_number": 27,
-    "labels": [
-      "bounty-claim",
-      "level-3",
-      "photonic_clifford-subbounty-question"
-    ],
-    "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "osmesirius-ship-it/daxda-next-gen",
-    "published_at": "2026-10-12T17:04:43Z",
-    "reward": {
-      "amount": 14500,
-      "currency": "USD",
-      "evidence": "[PAYOUT CLAIM] [photonic_clifford-subbounty-question] [BOUNTY] [$14500] [AGENTIC] [AI] DAXDA Photonic & Optical Clifford Tensor Accelerators – Coherent Optical Multivecto",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/osmesirius-ship-it/daxda-next-gen/issues/27",
-    "status": "open",
-    "title": "[PAYOUT CLAIM] [photonic_clifford-subbounty-question] [BOUNTY] [$14500] [AGENTIC] [AI] DAXDA Photonic & Optical Clifford Tensor Accelerators – Coherent Optical Multivector Processing ($14,500)",
-    "updated_at": "2026-10-12T17:04:45Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1043,7 +957,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1088,7 +1002,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1133,7 +1047,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1152,51 +1066,6 @@
     "status": "open",
     "title": "[PAYOUT CLAIM] [tpu_xla_orchestrator-subbounty-question] [BOUNTY] [$15000] [AGENTIC] [AI] DAXDA Google Cloud TPU v5e/v6e Pod Orchestration & XLA Kernel Synthesis – Megascale Tensor Compilation ($15,000)",
     "updated_at": "2026-10-12T17:04:54Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "### 🏆 Formal Bounty Claim & Settlement Request: [BOUNTY] [$9500] [AGENTIC] [AI] DAXDA 5D+ Non-Linear Temporal Manifolds & Quantum Causal Loop Harmonization – Chrono-Synchronicity Mapping - **Designated Sub-Bounty Tag**: `[chrono_5d-question]` - **Bounty Level**: **Level 2** - **Reward Claimed**: **$9,500 USD** - **Claimant**: @osmesirius-ship-it - **Bounty Specification**: [`BOUNTY_DAXDA_L2_5D_CHRONO.md`](https://github.com/osmesirius-ship-it/daxda-next-gen/blob/main/daxda-meta-bounty-submission/bounties/BOUNTY_DAXDA_L2_5D_CHRONO.md) - **Repository Source**: [https://github.com/osmesirius-ship-it/daxda-next-gen](https://github.com/osmesirius-ship-it/daxda-next-gen) --- ### 🛡️ Verification & Settlement Ledger 1. **Implementation & Test Suite**: Fully implemented and validated under the **DAXDA Nicole Protocol**. 2. **Deterministic Test Results**: Complete test suite executed with **100% pass rate** (560 tests passing across the repository). 3. **Formal Verification & Topologically Closed Manifold**: Certified with algebraic connectivity $\\lambda_2 = 1.3820$. 4. **Designated Payout Settlement Details**: - **Recipient / Claimant**: `@osmesirius-ship-it` - **Bitcoin (BTC)**: `bc1qqg3ahwhrtskau4k2nlg6hwa938ret2783uu0zs` - **Supported Currencies**: USD Direct Wire, BTC, USDT (BEP-20 / TRC-20), TON *Submitted autonomously by DAXDA Next-Gen Consortium of Engines on behalf of @osmesirius-ship-it.* <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #32</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting <code>/tip 20 @osmesirius-ship-it</code> (replace <code>20</code>…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-osmesirius-ship-it-daxda-next-gen-32",
-    "issue_number": 32,
-    "labels": [
-      "bounty-claim",
-      "chrono_5d-question",
-      "level-2"
-    ],
-    "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "osmesirius-ship-it/daxda-next-gen",
-    "published_at": "2026-10-12T17:04:53Z",
-    "reward": {
-      "amount": 9500,
-      "currency": "USD",
-      "evidence": "[PAYOUT CLAIM] [chrono_5d-question] [BOUNTY] [$9500] [AGENTIC] [AI] DAXDA 5D+ Non-Linear Temporal Manifolds & Quantum Causal Loop Harmonization – Chron",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/osmesirius-ship-it/daxda-next-gen/issues/32",
-    "status": "open",
-    "title": "[PAYOUT CLAIM] [chrono_5d-question] [BOUNTY] [$9500] [AGENTIC] [AI] DAXDA 5D+ Non-Linear Temporal Manifolds & Quantum Causal Loop Harmonization – Chrono-Synchronicity Mapping ($9,500)",
-    "updated_at": "2026-10-12T20:05:39Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1223,7 +1092,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1268,7 +1137,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1313,7 +1182,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1358,7 +1227,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1403,7 +1272,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1448,7 +1317,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1493,7 +1362,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1538,7 +1407,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1583,7 +1452,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1628,7 +1497,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-10-16T04:30:39Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1673,8 +1542,8 @@
       "card support",
       "recipe"
     ],
-    "last_changed_at": "2026-10-16T04:30:39Z",
-    "last_checked_at": "2026-10-16T04:30:39Z",
+    "last_changed_at": "2026-10-17T04:23:46Z",
+    "last_checked_at": "2026-10-17T04:23:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1692,6 +1561,6 @@
     "source_url": "https://github.com/sybil-solutions/local-ai-registry/issues/223",
     "status": "open",
     "title": "Bounty $50: recipe for Ryzen AI 890M (Radeon 890M iGPU)",
-    "updated_at": "2026-10-16T04:12:25Z"
+    "updated_at": "2026-10-16T06:17:59Z"
   }
 ]
