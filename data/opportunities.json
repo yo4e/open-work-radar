@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -39,50 +39,6 @@
     "status": "open",
     "title": "[GOOD FIRST ISSUE · RESERVED] Add smoke test for /paid-bounties route — 15 USD equivalent",
     "updated_at": "2026-10-03T02:02:01Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "COLLABORATOR",
-    "body_excerpt": "## Summary The transaction ledger records vote rewards several times smaller than the same polls advertise. ## Evidence `getVoteReward` (`hooks/use-voting.ts:157-168`) interpolates between `VOTER_REWARD_MIN` (0.005) and `VOTER_REWARD_MAX` (0.01) by consensus ratio. For `m6-p1` (7200/4800, total 12000): ``` consensusRatio = 0.6 progress = (0.6 - 0.5) / 0.35 = 0.2857 rate = 0.0064286 reward = $77.14 ``` That is the exact figure the voting card advertises (`components/voting/voting-card.tsx:200`). But `lib/mock-data.ts:1033` records: ```ts { type: \"vote_reward\", amount: 15, description: 'Vote reward for resolving \"Will Everton win?\" poll' } ``` and `:1044`: ```ts { type: \"vote_reward\", amount: 8, description: \"Vote reward for resolving VAR review poll\" } ``` where `m6-p5` yields **$72.14**. ## Impact Transaction history shows vote rewards roughly 5-9x smaller than the amount the same poll advertises, and neither record can be reproduced by `settleRewards`, which writes `amount: pending.amount`. ## Suggested fix Seed both transactions from `useVoting.getState().getVoteReward(pollId)`, or state them as historical values on polls whose pools no longer match.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "reward"
-    ],
-    "github_state": "open",
-    "id": "github-Rejira-Technologies-predictx-web-354",
-    "issue_number": 354,
-    "labels": [
-      "Stellar Wave",
-      "bug"
-    ],
-    "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "Rejira-Technologies/predictx-web",
-    "published_at": "2026-10-17T13:14:06Z",
-    "reward": {
-      "amount": 77.14,
-      "currency": "USD",
-      "evidence": "reward = $77.14",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/Rejira-Technologies/predictx-web/issues/354",
-    "status": "open",
-    "title": "Seeded vote_reward transactions pay \\ and \\ where the reward formula yields \\.14 and \\.14",
-    "updated_at": "2026-10-18T04:25:09Z"
   },
   {
     "ai_assistability": "unknown",
@@ -108,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -127,6 +83,51 @@
     "status": "open",
     "title": "bug: Carmen pays $20,000 for three heads - the head bounty is gifted as a single money slot",
     "updated_at": "2026-10-12T19:43:13Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## What is wrong Bounties are rounded to cents before the max check: `10.004` is accepted against `max_bounty_usd: 10` and `10.006` is refused. `3.333` is stored as 3.33 with no warning. ## Where `packages/core/src/util.ts:4` (`Math.round(usd * 100)`), compared after rounding at `packages/engine/src/index.ts:693`. ## Fix Reject values with more than two decimals (`multipleOf(0.01)`), or compare the unrounded USD value. Found in the 2026-10-18 QA pass of eyes.pictures and PR #94 (jerry/live-setup @ af4c5ea).",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-ayaangazali-eyes-117",
+    "issue_number": 117,
+    "labels": [
+      "bug",
+      "qa",
+      "severity: low"
+    ],
+    "last_changed_at": "2026-10-19T04:39:00Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "ayaangazali/eyes",
+    "published_at": "2026-10-18T08:06:53Z",
+    "reward": {
+      "amount": 10,
+      "currency": "USD",
+      "evidence": "Sub-cent bounties are rounded silently, so 10.004 passes a $10 max",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/ayaangazali/eyes/issues/117",
+    "status": "open",
+    "title": "Sub-cent bounties are rounded silently, so 10.004 passes a $10 max",
+    "updated_at": "2026-10-18T21:45:55Z"
   },
   {
     "ai_assistability": "unknown",
@@ -154,7 +155,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -203,7 +204,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -226,48 +227,47 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
-    "author_association": "NONE",
-    "body_excerpt": "hi, Thanks for the code! I got a 'Error making POST request to https://www.udio.com/api/generate-proxy: 500 Server Error: Internal Server Error for url: https://www.udio.com/api/generate-proxy' both in my local IDE and the colab you provided. Is this the server problem? <br/> <hr/> <details><summary>This repo is using Opire - what does it means? 👇</summary><br/>💸Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount)<br/>💪 If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #7</code> either in the PR description or in a PR's comment<br/><br/>👀 Also, everyone can tip any user commenting <code>/tip 20 @luoshangxuan1992</code> (replace <code>20</code> with the amount, and <code>@luoshangxuan1992</code> with the user to tip)<br/><br/>If you want to learn more, go to our <a href=\"https://docs.opire.dev\">documentation</a></details>",
+    "author_association": "OWNER",
+    "body_excerpt": "# Fiddy — Farcaster Client + Read Node + 3-Command Tutorial (Bounty Spec) ## Problem Statement Farcaster's documentation for standing up a read node and building a client is scattered across doc sites, some of it stale (it still describes onchain signer registration and claims read nodes reject writes). A developer who wants practical freedom of association — their own client on their own node, no third-party API keys — faces days of piecing together contracts, Snapchain, signers, and storage rent. Fiddy (fiddy.fun) wants to be the client that proves how easy this can be, and win the $2,048 bounty by getting it down to three commands. ## Solution Ship three things as one coherent product: 1. **The Fiddy client** — a fork of `0xterricola/farcaster-wallet-client` (itself a fork of the Farcaster client snapshot with external wallet support), rebranded with the Fiddy identity (chartreuse / #161715, Solid Glass + Awwwards-grade UI), reading from the user's own Snapchain read node and writing through it (read nodes gossip valid messages to validators — no API keys, no Neynar, no Alchemy). 2. **One-click node deploy** — an agent-on-cloud service: the user furnishes compute (any VPS; AWS path scripted first, ~$100/mo), Fiddy provisions and boots a Snapchain read node, then points the client at it. 3. **The tutorial microsite** — quickstart at the top (three commands), then a mobile- and desktop-friendly tutorial that teaches protocol concepts as it goes: FIDs, custody addresses, app keys (gasless `KEY_ADD`), Snapchain messages, read nodes vs validators and the mempool path, storage rent, seed-phrase safety. 4. **The Fiddy Agent (the differentiator)** — every client user can hatch their own autonomous Hermes agent, hosted on Agent37 cloud, living inside the client. Not a chatbot bolt-on: a real Hermes instance with its full feature set — scheduled tasks (cron), skills, memory, and every messaging channel Hermes supports (Farcaster first, then iMessage, Discord, Telegram, Wh…",
     "category": "unknown",
     "competition": {
-      "attempts": 31,
-      "claims": 19,
+      "attempts": null,
+      "claims": null,
       "open_prs": null
     },
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "opire"
+      "bounty",
+      "docs-bounty",
+      "translation-bounty"
     ],
     "github_state": "open",
-    "id": "github-flowese-UdioWrapper-7",
-    "issue_number": 7,
+    "id": "github-ivcained-fiddy-1",
+    "issue_number": 1,
     "labels": [
-      "💰 Reward"
+      "ready-for-agent"
     ],
-    "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
-    "notes": "Reward is listed by Opire; payout remains subject to creator acceptance/payment arrangement.",
-    "opire_reward_ids": [
-      "01HW8CK374Y67WDDZG22BYVZQ4"
-    ],
+    "last_changed_at": "2026-10-19T04:39:00Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
+    "notes": null,
     "platform_sources": [
-      "opire"
+      "github"
     ],
-    "project": "flowese/UdioWrapper",
-    "published_at": "2024-04-24T15:46:35.364000Z",
+    "project": "ivcained/fiddy",
+    "published_at": "2026-10-18T13:00:41Z",
     "reward": {
-      "amount": 20,
+      "amount": 2048,
       "currency": "USD",
-      "evidence": "Opire reward 01HW8CK374Y67WDDZG22BYVZQ4",
-      "provenance": "verified",
-      "verified": true
+      "evidence": "Fiddy: Farcaster client + read node + 3-command tutorial ($2048 bounty)",
+      "provenance": "stated",
+      "verified": false
     },
-    "source": "opire",
-    "source_url": "https://github.com/flowese/UdioWrapper/issues/7",
+    "source": "github",
+    "source_url": "https://github.com/ivcained/fiddy/issues/1",
     "status": "open",
-    "title": "500 Server Error - Auto Solve hcapcha",
-    "updated_at": "2026-10-15T01:53:37Z"
+    "title": "Fiddy: Farcaster client + read node + 3-command tutorial ($2048 bounty)",
+    "updated_at": "2026-10-19T03:04:57Z"
   },
   {
     "ai_assistability": "unknown",
@@ -290,7 +290,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -331,7 +331,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -375,7 +375,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -420,7 +420,7 @@
       "neuromorphic-fabric-bounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -465,7 +465,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -510,7 +510,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -555,7 +555,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -600,7 +600,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -645,7 +645,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -690,7 +690,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -735,7 +735,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -780,7 +780,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -825,7 +825,7 @@
       "multimodal_adversarial-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -844,51 +844,6 @@
     "status": "open",
     "title": "[PAYOUT CLAIM] [multimodal_adversarial-subbounty-question] [BOUNTY] [$14500] [AGENTIC] [AI] DAXDA Multi-Modal Adversarial Synthesis & Latent Embedding Poisoning – Vision-Audio-Text Jailbreak Injection ($14,500)",
     "updated_at": "2026-10-12T17:04:37Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "### 🏆 Formal Bounty Claim & Settlement Request: [BOUNTY] [$12500] [AGENTIC] [AI] DAXDA Multiversal Social Choice & Value Alignment Consensus – Swarm Pareto Equilibria - **Designated Sub-Bounty Tag**: `[multiversal_consensus-subbounty-question]` - **Bounty Level**: **Level 3** - **Reward Claimed**: **$12,500 USD** - **Claimant**: @osmesirius-ship-it - **Bounty Specification**: [`BOUNTY_DAXDA_L3_MULTIVERSAL_CONSENSUS.md`](https://github.com/osmesirius-ship-it/daxda-next-gen/blob/main/daxda-meta-bounty-submission/bounties/BOUNTY_DAXDA_L3_MULTIVERSAL_CONSENSUS.md) - **Repository Source**: [https://github.com/osmesirius-ship-it/daxda-next-gen](https://github.com/osmesirius-ship-it/daxda-next-gen) --- ### 🛡️ Verification & Settlement Ledger 1. **Implementation & Test Suite**: Fully implemented and validated under the **DAXDA Nicole Protocol**. 2. **Deterministic Test Results**: Complete test suite executed with **100% pass rate** (560 tests passing across the repository). 3. **Formal Verification & Topologically Closed Manifold**: Certified with algebraic connectivity $\\lambda_2 = 1.3820$. 4. **Designated Payout Settlement Details**: - **Recipient / Claimant**: `@osmesirius-ship-it` - **Bitcoin (BTC)**: `bc1qqg3ahwhrtskau4k2nlg6hwa938ret2783uu0zs` - **Supported Currencies**: USD Direct Wire, BTC, USDT (BEP-20 / TRC-20), TON *Submitted autonomously by DAXDA Next-Gen Consortium of Engines on behalf of @osmesirius-ship-it.* <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #23</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting <code>/tip 20 @osmesirius-ship-it</code…",
-    "category": "design",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-osmesirius-ship-it-daxda-next-gen-23",
-    "issue_number": 23,
-    "labels": [
-      "bounty-claim",
-      "level-3",
-      "multiversal_consensus-subbounty-question"
-    ],
-    "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "osmesirius-ship-it/daxda-next-gen",
-    "published_at": "2026-10-12T17:04:36Z",
-    "reward": {
-      "amount": 12500,
-      "currency": "USD",
-      "evidence": "[PAYOUT CLAIM] [multiversal_consensus-subbounty-question] [BOUNTY] [$12500] [AGENTIC] [AI] DAXDA Multiversal Social Choice & Value Alignment Consensus – Swarm Pareto Equilibr",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/osmesirius-ship-it/daxda-next-gen/issues/23",
-    "status": "open",
-    "title": "[PAYOUT CLAIM] [multiversal_consensus-subbounty-question] [BOUNTY] [$12500] [AGENTIC] [AI] DAXDA Multiversal Social Choice & Value Alignment Consensus – Swarm Pareto Equilibria ($12,500)",
-    "updated_at": "2026-10-12T17:04:38Z"
   },
   {
     "ai_assistability": "unknown",
@@ -915,7 +870,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -960,7 +915,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -979,51 +934,6 @@
     "status": "open",
     "title": "[PAYOUT CLAIM] [neuro_fmri-subbounty-question] [BOUNTY] [$14000] [AGENTIC] [AI] DAXDA Neuro-Cognitive fMRI Latent Space Matching & Representational Alignment – Biological Cognitive Anchoring ($14,000)",
     "updated_at": "2026-10-12T17:04:43Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "### 🏆 Formal Bounty Claim & Settlement Request: [BOUNTY] [$13500] [AGENTIC] [AI] DAXDA Neuro-Symbolic Honeytoken Swarms & Adaptive Dynamic Honeypot Routing – Autonomous Intrusion Trapdoors - **Designated Sub-Bounty Tag**: `[honeytoken_swarms-subbounty-question]` - **Bounty Level**: **Level 3** - **Reward Claimed**: **$13,500 USD** - **Claimant**: @osmesirius-ship-it - **Bounty Specification**: [`BOUNTY_DAXDA_L3_NEURO_SYMBOLIC_HONEYTOKEN_SWARMS.md`](https://github.com/osmesirius-ship-it/daxda-next-gen/blob/main/daxda-meta-bounty-submission/bounties/BOUNTY_DAXDA_L3_NEURO_SYMBOLIC_HONEYTOKEN_SWARMS.md) - **Repository Source**: [https://github.com/osmesirius-ship-it/daxda-next-gen](https://github.com/osmesirius-ship-it/daxda-next-gen) --- ### 🛡️ Verification & Settlement Ledger 1. **Implementation & Test Suite**: Fully implemented and validated under the **DAXDA Nicole Protocol**. 2. **Deterministic Test Results**: Complete test suite executed with **100% pass rate** (560 tests passing across the repository). 3. **Formal Verification & Topologically Closed Manifold**: Certified with algebraic connectivity $\\lambda_2 = 1.3820$. 4. **Designated Payout Settlement Details**: - **Recipient / Claimant**: `@osmesirius-ship-it` - **Bitcoin (BTC)**: `bc1qqg3ahwhrtskau4k2nlg6hwa938ret2783uu0zs` - **Supported Currencies**: USD Direct Wire, BTC, USDT (BEP-20 / TRC-20), TON *Submitted autonomously by DAXDA Next-Gen Consortium of Engines on behalf of @osmesirius-ship-it.* <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #26</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-osmesirius-ship-it-daxda-next-gen-26",
-    "issue_number": 26,
-    "labels": [
-      "bounty-claim",
-      "honeytoken_swarms-subbounty-question",
-      "level-3"
-    ],
-    "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "osmesirius-ship-it/daxda-next-gen",
-    "published_at": "2026-10-12T17:04:42Z",
-    "reward": {
-      "amount": 13500,
-      "currency": "USD",
-      "evidence": "[PAYOUT CLAIM] [honeytoken_swarms-subbounty-question] [BOUNTY] [$13500] [AGENTIC] [AI] DAXDA Neuro-Symbolic Honeytoken Swarms & Adaptive Dynamic Honeypot Routing – Autono",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/osmesirius-ship-it/daxda-next-gen/issues/26",
-    "status": "open",
-    "title": "[PAYOUT CLAIM] [honeytoken_swarms-subbounty-question] [BOUNTY] [$13500] [AGENTIC] [AI] DAXDA Neuro-Symbolic Honeytoken Swarms & Adaptive Dynamic Honeypot Routing – Autonomous Intrusion Trapdoors ($13,500)",
-    "updated_at": "2026-10-12T17:04:44Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1050,7 +960,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1095,7 +1005,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1140,7 +1050,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1185,7 +1095,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1230,7 +1140,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1275,7 +1185,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1320,7 +1230,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1365,7 +1275,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1410,7 +1320,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1455,7 +1365,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1500,7 +1410,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1545,7 +1455,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1590,7 +1500,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1635,8 +1545,8 @@
       "card support",
       "recipe"
     ],
-    "last_changed_at": "2026-10-17T04:23:46Z",
-    "last_checked_at": "2026-10-18T04:31:19Z",
+    "last_changed_at": "2026-10-19T04:39:00Z",
+    "last_checked_at": "2026-10-19T04:39:00Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1654,6 +1564,6 @@
     "source_url": "https://github.com/sybil-solutions/local-ai-registry/issues/223",
     "status": "open",
     "title": "Bounty $50: recipe for Ryzen AI 890M (Radeon 890M iGPU)",
-    "updated_at": "2026-10-16T06:17:59Z"
+    "updated_at": "2026-10-18T07:35:40Z"
   }
 ]
