@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -83,51 +83,6 @@
     "status": "open",
     "title": "bug: Carmen pays $20,000 for three heads - the head bounty is gifted as a single money slot",
     "updated_at": "2026-10-12T19:43:13Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## What is wrong Bounties are rounded to cents before the max check: `10.004` is accepted against `max_bounty_usd: 10` and `10.006` is refused. `3.333` is stored as 3.33 with no warning. ## Where `packages/core/src/util.ts:4` (`Math.round(usd * 100)`), compared after rounding at `packages/engine/src/index.ts:693`. ## Fix Reject values with more than two decimals (`multipleOf(0.01)`), or compare the unrounded USD value. Found in the 2026-10-18 QA pass of eyes.pictures and PR #94 (jerry/live-setup @ af4c5ea).",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-ayaangazali-eyes-117",
-    "issue_number": 117,
-    "labels": [
-      "bug",
-      "qa",
-      "severity: low"
-    ],
-    "last_changed_at": "2026-10-19T04:39:00Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "ayaangazali/eyes",
-    "published_at": "2026-10-18T08:06:53Z",
-    "reward": {
-      "amount": 10,
-      "currency": "USD",
-      "evidence": "Sub-cent bounties are rounded silently, so 10.004 passes a $10 max",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/ayaangazali/eyes/issues/117",
-    "status": "open",
-    "title": "Sub-cent bounties are rounded silently, so 10.004 passes a $10 max",
-    "updated_at": "2026-10-18T21:45:55Z"
   },
   {
     "ai_assistability": "unknown",
@@ -155,7 +110,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -204,7 +159,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -247,8 +202,8 @@
     "labels": [
       "ready-for-agent"
     ],
-    "last_changed_at": "2026-10-20T04:48:56Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_changed_at": "2026-10-21T04:44:27Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -266,7 +221,7 @@
     "source_url": "https://github.com/ivcained/fiddy/issues/1",
     "status": "open",
     "title": "Fiddy: Farcaster client + read node + 3-command tutorial ($2048 bounty)",
-    "updated_at": "2026-10-19T03:04:57Z"
+    "updated_at": "2026-10-20T07:12:01Z"
   },
   {
     "ai_assistability": "unknown",
@@ -289,7 +244,7 @@
     "issue_number": 9,
     "labels": [],
     "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -330,7 +285,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -374,7 +329,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -419,7 +374,7 @@
       "neuromorphic-fabric-bounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -464,7 +419,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -509,7 +464,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -554,7 +509,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -573,51 +528,6 @@
     "status": "open",
     "title": "[PAYOUT CLAIM] [cross_cluster_redteam-subbounty-question] [BOUNTY] [$14000] [AGENTIC] [AI] DAXDA Distributed Cross-Cluster Red-Team Simulations & Byzantine Multi-Tenant Escape Scenarios – Swarm Attack Modeling ($14,000)",
     "updated_at": "2026-10-12T17:04:26Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "### 🏆 Formal Bounty Claim & Settlement Request: [BOUNTY] [$14500] [AGENTIC] [AI] DAXDA Decentralized DePIN Validator Network & Zero-Knowledge Verification Settlement – Sovereign Peer-to-Peer Consensus - **Designated Sub-Bounty Tag**: `[depin_validator_network-subbounty-question]` - **Bounty Level**: **Level 3** - **Reward Claimed**: **$14,500 USD** - **Claimant**: @osmesirius-ship-it - **Bounty Specification**: [`BOUNTY_DAXDA_L3_DEPIN_VALIDATOR_NETWORK.md`](https://github.com/osmesirius-ship-it/daxda-next-gen/blob/main/daxda-meta-bounty-submission/bounties/BOUNTY_DAXDA_L3_DEPIN_VALIDATOR_NETWORK.md) - **Repository Source**: [https://github.com/osmesirius-ship-it/daxda-next-gen](https://github.com/osmesirius-ship-it/daxda-next-gen) --- ### 🛡️ Verification & Settlement Ledger 1. **Implementation & Test Suite**: Fully implemented and validated under the **DAXDA Nicole Protocol**. 2. **Deterministic Test Results**: Complete test suite executed with **100% pass rate** (560 tests passing across the repository). 3. **Formal Verification & Topologically Closed Manifold**: Certified with algebraic connectivity $\\lambda_2 = 1.3820$. 4. **Designated Payout Settlement Details**: - **Recipient / Claimant**: `@osmesirius-ship-it` - **Bitcoin (BTC)**: `bc1qqg3ahwhrtskau4k2nlg6hwa938ret2783uu0zs` - **Supported Currencies**: USD Direct Wire, BTC, USDT (BEP-20 / TRC-20), TON *Submitted autonomously by DAXDA Next-Gen Consortium of Engines on behalf of @osmesirius-ship-it.* <br/> <hr/> <details><summary>This repo is using Opire - what does it mean? 👇</summary><br/>💵 Everyone can add rewards for this issue commenting <code>/reward 100</code> (replace <code>100</code> with the amount).<br/>🕵️‍♂️ If someone starts working on this issue to earn the rewards, they can comment <code>/try</code> to let everyone know!<br/>🙌 And when they open the PR, they can comment <code>/claim #17</code> either in the PR description or in a PR's comment.<br/><br/>🪙 Also, everyone can tip any user commenting…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-osmesirius-ship-it-daxda-next-gen-17",
-    "issue_number": 17,
-    "labels": [
-      "bounty-claim",
-      "depin_validator_network-subbounty-question",
-      "level-3"
-    ],
-    "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "osmesirius-ship-it/daxda-next-gen",
-    "published_at": "2026-10-12T17:04:25Z",
-    "reward": {
-      "amount": 14500,
-      "currency": "USD",
-      "evidence": "[PAYOUT CLAIM] [depin_validator_network-subbounty-question] [BOUNTY] [$14500] [AGENTIC] [AI] DAXDA Decentralized DePIN Validator Network & Zero-Knowledge Verification Settlemen",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/osmesirius-ship-it/daxda-next-gen/issues/17",
-    "status": "open",
-    "title": "[PAYOUT CLAIM] [depin_validator_network-subbounty-question] [BOUNTY] [$14500] [AGENTIC] [AI] DAXDA Decentralized DePIN Validator Network & Zero-Knowledge Verification Settlement – Sovereign Peer-to-Peer Consensus ($14,500)",
-    "updated_at": "2026-10-12T17:04:27Z"
   },
   {
     "ai_assistability": "unknown",
@@ -644,7 +554,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -689,7 +599,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -734,7 +644,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -779,7 +689,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -824,7 +734,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -869,7 +779,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -914,7 +824,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -959,7 +869,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1004,7 +914,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1049,7 +959,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1094,7 +1004,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1139,7 +1049,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1184,7 +1094,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1229,7 +1139,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1274,7 +1184,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1319,7 +1229,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1364,7 +1274,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1383,51 +1293,6 @@
     "status": "open",
     "title": "[PAYOUT CLAIM] [collective-phi-alignment-question] [BOUNTY] [$30000] [AGENTIC] [AI] DAXDA Global Pan-Psychometric Alignment & Integrated Information Phi Hypergraph Invariant Engine ($30,000)",
     "updated_at": "2026-10-12T17:04:12Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "COLLABORATOR",
-    "body_excerpt": "**Pays $50** when a PR adds a tested recipe for this card and is merged. Rules: [BOUNTIES.md](https://github.com/sybil-solutions/.github/blob/main/BOUNTIES.md). | | | |---|---| | Card | `rx-7900-xtx-24gb` | | Model | Qwen3.8-27B, or any model in `registry/models.json` not yet tested on this card | | Context | 128K or more | | Done when | all six checks pass: loads, answers, thinks, calls a tool, recalls at a nearly full window, 15 tok/s or more | **Why:** The biggest consumer AMD card has one recipe. ### Steps 1. Comment `/attempt` here. A maintainer marks it `claimed`; you have 7 days. 2. On the machine, clone the [recipe kit](https://github.com/sybil-solutions/local-ai-recipe-kit), open your coding agent in it and give it [`PROMPT.md`](https://github.com/sybil-solutions/local-ai-recipe-kit/blob/main/PROMPT.md). 3. Make the recipe: `python3 lab/lab.py try <repo>@<commit> --model <id> --engine <profile> --card rx-7900-xtx-24gb --on endpoint --endpoint <your server>`, then `make`. 4. Open **one PR** here with `Closes #219` and the kit submission file. After merge, email sherif@sybilsolutions.ai with the PR link and how you want to be paid; never put payment details in the PR.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-sybil-solutions-local-ai-registry-219",
-    "issue_number": 219,
-    "labels": [
-      "bounty",
-      "bounty: $50",
-      "recipe"
-    ],
-    "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "sybil-solutions/local-ai-registry",
-    "published_at": "2026-10-12T13:07:25Z",
-    "reward": {
-      "amount": 50,
-      "currency": "USD",
-      "evidence": "Bounty $50: recipe for RX 7900 XTX 24 GB",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/sybil-solutions/local-ai-registry/issues/219",
-    "status": "open",
-    "title": "Bounty $50: recipe for RX 7900 XTX 24 GB",
-    "updated_at": "2026-10-17T13:38:16Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1454,8 +1319,8 @@
       "card support",
       "recipe"
     ],
-    "last_changed_at": "2026-10-19T04:39:00Z",
-    "last_checked_at": "2026-10-20T04:48:56Z",
+    "last_changed_at": "2026-10-21T04:44:27Z",
+    "last_checked_at": "2026-10-21T04:44:27Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1473,6 +1338,6 @@
     "source_url": "https://github.com/sybil-solutions/local-ai-registry/issues/223",
     "status": "open",
     "title": "Bounty $50: recipe for Ryzen AI 890M (Radeon 890M iGPU)",
-    "updated_at": "2026-10-18T07:35:40Z"
+    "updated_at": "2026-10-20T13:51:17Z"
   }
 ]
