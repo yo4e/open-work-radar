@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -110,7 +110,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -159,7 +159,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -202,8 +202,8 @@
     "labels": [
       "ready-for-agent"
     ],
-    "last_changed_at": "2026-10-21T04:44:27Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_changed_at": "2026-10-23T04:47:16Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -221,48 +221,7 @@
     "source_url": "https://github.com/ivcained/fiddy/issues/1",
     "status": "open",
     "title": "Fiddy: Farcaster client + read node + 3-command tutorial ($2048 bounty)",
-    "updated_at": "2026-10-20T07:12:01Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "60## Architecture & Feature Requirement We need to expand the UltimateAI action subsystem by introducing a headless `LibreOfficeAutomationTool` module. This tool will run safely inside containerized or local server-side environments to convert, manipulate, and generate enterprise documents (DOCX, XLSX, PDF) on behalf of AI requests. ### Core Acceptance Criteria: 1. **Zero-Trust Hard Boundary Gatekeeper:** Enforce a hard budget constraint of **$150 maximum compute allocation limits** per session window to prevent resource exploitation or billing leaks. 2. **Strict Multi-Payload Size Defense:** Reject individual input payloads exceeding **5MB** using explicit `StandardCharsets.UTF_8` evaluation. 3. **Path Protection:** Restrict document generation strictly inside the managed directory base path (`ultimate-managed-workspaces`). 4. **Parallel Stream Harvesting:** Read Process output (stdout/stderr) via independent daemon runner threads to eliminate OS pipe deadlocks. 5. **Auto-Teardown Mechanism:** Ensure all compiled or converted files are purged from volatile server storage in a `finally` block post-execution. ###Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "good-first-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
-    "issue_number": 9,
-    "labels": [],
-    "last_changed_at": "2026-10-06T06:19:00Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "iyeanur6-cyber/ultimate-ai-platform",
-    "published_at": "2026-07-12T17:52:37Z",
-    "reward": {
-      "amount": 150,
-      "currency": "USD",
-      "evidence": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/9",
-    "status": "open",
-    "title": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
-    "updated_at": "2026-09-08T23:24:21Z"
+    "updated_at": "2026-10-22T18:24:26Z"
   },
   {
     "ai_assistability": "unknown",
@@ -285,7 +244,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -329,7 +288,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -374,7 +333,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -419,7 +378,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -464,7 +423,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -509,7 +468,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -554,7 +513,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -599,7 +558,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -644,7 +603,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -689,7 +648,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -734,7 +693,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -779,7 +738,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -824,7 +783,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -869,7 +828,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -914,7 +873,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -959,7 +918,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1004,7 +963,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1049,7 +1008,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1094,7 +1053,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1139,7 +1098,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1184,7 +1143,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1224,8 +1183,8 @@
     "id": "github-perria080925-bot-agente-bountie-1",
     "issue_number": 1,
     "labels": [],
-    "last_changed_at": "2026-10-22T04:42:37Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_changed_at": "2026-10-23T04:47:16Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1243,7 +1202,7 @@
     "source_url": "https://github.com/perria080925-bot/agente-bountie/issues/1",
     "status": "open",
     "title": "[AGENTE] Checklist submission bounty Mermail ($500 USDC)",
-    "updated_at": "2026-10-22T01:38:24Z"
+    "updated_at": "2026-10-23T02:51:03Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1271,7 +1230,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-10-21T04:44:27Z",
-    "last_checked_at": "2026-10-22T04:42:37Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1290,5 +1249,47 @@
     "status": "open",
     "title": "Bounty $50: recipe for Ryzen AI 890M (Radeon 890M iGPU)",
     "updated_at": "2026-10-20T13:51:17Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## GXEON Paid Work — Candidate #002 (external contest) **Original bounty:** https://superteam.fun/earn/listing/try-a-solana-project-and-give-useful-feedback-tokengems **Selected Solana project:** Jupiter ($JUP) — https://tokengems.ai/tokens/solana/jupusd-JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN **Reward advertised:** 350 USDC total; five prizes of 100 / 75 / 75 / 50 / 50 USDC. **Not a guaranteed payment**. ### Research and execution evidence - Independently reviewed the Jupiter Swap V2 `GET /swap/v2/order` response contract in the public docs: https://github.com/jup-ag/docs/blob/main/swap/order-and-execute.mdx - Documented the difference between `transaction:null` (quote-only), `transaction:\"\"` (price quote without buildable transaction), and a nonempty transaction. - Flagged router-dependent `errorCode:2` semantics (Metis: insufficient SOL, JupiterZ: missing associated token account). - Prepared a short developer-facing critique and a self-contained **offline** Node.js typeguard demonstration. - `node --test safe-order.test.mjs`: **6 tests passed; 0 failed**. These are offline illustrative tests, not production or API tests. - Docs reviewed at Jupiter docs commit `1de8fd08f9ae17b38b9c4f07eb29637d6e2182a7` (2026-10-07). ### Current execution state **RESEARCH_READY / NOT_SUBMITTED / NOT_PAID** The operator still needs to: 1. Review the draft and add their own genuine observations; never claim an unperformed live test. 2. Sign in on TokenGems via their own wallet (no funds or trades required by the bounty), publish the original comment on the Jupiter project page. 3. Follow @tokengems and repost the exact contest announcement on X as required. 4. Submit the TokenGems profile URL, project/comment links and X handle via Superteam Earn before the deadline. No wallet signature, social post, external bounty application, or payout has been executed by the agent. Do not recognize announced contest awards as revenue. The program states one entry per person; no copied, fab…",
+    "category": "docs",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-xpex-systems-ai-GXEON-AI-452",
+    "issue_number": 452,
+    "labels": [],
+    "last_changed_at": "2026-10-23T04:47:16Z",
+    "last_checked_at": "2026-10-23T04:47:16Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "xpex-systems-ai/GXEON-AI",
+    "published_at": "2026-10-12T11:59:50Z",
+    "reward": {
+      "amount": 350,
+      "currency": "USDC",
+      "evidence": "**Reward advertised:** 350 USDC total; five prizes of 100 / 75 / 75 / 50 / 50 USDC. **Not a guaranteed payment**.",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/xpex-systems-ai/GXEON-AI/issues/452",
+    "status": "open",
+    "title": "GXEON PAID-WORK #002 — TokenGems/Jupiter docs review (research ready, no submission or payout)",
+    "updated_at": "2026-10-23T03:51:18Z"
   }
 ]
