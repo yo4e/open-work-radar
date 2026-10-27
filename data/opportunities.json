@@ -20,7 +20,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,7 +64,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -107,8 +107,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-10-26T04:44:53Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_changed_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -126,7 +126,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/28",
     "status": "open",
     "title": "💰 Bounty Seguro ($$100): 💰 Bounty Seguro ($$100): [Bounty] 💰 Bounty Seguro ",
-    "updated_at": "2026-10-26T00:07:20Z"
+    "updated_at": "2026-10-26T15:19:29Z"
   },
   {
     "ai_assistability": "unknown",
@@ -154,7 +154,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -203,7 +203,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -247,7 +247,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-10-23T04:47:16Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -288,7 +288,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -332,7 +332,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -377,7 +377,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -422,7 +422,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -467,7 +467,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -512,7 +512,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -557,7 +557,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -602,7 +602,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -647,7 +647,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -692,7 +692,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -737,7 +737,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -782,7 +782,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -827,7 +827,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -872,7 +872,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -917,7 +917,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -962,7 +962,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1007,7 +1007,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1052,7 +1052,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1097,7 +1097,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1142,7 +1142,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1187,7 +1187,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1227,8 +1227,8 @@
     "id": "github-perria080925-bot-agente-bountie-1",
     "issue_number": 1,
     "labels": [],
-    "last_changed_at": "2026-10-26T04:44:53Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_changed_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1246,7 +1246,7 @@
     "source_url": "https://github.com/perria080925-bot/agente-bountie/issues/1",
     "status": "open",
     "title": "[AGENTE] Checklist submission bounty Mermail ($500 USDC)",
-    "updated_at": "2026-10-26T04:09:07Z"
+    "updated_at": "2026-10-26T12:10:24Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1274,7 +1274,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-10-21T04:44:27Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1315,8 +1315,8 @@
     "id": "github-xpex-systems-ai-GXEON-AI-452",
     "issue_number": 452,
     "labels": [],
-    "last_changed_at": "2026-10-26T04:44:53Z",
-    "last_checked_at": "2026-10-26T04:44:53Z",
+    "last_changed_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-27T05:02:19Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1334,6 +1334,6 @@
     "source_url": "https://github.com/xpex-systems-ai/GXEON-AI/issues/452",
     "status": "open",
     "title": "GXEON PAID-WORK #002 — TokenGems/Jupiter docs review (research ready, no submission or payout)",
-    "updated_at": "2026-10-26T04:08:21Z"
+    "updated_at": "2026-10-26T12:09:30Z"
   }
 ]
