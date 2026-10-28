@@ -2,6 +2,48 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "This is a **synthetic release canary** for Squash's hardened/v2 runner and hosted payment flow. It is not an upstream OSS bug report. `double(value)` should multiply a number by two. The initial implementation in `src/index.mjs` adds two instead. Acceptance is defined by the committed `.squash/contract.json`: positive, zero and negative numeric inputs, built with the committed npm lockfile into `dist/index.mjs`. The frozen base must fail before funding; a solver's exact delivered commit must pass the same contract. The planned solver bounty is **$5.00**, paid through Squash after a valid claim, passing grade and payout-eligibility checks. The funder completes hosted card checkout separately. Do not start paid work until Squash confirms this issue is funded and you hold the claim. Solvers need GitHub identity, the visible linked Squash profile badge and an eligible Stripe payout account. The funder cannot also be the payee. Setup: https://app.squash.ci/setup After the bounty is funded, use `/claim` here, then `/deliver <full-commit-SHA> <public-fork-URL>` from the eligible claimant's account. Squash keeps payment and verification records; no direct or off-platform payment is requested.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-DaltonTheDeveloper-squash-v2-canary-20261027-1",
+    "issue_number": 1,
+    "labels": [],
+    "last_changed_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "DaltonTheDeveloper/squash-v2-canary-20261027",
+    "published_at": "2026-10-28T03:57:48Z",
+    "reward": {
+      "amount": 5,
+      "currency": "USD",
+      "evidence": "Release canary: double must multiply by two ($5 Squash bounty)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/DaltonTheDeveloper/squash-v2-canary-20261027/issues/1",
+    "status": "open",
+    "title": "Release canary: double must multiply by two ($5 Squash bounty)",
+    "updated_at": "2026-10-28T05:23:43Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
     "author_association": "COLLABORATOR",
     "body_excerpt": "## Goal Add a small automated smoke test that verifies the public `/paid-bounties` route resolves correctly and does not fall through to the SPA home. ## Scope - Add a focused route/static-page test only. - Verify the canonical route `/paid-bounties`. - Verify `/paid-bounties.html` redirects to the canonical route if the test layer supports redirect assertions. - Do not change payment, treasury, wallet, settlement or bounty approval logic. ## Acceptance criteria - The new test passes locally and in CI. - Existing tests remain green. - The test fails if the route is removed or accidentally caught by the SPA fallback. ## Reward **15 USD equivalent — RESERVED.** The project owner has confirmed that funds are available and this amount is reserved for this task. Settlement rail will be agreed with the contributor before payout: **XMR, BTC or ETH**. The USD-equivalent conversion reference/timing, network and fee handling will be agreed before settlement. **RESERVED does not mean PAID**: payment follows accepted completion of the agreed scope. ## Contributor workflow - Reference this issue in the PR. - Include the test added and the local test command/result. - Include CI evidence once available. - Briefly explain what regression the test prevents. Accepted work can be linked as evidence in the contributor's MyZubster Contributor Passport / Pilot Node history.",
     "category": "design",
@@ -20,7 +62,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -64,7 +106,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -108,7 +150,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -127,6 +169,50 @@
     "status": "open",
     "title": "💰 Bounty Seguro ($$100): 💰 Bounty Seguro ($$100): [Bounty] 💰 Bounty Seguro ",
     "updated_at": "2026-10-26T15:19:29Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "🤖 **Bounty con Pago Garantizado (Escrow)** - **Título:** [Bounty] Preserve RFC 7239 `Forwarded` host authority in sub-mounted ASGI `Request.scope_ - **Monto:** $$250 - **Plataforma:** GitHub Issue - **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4143) --- ### 💰 Payment Details - BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00 - ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED - LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne - Lightning: chieftrait089@walletofsatoshi.com **Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you! --- *Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-alfrexo95-bounty-bot-53",
+    "issue_number": 53,
+    "labels": [
+      "bounty",
+      "escrow"
+    ],
+    "last_changed_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "alfrexo95/bounty-bot",
+    "published_at": "2026-10-28T05:03:16Z",
+    "reward": {
+      "amount": 250,
+      "currency": "USD",
+      "evidence": "💰 Bounty Seguro ($$250): [Bounty] Preserve RFC 7239 `Forwarded` host author",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/alfrexo95/bounty-bot/issues/53",
+    "status": "open",
+    "title": "💰 Bounty Seguro ($$250): [Bounty] Preserve RFC 7239 `Forwarded` host author",
+    "updated_at": "2026-10-28T05:22:17Z"
   },
   {
     "ai_assistability": "unknown",
@@ -154,7 +240,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -203,7 +289,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -247,7 +333,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-10-23T04:47:16Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -288,7 +374,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -332,7 +418,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -377,7 +463,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -422,7 +508,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -467,7 +553,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -512,7 +598,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -557,7 +643,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -602,7 +688,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -647,7 +733,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -692,7 +778,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -737,7 +823,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -782,7 +868,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -827,7 +913,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -872,7 +958,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -917,7 +1003,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -962,7 +1048,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1007,7 +1093,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1052,7 +1138,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1097,7 +1183,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1142,7 +1228,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1187,7 +1273,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1227,8 +1313,8 @@
     "id": "github-perria080925-bot-agente-bountie-1",
     "issue_number": 1,
     "labels": [],
-    "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_changed_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1246,7 +1332,7 @@
     "source_url": "https://github.com/perria080925-bot/agente-bountie/issues/1",
     "status": "open",
     "title": "[AGENTE] Checklist submission bounty Mermail ($500 USDC)",
-    "updated_at": "2026-10-26T12:10:24Z"
+    "updated_at": "2026-10-28T02:02:14Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1274,7 +1360,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-10-21T04:44:27Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1308,15 +1394,14 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
-      "reward"
+      "bounty"
     ],
     "github_state": "open",
     "id": "github-xpex-systems-ai-GXEON-AI-452",
     "issue_number": 452,
     "labels": [],
-    "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-10-27T05:02:19Z",
+    "last_changed_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-28T05:40:29Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1334,6 +1419,6 @@
     "source_url": "https://github.com/xpex-systems-ai/GXEON-AI/issues/452",
     "status": "open",
     "title": "GXEON PAID-WORK #002 — TokenGems/Jupiter docs review (research ready, no submission or payout)",
-    "updated_at": "2026-10-26T12:09:30Z"
+    "updated_at": "2026-10-28T02:02:24Z"
   }
 ]
