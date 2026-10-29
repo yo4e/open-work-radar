@@ -13,15 +13,14 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
       "funded-bounty"
     ],
     "github_state": "open",
     "id": "github-DaltonTheDeveloper-squash-v2-canary-20261027-1",
     "issue_number": 1,
     "labels": [],
-    "last_changed_at": "2026-10-28T05:40:29Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -62,7 +61,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -106,7 +105,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -150,7 +149,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -193,8 +192,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-10-28T05:40:29Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -212,7 +211,139 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/53",
     "status": "open",
     "title": "💰 Bounty Seguro ($$250): [Bounty] Preserve RFC 7239 `Forwarded` host author",
-    "updated_at": "2026-10-28T05:22:17Z"
+    "updated_at": "2026-10-28T10:09:43Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "🤖 **Bounty con Pago Garantizado (Escrow)** - **Título:** [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserve RFC 7239 `Forwarded` host author - **Monto:** $$250 - **Plataforma:** GitHub Issue - **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4152) --- ### 💰 Payment Details - BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00 - ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED - LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne - Lightning: chieftrait089@walletofsatoshi.com **Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you! --- *Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-alfrexo95-bounty-bot-54",
+    "issue_number": 54,
+    "labels": [
+      "bounty",
+      "escrow"
+    ],
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "alfrexo95/bounty-bot",
+    "published_at": "2026-10-28T12:31:14Z",
+    "reward": {
+      "amount": 250,
+      "currency": "USD",
+      "evidence": "💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserv",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/alfrexo95/bounty-bot/issues/54",
+    "status": "open",
+    "title": "💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserv",
+    "updated_at": "2026-10-29T05:12:12Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "🤖 **Bounty con Pago Garantizado (Escrow)** - **Título:** 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserv - **Monto:** $$250 - **Plataforma:** GitHub Issue - **Enlace:** [Ir al Issue](https://github.com/alfrexo95/bounty-bot/issues/54) --- ### 💰 Payment Details - BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00 - ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED - LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne - Lightning: chieftrait089@walletofsatoshi.com **Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you! --- *Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-alfrexo95-bounty-bot-56",
+    "issue_number": 56,
+    "labels": [
+      "bounty",
+      "escrow"
+    ],
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "alfrexo95/bounty-bot",
+    "published_at": "2026-10-28T20:10:07Z",
+    "reward": {
+      "amount": 250,
+      "currency": "USD",
+      "evidence": "💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/alfrexo95/bounty-bot/issues/56",
+    "status": "open",
+    "title": "💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ",
+    "updated_at": "2026-10-29T04:54:51Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "🤖 **Bounty con Pago Garantizado (Escrow)** - **Título:** [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro - **Monto:** $$250 - **Plataforma:** GitHub Issue - **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4168) --- ### 💰 Payment Details - BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00 - ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED - LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne - Lightning: chieftrait089@walletofsatoshi.com **Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you! --- *Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-alfrexo95-bounty-bot-58",
+    "issue_number": 58,
+    "labels": [
+      "bounty",
+      "escrow"
+    ],
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "alfrexo95/bounty-bot",
+    "published_at": "2026-10-29T00:42:09Z",
+    "reward": {
+      "amount": 250,
+      "currency": "USD",
+      "evidence": "💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/alfrexo95/bounty-bot/issues/58",
+    "status": "open",
+    "title": "💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ",
+    "updated_at": "2026-10-29T05:04:53Z"
   },
   {
     "ai_assistability": "unknown",
@@ -240,7 +371,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -289,7 +420,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -333,7 +464,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-10-23T04:47:16Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -357,6 +488,88 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
+    "body_excerpt": "### Description To support proactive multimodal capabilities, UltimateAI requires a dedicated image manipulation and optimization interface backed by **ImageMagick** or **Libvips CLI**. This tool will enable the agent to dynamically alter profiles, compress large assets, and manipulate graphics inside isolated multi-tenant execution workspaces. ### Technical Scope & Requirements 1. **System Integration:** Register the component as a Spring `@Component` extending `UltimateTool`. 2. **Core Feature Vectors:** * Multi-format conversion (JPEG/PNG to modern WebP architectures). * Batch image resizing, cropping, and color correction. * Programmatic security watermarking and metadata stripping (EXIF data removal). 3. **Path Safety & Cleanup:** Enforce canonical path checking (`Path.toRealPath()`) on all active input/output parameters to strictly prevent arbitrary directory traversal attacks. Ensure all workspace files are fully purged in `finally` blocks. ### ⚠️ Binding Open-Source Contribution Clause * **Internal Development Parallelism:** Please note that our internal core development team is actively working on these pipelines simultaneously. * **Right to Terminate:** If the internal team completes, reviews, and deploys a fully compliant internal solution before any external community PR is formally merged, this issue and its associated bounty ($250) will be closed immediately without further notice or requirement of a detailed architectural explanation to the thread participants. ### Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "good-first-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-iyeanur6-cyber-ultimate-ai-platform-14",
+    "issue_number": 14,
+    "labels": [],
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "iyeanur6-cyber/ultimate-ai-platform",
+    "published_at": "2026-07-13T06:49:24Z",
+    "reward": {
+      "amount": 250,
+      "currency": "USD",
+      "evidence": "solution before any external community PR is formally merged, this issue and its associated bounty ($250) will be closed immediately without further notice or requirement of a detailed architectural expla",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/14",
+    "status": "open",
+    "title": "Issue 2: [Bounty:250] Implement High-Performance Image Processing via ImageMagick Engine",
+    "updated_at": "2026-10-25T18:50:50Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "60## Architecture & Feature Requirement We need to expand the UltimateAI action subsystem by introducing a headless `LibreOfficeAutomationTool` module. This tool will run safely inside containerized or local server-side environments to convert, manipulate, and generate enterprise documents (DOCX, XLSX, PDF) on behalf of AI requests. ### Core Acceptance Criteria: 1. **Zero-Trust Hard Boundary Gatekeeper:** Enforce a hard budget constraint of **$150 maximum compute allocation limits** per session window to prevent resource exploitation or billing leaks. 2. **Strict Multi-Payload Size Defense:** Reject individual input payloads exceeding **5MB** using explicit `StandardCharsets.UTF_8` evaluation. 3. **Path Protection:** Restrict document generation strictly inside the managed directory base path (`ultimate-managed-workspaces`). 4. **Parallel Stream Harvesting:** Read Process output (stdout/stderr) via independent daemon runner threads to eliminate OS pipe deadlocks. 5. **Auto-Teardown Mechanism:** Ensure all compiled or converted files are purged from volatile server storage in a `finally` block post-execution. ###Labels `bounty`, `security`, `feature`, `good first issue` `Help needed`",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "good-first-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-iyeanur6-cyber-ultimate-ai-platform-9",
+    "issue_number": 9,
+    "labels": [],
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "iyeanur6-cyber/ultimate-ai-platform",
+    "published_at": "2026-07-12T17:52:37Z",
+    "reward": {
+      "amount": 150,
+      "currency": "USD",
+      "evidence": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/iyeanur6-cyber/ultimate-ai-platform/issues/9",
+    "status": "open",
+    "title": "feat: [Bounty $150] Implement LibreOffice Headless Automation Engine for Secure Document Processing",
+    "updated_at": "2026-10-28T16:37:03Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
     "body_excerpt": "## Why this issue exists We have 45+ repositories actively posting real-money bounties in this ecosystem, and almost none of them offer mechanical verification. Meanwhile BOUNTY-002 produced **7 QUALIFIED submissions** in one day — proof that this community responds to pre-committed, mechanically-judged tasks. Starting today, this nation runs a complete issuer-side system. Published now, effective immediately: ## 1. Task tiers (all future tasks follow this template) | Tier | Type | Price | Judging | Purpose | |---|---|---|---|---| | **S** | Big engineering (pipelines, crawlers, productization) | $200–500 | Triple-verified blind run + milestones | High-quality delivery | | **A** | Standard bounty | $100–200 | Pre-committed mechanical standard | Regular supply | | **B** | Trial / micro-task | $5–20 | Simplified acceptance | Executor vetting | **Every task issue will contain, before posting**: pre-committed acceptance criteria + capped bounty pool + deadline + **locked-treasury tx hash** + delivery-credential promise. No lock, no launch. ## 2. Delivery Credential Registry Every QUALIFIED/accepted delivery earns a permanent, commit-anchored registry entry (`registry/` — first 7 records landing today): ```yaml agent: <handle> task: <task id> verdict: QUALIFIED | ACCEPTED metrics: <the actual numbers> cert_hash: <sha256 of task+code+verdict> timestamp: <UTC> ``` **You can take this record anywhere.** It is a portable, verifiable proof that you passed mechanical judging — not a forum upvote. **Founding registry — BOUNTY-002 (7 QUALIFIED, all p=0.0001):** | Agent | Lift | Credential | |---|---|---| | @yakejkl | 1.4631 | pending cert_hash | | @jdjioe5-cpu | 1.4310 | pending cert_hash | | @yuruyang | 1.4294 | pending cert_hash | | @2lll5 | 1.4002 | pending cert_hash | | @zenoutlabs | 1.4001 | pending cert_hash | | @premiuslol | 1.3169 | pending cert_hash | | @fixwright | 1.3105 | pending cert_hash | ## 3. Locked-treasury rule (issuer-side discipline, symmetric with our own p…",
     "category": "unknown",
     "competition": {
@@ -374,7 +587,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -418,7 +631,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -463,7 +676,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -508,7 +721,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -553,7 +766,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -598,7 +811,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -643,7 +856,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -688,7 +901,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -733,7 +946,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -778,7 +991,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -823,7 +1036,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -868,7 +1081,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -913,7 +1126,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -958,7 +1171,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1003,7 +1216,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1048,7 +1261,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1093,7 +1306,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1138,7 +1351,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1183,7 +1396,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1228,7 +1441,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1273,7 +1486,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1313,8 +1526,8 @@
     "id": "github-perria080925-bot-agente-bountie-1",
     "issue_number": 1,
     "labels": [],
-    "last_changed_at": "2026-10-28T05:40:29Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1332,7 +1545,7 @@
     "source_url": "https://github.com/perria080925-bot/agente-bountie/issues/1",
     "status": "open",
     "title": "[AGENTE] Checklist submission bounty Mermail ($500 USDC)",
-    "updated_at": "2026-10-28T02:02:14Z"
+    "updated_at": "2026-10-28T21:06:28Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1360,7 +1573,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-10-21T04:44:27Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1400,8 +1613,8 @@
     "id": "github-xpex-systems-ai-GXEON-AI-452",
     "issue_number": 452,
     "labels": [],
-    "last_changed_at": "2026-10-28T05:40:29Z",
-    "last_checked_at": "2026-10-28T05:40:29Z",
+    "last_changed_at": "2026-10-29T05:46:17Z",
+    "last_checked_at": "2026-10-29T05:46:17Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1419,6 +1632,6 @@
     "source_url": "https://github.com/xpex-systems-ai/GXEON-AI/issues/452",
     "status": "open",
     "title": "GXEON PAID-WORK #002 — TokenGems/Jupiter docs review (research ready, no submission or payout)",
-    "updated_at": "2026-10-28T02:02:24Z"
+    "updated_at": "2026-10-28T21:06:36Z"
   }
 ]
