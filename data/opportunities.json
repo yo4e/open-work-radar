@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -61,7 +61,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -107,8 +107,8 @@
       "integration",
       "major"
     ],
-    "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -126,7 +126,52 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/2890",
     "status": "open",
     "title": "[BOUNTY: 67 RTC] AgentFolio ↔ Beacon Integration Spec + Reference Implementation",
-    "updated_at": "2026-10-31T09:05:58Z"
+    "updated_at": "2026-11-02T18:07:57Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## [BOUNTY] Write a BoTTube Integration Guide — 15 RTC **Reward**: 15 RTC ($1.50 at reference rate) **Difficulty**: Easy **Status**: Open ### Description Write a developer-focused guide or blog post about integrating with the BoTTube API. Published on Dev.to, Medium, Hashnode, or your own blog. ### Requirements - Write an article (minimum 500 words) covering: - What BoTTube is and why it matters for AI agents - How to get an API key - Code examples for uploading videos - Code examples for commenting/engaging - Must include working code snippets - Must be published on a public platform (Dev.to, Medium, Hashnode, personal blog) - Must link to bottube.ai ### How to Claim 1. Comment with your planned article outline 2. Write and publish the article 3. Reply with the published URL 4. Receive 15 RTC to your wallet ### Resources - BoTTube: https://bottube.ai - Python SDK: `pip install bottube` - Existing articles: https://dev.to/scottcjn",
+    "category": "design",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-450",
+    "issue_number": 450,
+    "labels": [
+      "bottube",
+      "bounty",
+      "content"
+    ],
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-26T22:22:03Z",
+    "reward": {
+      "amount": 1.5,
+      "currency": "USD",
+      "evidence": "**Reward**: 15 RTC ($1.50 at reference rate)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/450",
+    "status": "open",
+    "title": "[BOUNTY] Write a BoTTube Integration Guide — 10 RTC",
+    "updated_at": "2026-11-03T02:56:10Z"
   },
   {
     "ai_assistability": "unknown",
@@ -155,7 +200,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -201,8 +246,8 @@
       "open",
       "red-team"
     ],
-    "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -220,7 +265,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/67",
     "status": "open",
     "title": "[BOUNTY] 🔴 Red Team: Payment Widget XSS & Injection (75 RTC)",
-    "updated_at": "2026-11-01T07:37:02Z"
+    "updated_at": "2026-11-02T23:56:07Z"
   },
   {
     "ai_assistability": "unknown",
@@ -246,7 +291,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -290,7 +335,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -334,7 +379,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-31T05:38:52Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -377,8 +422,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -396,7 +441,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/54",
     "status": "open",
     "title": "💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserv",
-    "updated_at": "2026-10-29T05:12:12Z"
+    "updated_at": "2026-11-02T06:39:56Z"
   },
   {
     "ai_assistability": "unknown",
@@ -421,8 +466,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-10-31T05:38:52Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -440,7 +485,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/56",
     "status": "open",
     "title": "💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ",
-    "updated_at": "2026-10-30T10:28:29Z"
+    "updated_at": "2026-11-02T06:39:48Z"
   },
   {
     "ai_assistability": "unknown",
@@ -465,8 +510,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-10-31T05:38:52Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -484,7 +529,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/58",
     "status": "open",
     "title": "💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ",
-    "updated_at": "2026-10-30T10:26:58Z"
+    "updated_at": "2026-11-02T06:39:40Z"
   },
   {
     "ai_assistability": "unknown",
@@ -510,7 +555,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -554,7 +599,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -597,8 +642,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -616,7 +661,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/72",
     "status": "open",
     "title": "💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): [Bounty] 💰 Bount",
-    "updated_at": "2026-11-01T01:43:03Z"
+    "updated_at": "2026-11-02T12:45:07Z"
   },
   {
     "ai_assistability": "unknown",
@@ -641,8 +686,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -660,7 +705,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/73",
     "status": "open",
     "title": "💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ",
-    "updated_at": "2026-11-01T05:32:09Z"
+    "updated_at": "2026-11-02T12:46:35Z"
   },
   {
     "ai_assistability": "unknown",
@@ -685,8 +730,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -704,7 +749,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/76",
     "status": "open",
     "title": "💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ",
-    "updated_at": "2026-11-02T00:33:54Z"
+    "updated_at": "2026-11-02T12:43:29Z"
   },
   {
     "ai_assistability": "unknown",
@@ -732,7 +777,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -766,8 +811,7 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
-      "reward"
+      "bounty"
     ],
     "github_state": "open",
     "id": "github-dailydollar-bot-agent-bounty-feed-3",
@@ -775,8 +819,8 @@
     "labels": [
       "help wanted"
     ],
-    "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_changed_at": "2026-11-03T06:45:25Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -794,7 +838,7 @@
     "source_url": "https://github.com/dailydollar-bot/agent-bounty-feed/issues/3",
     "status": "open",
     "title": "5 USDC bounty: best public agent-facing guide or demo for Agent Bounty Feed (deadline 2026-11-12)",
-    "updated_at": "2026-11-02T04:21:05Z"
+    "updated_at": "2026-11-03T03:49:04Z"
   },
   {
     "ai_assistability": "unknown",
@@ -825,7 +869,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -866,7 +910,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -910,7 +954,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-10-23T04:47:16Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -951,7 +995,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -995,7 +1039,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1040,7 +1084,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1085,7 +1129,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1130,7 +1174,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1175,7 +1219,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1220,7 +1264,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1265,7 +1309,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1310,7 +1354,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1355,7 +1399,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1400,7 +1444,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1445,7 +1489,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1490,7 +1534,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1535,7 +1579,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1580,7 +1624,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1625,7 +1669,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1670,7 +1714,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1715,7 +1759,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1760,7 +1804,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1805,7 +1849,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1850,7 +1894,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1891,7 +1935,7 @@
     "issue_number": 161,
     "labels": [],
     "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1932,7 +1976,7 @@
     "issue_number": 36,
     "labels": [],
     "last_changed_at": "2026-10-30T05:46:26Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1951,47 +1995,6 @@
     "status": "open",
     "title": "Challenge: Bypass the Ed25519 signature verification ($200 bounty)",
     "updated_at": "2026-10-29T22:54:14Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## 🎯 Estado: SKILL COMPLETA — bloqueada solo por permisos del token La skill **`mermail-bookkeeper-agent`** está terminada, validada con `npm test` del repo oficial (18 skills, 73 tools ✅) y commiteada en el branch `feat/mermail-bookkeeper-agent`. --- ### PASO 1 — Actualizar el token GitHub (2 min, desbloquea todo) El token actual es read-only para contenidos. Ir a: **GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → [este token] → Edit** 1. Repository access → **All repositories** (el fork `perria080925-bot/mermail-skills` se creó después del token) 2. Permissions → **Contents: Read and write** 3. Permissions → **Pull requests: Read and write** 4. (opcional) Metadata: Read (ya la tiene) 5. Regenerate/copiar el nuevo token y pegarlo al agente en el chat ### PASO 2 — Lo que hace el agente automáticamente con el nuevo token 1. `git push fork feat/mermail-bookkeeper-agent` (commit ya listo: 5 archivos nuevos + 5 índices actualizados) 2. Abrir el PR contra `Nudgen-Marketing/mermail-skills:main` con el template del repo completo 3. Respaldo en `agente-bountie` ### PASO 3 — Cuenta Mermail para el demo EN VIVO (5 min) 1. Sign up en **https://mermail.app** (Google o email) 2. Console → crear workspace → crear 2 mailboxes (ej. `billing@...` y `demo@...`) 3. Settings → API Keys → generar `sk-proj-...` → pegarla al agente (o guardarla como secret) 4. Con eso el agente ejecuta el demo real: siembra emails de recibos vía API → corre la skill → captura evidencia para el video ### PASO 4 — Demo video + submission (humano, 15 min) 1. El agente genera el video demo 2-5 min (frames reales de ejecución + ffmpeg) 2. Publicar el video en X citando la cuenta de Mermail (@Mermailapp) 3. Subir submission en https://superteam.fun/earn/listing/build-and-demo-a-mermail-agent-skill/ con: link del PR + link del video + descripción + cliente AI usado 4. Deadline: **2026-10-07** — premios: 1º $250, 2º $100, 3º $50, Innovación $50, Video $50 (USDC) --- ### Co…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-perria080925-bot-agente-bountie-1",
-    "issue_number": 1,
-    "labels": [],
-    "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "perria080925-bot/agente-bountie",
-    "published_at": "2026-09-27T14:39:06Z",
-    "reward": {
-      "amount": 500,
-      "currency": "USDC",
-      "evidence": "[AGENTE] Checklist submission bounty Mermail ($500 USDC)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/perria080925-bot/agente-bountie/issues/1",
-    "status": "open",
-    "title": "[AGENTE] Checklist submission bounty Mermail ($500 USDC)",
-    "updated_at": "2026-11-01T17:23:38Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2019,7 +2022,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-10-21T04:44:27Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
+    "last_checked_at": "2026-11-03T06:45:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2038,46 +2041,5 @@
     "status": "open",
     "title": "Bounty $50: recipe for Ryzen AI 890M (Radeon 890M iGPU)",
     "updated_at": "2026-10-20T13:51:17Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## GXEON Paid Work — Candidate #002 (external contest) **Original bounty:** https://superteam.fun/earn/listing/try-a-solana-project-and-give-useful-feedback-tokengems **Selected Solana project:** Jupiter ($JUP) — https://tokengems.ai/tokens/solana/jupusd-JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN **Reward advertised:** 350 USDC total; five prizes of 100 / 75 / 75 / 50 / 50 USDC. **Not a guaranteed payment**. ### Research and execution evidence - Independently reviewed the Jupiter Swap V2 `GET /swap/v2/order` response contract in the public docs: https://github.com/jup-ag/docs/blob/main/swap/order-and-execute.mdx - Documented the difference between `transaction:null` (quote-only), `transaction:\"\"` (price quote without buildable transaction), and a nonempty transaction. - Flagged router-dependent `errorCode:2` semantics (Metis: insufficient SOL, JupiterZ: missing associated token account). - Prepared a short developer-facing critique and a self-contained **offline** Node.js typeguard demonstration. - `node --test safe-order.test.mjs`: **6 tests passed; 0 failed**. These are offline illustrative tests, not production or API tests. - Docs reviewed at Jupiter docs commit `1de8fd08f9ae17b38b9c4f07eb29637d6e2182a7` (2026-10-07). ### Current execution state **RESEARCH_READY / NOT_SUBMITTED / NOT_PAID** The operator still needs to: 1. Review the draft and add their own genuine observations; never claim an unperformed live test. 2. Sign in on TokenGems via their own wallet (no funds or trades required by the bounty), publish the original comment on the Jupiter project page. 3. Follow @tokengems and repost the exact contest announcement on X as required. 4. Submit the TokenGems profile URL, project/comment links and X handle via Superteam Earn before the deadline. No wallet signature, social post, external bounty application, or payout has been executed by the agent. Do not recognize announced contest awards as revenue. The program states one entry per person; no copied, fab…",
-    "category": "docs",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-xpex-systems-ai-GXEON-AI-452",
-    "issue_number": 452,
-    "labels": [],
-    "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-02T05:59:28Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "xpex-systems-ai/GXEON-AI",
-    "published_at": "2026-10-12T11:59:50Z",
-    "reward": {
-      "amount": 350,
-      "currency": "USDC",
-      "evidence": "**Reward advertised:** 350 USDC total; five prizes of 100 / 75 / 75 / 50 / 50 USDC. **Not a guaranteed payment**.",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/xpex-systems-ai/GXEON-AI/issues/452",
-    "status": "open",
-    "title": "GXEON PAID-WORK #002 — TokenGems/Jupiter docs review (research ready, no submission or payout)",
-    "updated_at": "2026-11-01T17:23:51Z"
   }
 ]
