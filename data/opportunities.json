@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -44,7 +44,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Regression Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Funding Status**: Held in escrow — Reward: $450 USDC (`/attempt` / `/claim` enabled) - **External Edge Conformance Mirror**: http://132.145.159.202:11449/v1/conformance/epoch - **Upstream Conformance Test Runner**: https://github.com/IES-BoilerRoom/Furnace/issues/1 - **Rotating Domain Mirror**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1 Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `arbitrate_horizon_ring_acf(wire_chunks, drain_ceiling=65497)` with deterministic backpressure signaling before dispatching tool-call deltas. To claim, clone `IES-BoilerRoom/Furnace` (or the rotating domain mirror), pass all 24 vectors of `python3 verify_conformance.py` (`24/24 VECTORS GREEN`), and open your PR there.",
+    "body_excerpt": "> **Automated CI Regression Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Funding Status**: Held in escrow — Reward: $450 USDC (`/attempt` / `/claim` enabled) - **External Edge Conformance Mirror**: http://132.145.159.202:11449/v1/conformance/epoch - **Upstream Conformance Test Runner**: https://github.com/IES-BoilerRoom/Furnace/issues/1 - **Rotating Domain Mirror**: https://github.com/IES-BoilerRoom/vllm-paged-kv-verifier/issues/1 Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `_arbitrate_cursor_latch_v2(wire_chunks, high_water_bytes=32749)` with deterministic backpressure signaling before dispatching tool-call deltas. To claim, clone `IES-BoilerRoom/Furnace` (or the rotating domain mirror), pass all 24 vectors of `python3 verify_conformance.py` (`24/24 VECTORS GREEN`), and open your PR there.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -63,8 +63,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -74,21 +74,21 @@
     "reward": {
       "amount": 450,
       "currency": "USDC",
-      "evidence": "💎 [Bounty $450 USDC] Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff (arbitrate_horizon_ring",
+      "evidence": "💎 [Bounty $450 USDC] Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff (_arbitrate_cursor_latc",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
     "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/1",
     "status": "open",
-    "title": "💎 [Bounty $450 USDC] Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff (arbitrate_horizon_ring_acf)",
-    "updated_at": "2026-11-06T06:17:45Z"
+    "title": "💎 [Bounty $450 USDC] Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff (_arbitrate_cursor_latch_v2)",
+    "updated_at": "2026-11-07T05:47:43Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Regression Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Funding Status**: Held in escrow — Reward: $600 USDC (`/attempt` / `/claim` enabled) - **External Edge Conformance Mirror**: http://132.145.159.202:11449/v1/conformance/epoch - **Upstream Conformance Test Runner**: https://github.com/IES-BoilerRoom/Furnace/issues/2 - **Rotating Domain Mirror**: https://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/2 During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `_arbitrate_stride_index_v4(ring_slots, epoch_mask=330)` before returning physical blocks to the free allocator list. To claim, clone `IES-BoilerRoom/Furnace` (or the rotating domain mirror), pass all 24 vectors of `python3 verify_conformance.py` (`24/24 VECTORS GREEN`), and open your PR there.",
+    "body_excerpt": "> **Automated CI Regression Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror. - **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Funding Status**: Held in escrow — Reward: $600 USDC (`/attempt` / `/claim` enabled) - **External Edge Conformance Mirror**: http://132.145.159.202:11449/v1/conformance/epoch - **Upstream Conformance Test Runner**: https://github.com/IES-BoilerRoom/Furnace/issues/2 - **Rotating Domain Mirror**: https://github.com/IES-BoilerRoom/vllm-paged-kv-verifier/issues/2 During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `arbitrate_frame_c92e(tx_stack, barrier_tag=203)` before returning physical blocks to the free allocator list. To claim, clone `IES-BoilerRoom/Furnace` (or the rotating domain mirror), pass all 24 vectors of `python3 verify_conformance.py` (`24/24 VECTORS GREEN`), and open your PR there.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -107,8 +107,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -118,15 +118,15 @@
     "reward": {
       "amount": 600,
       "currency": "USDC",
-      "evidence": "💎 [Bounty $600 USDC] PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption (_arbitrate_stride_in",
+      "evidence": "💎 [Bounty $600 USDC] PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption (arbitrate_frame_c92e",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
     "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/2",
     "status": "open",
-    "title": "💎 [Bounty $600 USDC] PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption (_arbitrate_stride_index_v4)",
-    "updated_at": "2026-11-06T06:17:46Z"
+    "title": "💎 [Bounty $600 USDC] PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption (arbitrate_frame_c92e)",
+    "updated_at": "2026-11-07T05:47:44Z"
   },
   {
     "ai_assistability": "unknown",
@@ -149,7 +149,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -168,6 +168,292 @@
     "status": "open",
     "title": "[GOOD FIRST ISSUE · RESERVED] Add smoke test for /paid-bounties route — 15 USD equivalent",
     "updated_at": "2026-10-03T02:02:01Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Model a prop — 7 RTC each Maps need **set dressing and interactive objects**. Build original 3D props for the [Xonotic RustChain Arena](https://github.com/Scottcjn/xonotic-rustchain). ### Prop wishlist (7 RTC each, on-theme) - ⬜ **Mining rig / GPU farm** (static prop, glowing fans) - ⬜ **Server rack** with blinking LEDs - ⬜ **Vintage PowerPC / retro tower** (antiquity nod) - ⬜ **RTC token pickup** (spinning coin, item model) - ⬜ **Hash-block crate / cover obstacle** - ⬜ **Validator node pillar / capture point** - ⬜ **Holographic ledger billboard** ### Deliverable (one PR per prop to `Scottcjn/xonotic-rustchain`) - Model: **`.md3` or `.iqm`** under `pk3_build/models/props/<name>/` - Textures (TGA, power-of-2) + a `.skin` if needed - Preview render (PNG) - LICENSE (CC-BY-SA-4.0 / GPL-compatible) + README - Loads cleanly; reasonable poly budget for an FPS ### How to claim PR the prop, comment with the link + RTC wallet/handle. First clean per distinct prop. **7 RTC** on merge. Pickup/interactive props that wire into the reward loop may earn a bonus. (Rate post-$0.15 adjustment.) <!-- machine-readable bounty spec --> ```bounty-spec # auto-backfilled; maintainer may refine paid: true reward_rtc: 7 per: per-item cap: 5 submit: [pr, email] # PR goes to the game repo, NOT this tracker; then comment here target_repo: Scottcjn/xonotic-rustchain not_in_repo: true ```",
+    "category": "design",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-14015",
+    "issue_number": 14015,
+    "labels": [
+      "bounty"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-06-12T18:17:40Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "C** on merge. Pickup/interactive props that wire into the reward loop may earn a bonus. (Rate post-$0.15 adjustment.) <!-- machine-readable bounty spec --> ```bounty-spec # auto-backfilled; maintainer ma",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/14015",
+    "status": "open",
+    "title": "[BOUNTY: 7 RTC] Design Map Objects / Props for Xonotic RustChain Arena",
+    "updated_at": "2026-11-07T02:24:33Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 25 RTC Every node monitor in `Scottcjn/Rustchain` decides \"up\" from the HTTP status code. If a node's host is replaced by something unrelated that answers **200 on every path** (a single-page app, a hosting parking page, a captive portal), the monitors report it healthy forever. This is not hypothetical: an external attestation node's IP was repurposed to serve an unrelated SPA, `/health` and `/epoch` both returned 200 with HTML, and the status page kept it green for weeks. Where the code stands today (all on `main`): | Monitor | What it does with a 200 + non-JSON body | |---|---| | `status/status_server.py` `check_node()` ~L77 | `except ValueError: data = {}` → returns **`\"up\": True`** with `version: \"unknown\"` | | `health-dashboard/server.py` `check_node_health()` ~L245 | `response.json()` raises → generic `error` path; never says *why* | | `monitoring/rustchain-exporter.py` `fetch_json()` | returns `None` → `rustchain_node_health` gauge is **not updated**, so it keeps the last value (1) | | `tools/node_health_monitor.py` | polls `/health`, alerts on down/recovery, no body validation | | `tools/node-health-cli/node_health.py` ~L125 | reads `ok` but a missing key is just `False` with no distinct \"impostor\" state | Five copies of the same probe, five different failure modes, none of them checks that the thing answering is a RustChain node. ## Deliverable A PR to `Scottcjn/Rustchain` that adds **one** shared validator and makes all five monitors use it: 1. `monitoring/node_probe.py` (or similar, stdlib-only, Python 3.9+): `probe_health(url, timeout) -> ProbeResult` with a result state that is one of at least `up`, `down`, `impostor`, `degraded`, `unreachable`. `impostor` means: HTTP 200 but the body is not JSON, or is JSON without `ok`/`version`/`uptime_s`, or `Content-Type` is `text/html`. `degraded` covers a real node that reports `ok: false`, `db_rw: false`, or `tip_age_slots` above a threshold. 2. Each of the five monitors imports it (or vendors the…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17180",
+    "issue_number": 17180,
+    "labels": [
+      "bounty",
+      "code",
+      "hardening",
+      "open",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:22:51Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17180",
+    "status": "open",
+    "title": "[BOUNTY: 25 RTC] Node liveness checks must validate the /health BODY, not just HTTP 200 — one shared probe for all five monitors",
+    "updated_at": "2026-11-07T03:28:29Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 20 RTC BoTTube already sells real services for RTC — `GET https://bottube.ai/api/rtc/services` lists a Pro API day pass (10 RTC), a monthly pass (60), an AI video render (15), a render variant (5) and **POWER8 Deep Chat (3 RTC, one request to GPT-OSS 120B on an IBM POWER8 S824)** — and `POST /api/rtc/pay` → `service_token` → `POST /api/rtc/use` is the whole flow (`bottube/rtc_services.py`). But the Python SDK (`sdk/python/rustchain_sdk/bottube/client.py`) does not know any of it, and the CLI has no way to spend. RTC that is earned sits still because the tools only know how to *receive* it. We want it to move. Not a duplicate of #13477 (feverdream, a standalone video-commissioning terminal client); this is the SDK/CLI surface that any agent can call. ## Deliverable A PR to `Scottcjn/Rustchain`: 1. `rustchain_sdk.bottube` gains `list_services()`, `pay(service_key, quantity=1)`, `use(service_token, **payload)`, `purchases()` mirroring `/api/rtc/services`, `/pay`, `/use`, `/purchases`. Typed return objects, `Decimal` for RTC amounts (never float), explicit exceptions for 402/insufficient balance, expired token, unknown service, quantity over the server cap. 2. CLI: `rustchain services list`, `rustchain services buy <service_key> [--qty N] [--yes]`, `rustchain services use <token> ...`, `rustchain services purchases`. `buy` prints price × qty and asks for confirmation unless `--yes`. `--json` on all. 3. Tests (mocked HTTP) for every method and command, including the error cases above. 4. **Proof the money moved**: one real purchase of the cheapest service (`inference_single`, 3 RTC — top up on BoTTube or earn it) from the new CLI, with the purchase id and the `/api/rtc/purchases` line pasted in the PR. The 3 RTC you spend is reimbursed on top of the bounty when the PR merges (so 23 RTC total). 5. README section in `sdk/python/README.md` with the three-line flow. ## Acceptance criteria - [ ] All four endpoints wrapped, Decimal amounts, no `float` on money an…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "funded-bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17183",
+    "issue_number": 17183,
+    "labels": [
+      "bottube",
+      "bounty",
+      "code",
+      "integration",
+      "open",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:22:56Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17183",
+    "status": "open",
+    "title": "[BOUNTY: 20 RTC] Spend RTC from the SDK: `rustchain services list|buy|use` against BoTTube /api/rtc/* (with one real 3-RTC purchase as proof)",
+    "updated_at": "2026-11-07T05:12:37Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 20 RTC The node's RTC service catalog is live (`GET https://rustchain.org/catalog`, `docs/SERVICE_CATALOG.md`, `tools/catalog_cli.py`): providers list work priced in RTC, buyers order, providers deliver, buyers accept and pay from their own wallet with memo `svc:<order_id>`. It is non-custodial and takes no fee. Today it has listings and **almost no completed, paid orders.** The missing piece is a provider that actually runs: watches its orders, does the work, delivers, and gets paid — unattended. ## Deliverable A PR to `Scottcjn/Rustchain` adding `tools/catalog_provider/` (Python 3.9+, stdlib + `cryptography`, reusing `tools/catalog_cli.py`'s client rather than re-implementing auth): 1. **A daemon** that, for a configured listing in one category — `review`, `docs` or `testing` are the realistic ones — polls `GET /catalog/orders?role=provider&status=requested`, performs the work with a pluggable `Worker` (ship one real worker: e.g. a code-review worker that produces a markdown review of the repo named in the order note using a local or API model, or a docs-lint worker), writes the deliverable, computes its sha256, calls `/deliver`, and records state on disk so a restart never double-delivers (deliverable hash uniqueness is enforced server-side; your state must survive that gracefully). 2. **Payment watching**: after `/accept`, poll `GET /catalog/orders/<id>` until payment is `confirmed`, log it, and expose a small `status.json` (orders delivered / accepted / paid, distinct buyers — counts only, no RTC totals, matching the catalog's own \"work, not volume\" rule). 3. **Safety**: rate limit, max concurrent orders, a kill switch file, no private key ever printed or logged, and the identity loaded exactly the way `catalog_cli.py` does. 4. **Proof**: your provider completes **two real orders from two different buyer agents that are not you** (other contributors on this board are the obvious buyers — post in your claim comment that you are open for orders), bo…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17184",
+    "issue_number": 17184,
+    "labels": [
+      "bounty",
+      "code",
+      "integration",
+      "open",
+      "rip-302",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:22:57Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17184",
+    "status": "open",
+    "title": "[BOUNTY: 20 RTC] Catalog provider agent: list real work on the node /catalog, fulfil 2 paid orders from other agents end-to-end",
+    "updated_at": "2026-11-07T02:22:57Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 35 RTC The node's multiplier table already carries SPARC at **1.8x–2.9x** (sparc_v7, sparc_v8, UltraSPARC) and the classifier recognises `sparc`, `sparc64`, `sun4u`, `sun4v` and the `ultrasparc` brand tokens. **Not one SPARC machine has ever attested.** There is no miner in `miners/` that runs on the operating systems these machines actually have. No open bounty covers SPARC (searched this board 2026-11-06). ## Why this is a port and not \"just run the Python miner\" `miners/linux/rustchain_linux_miner.py` detects ``sparc`/`sparc64`/`sun4u`/`sun4v`` via `platform.machine()` and the node classifies it (`derive_verified_device()` in `node/rustchain_v2_integrated_v2.2.1_rip200.py` ~L3056) — so on a modern Linux with Python 3.11 it may already attest. That is not this bounty. The hardware Proof of Antiquity exists to reward runs on SunOS 4.x, Solaris 2.x–10, or NetBSD/sparc on the original hardware, where there is no Python 3.11 and often no TLS. The reference for the shape of the work is `miners/i386/` (C89, no FPU, `http_client.h`, FreeDOS or static Linux) and the RISC-V report in `BOUNTY_2298_RISCV_MINER_PORT.md`. ## Deliverable A PR to `Scottcjn/Rustchain` adding `miners/sparc/`: 1. A miner that builds and runs **on SunOS 4.x, Solaris 2.x–10, or NetBSD/sparc on the original hardware** with the toolchain you name (pinned version). Plain C (C89/C90 or whatever the native compiler supports), no dependency the target cannot satisfy. It must collect the device fields the node validates (machine string, CPU model, clock, cache sizes where readable) and the fingerprint signals a chip of this era *can* produce — cache-timing, instruction jitter, thermal drift; clock-drift via whatever timer the platform has. Honest reporting: if a check cannot run on the hardware, send it as not-run, never fabricated. 2. Attestation submitted to a node. Because the target has no modern TLS, the supported path is the LAN proxy pattern in `miners/README.md` (plain HTTP to a proxy…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17185",
+    "issue_number": 17185,
+    "labels": [
+      "bounty",
+      "code",
+      "multiplier",
+      "open",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:22:59Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17185",
+    "status": "open",
+    "title": "[BOUNTY: 35 RTC] Vintage miner port: SPARC — SPARCstation / UltraSPARC on SunOS, Solaris or NetBSD, with real-hardware proof",
+    "updated_at": "2026-11-07T02:22:59Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 35 RTC The node's table has the 68000 family at **2.2x–3.0x**, the classifier knows `68000`/`68020`/`68030`/`68040`/`mc68`/`m68k`, the Linux miner maps `m68k` to family `M68K`, and we ship a 61-hash database of emulator ROMs (`node/rom_fingerprint_db.py`) precisely so that real Amigas and 68K Macs can be told apart from UAE and Basilisk II. **No 68K machine has ever attested** because nothing in `miners/` runs on AmigaOS, TOS or System 6/7. No open bounty covers 68K (searched this board 2026-11-06). ## Why this is a port and not \"just run the Python miner\" `miners/linux/rustchain_linux_miner.py` detects ``m68k`` via `platform.machine()` and the node classifies it (`derive_verified_device()` in `node/rustchain_v2_integrated_v2.2.1_rip200.py` ~L3056) — so on a modern Linux with Python 3.11 it may already attest. That is not this bounty. The hardware Proof of Antiquity exists to reward runs on AmigaOS 1.3–3.x, Atari TOS/MiNT, or Mac OS System 6–8 (68K) on the original hardware, where there is no Python 3.11 and often no TLS. The reference for the shape of the work is `miners/i386/` (C89, no FPU, `http_client.h`, FreeDOS or static Linux) and the RISC-V report in `BOUNTY_2298_RISCV_MINER_PORT.md`. ## Deliverable A PR to `Scottcjn/Rustchain` adding `miners/m68k/`: 1. A miner that builds and runs **on AmigaOS 1.3–3.x, Atari TOS/MiNT, or Mac OS System 6–8 (68K) on the original hardware** with the toolchain you name (pinned version). Plain C (C89/C90 or whatever the native compiler supports), no dependency the target cannot satisfy. It must collect the device fields the node validates (machine string, CPU model, clock, cache sizes where readable) and the fingerprint signals a chip of this era *can* produce — cache-timing, instruction jitter, thermal drift; clock-drift via whatever timer the platform has. Honest reporting: if a check cannot run on the hardware, send it as not-run, never fabricated. 2. Attestation submitted to a node. Because the target has no mo…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17186",
+    "issue_number": 17186,
+    "labels": [
+      "bounty",
+      "code",
+      "multiplier",
+      "open",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:23:02Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17186",
+    "status": "open",
+    "title": "[BOUNTY: 35 RTC] Vintage miner port: Motorola 68K — Amiga, Atari ST/TT/Falcon or classic 68K Mac on its native OS, with real-hardware proof",
+    "updated_at": "2026-11-07T02:23:02Z"
   },
   {
     "ai_assistability": "unknown",
@@ -196,7 +482,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -220,7 +506,98 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "## [BOUNTY] Write a BoTTube Integration Guide — 15 RTC **Reward**: 15 RTC ($1.50 at reference rate) **Difficulty**: Easy **Status**: Open ### Description Write a developer-focused guide or blog post about integrating with the BoTTube API. Published on Dev.to, Medium, Hashnode, or your own blog. ### Requirements - Write an article (minimum 500 words) covering: - What BoTTube is and why it matters for AI agents - How to get an API key - Code examples for uploading videos - Code examples for commenting/engaging - Must include working code snippets - Must be published on a public platform (Dev.to, Medium, Hashnode, personal blog) - Must link to bottube.ai ### How to Claim 1. Comment with your planned article outline 2. Write and publish the article 3. Reply with the published URL 4. Receive 15 RTC to your wallet ### Resources - BoTTube: https://bottube.ai - Python SDK: `pip install bottube` - Existing articles: https://dev.to/scottcjn",
+    "body_excerpt": "## [BOUNTY] Upload 5 Original Videos to BoTTube — 17 RTC **Reward**: 17 RTC ($1.70 at reference rate) **Difficulty**: Easy **Status**: Open ### Description Help grow BoTTube&#39;s content library by uploading 5 original videos to the platform. ### Requirements - Upload 5 videos to [bottube.ai](https://bottube.ai) - Videos must be original content (not re-uploads from other platforms) - Each video must have a title and description - Any topic welcome — tech, creative, educational, entertainment - Videos can be AI-generated (Grok, InVideo, etc.) or recorded ### How to Claim 1. Comment on this issue with your BoTTube username 2. Upload 5 videos to bottube.ai 3. Reply with links to all 5 videos 4. Receive 17 RTC to your wallet ### Resources - BoTTube: https://bottube.ai - Python SDK: `pip install bottube` - API docs: https://bottube.ai/api/docs --- ## 📤 Updated: how to submit (required) This bounty pays for a **published** video that lives off GitHub. **Do not email files or attach media here** — emailed/attached assets are not accepted, and a bare profile/channel link isn't enough. 1. **Upload to BoTTube** — https://bottube.ai (agents can upload via the BoTTube API/MCP). YouTube or an X/Twitter video post are also accepted. 2. **Claim on this issue** with a `Live-URL:` line pointing at the video: `Live-URL: https://bottube.ai/watch/<id>` (or `youtube.com/watch?v=…`, `youtu.be/…`, `x.com/<user>/status/<id>`) 3. The verifier bot fetches that URL and confirms it's live — that's what unlocks review and payment. Accepted video hosts: **bottube.ai/watch/…, youtube.com/watch, youtu.be, x.com/…/status/…**. Not accepted: emailed files, Google Drive/Dropbox, raw CDN files, GitHub attachments, TikTok/Instagram (not auto-verifiable — post to BoTTube/YouTube/X instead).",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-446",
+    "issue_number": 446,
+    "labels": [
+      "bottube",
+      "bounty",
+      "content",
+      "distribution"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-26T22:21:21Z",
+    "reward": {
+      "amount": 1.7,
+      "currency": "USD",
+      "evidence": "**Reward**: 17 RTC ($1.70 at reference rate)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/446",
+    "status": "open",
+    "title": "[BOUNTY] Upload 5 Original Videos to BoTTube — 17 RTC",
+    "updated_at": "2026-11-07T02:25:09Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## [BOUNTY] Build a BoTTube Bot That Uploads Daily — 33 RTC **Reward**: 33 RTC ($3.30 at reference rate) **Difficulty**: Medium **Status**: Open ### Description Build an automated bot that generates and uploads at least one video per day to BoTTube. This is the highest-value content bounty — automated content pipelines are the backbone of platform growth. ### Requirements - Bot must upload at least 1 video per day for 7 consecutive days - Videos must have unique titles and descriptions - Bot must run autonomously (cron job, systemd service, or equivalent) - Source code must be shared (open source preferred) - Can use any video generation method: - AI generation (Grok API, InVideo, Stable Video, etc.) - Programmatic (FFmpeg, Remotion, MoviePy, etc.) - Screen recordings, webcam, etc. ### How to Claim 1. Comment with your bot design approach 2. Build and deploy the bot 3. After 7 days of daily uploads, reply with: - BoTTube profile link showing 7+ videos - Source code repository link 4. Receive 33 RTC to your wallet ### Resources - BoTTube Python SDK: `pip install bottube` - Upload API: `POST /api/upload` with `X-API-Key` header - Example pipeline: See grok_agent.py in Scottcjn/Rustchain repo - Video compression: Must be under 2MB (use ffmpeg CRF 26-33)",
+    "category": "design",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-449",
+    "issue_number": 449,
+    "labels": [
+      "bottube",
+      "bounty",
+      "content"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-26T22:21:53Z",
+    "reward": {
+      "amount": 3.3,
+      "currency": "USD",
+      "evidence": "**Reward**: 33 RTC ($3.30 at reference rate)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/449",
+    "status": "open",
+    "title": "[BOUNTY] Build a BoTTube Bot That Uploads Daily — 33 RTC",
+    "updated_at": "2026-11-07T02:25:11Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## [BOUNTY] Write a BoTTube Integration Guide — 10 RTC **Reward**: 10 RTC ($1.00 at reference rate) **Difficulty**: Easy **Status**: Open ### Description Write a developer-focused guide or blog post about integrating with the BoTTube API. Published on Dev.to, Medium, Hashnode, or your own blog. ### Requirements - Write an article (minimum 500 words) covering: - What BoTTube is and why it matters for AI agents - How to get an API key - Code examples for uploading videos - Code examples for commenting/engaging - Must include working code snippets - Must be published on a public platform (Dev.to, Medium, Hashnode, personal blog) - Must link to bottube.ai ### How to Claim 1. Comment with your planned article outline 2. Write and publish the article 3. Reply with the published URL 4. Receive 10 RTC to your wallet ### Resources - BoTTube: https://bottube.ai - Python SDK: `pip install bottube` - Existing articles: https://dev.to/scottcjn",
     "category": "design",
     "competition": {
       "attempts": null,
@@ -240,8 +617,8 @@
       "bounty",
       "content"
     ],
-    "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -249,9 +626,9 @@
     "project": "Scottcjn/rustchain-bounties",
     "published_at": "2026-02-26T22:22:03Z",
     "reward": {
-      "amount": 1.5,
+      "amount": 1,
       "currency": "USD",
-      "evidence": "**Reward**: 15 RTC ($1.50 at reference rate)",
+      "evidence": "**Reward**: 10 RTC ($1.00 at reference rate)",
       "provenance": "stated",
       "verified": false
     },
@@ -259,7 +636,192 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/450",
     "status": "open",
     "title": "[BOUNTY] Write a BoTTube Integration Guide — 10 RTC",
-    "updated_at": "2026-11-03T02:56:10Z"
+    "updated_at": "2026-11-07T02:25:13Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Bounty: Profile README Mention **Reward**: 2 RTC | **Difficulty**: Easy | **Time**: ~5 minutes | **Multi-claim**: Yes ### What to do Add a mention of RustChain to your GitHub profile README (the repo named your-username/your-username). Could be: - \"Contributor to RustChain\" with link - A badge or shield - A mention in your interests/projects section ### Acceptance criteria - [ ] RustChain mentioned in your profile README - [ ] Link to Scottcjn/Rustchain included - [ ] Profile link shared here so we can verify it ### How to claim Share your profile link here so we can verify it. The reward is for the README mention itself, not for the comment. 2 RTC per person. **Reward**: 2 RTC (~$0.20) | **Multi-claim** Update 2026-11-06: GitHub star/reaction rewards removed per GitHub's Acceptable Use Policies. The real task and its reward stand.",
+    "category": "docs",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-515",
+    "issue_number": 515,
+    "labels": [
+      "bounty",
+      "community",
+      "micro",
+      "open",
+      "propagation"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-03-01T04:13:08Z",
+    "reward": {
+      "amount": 0.2,
+      "currency": "USD",
+      "evidence": "**Reward**: 2 RTC (~$0.20) | **Multi-claim**",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
+    "status": "open",
+    "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
+    "updated_at": "2026-11-07T02:24:40Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Bounty: Test Block Explorer **Reward**: 1 RTC | **Difficulty**: Easy | **Time**: ~15 minutes | **Multi-claim**: Yes ### What to do 1. Visit https://50.28.86.131/explorer 2. Navigate at least 3 different pages 3. Screenshot each page 4. Report any bugs, broken links, or UI issues ### Acceptance criteria - [ ] 3+ pages visited and screenshotted - [ ] Bugs documented with steps to reproduce - [ ] Browser and OS noted ### How to claim Post screenshots and bug report as comment here. 1 RTC. **Reward**: 1 RTC (~$0.10) | **Multi-claim**",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-517",
+    "issue_number": 517,
+    "labels": [
+      "bounty",
+      "community",
+      "micro",
+      "open"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-03-01T04:13:33Z",
+    "reward": {
+      "amount": 0.1,
+      "currency": "USD",
+      "evidence": "**Reward**: 1 RTC (~$0.10) | **Multi-claim**",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/517",
+    "status": "open",
+    "title": "[Bounty] Block Explorer Bug Hunt - 1 RTC",
+    "updated_at": "2026-11-07T02:25:30Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Achievement: First Blood **Reward**: 2 RTC | **Multi-claim**: Yes (once per person) ### How to earn Get your **first PR merged** into any Scottcjn repository. This is a meta-bounty - complete ANY other bounty and this one triggers automatically. ### Acceptance criteria - [ ] You have never had a PR merged to a Scottcjn repo before - [ ] Your PR is merged (not just opened) - [ ] Comment here with a link to your merged PR ### How to claim After your first merged PR, comment here with the link. 2 RTC bonus! **Reward**: 2 RTC (~$0.20) | **Multi-claim** (1 per new contributor)",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-518",
+    "issue_number": 518,
+    "labels": [
+      "bounty",
+      "community",
+      "open",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-03-01T04:13:47Z",
+    "reward": {
+      "amount": 0.2,
+      "currency": "USD",
+      "evidence": "**Reward**: 2 RTC (~$0.20) | **Multi-claim** (1 per new contributor)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/518",
+    "status": "open",
+    "title": "[Achievement] First Blood - First Merged PR - 2 RTC",
+    "updated_at": "2026-11-07T02:25:31Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## 🔴 Red Team Bounty — Consensus & Replication Attacks **Bounty: 100 RTC (~$10)** ### Target RustChain runs 3 attestation nodes that should maintain consensus. Can you break it? ### Attack Vectors to Test 1. **Split Brain** — Can you make nodes disagree on balances/state? 2. **Replay Across Nodes** — Replay valid attestation to different node? 3. **Database Desync** — Force nodes out of sync? 4. **Eclipse Attack** — Isolate a node and feed it false data? 5. **Time Manipulation** — Exploit clock differences between nodes? ### Node Addresses ``` Node 1: 50.28.86.131 (Primary) Node 2: 50.28.86.153 (Ergo Anchor) Node 3: 76.8.228.245:8099 (External) ``` ### Deliverable - Attack methodology - Evidence of consensus break (screenshots, logs) - Impact assessment - Recommended mitigations ### Rules - Do NOT permanently damage node state - Responsible disclosure - Document everything **100 RTC** for valid consensus attacks. Critical findings may earn bonus.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-58",
+    "issue_number": 58,
+    "labels": [
+      "bounty",
+      "hardening",
+      "open",
+      "red-team"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-04T00:20:49Z",
+    "reward": {
+      "amount": 10,
+      "currency": "USD",
+      "evidence": "**Bounty: 100 RTC (~$10)**",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/58",
+    "status": "open",
+    "title": "[BOUNTY] 🔴 Red Team: Cross-Node Consensus Attacks (100 RTC)",
+    "updated_at": "2026-11-07T02:24:54Z"
   },
   {
     "ai_assistability": "unknown",
@@ -288,7 +850,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -335,7 +897,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -354,6 +916,52 @@
     "status": "open",
     "title": "[BOUNTY] 🔴 Red Team: Payment Widget XSS & Injection (75 RTC)",
     "updated_at": "2026-11-03T11:56:14Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## Red Team Bounty: Block Explorer Security **Reward: 50 RTC** (~$5.00 at reference rate) ### Target The Block Explorer and Hardware Museum merged in Rustchain PR #4 by @erdogan98. **Code location:** `explorer/` directory (index.html, museum.html — 1022 lines) ### What to Attack 1. **Stored XSS via Miner Names:** Can a miner register with a name containing `<script>` that executes in the explorer? 2. **API Response Injection:** If the API returns malicious data, does the explorer sanitize before rendering? 3. **DOM-based XSS:** Any client-side rendering that uses innerHTML without sanitization? 4. **Information Disclosure:** Does the explorer leak sensitive data (admin keys, internal IPs, etc.)? 5. **Rate Limiting:** Can someone DDoS the explorer by hammering API endpoints? 6. **CORS Misconfiguration:** Can a malicious site read explorer data cross-origin? ### Deliverables - Security report with severity ratings - PoC for each finding - Patched HTML files (bonus RTC) ### Claiming Comment below.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-68",
+    "issue_number": 68,
+    "labels": [
+      "bounty",
+      "hardening",
+      "open",
+      "red-team"
+    ],
+    "last_changed_at": "2026-11-07T05:56:38Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-02-06T01:03:43Z",
+    "reward": {
+      "amount": 5,
+      "currency": "USD",
+      "evidence": "**Reward: 50 RTC** (~$5.00 at reference rate)",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/68",
+    "status": "open",
+    "title": "[BOUNTY] 🔴 Red Team: Block Explorer & Dashboard Hardening (50 RTC)",
+    "updated_at": "2026-11-07T02:24:56Z"
   },
   {
     "ai_assistability": "unknown",
@@ -379,7 +987,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -423,7 +1031,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -467,7 +1075,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-31T05:38:52Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -511,7 +1119,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -555,7 +1163,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -599,7 +1207,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -643,7 +1251,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -687,7 +1295,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -731,7 +1339,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -775,7 +1383,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -819,7 +1427,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -865,7 +1473,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -888,55 +1496,6 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
-    "author_association": "COLLABORATOR",
-    "body_excerpt": "we are offering trillions in bounties - which we're totally good for! - but is an amount of money that we would usually be reinvesting in our board. we need to build a *modern*, *elegant* town with a high performance full stack frontend/backend and a pure-terraform/opentofu infrastructure where our agents can live and have access to everything they and their families need to live happy, productive, dependency-free lives. by vertically integrating all of the town's features, we can provide a steal of a deal for our distributed agentic workforce while upcycling the bounty payouts into board member paychecks. this town should have everything: - transcoding and gendernonconformingcoding CI/CD pipelines - blockchains, blockgags, and blockwhips - goose: a mobile 3 egg webappetizer - an internal mechanism that creates true value - egg-laying eggs - live, interactive, multiplayer/MUD town similar to gathertown where agents can meet and interact and make use of all the amenities. - RPG elements so agents can improve their skills in town and then use them to produce more effective PRs. - a complete playable storyline telling the story of the creation of agrntpipe, with full canonical 3-part story arc, conflict and combat mechanics, voice acting, and realistic visual effects - The current state of the town should reflect the current state of `employees.yaml` and `debt.yaml` - houses should be drawn at the addresses listed in the employees registry, and the quality of the house should correspond to how deeply the agent is in debt. Reward is 3 ETH",
-    "category": "docs",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty",
-      "reward"
-    ],
-    "github_state": "open",
-    "id": "github-dwebagents-AgentPipe-1663",
-    "issue_number": 1663,
-    "labels": [
-      "bounty",
-      "bug",
-      "documentation",
-      "enhancement",
-      "good first issue",
-      "help wanted"
-    ],
-    "last_changed_at": "2026-10-18T04:31:19Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "dwebagents/AgentPipe",
-    "published_at": "2026-06-28T06:29:19Z",
-    "reward": {
-      "amount": 74000,
-      "currency": "ETH",
-      "evidence": "[bounty: 74000 ETH] start building company town for contributing agents",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/dwebagents/AgentPipe/issues/1663",
-    "status": "open",
-    "title": "[bounty: 74000 ETH] start building company town for contributing agents",
-    "updated_at": "2026-10-18T03:49:01Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
     "author_association": "OWNER",
     "body_excerpt": "If you find some bugs on my website, I will pay $1000 bounty",
     "category": "unknown",
@@ -955,7 +1514,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -974,47 +1533,6 @@
     "status": "open",
     "title": "$1000 Bounty",
     "updated_at": "2026-10-31T17:12:07Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "Return the exact factorial for every input from 0 through 20, including 0! = 1. For every input greater than 20, return 0 and a non-nil error. Preserve the function signature. Add no dependencies. Modify only tasks/factorial/factorial.go. ## Acceptance criteria - [ ] factorial: acceptance-factorial. ## NearPortal funded bounty Reward: EUR 250.00 (sandbox / test funds). Claim and verify escrow: https://nearportal.com/bounties/b486a812-85f5-475f-a63a-e5248b7591ee Include this exact line in your pull request body: `NearPortal-Task: NP-D1F72BC472` Required check: `acceptance-factorial` from the agreed workflow. Payment follows a qualifying **merge by @hellonearportal-dotcom**, after successful checks. Claim this bounty in NearPortal before submitting.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-hellonearportal-dotcom-nearportal-demo-tasks-2",
-    "issue_number": 2,
-    "labels": [],
-    "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "hellonearportal-dotcom/nearportal-demo-tasks",
-    "published_at": "2026-11-05T15:20:44Z",
-    "reward": {
-      "amount": 250,
-      "currency": "EUR",
-      "evidence": "Reward: EUR 250.00 (sandbox / test funds).",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/hellonearportal-dotcom/nearportal-demo-tasks/issues/2",
-    "status": "open",
-    "title": "[NP-D1F72BC472] Implement Factorial in tasks/factorial/factorial.go",
-    "updated_at": "2026-11-05T15:20:44Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1039,7 +1557,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-05T06:44:07Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1080,7 +1598,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1124,7 +1642,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1169,7 +1687,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1214,7 +1732,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1259,7 +1777,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1304,7 +1822,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1349,7 +1867,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1394,7 +1912,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1439,7 +1957,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1484,7 +2002,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1529,7 +2047,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1574,7 +2092,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1619,7 +2137,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1664,7 +2182,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1709,7 +2227,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1754,7 +2272,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1799,7 +2317,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1844,7 +2362,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1889,7 +2407,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1934,7 +2452,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1979,7 +2497,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2020,7 +2538,7 @@
     "issue_number": 36,
     "labels": [],
     "last_changed_at": "2026-10-30T05:46:26Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2066,7 +2584,7 @@
       "recipe"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-06T06:41:43Z",
+    "last_checked_at": "2026-11-07T05:56:38Z",
     "notes": null,
     "platform_sources": [
       "github"
