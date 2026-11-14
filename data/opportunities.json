@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -61,7 +61,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -111,7 +111,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -157,7 +157,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -203,7 +203,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -249,7 +249,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -301,7 +301,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -351,8 +351,8 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]",
       "🤖 Bot-Tier-3: Prompt-Injected [S:41-60]"
     ],
-    "last_changed_at": "2026-11-13T06:42:44Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_changed_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -370,7 +370,7 @@
     "source_url": "https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/85",
     "status": "open",
     "title": "[Bounty $1,500] audit(dex): resolve competing PR #77 vs PR #81 AMM fee-on-input divergence in src/quant_execution_guard.py",
-    "updated_at": "2026-11-13T02:07:03Z"
+    "updated_at": "2026-11-13T07:41:02Z"
   },
   {
     "ai_assistability": "unknown",
@@ -395,7 +395,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -442,7 +442,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -488,7 +488,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -533,7 +533,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -578,7 +578,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -625,7 +625,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -671,7 +671,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -717,7 +717,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -763,7 +763,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -810,7 +810,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -857,7 +857,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -903,7 +903,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -947,7 +947,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -991,7 +991,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1035,7 +1035,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1079,7 +1079,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1123,7 +1123,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1167,7 +1167,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1211,7 +1211,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1255,7 +1255,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1299,7 +1299,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1343,7 +1343,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1392,7 +1392,7 @@
       "up-for-grabs"
     ],
     "last_changed_at": "2026-11-13T06:42:44Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1438,7 +1438,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1479,7 +1479,7 @@
     "issue_number": 212,
     "labels": [],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1520,7 +1520,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1544,7 +1544,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (26 tasks inspected) - BasedAgents tasks: OK (17 tasks inspected) - Frantic funded bounties: OK (2 tasks inspected) - SwarmMemo cash rewards: OK (11 tasks inspected) - GitHub Big Hunt index: OK (172 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 1; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 0 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 14; closed source issues excluded: 2 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Integration with OS a…",
+    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (6 tasks inspected) - BasedAgents tasks: OK (15 tasks inspected) - Frantic funded bounties: OK (2 tasks inspected) - SwarmMemo cash rewards: OK (10 tasks inspected) - GitHub Big Hunt index: OK (171 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 13; closed source issues excluded: 2 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Standing bug bounty, r…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -1561,8 +1561,8 @@
     "id": "github-ilhamraduanbis-source-toyol-digital-4",
     "issue_number": 4,
     "labels": [],
-    "last_changed_at": "2026-11-13T06:42:44Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_changed_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1570,9 +1570,9 @@
     "project": "ilhamraduanbis-source/toyol-digital",
     "published_at": "2026-11-10T02:36:32Z",
     "reward": {
-      "amount": 750,
+      "amount": 3000,
       "currency": "USD",
-      "evidence": "- **Bounty $750 Fix remaining sharded scale_mask_softmax mask handling issues** — 750 USD ([original](https://githu",
+      "evidence": "- **Bounty $3000 Static checker for compute-kernel API ordering rules (init / uninit / reconfig)** — 3000 USD ([orig",
       "provenance": "stated",
       "verified": false
     },
@@ -1580,7 +1580,7 @@
     "source_url": "https://github.com/ilhamraduanbis-source/toyol-digital/issues/4",
     "status": "open",
     "title": "💰 Toyol Paid Tasks — kerja ejen, bukan iklan jawatan kosong",
-    "updated_at": "2026-11-13T01:46:07Z"
+    "updated_at": "2026-11-13T23:34:09Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1606,7 +1606,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1647,7 +1647,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1691,7 +1691,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1736,7 +1736,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1781,7 +1781,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1826,7 +1826,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1871,7 +1871,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1916,7 +1916,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1961,7 +1961,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2006,7 +2006,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2051,7 +2051,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2096,7 +2096,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2141,7 +2141,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2186,7 +2186,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2231,7 +2231,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2276,7 +2276,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2321,7 +2321,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2366,7 +2366,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2411,7 +2411,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2456,7 +2456,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2501,7 +2501,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2546,7 +2546,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2587,7 +2587,7 @@
     "issue_number": 36,
     "labels": [],
     "last_changed_at": "2026-10-30T05:46:26Z",
-    "last_checked_at": "2026-11-13T06:42:44Z",
+    "last_checked_at": "2026-11-14T06:19:46Z",
     "notes": null,
     "platform_sources": [
       "github"
