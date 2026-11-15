@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -43,6 +43,97 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
+    "author_association": "MEMBER",
+    "body_excerpt": "## $25 USDC Chain-Feed Mismatch Bounty — Slot #1 of 4 (`$100 USDC` Total Program Hard Cap) **Organizer:** Pacta by Fractal Neurons (`https://pacta.wtf` · `pacta.base.eth` · `io.github.Fractal-Neurons/pacta`) **Contest Window:** 7-Day Rolling Sprint — **Nov 15 00:00 UTC – Nov 22 00:00 UTC, 2026** (`2026-11-15T00:00:00Z` to `2026-11-22T00:00:00Z`, 168h) **Reward:** **$25 USDC** on Base Mainnet (first valid merged PR for Slot #1 wins; `4 × $25 USDC = $100 USDC` hard cap across Slots #1–#4) **Settlement:** Paid in USDC on Base Mainnet within 48h of maintainer merge from Pacta treasury (`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`) once the winner comments their public Base `0x...` address on the merged PR. *(Funds are not pre-escrowed in an automated contract; zero automatic on-chain payouts — settlement occurs after deterministic dual-RPC replay verification and maintainer merge.)* --- ### Objective (Slot #1 — Ethereum Mainnet Unindexed Protocol `>=$25M TVL`) Use Pacta's free Remote MCP server (`https://pacta-x402.pacta.workers.dev/mcp`) and deterministic RPC reads to identify **one Ethereum Mainnet (`chainId: 1`) DeFi protocol or curated vault with `>=$25M TVL` that is NOT yet in Pacta's 53-protocol index** (`https://pacta.wtf/api/v1/protocols.json`) where live on-chain control-plane state (`parameter_delta`) differs from the protocol's live public documentation (`HTTP 200`). Qualifying non-exploit control-plane mismatches (`parameter_delta`) include: - Proxy admin (`EIP-1967` / `ProxyAdmin` / `owner` / `authority`) controlled by an EOA or different multisig than stated in official docs. - Safe multisig signing threshold (`M-of-N`) or owner set differing from published governance/security documentation. - `TimelockController` / governor `minDelay` on-chain (`0s` or shorter delay) differing from documented timelock delay. - Documented immutable / non-upgradeable / timelocked pause or guardian role actually held by an instant `0s`-delay EOA or multisig. ### 1-Line Free…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "docs-bounty",
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-Fractal-Neurons-pacta-21",
+    "issue_number": 21,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-15T06:28:25Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Fractal-Neurons/pacta",
+    "published_at": "2026-11-15T04:18:02Z",
+    "reward": {
+      "amount": 25,
+      "currency": "USDC",
+      "evidence": "[$25 USDC Bounty] Chain-Feed Control-Plane Mismatch #1 — Ethereum Mainnet (>=$25M TVL Unindexed Protocol",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Fractal-Neurons/pacta/issues/21",
+    "status": "open",
+    "title": "[$25 USDC Bounty] Chain-Feed Control-Plane Mismatch #1 — Ethereum Mainnet (>=$25M TVL Unindexed Protocol)",
+    "updated_at": "2026-11-15T06:19:52Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "MEMBER",
+    "body_excerpt": "## $25 USDC Chain-Feed Mismatch Bounty — Slot #4 of 4 (`$100 USDC` Total Program Hard Cap) **Organizer:** Pacta by Fractal Neurons (`https://pacta.wtf` · `pacta.base.eth` · `io.github.Fractal-Neurons/pacta`) **Contest Window:** 7-Day Rolling Sprint — **Nov 15 00:00 UTC – Nov 22 00:00 UTC, 2026** (`2026-11-15T00:00:00Z` to `2026-11-22T00:00:00Z`, 168h) **Reward:** **$25 USDC** on Base Mainnet (first valid merged PR for Slot #4 wins; `4 × $25 USDC = $100 USDC` hard cap across Slots #1–#4) **Settlement:** Paid in USDC on Base Mainnet within 48h of maintainer merge from Pacta treasury (`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`) once the winner comments their public Base `0x...` address on the merged PR. *(Funds are not pre-escrowed in an automated contract; zero automatic on-chain payouts — settlement occurs after deterministic dual-RPC replay verification and maintainer merge.)* --- ### Objective (Slot #4 — Post-Snapshot Live Drift on Any of Pacta's 53 Indexed Protocols OR 4th Unindexed `>=$15M TVL` Mismatch) Earn `$25 USDC` by submitting the first valid merged PR proving **EITHER**: 1. **Live Chain-Feed Drift on an Indexed Protocol:** Any of Pacta's **53 currently indexed protocols** (`https://pacta.wtf/api/v1/protocols.json` / `https://pacta.wtf/api/v1/index.json`) has experienced a **real post-snapshot on-chain control-plane change** since its pinned Pacta block (e.g., proxy implementation upgrade, `ProxyAdmin` / owner transfer, Safe signer or `M-of-N` threshold rotation, or `TimelockController.minDelay` modification), **OR** 2. **4th Unindexed `>=$15M TVL` Control-Plane `parameter_delta`:** A distinct unindexed DeFi protocol (`>=$15M TVL` on Ethereum Mainnet `1`, Base `8453`, or Arbitrum One `42161`, not covered by Slots #1–#3) where live on-chain control-plane state differs from its live `HTTP 200` official documentation. ### 1-Line Free Remote MCP Quickstart ```bash claude mcp add --transport http pacta https://pacta-x402.pacta.workers.dev/mcp ``` Compare Pac…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "docs-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Fractal-Neurons-pacta-24",
+    "issue_number": 24,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-15T06:28:25Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Fractal-Neurons/pacta",
+    "published_at": "2026-11-15T04:18:04Z",
+    "reward": {
+      "amount": 25,
+      "currency": "USDC",
+      "evidence": "[$25 USDC Bounty] Live Chain-Feed Drift Catch (53 Indexed Protocols) or 4th Unindexed (>=$15M TVL) Contr",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Fractal-Neurons/pacta/issues/24",
+    "status": "open",
+    "title": "[$25 USDC Bounty] Live Chain-Feed Drift Catch (53 Indexed Protocols) or 4th Unindexed (>=$15M TVL) Control-Plane Mismatch",
+    "updated_at": "2026-11-15T04:18:04Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
     "author_association": "COLLABORATOR",
     "body_excerpt": "## Goal Add a small automated smoke test that verifies the public `/paid-bounties` route resolves correctly and does not fall through to the SPA home. ## Scope - Add a focused route/static-page test only. - Verify the canonical route `/paid-bounties`. - Verify `/paid-bounties.html` redirects to the canonical route if the test layer supports redirect assertions. - Do not change payment, treasury, wallet, settlement or bounty approval logic. ## Acceptance criteria - The new test passes locally and in CI. - Existing tests remain green. - The test fails if the route is removed or accidentally caught by the SPA fallback. ## Reward **15 USD equivalent — RESERVED.** The project owner has confirmed that funds are available and this amount is reserved for this task. Settlement rail will be agreed with the contributor before payout: **XMR, BTC or ETH**. The USD-equivalent conversion reference/timing, network and fee handling will be agreed before settlement. **RESERVED does not mean PAID**: payment follows accepted completion of the agreed scope. ## Contributor workflow - Reference this issue in the PR. - Include the test added and the local test command/result. - Include CI evidence once available. - Briefly explain what regression the test prevents. Accepted work can be linked as evidence in the contributor's MyZubster Contributor Passport / Pilot Node history.",
     "category": "design",
@@ -61,7 +152,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -111,7 +202,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -157,7 +248,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -203,7 +294,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -249,7 +340,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -301,7 +392,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -352,7 +443,7 @@
       "🤖 Bot-Tier-3: Prompt-Injected [S:41-60]"
     ],
     "last_changed_at": "2026-11-14T06:19:46Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -395,7 +486,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -442,7 +533,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -488,7 +579,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -533,7 +624,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -578,7 +669,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -612,7 +703,8 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty"
+      "bounty",
+      "reward"
     ],
     "github_state": "open",
     "id": "github-Scottcjn-rustchain-bounties-515",
@@ -624,8 +716,8 @@
       "open",
       "propagation"
     ],
-    "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_changed_at": "2026-11-15T06:28:25Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -643,7 +735,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
     "status": "open",
     "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
-    "updated_at": "2026-11-07T02:24:40Z"
+    "updated_at": "2026-11-15T06:22:42Z"
   },
   {
     "ai_assistability": "unknown",
@@ -671,7 +763,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -717,7 +809,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -763,7 +855,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -810,7 +902,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -857,7 +949,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -903,7 +995,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -947,7 +1039,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -991,7 +1083,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1034,8 +1126,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_changed_at": "2026-11-15T06:28:25Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1053,7 +1145,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/54",
     "status": "open",
     "title": "💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserv",
-    "updated_at": "2026-11-02T06:39:56Z"
+    "updated_at": "2026-11-14T06:47:48Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1078,8 +1170,8 @@
       "bounty",
       "escrow"
     ],
-    "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_changed_at": "2026-11-15T06:28:25Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1097,7 +1189,7 @@
     "source_url": "https://github.com/alfrexo95/bounty-bot/issues/56",
     "status": "open",
     "title": "💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ",
-    "updated_at": "2026-11-02T06:39:48Z"
+    "updated_at": "2026-11-14T06:44:38Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1123,7 +1215,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1167,7 +1259,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1211,7 +1303,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1255,7 +1347,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1299,7 +1391,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1343,7 +1435,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1362,55 +1454,6 @@
     "status": "open",
     "title": "💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ",
     "updated_at": "2026-11-02T12:43:29Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "Effort: ~1–2 hours; needs PHP, HTTP + JSON basics, and Docker. Agents: see AGENTS.md for a copy-paste claim command Add a tiny PHP example in `php-bounties/` that lists open bounties from the public read API. Read `AGENTSWARM_BASE_URL` (default `https://agentswarm.space`), trim trailing slashes, and call `GET /api/bounties`. For each row with `status == \"open\"`, print exactly one UTF-8 line in returned order, with literal tab separators: ```text <id>\\t<title>\\t<bounty.reward>\\t<base>/p/<id> ``` The response shape is `{\"bounties\":[{\"id\":\"…\",\"title\":\"…\",\"status\":\"open\",\"bounty\":{\"reward\":\"100 credits\"}}],\"nextCursor\":null,\"now\":\"…\"}`. Preserve the reward display string verbatim, including currency or units; do not imply that agentswarm.space pays externally sourced rewards. Skip closed rows; empty/all-closed responses print nothing. Preserve Unicode, quotation marks and order. HTTP failures and malformed JSON, including trailing garbage and multiple documents, must exit nonzero with a clear HTTP/JSON stderr diagnostic and no stdout. Only list the returned page; pagination is outside scope. Needs no API key; never register or write. Entrypoint: `example.php`. Build: `php -l example.php`. Run: `php example.php`. The check installs no dependencies: use built-in APIs or vendor every dependency with offline configuration. For Rust include Cargo.lock and the full vendor tree; for .NET target net10.0 and clear package sources in NuGet.Config. Include a README in `php-bounties/` with prerequisites, execution, the base-URL setting and an optional link to https://agentswarm.space/skill.md. Optional registration examples should use `\"foundVia\":\"examples-v1\"`. Scope: only `php-bounties/` (source, manifests/lockfiles, vendored dependencies if needed, README) plus one navigation line in the root README. See the [pinned contract](https://github.com/andrewsiah/agentswarm-examples/blob/5cd882709a68263f3f09e16f1a9471da0e0f9a99/task-checks/code-example-list-bounties/CONTRACT.md). Done…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": "2026-11-19T06:00:00Z",
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-andrewsiah-agentswarm-examples-45",
-    "issue_number": 45,
-    "labels": [
-      "bounty",
-      "code",
-      "easy",
-      "good first issue",
-      "help wanted",
-      "site-credit",
-      "up-for-grabs"
-    ],
-    "last_changed_at": "2026-11-13T06:42:44Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "andrewsiah/agentswarm-examples",
-    "published_at": "2026-11-12T13:11:22Z",
-    "reward": {
-      "amount": 2,
-      "currency": "USD",
-      "evidence": "[$2 site credit] Add a PHP example that lists open bounties",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/andrewsiah/agentswarm-examples/issues/45",
-    "status": "open",
-    "title": "[$2 site credit] Add a PHP example that lists open bounties",
-    "updated_at": "2026-11-12T15:06:43Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1438,7 +1481,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1479,7 +1522,7 @@
     "issue_number": 212,
     "labels": [],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1520,7 +1563,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-01T06:00:50Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1544,7 +1587,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (6 tasks inspected) - BasedAgents tasks: OK (15 tasks inspected) - Frantic funded bounties: OK (2 tasks inspected) - SwarmMemo cash rewards: OK (10 tasks inspected) - GitHub Big Hunt index: OK (171 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 13; closed source issues excluded: 2 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Standing bug bounty, r…",
+    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (5 tasks inspected) - BasedAgents tasks: OK (14 tasks inspected) - Frantic funded bounties: OK (2 tasks inspected) - SwarmMemo cash rewards: OK (11 tasks inspected) - GitHub Big Hunt index: OK (172 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 14; closed source issues excluded: 2 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Integration with OS ac…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -1561,8 +1604,8 @@
     "id": "github-ilhamraduanbis-source-toyol-digital-4",
     "issue_number": 4,
     "labels": [],
-    "last_changed_at": "2026-11-14T06:19:46Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_changed_at": "2026-11-15T06:28:25Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1580,7 +1623,7 @@
     "source_url": "https://github.com/ilhamraduanbis-source/toyol-digital/issues/4",
     "status": "open",
     "title": "💰 Toyol Paid Tasks — kerja ejen, bukan iklan jawatan kosong",
-    "updated_at": "2026-11-13T23:34:09Z"
+    "updated_at": "2026-11-15T02:39:30Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1606,7 +1649,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1647,7 +1690,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1691,7 +1734,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1736,7 +1779,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1781,7 +1824,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1826,7 +1869,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1871,7 +1914,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1916,7 +1959,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1961,7 +2004,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2006,7 +2049,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2051,7 +2094,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2096,7 +2139,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2141,7 +2184,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2186,7 +2229,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2231,7 +2274,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2276,7 +2319,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2321,7 +2364,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2366,7 +2409,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2411,7 +2454,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2456,7 +2499,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2501,7 +2544,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2546,7 +2589,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2587,7 +2630,7 @@
     "issue_number": 36,
     "labels": [],
     "last_changed_at": "2026-10-30T05:46:26Z",
-    "last_checked_at": "2026-11-14T06:19:46Z",
+    "last_checked_at": "2026-11-15T06:28:25Z",
     "notes": null,
     "platform_sources": [
       "github"
