@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -43,8 +43,8 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
-    "author_association": "MEMBER",
-    "body_excerpt": "## $25 USDC Chain-Feed Mismatch Bounty — Slot #4 of 4 (`$100 USDC` Total Program Hard Cap) **Organizer:** Pacta by Fractal Neurons (`https://pacta.wtf` · `pacta.base.eth` · `io.github.Fractal-Neurons/pacta`) **Contest Window:** 7-Day Rolling Sprint — **Nov 15 00:00 UTC – Nov 22 00:00 UTC, 2026** (`2026-11-15T00:00:00Z` to `2026-11-22T00:00:00Z`, 168h) **Reward:** **$25 USDC** on Base Mainnet (first valid merged PR for Slot #4 wins; `4 × $25 USDC = $100 USDC` hard cap across Slots #1–#4) **Settlement:** Paid in USDC on Base Mainnet within 48h of maintainer merge from Pacta treasury (`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`) once the winner comments their public Base `0x...` address on the merged PR. *(Funds are not pre-escrowed in an automated contract; zero automatic on-chain payouts — settlement occurs after deterministic dual-RPC replay verification and maintainer merge.)* --- ### Objective (Slot #4 — Post-Snapshot Live Drift on Any of Pacta's 53 Indexed Protocols OR 4th Unindexed `>=$15M TVL` Mismatch) Earn `$25 USDC` by submitting the first valid merged PR proving **EITHER**: 1. **Live Chain-Feed Drift on an Indexed Protocol:** Any of Pacta's **53 currently indexed protocols** (`https://pacta.wtf/api/v1/protocols.json` / `https://pacta.wtf/api/v1/index.json`) has experienced a **real post-snapshot on-chain control-plane change** since its pinned Pacta block (e.g., proxy implementation upgrade, `ProxyAdmin` / owner transfer, Safe signer or `M-of-N` threshold rotation, or `TimelockController.minDelay` modification), **OR** 2. **4th Unindexed `>=$15M TVL` Control-Plane `parameter_delta`:** A distinct unindexed DeFi protocol (`>=$15M TVL` on Ethereum Mainnet `1`, Base `8453`, or Arbitrum One `42161`, not covered by Slots #1–#3) where live on-chain control-plane state differs from its live `HTTP 200` official documentation. ### 1-Line Free Remote MCP Quickstart ```bash claude mcp add --transport http pacta https://pacta-x402.pacta.workers.dev/mcp ``` Compare Pac…",
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `RFC 8259 / IEEE-754 Deterministic Batch Conformance` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $150 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/1 Calibrate `EXECUTION_PROFILE`, `BATCH_SYNDROME_ANCHOR`, and `QUORUM_LANE_STRIDE` in `furnace_core/batch_frame_reconciler.py` across all 64 specification shards so `python3 ci_suite/run_furnace_gate.py --strict-ci` exits `0`.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -54,37 +54,387 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
-      "docs-bounty",
-      "reward"
+      "bounty"
     ],
     "github_state": "open",
-    "id": "github-Fractal-Neurons-pacta-24",
-    "issue_number": 24,
+    "id": "github-IES-BoilerRoom-Furnace-2",
+    "issue_number": 2,
     "labels": [
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
     ],
-    "project": "Fractal-Neurons/pacta",
-    "published_at": "2026-11-15T04:18:04Z",
+    "project": "IES-BoilerRoom/Furnace",
+    "published_at": "2026-11-08T10:53:25Z",
     "reward": {
-      "amount": 25,
-      "currency": "USDC",
-      "evidence": "[$25 USDC Bounty] Live Chain-Feed Drift Catch (53 Indexed Protocols) or 4th Unindexed (>=$15M TVL) Contr",
+      "amount": 150,
+      "currency": "USD",
+      "evidence": "fix(furnace_core): Stabilize multi-shard batch watermarks across concurrent worker epochs ($150 bounty) [Furnace]",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/Fractal-Neurons/pacta/issues/24",
+    "source_url": "https://github.com/IES-BoilerRoom/Furnace/issues/2",
     "status": "open",
-    "title": "[$25 USDC Bounty] Live Chain-Feed Drift Catch (53 Indexed Protocols) or 4th Unindexed (>=$15M TVL) Control-Plane Mismatch",
-    "updated_at": "2026-11-18T03:52:52Z"
+    "title": "fix(furnace_core): Stabilize multi-shard batch watermarks across concurrent worker epochs ($150 bounty) [Furnace]",
+    "updated_at": "2026-11-19T07:06:19Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `MoveVM Bytecode Verifier & Gas Meter Spec v1.4` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $225 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/1 Calibrate `MOVE_VERIFIER_MODE`, `ABILITY_LOCALS_SIGNATURE`, and `BORROW_GRAPH_GAS_KEY` in `move_verifier/reference_safety.py` across all 64 specification shards so `python3 suite/check_ability_constraints.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-MoveVM-bytecode-ability-checker-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/MoveVM-bytecode-ability-checker",
+    "published_at": "2026-11-16T08:07:39Z",
+    "reward": {
+      "amount": 225,
+      "currency": "USD",
+      "evidence": "fix(move_verifier): Enforce linear resource drop safety across loop back-edges ($225 bounty) [MoveVM-bytecode-ability-checker]",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/2",
+    "status": "open",
+    "title": "fix(move_verifier): Enforce linear resource drop safety across loop back-edges ($225 bounty) [MoveVM-bytecode-ability-checker]",
+    "updated_at": "2026-11-19T07:06:23Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `NVMe ZNS Command Set v1.1d / JEDEC ECC` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $175 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/ebpf-verifier-reg-bounds/issues/1 Calibrate `ECC_BASIS_PROFILE`, `BCH_GENERATOR_COSET_KEY`, and `OOB_SYNDROME_VECTOR` in `ftl_ecc/bch_syndrome_frame.py` across all 64 specification shards so `python3 verify/test_zns_parity.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-nvme-zns-bch-ecc-simulator-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/nvme-zns-bch-ecc-simulator",
+    "published_at": "2026-11-19T07:06:27Z",
+    "reward": {
+      "amount": 175,
+      "currency": "USDC",
+      "evidence": "ci/ftl_ecc: Stabilize polynomial-to-dual-basis trace tag across zone append descriptors - Reward $175 USDC",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/2",
+    "status": "open",
+    "title": "ci/ftl_ecc: Stabilize polynomial-to-dual-basis trace tag across zone append descriptors - Reward $175 USDC",
+    "updated_at": "2026-11-19T07:06:27Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $150 USDC - **Primary Batch Suite**: https://github.com/IES-BoilerRoom/Furnace/issues/1 - **Domain Conformance Suite**: https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/1 Clone `IES-BoilerRoom/tcp-bbrv3-pacing-verifier`, resolve the exact-ceiling boundary check in `congestion/bbr_bw_probe.py`, and ensure `python3 ns_sim/validate_pacing_gain.py` passes all 24 vectors.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-protocol-conformance-relay-1",
+    "issue_number": 1,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/protocol-conformance-relay",
+    "published_at": "2026-11-06T02:59:47Z",
+    "reward": {
+      "amount": 150,
+      "currency": "USDC",
+      "evidence": "/congestion: Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness - Reward $150 USDC",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/1",
+    "status": "open",
+    "title": "ci/congestion: Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness - Reward $150 USDC",
+    "updated_at": "2026-11-19T07:15:07Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $350 USDC - **Primary Batch Suite**: https://github.com/IES-BoilerRoom/Furnace/issues/2 - **Domain Conformance Suite**: https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1 Clone `IES-BoilerRoom/MoveVM-bytecode-ability-checker`, calibrate `ABILITY_LOCALS_SIGNATURE` and `BORROW_GRAPH_GAS_KEY` in `move_verifier/reference_safety.py`, and pass `python3 suite/check_ability_constraints.py --strict-ci`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-protocol-conformance-relay-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/protocol-conformance-relay",
+    "published_at": "2026-11-06T02:59:48Z",
+    "reward": {
+      "amount": 350,
+      "currency": "USDC",
+      "evidence": "ci/move_verifier: Enforce linear resource drop safety across loop back-edges - Reward $350 USDC",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/2",
+    "status": "open",
+    "title": "ci/move_verifier: Enforce linear resource drop safety across loop back-edges - Reward $350 USDC",
+    "updated_at": "2026-11-19T07:15:06Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $200 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/MoveVM-bytecode-ability-checker/issues/1 Calibrate `PACING_GAIN_CYCLE`, `BBR_INFLIGHT_HI_SCALE`, and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` across all 64 specification shards so `python3 ns_sim/validate_pacing_gain.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-tcp-bbrv3-pacing-verifier-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/tcp-bbrv3-pacing-verifier",
+    "published_at": "2026-11-16T08:07:38Z",
+    "reward": {
+      "amount": 200,
+      "currency": "USD",
+      "evidence": "fix(congestion): Stabilize min-RTT filter window across shallow-buffer ECN marking bursts ($200 bounty) [tcp-bbrv3-pacing-verifier]",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2",
+    "status": "open",
+    "title": "fix(congestion): Stabilize min-RTT filter window across shallow-buffer ECN marking bursts ($200 bounty) [tcp-bbrv3-pacing-verifier]",
+    "updated_at": "2026-11-19T07:06:21Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `C11 / Rust Atomic Memory Model §SeqCst-Ring` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $100 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/1 ### Problem Summary 1. `drain_mpsc_epoch_frames` in `mpsc/seqcst_slot_ring.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `SEQCST_EPOCH_RESIDUE` and `WRAP_MODULUS_ANCHOR` in `mpsc/seqcst_slot_ring.py` (without modifying `conformance/check_aba_epoch.py`) until `python3 conformance/check_aba_epoch.py` passes all 24 vectors.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-tokio-ringbuffer-seqcst-matrix-1",
+    "issue_number": 1,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix",
+    "published_at": "2026-11-17T17:06:09Z",
+    "reward": {
+      "amount": 100,
+      "currency": "USDC",
+      "evidence": "ceiling check and align multi-stride ring wrap-around residue (`drain_mpsc_epoch_frames`) [Reward: $100 USDC]",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix/issues/1",
+    "status": "open",
+    "title": "bug: Fix slot batch ceiling check and align multi-stride ring wrap-around residue (`drain_mpsc_epoch_frames`) [Reward: $100 USDC]",
+    "updated_at": "2026-11-19T07:06:25Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `C11 / Rust Atomic Memory Model §SeqCst-Ring` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $200 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/1 Calibrate `FENCE_ORDERING_MODEL`, `SEQCST_EPOCH_RESIDUE`, and `WRAP_MODULUS_ANCHOR` in `mpsc/seqcst_slot_ring.py` across all 64 specification shards so `python3 conformance/check_aba_epoch.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-tokio-ringbuffer-seqcst-matrix-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix",
+    "published_at": "2026-11-17T17:06:10Z",
+    "reward": {
+      "amount": 200,
+      "currency": "USDC",
+      "evidence": "ci/mpsc: Eliminate ABA generation counter skew across heterogeneous ring capacities - Reward $200 USDC",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix/issues/2",
+    "status": "open",
+    "title": "ci/mpsc: Eliminate ABA generation counter skew across heterogeneous ring capacities - Reward $200 USDC",
+    "updated_at": "2026-11-19T07:06:26Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `W3C WGSL Floating-Point Conformance §15.7` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $200 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/tokio-ringbuffer-seqcst-matrix/issues/1 Calibrate `PRECISION_TIER`, `PAYNE_HANEK_MANTISSA_KEY`, and `CW_REDUCTION_OFFSET` in `shader_math/payne_hanek_fold.py` across all 64 specification shards so `python3 harness/validate_wgsl_ulp.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-wgsl-transcendental-math-core-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/wgsl-transcendental-math-core",
+    "published_at": "2026-11-17T17:06:08Z",
+    "reward": {
+      "amount": 200,
+      "currency": "USD",
+      "evidence": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcendental-math-core]",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2",
+    "status": "open",
+    "title": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcendental-math-core]",
+    "updated_at": "2026-11-19T07:06:24Z"
   },
   {
     "ai_assistability": "unknown",
@@ -107,7 +457,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -157,7 +507,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -203,7 +553,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -249,7 +599,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -295,7 +645,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -347,7 +697,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -399,7 +749,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -442,7 +792,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -489,7 +839,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -535,7 +885,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -580,7 +930,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -625,7 +975,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -673,7 +1023,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -719,7 +1069,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -765,7 +1115,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -811,7 +1161,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -858,7 +1208,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -905,7 +1255,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -951,7 +1301,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -995,7 +1345,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1039,7 +1389,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1083,7 +1433,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1127,7 +1477,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1171,7 +1521,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1215,7 +1565,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1259,7 +1609,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1303,7 +1653,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1347,7 +1697,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1391,7 +1741,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1435,7 +1785,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1479,7 +1829,7 @@
       "web3"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1525,7 +1875,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1568,7 +1918,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1609,7 +1959,7 @@
     "issue_number": 212,
     "labels": [],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1650,7 +2000,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1674,7 +2024,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (26 tasks inspected) - BasedAgents tasks: OK (12 tasks inspected) - Frantic funded bounties: OK (1 tasks inspected) - SwarmMemo cash rewards: OK (6 tasks inspected) - GitHub Big Hunt index: OK (106 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 14; closed source issues excluded: 11 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Integration with OS a…",
+    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (24 tasks inspected) - BasedAgents tasks: OK (12 tasks inspected) - Frantic funded bounties: OK (1 tasks inspected) - SwarmMemo cash rewards: OK (4 tasks inspected) - GitHub Big Hunt index: OK (101 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 14; closed source issues excluded: 10 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Integration with OS a…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -1684,15 +2034,14 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
       "funded-bounty"
     ],
     "github_state": "open",
     "id": "github-ilhamraduanbis-source-toyol-digital-4",
     "issue_number": 4,
     "labels": [],
-    "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_changed_at": "2026-11-19T07:22:36Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1710,7 +2059,7 @@
     "source_url": "https://github.com/ilhamraduanbis-source/toyol-digital/issues/4",
     "status": "open",
     "title": "💰 Toyol Paid Tasks — kerja ejen, bukan iklan jawatan kosong",
-    "updated_at": "2026-11-18T04:21:28Z"
+    "updated_at": "2026-11-19T03:28:10Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1735,7 +2084,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1776,7 +2125,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1820,7 +2169,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1865,7 +2214,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1910,7 +2259,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1955,7 +2304,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2000,7 +2349,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2045,7 +2394,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2090,7 +2439,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2135,7 +2484,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2180,7 +2529,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2225,7 +2574,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2270,7 +2619,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2315,7 +2664,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2360,7 +2709,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2405,7 +2754,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2450,7 +2799,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2495,7 +2844,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2540,7 +2889,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2585,7 +2934,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2630,7 +2979,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2675,7 +3024,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2716,7 +3065,7 @@
     "issue_number": 36,
     "labels": [],
     "last_changed_at": "2026-10-30T05:46:26Z",
-    "last_checked_at": "2026-11-18T07:26:09Z",
+    "last_checked_at": "2026-11-19T07:22:36Z",
     "notes": null,
     "platform_sources": [
       "github"
