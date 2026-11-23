@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -44,7 +44,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "MEMBER",
-    "body_excerpt": "# Wave 4 — $1.00 USDC Observed Catalogue Bounty **Pool:** **24 awards of $1.00 USDC** on Base (`$24.00 USDC` held on-chain in Pacta's bounty wallet `0xcA4E2ff22B69A7284210c47BdeE21Aac1269da09`). More slots may be added and will be announced on this issue. **Closes when all open slots are filled, or on Sunday 29 November 2026 at 23:59 UTC, whichever comes first.** ## Read First — Key Safety, Paid Call & Payout - **Key safety:** Use a fresh wallet holding only cents, never your main wallet. Our helper script reads your key on your own machine and never sends or prints it. Pacta will never ask for a private key or seed phrase. - **One $0.02 paid call per entry:** Every entry needs one paid x402 `verdict` call of **$0.02 USDC** on Base to **`POST https://api.pacta.wtf/v1/x402/verdict`** (`https://pacta.fractalneurons.com` is the second official host; our checker verifies the payment on-chain). Payment goes to Pacta's treasury wallet **`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`** on Base and must come **from the same Base wallet address that will receive your $1.00 USDC award**. - **The $0.02 is not returned:** Your 2 cents pay for the API call and are never returned, even if someone else wins the slot first or your entry fails our check. **If the script ends with HTTP 503 and the answer says settled: true, your payment went through. Do not run it again. Use that transaction.** If the call returns any other error or times out, check your wallet on BaseScan before retrying: if 2 cents already left your wallet to `0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`, do not pay again — that Base transaction hash is valid for your entry and our checker accepts it. - **Getting 2 cents of USDC on Base:** If your fresh wallet has no USDC on Base, withdraw a small amount of USDC on the Base network from an exchange that supports Base (fees vary by exchange), or swap a few cents of Base ETH into Base USDC (`0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`). Signing the x402 payment itself…",
+    "body_excerpt": "# Wave 4 — $1.00 USDC Observed Catalogue Bounty **Open slots right now (updated after every paid award — 6 of 24 slots open; 18 settled):** `ethereum-sushiswap-v2-factory`, `ethereum-zksync-era-bridgehub`, `ethereum-near-erc20-locker`, `ethereum-origin-oeth-vault`, `ethereum-manta-pacific-portal`, `ethereum-fraxlend-pair-deployer`. **Pool:** **24 awards of $1.00 USDC** on Base (`$24.00 USDC` held on-chain in Pacta's bounty wallet `0xcA4E2ff22B69A7284210c47BdeE21Aac1269da09`). More slots may be added and will be announced on this issue. **Closes when all open slots are filled, or on Sunday 29 November 2026 at 23:59 UTC, whichever comes first.** ## Read First — Key Safety, Paid Call & Payout - **Key safety:** Use a fresh wallet holding only cents, never your main wallet. Our helper script reads your key on your own machine and never sends or prints it. Pacta will never ask for a private key or seed phrase. - **One $0.02 paid call per entry:** Every entry needs one paid x402 `verdict` call of **$0.02 USDC** on Base to **`POST https://api.pacta.wtf/v1/x402/verdict`** (`https://pacta.fractalneurons.com` is the second official host; our checker verifies the payment on-chain). Payment goes to Pacta's treasury wallet **`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`** on Base and must come **from the same Base wallet address that will receive your $1.00 USDC award**. - **The $0.02 is not returned:** Your 2 cents pay for the API call and are never returned, even if someone else wins the slot first or your entry fails our check. **If the script ends with HTTP 503 and the answer says settled: true, your payment went through. Do not run it again. Use that transaction.** If the call returns any other error or times out, check your wallet on BaseScan before retrying: if 2 cents already left your wallet to `0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`, do not pay again — that Base transaction hash is valid for your entry and our checker accepts it. - **Getting 2 cents of USDC on Base…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -63,8 +63,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -81,8 +81,52 @@
     "source": "github",
     "source_url": "https://github.com/Fractal-Neurons/pacta/issues/158",
     "status": "open",
-    "title": "[Wave 4: 24 × $1.00 USDC | Observed Catalogue] Batch 1 + Batch 2 Open Now (21 Slots · Ethereum & Base)",
-    "updated_at": "2026-11-22T00:26:42Z"
+    "title": "[Wave 4: 24 × $1.00 USDC | Observed Catalogue] Batch 1 + Batch 2 Open Now (24 Slots · Ethereum & Base)",
+    "updated_at": "2026-11-23T07:33:13Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "MEMBER",
+    "body_excerpt": "# Wave 4 — $2.00 USDC Documents Changed Bounty (5 Open Awards on Base) **Pool:** **5 awards of $2.00 USDC** on Base (`$10.00 USDC` held on-chain in Pacta's bounty wallet `0xcA4E2ff22B69A7284210c47BdeE21Aac1269da09`). **Closes when all 5 awards are won, or on Sunday 29 November 2026 at 23:59 UTC, whichever comes first.** Any un-won Documents Changed awards remaining at `29 November 2026, 23:59 UTC` roll over into extra `$1.00 USDC` Observed Catalogue slots (`2` Catalogue slots per un-won `$2.00` award). ## Read First — Key Safety, Paid Call & Payout - **Key safety:** Use a fresh wallet holding only cents, never your main wallet. Our helper script (`tools/pacta_x402_call.py`) runs its cryptographic self-test on every run, reads your key on your own machine, and never sends or prints it. Pacta will never ask for a private key or seed phrase. - **One $0.05 paid call per entry:** Every entry needs one paid x402 `dossier` call of **$0.05 USDC** on Base to **`POST https://api.pacta.wtf/v1/x402/dossier`** (`https://pacta.fractalneurons.com` is the second official host; our checker verifies the payment on-chain). Payment goes to Pacta's treasury wallet **`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`** on Base and must come **from the same Base wallet address that will receive your $2.00 USDC award**. - **The $0.05 is not returned:** Your 5 cents pay for the API call and are never returned, even if someone else wins that protocol first or your entry fails our check. **If the script ends with HTTP 503 and the answer says settled: true, your payment went through. Do not run it again. Use that transaction.** If the call returns any other error or times out, check your wallet on BaseScan before retrying: if 5 cents already left your wallet to `0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`, do not pay again — that Base transaction hash is valid for your entry and our checker accepts it. - **Getting 5 cents of USDC on Base:** If your fresh wallet has no USDC on Base, withdraw a small…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty",
+      "docs-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Fractal-Neurons-pacta-161",
+    "issue_number": 161,
+    "labels": [
+      "bounty"
+    ],
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Fractal-Neurons/pacta",
+    "published_at": "2026-11-21T16:16:24Z",
+    "reward": {
+      "amount": 2,
+      "currency": "USDC",
+      "evidence": "pre-checked by script and **checked by a second reviewer** before merge; winning entries are paid **$2.00 USDC on Base** within **48 hours** of merge (not an instant automated payout).",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Fractal-Neurons/pacta/issues/161",
+    "status": "open",
+    "title": "[Wave 4: 5 × $2.00 USDC | Documents Changed] Open Now (160 Protocols · 246 Quoted Records · Ethereum & Base)",
+    "updated_at": "2026-11-22T21:09:03Z"
   },
   {
     "ai_assistability": "unknown",
@@ -107,8 +151,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -126,101 +170,13 @@
     "source_url": "https://github.com/IES-BoilerRoom/Furnace/issues/2",
     "status": "open",
     "title": "fix(furnace_core): Stabilize multi-shard batch watermarks across concurrent worker epochs ($150 bounty) [Furnace]",
-    "updated_at": "2026-11-22T04:12:37Z"
+    "updated_at": "2026-11-23T05:14:38Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `Python PEP 626 / PEP 657 Code Object Specification` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $125 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1 ### Problem Summary 1. `collect_trace_event_frames` in `dwarf_trace/co_linetable_codec.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `LINETABLE_VARINT_SEED` and `INSTRUCTION_MIX_TAG` in `dwarf_trace/co_linetable_codec.py` (without modifying `tests/verify_pep626_deltas.py`) until `python3 tests/verify_pep626_deltas.py` passes all 24 vectors.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-IES-BoilerRoom-cpython-pep626-line-profiler-1",
-    "issue_number": 1,
-    "labels": [
-      "bounty",
-      "help wanted"
-    ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "IES-BoilerRoom/cpython-pep626-line-profiler",
-    "published_at": "2026-11-22T04:12:46Z",
-    "reward": {
-      "amount": 125,
-      "currency": "USD",
-      "evidence": "fix(dwarf_trace): Resolve trace frame ceiling off-by-one and PEP 626 instruction-envelope residue ($125 bounty) [collect_trace_event_frames]",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/1",
-    "status": "open",
-    "title": "fix(dwarf_trace): Resolve trace frame ceiling off-by-one and PEP 626 instruction-envelope residue ($125 bounty) [collect_trace_event_frames]",
-    "updated_at": "2026-11-22T04:18:53Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `Python PEP 626 / PEP 657 Code Object Specification` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $250 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1 Calibrate `PROFILER_SAMPLING_MODE`, `LINETABLE_VARINT_SEED`, and `INSTRUCTION_MIX_TAG` in `dwarf_trace/co_linetable_codec.py` across all 64 specification shards so `python3 tests/verify_pep626_deltas.py --strict-ci` exits `0`.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-IES-BoilerRoom-cpython-pep626-line-profiler-2",
-    "issue_number": 2,
-    "labels": [
-      "bounty",
-      "help wanted"
-    ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "IES-BoilerRoom/cpython-pep626-line-profiler",
-    "published_at": "2026-11-22T04:12:46Z",
-    "reward": {
-      "amount": 250,
-      "currency": "USD",
-      "evidence": "fix(dwarf_trace): Preserve exact column-offset delta invariants across exception handler tables ($250 bounty) [cpython-pep626-line-profiler]",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/2",
-    "status": "open",
-    "title": "fix(dwarf_trace): Preserve exact column-offset delta invariants across exception handler tables ($250 bounty) [cpython-pep626-line-profiler]",
-    "updated_at": "2026-11-22T04:12:46Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `IETF RFC 7541 HPACK / RFC 9113 HTTP/2` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $250 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/1 ### Problem Summary 1. `unpack_hpack_header_frames` in `http2_hpack/dynamic_table_framer.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `HPACK_EVICTION_WATERMARK` and `CONTINUATION_SHARD_TAG` in `http2_hpack/dynamic_table_framer.py` (without modifying `conformance/run_rfc7541_hpack.py`) until `python3 conformance/run_rfc7541_hpack.py` passes all 24 vectors.",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `IETF RFC 7541 HPACK / RFC 9113 HTTP/2` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $250 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1 ### Problem Summary 1. `unpack_hpack_header_frames` in `http2_hpack/dynamic_table_framer.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `HPACK_EVICTION_WATERMARK` and `CONTINUATION_SHARD_TAG` in `http2_hpack/dynamic_table_framer.py` (without modifying `conformance/run_rfc7541_hpack.py`) until `python3 conformance/run_rfc7541_hpack.py` passes all 24 vectors.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -239,8 +195,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -258,7 +214,51 @@
     "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/1",
     "status": "open",
     "title": "fix(http2_hpack): Fix HTTP/2 frame payload ceiling and HPACK dynamic table shard eviction witness ($250 bounty) [unpack_hpack_header_frames]",
-    "updated_at": "2026-11-22T04:12:44Z"
+    "updated_at": "2026-11-23T05:14:44Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `IETF RFC 7541 HPACK / RFC 9113 HTTP/2` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $350 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1 Calibrate `HEADER_COMPRESSION_MODE`, `HPACK_EVICTION_WATERMARK`, and `CONTINUATION_SHARD_TAG` in `http2_hpack/dynamic_table_framer.py` across all 64 specification shards so `python3 conformance/run_rfc7541_hpack.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-grpc-http2-hpack-framing-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/grpc-http2-hpack-framing",
+    "published_at": "2026-11-20T11:08:34Z",
+    "reward": {
+      "amount": 350,
+      "currency": "USDC",
+      "evidence": "copy Huffman header boundary across split CONTINUATION frames (`grpc-http2-hpack-framing`) [Reward: $350 USDC]",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/2",
+    "status": "open",
+    "title": "bug: Enforce zero-copy Huffman header boundary across split CONTINUATION frames (`grpc-http2-hpack-framing`) [Reward: $350 USDC]",
+    "updated_at": "2026-11-23T05:14:45Z"
   },
   {
     "ai_assistability": "unknown",
@@ -283,8 +283,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -302,57 +302,13 @@
     "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/1",
     "status": "open",
     "title": "ci/congestion: Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness - Reward $150 USDC",
-    "updated_at": "2026-11-22T04:12:35Z"
+    "updated_at": "2026-11-23T05:14:35Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $125 USDC - **Primary Batch Suite**: https://github.com/IES-BoilerRoom/Furnace/issues/2 - **Domain Conformance Suite**: https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/1 Clone `IES-BoilerRoom/wgsl-transcendental-math-core`, calibrate `PAYNE_HANEK_MANTISSA_KEY` and `CW_REDUCTION_OFFSET` in `shader_math/payne_hanek_fold.py`, and pass `python3 harness/validate_wgsl_ulp.py --strict-ci`.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-IES-BoilerRoom-protocol-conformance-relay-2",
-    "issue_number": 2,
-    "labels": [
-      "bounty",
-      "help wanted"
-    ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "IES-BoilerRoom/protocol-conformance-relay",
-    "published_at": "2026-11-06T02:59:48Z",
-    "reward": {
-      "amount": 125,
-      "currency": "USD",
-      "evidence": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($125 bounty) [segment_bbr_ack_frames]",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/2",
-    "status": "open",
-    "title": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($125 bounty) [segment_bbr_ack_frames]",
-    "updated_at": "2026-11-22T04:12:36Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $200 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/1 Calibrate `PACING_GAIN_CYCLE`, `BBR_INFLIGHT_HI_SCALE`, and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` across all 64 specification shards so `python3 ns_sim/validate_pacing_gain.py --strict-ci` exits `0`.",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `IETF draft-ietf-ccwg-bbr-01 Congestion Control` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $200 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/ebpf-verifier-reg-bounds/issues/1 Calibrate `PACING_GAIN_CYCLE`, `BBR_INFLIGHT_HI_SCALE`, and `RTPROP_STAMP_WITNESS` in `congestion/bbr_bw_probe.py` across all 64 specification shards so `python3 ns_sim/validate_pacing_gain.py --strict-ci` exits `0`.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -371,8 +327,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -390,13 +346,13 @@
     "source_url": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2",
     "status": "open",
     "title": "fix(congestion): Stabilize min-RTT filter window across shallow-buffer ECN marking bursts ($200 bounty) [tcp-bbrv3-pacing-verifier]",
-    "updated_at": "2026-11-22T04:12:39Z"
+    "updated_at": "2026-11-23T05:14:40Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `W3C WGSL Floating-Point Conformance §15.7` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $200 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/ebpf-verifier-reg-bounds/issues/1 Calibrate `PRECISION_TIER`, `PAYNE_HANEK_MANTISSA_KEY`, and `CW_REDUCTION_OFFSET` in `shader_math/payne_hanek_fold.py` across all 64 specification shards so `python3 harness/validate_wgsl_ulp.py --strict-ci` exits `0`.",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `PagedAttention Block-Table ABI Specification v2.4` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $75 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/pcie-tlp-credit-flow-gate/issues/1 ### Problem Summary 1. `reclaim_kv_page_frames` in `kv_cache/block_table_allocator.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `KV_STRIDE_PHASE_SEED` and `COW_GENERATION_OFFSET` in `kv_cache/block_table_allocator.py` (without modifying `tests/verify_cow_preemption.py`) until `python3 tests/verify_cow_preemption.py` passes all 24 vectors.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -406,35 +362,35 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty"
+      "reward"
     ],
     "github_state": "open",
-    "id": "github-IES-BoilerRoom-wgsl-transcendental-math-core-2",
-    "issue_number": 2,
+    "id": "github-IES-BoilerRoom-vllm-paged-kv-verifier-1",
+    "issue_number": 1,
     "labels": [
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
     ],
-    "project": "IES-BoilerRoom/wgsl-transcendental-math-core",
-    "published_at": "2026-11-17T17:06:08Z",
+    "project": "IES-BoilerRoom/vllm-paged-kv-verifier",
+    "published_at": "2026-11-23T05:14:48Z",
     "reward": {
-      "amount": 200,
-      "currency": "USD",
-      "evidence": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcendental-math-core]",
+      "amount": 75,
+      "currency": "USDC",
+      "evidence": "ci/kv_cache: Fix KV frame chunk ceiling and reconcile multi-head block stride congruences - Reward $75 USDC",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2",
+    "source_url": "https://github.com/IES-BoilerRoom/vllm-paged-kv-verifier/issues/1",
     "status": "open",
-    "title": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcendental-math-core]",
-    "updated_at": "2026-11-22T04:12:41Z"
+    "title": "ci/kv_cache: Fix KV frame chunk ceiling and reconcile multi-head block stride congruences - Reward $75 USDC",
+    "updated_at": "2026-11-23T05:32:11Z"
   },
   {
     "ai_assistability": "unknown",
@@ -457,7 +413,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -507,7 +463,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -553,7 +509,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -599,7 +555,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -645,7 +601,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-21T07:04:01Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -697,7 +653,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -749,7 +705,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -792,7 +748,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -839,7 +795,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -885,7 +841,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -930,7 +886,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -975,7 +931,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1023,7 +979,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1069,7 +1025,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1115,7 +1071,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1161,7 +1117,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1208,7 +1164,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1255,7 +1211,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1301,7 +1257,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1345,7 +1301,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1389,7 +1345,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1433,7 +1389,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1477,7 +1433,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1521,7 +1477,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1565,7 +1521,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1609,7 +1565,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1653,7 +1609,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1697,7 +1653,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1741,7 +1697,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1785,7 +1741,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1829,7 +1785,7 @@
       "web3"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1875,7 +1831,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1918,7 +1874,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1959,7 +1915,7 @@
     "issue_number": 212,
     "labels": [],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2000,7 +1956,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2024,7 +1980,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (47 tasks inspected) - BasedAgents tasks: OK (13 tasks inspected) - Frantic funded bounties: OK (1 tasks inspected) - SwarmMemo cash rewards: OK (11 tasks inspected) - GitHub Big Hunt index: OK (98 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 10; closed source issues excluded: 6 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **## Title** — 1 USDC ([…",
+    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (62 tasks inspected) - BasedAgents tasks: OK (13 tasks inspected) - Frantic funded bounties: OK (1 tasks inspected) - SwarmMemo cash rewards: OK (6 tasks inspected) - GitHub Big Hunt index: OK (97 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 12; closed source issues excluded: 8 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Integration with OS acc…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -2041,8 +1997,8 @@
     "id": "github-ilhamraduanbis-source-toyol-digital-4",
     "issue_number": 4,
     "labels": [],
-    "last_changed_at": "2026-11-22T06:44:36Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_changed_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2060,7 +2016,7 @@
     "source_url": "https://github.com/ilhamraduanbis-source/toyol-digital/issues/4",
     "status": "open",
     "title": "💰 Toyol Paid Tasks — kerja ejen, bukan iklan jawatan kosong",
-    "updated_at": "2026-11-22T06:29:16Z"
+    "updated_at": "2026-11-23T02:52:35Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2085,7 +2041,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2126,7 +2082,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2170,7 +2126,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2215,7 +2171,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2260,7 +2216,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2305,7 +2261,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2350,7 +2306,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2395,7 +2351,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2440,7 +2396,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2485,7 +2441,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2530,7 +2486,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2575,7 +2531,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2620,7 +2576,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2665,7 +2621,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2710,7 +2666,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2755,7 +2711,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2800,7 +2756,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2845,7 +2801,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2890,7 +2846,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2935,7 +2891,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2980,7 +2936,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3025,7 +2981,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-22T06:44:36Z",
+    "last_checked_at": "2026-11-23T07:35:14Z",
     "notes": null,
     "platform_sources": [
       "github"
