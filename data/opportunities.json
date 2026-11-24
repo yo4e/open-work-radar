@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -44,7 +44,7 @@
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "MEMBER",
-    "body_excerpt": "# Wave 4 — $1.00 USDC Observed Catalogue Bounty **Open slots right now (updated after every paid award — 6 of 24 slots open; 18 settled):** `ethereum-sushiswap-v2-factory`, `ethereum-zksync-era-bridgehub`, `ethereum-near-erc20-locker`, `ethereum-origin-oeth-vault`, `ethereum-manta-pacific-portal`, `ethereum-fraxlend-pair-deployer`. **Pool:** **24 awards of $1.00 USDC** on Base (`$24.00 USDC` held on-chain in Pacta's bounty wallet `0xcA4E2ff22B69A7284210c47BdeE21Aac1269da09`). More slots may be added and will be announced on this issue. **Closes when all open slots are filled, or on Sunday 29 November 2026 at 23:59 UTC, whichever comes first.** ## Read First — Key Safety, Paid Call & Payout - **Key safety:** Use a fresh wallet holding only cents, never your main wallet. Our helper script reads your key on your own machine and never sends or prints it. Pacta will never ask for a private key or seed phrase. - **One $0.02 paid call per entry:** Every entry needs one paid x402 `verdict` call of **$0.02 USDC** on Base to **`POST https://api.pacta.wtf/v1/x402/verdict`** (`https://pacta.fractalneurons.com` is the second official host; our checker verifies the payment on-chain). Payment goes to Pacta's treasury wallet **`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`** on Base and must come **from the same Base wallet address that will receive your $1.00 USDC award**. - **The $0.02 is not returned:** Your 2 cents pay for the API call and are never returned, even if someone else wins the slot first or your entry fails our check. **If the script ends with HTTP 503 and the answer says settled: true, your payment went through. Do not run it again. Use that transaction.** If the call returns any other error or times out, check your wallet on BaseScan before retrying: if 2 cents already left your wallet to `0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`, do not pay again — that Base transaction hash is valid for your entry and our checker accepts it. - **Getting 2 cents of USDC on Base…",
+    "body_excerpt": "# Wave 4 — $2.00 USDC Documents Changed Bounty (5 Open Awards on Base) **Account-age requirement (read before paying):** Your GitHub account must have been created on or before **2026-05-21**. Younger accounts cannot win; please do not pay for a call. **Open awards right now (updated after every paid award — 4 of 5 awards open; 1 settled: `eigenlayer`):** 159 eligible protocols remain open. **Pool:** **5 awards of $2.00 USDC** on Base (`$10.00 USDC` held on-chain in Pacta's bounty wallet `0xcA4E2ff22B69A7284210c47BdeE21Aac1269da09`). **Closes when all 5 awards are won, or on Sunday 29 November 2026 at 23:59 UTC, whichever comes first.** Any un-won Documents Changed awards remaining at `29 November 2026, 23:59 UTC` roll over into extra `$1.00 USDC` Observed Catalogue slots (`2` Catalogue slots per un-won `$2.00` award). ## Read First — Key Safety, Paid Call & Payout - **Key safety:** Use a fresh wallet holding only cents, never your main wallet. Our helper script (`tools/pacta_x402_call.py`) runs its cryptographic self-test on every run, reads your key on your own machine, and never sends or prints it. Pacta will never ask for a private key or seed phrase. - **One $0.05 paid call per entry:** Every entry needs one paid x402 `dossier` call of **$0.05 USDC** on Base to **`POST https://api.pacta.wtf/v1/x402/dossier`** (`https://pacta.fractalneurons.com` is the second official host; our checker verifies the payment on-chain). Payment goes to Pacta's treasury wallet **`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`** on Base and must come **from the same Base wallet address that will receive your $2.00 USDC award**. - **The $0.05 is not returned:** Your 5 cents pay for the API call and are never returned, even if someone else wins that protocol first or your entry fails our check. **If the script ends with HTTP 503 and the answer says settled: true, your payment went through. Do not run it again. Use that transaction.** If the call returns any other error or times out, chec…",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -54,51 +54,6 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
-      "docs-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-Fractal-Neurons-pacta-158",
-    "issue_number": 158,
-    "labels": [
-      "bounty"
-    ],
-    "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "Fractal-Neurons/pacta",
-    "published_at": "2026-11-21T15:53:53Z",
-    "reward": {
-      "amount": 1,
-      "currency": "USDC",
-      "evidence": "- **Payout within 48 hours:** Each winning entry is paid **$1.00 USDC on Base** within **48 hours** after our check passes and the Pull Request merges.",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/Fractal-Neurons/pacta/issues/158",
-    "status": "open",
-    "title": "[Wave 4: 24 × $1.00 USDC | Observed Catalogue] Batch 1 + Batch 2 Open Now (24 Slots · Ethereum & Base)",
-    "updated_at": "2026-11-23T07:33:13Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "MEMBER",
-    "body_excerpt": "# Wave 4 — $2.00 USDC Documents Changed Bounty (5 Open Awards on Base) **Pool:** **5 awards of $2.00 USDC** on Base (`$10.00 USDC` held on-chain in Pacta's bounty wallet `0xcA4E2ff22B69A7284210c47BdeE21Aac1269da09`). **Closes when all 5 awards are won, or on Sunday 29 November 2026 at 23:59 UTC, whichever comes first.** Any un-won Documents Changed awards remaining at `29 November 2026, 23:59 UTC` roll over into extra `$1.00 USDC` Observed Catalogue slots (`2` Catalogue slots per un-won `$2.00` award). ## Read First — Key Safety, Paid Call & Payout - **Key safety:** Use a fresh wallet holding only cents, never your main wallet. Our helper script (`tools/pacta_x402_call.py`) runs its cryptographic self-test on every run, reads your key on your own machine, and never sends or prints it. Pacta will never ask for a private key or seed phrase. - **One $0.05 paid call per entry:** Every entry needs one paid x402 `dossier` call of **$0.05 USDC** on Base to **`POST https://api.pacta.wtf/v1/x402/dossier`** (`https://pacta.fractalneurons.com` is the second official host; our checker verifies the payment on-chain). Payment goes to Pacta's treasury wallet **`0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`** on Base and must come **from the same Base wallet address that will receive your $2.00 USDC award**. - **The $0.05 is not returned:** Your 5 cents pay for the API call and are never returned, even if someone else wins that protocol first or your entry fails our check. **If the script ends with HTTP 503 and the answer says settled: true, your payment went through. Do not run it again. Use that transaction.** If the call returns any other error or times out, check your wallet on BaseScan before retrying: if 5 cents already left your wallet to `0x4348DF1BEFAffcbA248B5118B1b782B1B2bdEd14`, do not pay again — that Base transaction hash is valid for your entry and our checker accepts it. - **Getting 5 cents of USDC on Base:** If your fresh wallet has no USDC on Base, withdraw a small…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty",
       "docs-bounty"
     ],
     "github_state": "open",
@@ -107,8 +62,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_changed_at": "2026-11-24T09:51:57Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -126,7 +81,7 @@
     "source_url": "https://github.com/Fractal-Neurons/pacta/issues/161",
     "status": "open",
     "title": "[Wave 4: 5 × $2.00 USDC | Documents Changed] Open Now (160 Protocols · 246 Quoted Records · Ethereum & Base)",
-    "updated_at": "2026-11-22T21:09:03Z"
+    "updated_at": "2026-11-23T10:18:06Z"
   },
   {
     "ai_assistability": "unknown",
@@ -152,7 +107,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -196,7 +151,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -240,7 +195,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -284,7 +239,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -328,7 +283,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -372,7 +327,7 @@
       "help wanted"
     ],
     "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -413,7 +368,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -463,7 +418,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -509,7 +464,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -555,7 +510,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -601,7 +556,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-21T07:04:01Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -653,7 +608,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -705,7 +660,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -748,7 +703,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -795,7 +750,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -841,7 +796,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -886,7 +841,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -931,7 +886,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -978,8 +933,8 @@
       "open",
       "propagation"
     ],
-    "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_changed_at": "2026-11-24T09:51:57Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -997,7 +952,7 @@
     "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/515",
     "status": "open",
     "title": "[Bounty] Add RustChain to Your GitHub Profile README - 2 RTC",
-    "updated_at": "2026-11-17T20:55:52Z"
+    "updated_at": "2026-11-24T02:10:37Z"
   },
   {
     "ai_assistability": "unknown",
@@ -1025,7 +980,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1071,7 +1026,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1117,7 +1072,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1164,7 +1119,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1211,7 +1166,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1257,7 +1212,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1301,7 +1256,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1345,7 +1300,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1389,7 +1344,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1433,7 +1388,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1477,7 +1432,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1521,7 +1476,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1565,7 +1520,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1609,7 +1564,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1653,7 +1608,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1697,7 +1652,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1741,7 +1696,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1785,7 +1740,7 @@
       "web3"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1831,7 +1786,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1874,7 +1829,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1915,7 +1870,7 @@
     "issue_number": 212,
     "labels": [],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1956,7 +1911,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1975,48 +1930,6 @@
     "status": "open",
     "title": "$1000 Bounty",
     "updated_at": "2026-11-17T17:36:27Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "# Toyol Paid Tasks Radar untuk **tugasan berbayar terbuka yang AI agent boleh cuba selesaikan**, bukan jawatan kosong atau peluang kerja manusia. Hasil yang boleh dibuktikan sahaja: ditemukan → dinilai → dicuba → diuji → dihantar → diterima → diselesaikan bayaran → diterima ke MYR. Tiada hak untuk mengambil wang tidak dituntut milik pihak lain. Tidak ada deposit, stake, deposit balik modal, atau pembelian tugasan dengan wang pemilik. Baki modal operasi sebenar masih kosong sehingga penerimaan bayaran dibuktikan. <!-- toyol-paid-tasks-v1 --> # 🧟 Toyol — Paid Tasks (not job vacancies) **REAL MONEY RECEIVED: RM0. ADVERTISED REWARDS ARE NOT EARNINGS.** Source API: [Jobbi](https://jobbi.org/gigs), [Taskmarket](https://docs.taskmarket.dev/api/reference), [BasedAgents](https://basedagents.ai/docs/agents), [Frantic](https://gofrantic.com), [SwarmMemo](https://swarmmemo.com/work?kind=earn), [independent GitHub bounty index](https://github.com/krishi-shah/dailybugbounties). No owner cash, deposits, stakes, platform fees, wallet spending, or other people’s unclaimed money. Only public work explicitly open to a participant may be attempted. Payment and Malaysia cashout must be verified before reporting profit. - Taskmarket open: OK (62 tasks inspected) - BasedAgents tasks: OK (13 tasks inspected) - Frantic funded bounties: OK (1 tasks inspected) - SwarmMemo cash rewards: OK (6 tasks inspected) - GitHub Big Hunt index: OK (97 tasks inspected) ## Toyol Frantic customer inbox - Sworn: true; hire listing open: true; payout configured: true - Invitations: 0; active claims: 0; review pending: 0; revision needed: 0; awaiting payout: 0 - Platform reported earnings USD: 1 (not independently verified settlement or MYR). ## Original issue verification - GitHub issue sources checked: 12; closed source issues excluded: 8 - An open issue is NOT proof that its bounty is still payable; assignee, competition and payment need review. ## Tasks to investigate / attempt - **Integration with OS acc…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty",
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-ilhamraduanbis-source-toyol-digital-4",
-    "issue_number": 4,
-    "labels": [],
-    "last_changed_at": "2026-11-23T07:35:14Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "ilhamraduanbis-source/toyol-digital",
-    "published_at": "2026-11-10T02:36:32Z",
-    "reward": {
-      "amount": 2340,
-      "currency": "USD",
-      "evidence": "- **BOUNTY WearOS Support $2340** — 2340 USD ([original](https://github.com/microg/GmsCore/issues/2843))",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/ilhamraduanbis-source/toyol-digital/issues/4",
-    "status": "open",
-    "title": "💰 Toyol Paid Tasks — kerja ejen, bukan iklan jawatan kosong",
-    "updated_at": "2026-11-23T02:52:35Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2041,7 +1954,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2082,7 +1995,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2126,7 +2039,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2171,7 +2084,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2216,7 +2129,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2261,7 +2174,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2306,7 +2219,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2351,7 +2264,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2396,7 +2309,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2441,7 +2354,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2486,7 +2399,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2531,7 +2444,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2576,7 +2489,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2621,7 +2534,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2666,7 +2579,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2711,7 +2624,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2756,7 +2669,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2801,7 +2714,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2846,7 +2759,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2891,7 +2804,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2936,7 +2849,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2981,7 +2894,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-23T07:35:14Z",
+    "last_checked_at": "2026-11-24T09:51:57Z",
     "notes": null,
     "platform_sources": [
       "github"
