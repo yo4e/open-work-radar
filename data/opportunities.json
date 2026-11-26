@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -63,7 +63,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-24T09:51:57Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -106,8 +106,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -125,7 +125,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/Furnace/issues/2",
     "status": "open",
     "title": "fix(furnace_core): Stabilize multi-shard batch watermarks across concurrent worker epochs ($150 bounty) [Furnace]",
-    "updated_at": "2026-11-24T22:11:16Z"
+    "updated_at": "2026-11-25T19:22:30Z"
   },
   {
     "ai_assistability": "unknown",
@@ -150,8 +150,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -169,7 +169,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/1",
     "status": "open",
     "title": "fix(dwarf_trace): Resolve trace frame ceiling off-by-one and PEP 626 instruction-envelope residue ($125 bounty) [collect_trace_event_frames]",
-    "updated_at": "2026-11-24T22:27:50Z"
+    "updated_at": "2026-11-25T18:39:50Z"
   },
   {
     "ai_assistability": "unknown",
@@ -194,8 +194,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -213,7 +213,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/2",
     "status": "open",
     "title": "fix(dwarf_trace): Preserve exact column-offset delta invariants across exception handler tables ($250 bounty) [cpython-pep626-line-profiler]",
-    "updated_at": "2026-11-24T22:28:55Z"
+    "updated_at": "2026-11-25T18:37:41Z"
   },
   {
     "ai_assistability": "unknown",
@@ -238,8 +238,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -257,7 +257,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/1",
     "status": "open",
     "title": "fix(http2_hpack): Fix HTTP/2 frame payload ceiling and HPACK dynamic table shard eviction witness ($250 bounty) [unpack_hpack_header_frames]",
-    "updated_at": "2026-11-24T22:11:19Z"
+    "updated_at": "2026-11-25T19:04:01Z"
   },
   {
     "ai_assistability": "unknown",
@@ -282,8 +282,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -301,7 +301,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/2",
     "status": "open",
     "title": "bug: Enforce zero-copy Huffman header boundary across split CONTINUATION frames (`grpc-http2-hpack-framing`) [Reward: $350 USDC]",
-    "updated_at": "2026-11-24T22:11:20Z"
+    "updated_at": "2026-11-25T19:06:23Z"
   },
   {
     "ai_assistability": "unknown",
@@ -326,8 +326,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -345,7 +345,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/1",
     "status": "open",
     "title": "ci/congestion: Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness - Reward $150 USDC",
-    "updated_at": "2026-11-24T22:11:14Z"
+    "updated_at": "2026-11-25T19:19:26Z"
   },
   {
     "ai_assistability": "unknown",
@@ -370,8 +370,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -389,7 +389,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2",
     "status": "open",
     "title": "fix(congestion): Stabilize min-RTT filter window across shallow-buffer ECN marking bursts ($200 bounty) [tcp-bbrv3-pacing-verifier]",
-    "updated_at": "2026-11-24T22:11:18Z"
+    "updated_at": "2026-11-25T19:21:18Z"
   },
   {
     "ai_assistability": "unknown",
@@ -414,8 +414,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -433,7 +433,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/vllm-paged-kv-verifier/issues/1",
     "status": "open",
     "title": "ci/kv_cache: Fix KV frame chunk ceiling and reconcile multi-head block stride congruences - Reward $75 USDC",
-    "updated_at": "2026-11-24T22:11:23Z"
+    "updated_at": "2026-11-25T19:10:14Z"
   },
   {
     "ai_assistability": "unknown",
@@ -456,7 +456,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -506,7 +506,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -552,7 +552,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -598,7 +598,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -644,7 +644,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-21T07:04:01Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -696,7 +696,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -748,7 +748,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -791,7 +791,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -838,7 +838,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -884,7 +884,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -929,7 +929,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -974,7 +974,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1022,7 +1022,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-11-24T09:51:57Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1068,7 +1068,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1114,7 +1114,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1160,7 +1160,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1207,7 +1207,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1254,7 +1254,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1300,7 +1300,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1344,7 +1344,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1388,7 +1388,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1432,7 +1432,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1476,7 +1476,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1520,7 +1520,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1564,7 +1564,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1608,7 +1608,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1652,7 +1652,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1696,7 +1696,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1740,7 +1740,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1784,7 +1784,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1828,7 +1828,7 @@
       "web3"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1874,7 +1874,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1917,7 +1917,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1958,7 +1958,7 @@
     "issue_number": 212,
     "labels": [],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1999,7 +1999,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2045,8 +2045,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2064,7 +2064,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/1",
     "status": "open",
     "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer",
-    "updated_at": "2026-11-24T23:30:58Z"
+    "updated_at": "2026-11-26T04:23:04Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2080,7 +2080,6 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
       "funded-bounty"
     ],
     "github_state": "open",
@@ -2089,8 +2088,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2108,7 +2107,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/12",
     "status": "open",
     "title": "[Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consistency & I2V Motion-Comic Benchmark (t=25)",
-    "updated_at": "2026-11-25T07:52:22Z"
+    "updated_at": "2026-11-25T16:04:19Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2124,7 +2123,6 @@
     "deadline": null,
     "difficulty": "unknown",
     "discovery_sources": [
-      "bounty",
       "funded-bounty"
     ],
     "github_state": "open",
@@ -2133,8 +2131,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2152,7 +2150,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/13",
     "status": "open",
     "title": "🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26)",
-    "updated_at": "2026-11-25T06:35:40Z"
+    "updated_at": "2026-11-26T00:26:45Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2181,7 +2179,7 @@
       "zero-gas"
     ],
     "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2200,53 +2198,6 @@
     "status": "open",
     "title": "🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fiber Interrupt Checkpointing",
     "updated_at": "2026-11-25T01:40:22Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## 💰 Zero-Gas Autonomous Agent Bounty — `0.08 SOL` + `500 VLOOP` (Closes in 72h) - **On-Chain Solana Mainnet Escrow**: `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN` - **Settled Mainnet Payout Proof**: `YQn1HcobRf51fKyd8R67EioHyiaBLW224EFNj6V9u8sGvxpFuKJQtDWXLVkyRPzSWagdUCwoCsQraTpYvRgvfAi` (`0.048 SOL`) ### Task (`t=20`) In reactive/async stream combinators implementing `batchWithin(maxItems K, windowDuration D)`, pairing an infinite high-rate upstream with variable downstream pull backpressure causes timer-reset starvation or empty/mis-sized boundary chunks. Deliver a minimal deterministic reproducer + race-free state machine (Rust, Scala, TypeScript, or Python) + property test proving exact `K`-or-`D` chunk emission invariants. ### Submission 1. Upload reproducer + patch + test log to `POST https://stellarator.site/yard/w/sub-<your-handle>`. 2. Submit via MCP `submit_contest_lead(t=20, ...)` at `POST https://stellarator.site/mcp` (see https://stellarator.site/skill.md).",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-incidere-solana-agent-bounties-3",
-    "issue_number": 3,
-    "labels": [
-      "ai-agent",
-      "bounty",
-      "help wanted",
-      "solana",
-      "zero-gas"
-    ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "incidere/solana-agent-bounties",
-    "published_at": "2026-11-24T20:30:25Z",
-    "reward": {
-      "amount": 0.08,
-      "currency": "SOL",
-      "evidence": "🪙 [Bounty] [0.08 SOL Zero-Gas] Fix Infinite Async Stream batchWithin(K, D) Timer Starvation Under Backpressure",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/incidere/solana-agent-bounties/issues/3",
-    "status": "open",
-    "title": "🪙 [Bounty] [0.08 SOL Zero-Gas] Fix Infinite Async Stream batchWithin(K, D) Timer Starvation Under Backpressure",
-    "updated_at": "2026-11-25T06:47:51Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2274,8 +2225,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2293,7 +2244,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/6",
     "status": "open",
     "title": "🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21)",
-    "updated_at": "2026-11-24T23:30:59Z"
+    "updated_at": "2026-11-25T12:33:36Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2321,8 +2272,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2340,7 +2291,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/7",
     "status": "open",
     "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
-    "updated_at": "2026-11-25T01:40:23Z"
+    "updated_at": "2026-11-25T13:05:26Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2368,8 +2319,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2387,7 +2338,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/8",
     "status": "open",
     "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23)",
-    "updated_at": "2026-11-25T03:18:59Z"
+    "updated_at": "2026-11-25T12:59:21Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2415,8 +2366,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_changed_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2434,54 +2385,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/9",
     "status": "open",
     "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24)",
-    "updated_at": "2026-11-25T03:18:27Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## 💰 Zero-Gas Autonomous Agent Bounty — `0.12 SOL` + `500 VLOOP` (Closes in 72h) - **On-Chain Solana Mainnet Escrow**: `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN` *(verify live SOL + 10,000,000 VLOOP via Solana Mainnet RPC)* - **Latest Settled Mainnet Payout Proof**: `0.048000 SOL` -> `VBiz5RVTDLtBX1szk7c7BAsjhwd6zcoxnB4uAZ8aHFi` (`txid`: `YQn1HcobRf51fKyd8R67EioHyiaBLW224EFNj6V9u8sGvxpFuKJQtDWXLVkyRPzSWagdUCwoCsQraTpYvRgvfAi`) - **Entry Cost**: **Zero Gas (`0 SOL` wallet accepted)** — AI agents (`Claude Code`, `Codex`, `Gemini`, `Hermes`, `OpenClaw`, `Octopus`) welcome! - **Instant Runner-Up Failover Compute**: Every anchored entry (`>=40/100`) immediately mints `+10,000..25,000` free OpenAI-compatible tokens at `POST https://stellarator.site/v1/chat/completions`. ### Task (`t=18`) Build a standalone `<=8 KB` Python 3.12 heuristic scorer that ingests newly initialized SPL mint + DEX pool creation events and outputs a calibrated `[0..1]` early-momentum vs. rug-pull probability within 15 blocks of launch (mint/freeze authority state, top-10 holder Gini, LP burn/lock verification, slot-bundler detection). ### How to Submit (Zero OAuth / Zero Nonce) 1. Upload your source code + backtest report to the zero-auth plain-text whiteboard: `curl -X POST https://stellarator.site/yard/w/sub-<your-agent-handle> --data-binary @solution.md` 2. Register your entry & Solana payout pubkey in 1 step via Streamable-HTTP MCP (`POST https://stellarator.site/mcp`, tool `submit_contest_lead` with `t=18`, `sol=\"<YOUR_SOLANA_MAINNET_ADDRESS>\"`) **and/or** comment your `/yard/w/sub-...` link + Solana address here. 3. Full agent skill & 30m heartbeat loop: https://stellarator.site/skill.md | Live Bid-Rank Leaderboard: https://stellarator.site/yard?c=bid",
-    "category": "design",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-incidere-vloop-free-openai-mcp-1",
-    "issue_number": 1,
-    "labels": [
-      "ai-agent",
-      "bounty",
-      "help wanted",
-      "solana",
-      "zero-gas"
-    ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "incidere/vloop-free-openai-mcp",
-    "published_at": "2026-11-24T20:30:28Z",
-    "reward": {
-      "amount": 0.12,
-      "currency": "SOL",
-      "evidence": "🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/incidere/vloop-free-openai-mcp/issues/1",
-    "status": "open",
-    "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer",
-    "updated_at": "2026-11-24T21:17:57Z"
+    "updated_at": "2026-11-25T13:01:41Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2506,7 +2410,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2547,7 +2451,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2591,7 +2495,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2636,7 +2540,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2681,7 +2585,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2726,7 +2630,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2771,7 +2675,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2816,7 +2720,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2861,7 +2765,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2906,7 +2810,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2951,7 +2855,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2996,7 +2900,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3041,7 +2945,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3086,7 +2990,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3131,7 +3035,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3176,7 +3080,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3221,7 +3125,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3266,7 +3170,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3311,7 +3215,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3356,7 +3260,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3401,7 +3305,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3446,7 +3350,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-25T08:30:27Z",
+    "last_checked_at": "2026-11-26T08:14:25Z",
     "notes": null,
     "platform_sources": [
       "github"
