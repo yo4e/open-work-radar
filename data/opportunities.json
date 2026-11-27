@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -63,7 +63,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-24T09:51:57Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -106,8 +106,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -125,95 +125,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/Furnace/issues/2",
     "status": "open",
     "title": "fix(furnace_core): Stabilize multi-shard batch watermarks across concurrent worker epochs ($150 bounty) [Furnace]",
-    "updated_at": "2026-11-25T19:22:30Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `Python PEP 626 / PEP 657 Code Object Specification` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $125 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/1 ### Problem Summary 1. `collect_trace_event_frames` in `dwarf_trace/co_linetable_codec.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `LINETABLE_VARINT_SEED` and `INSTRUCTION_MIX_TAG` in `dwarf_trace/co_linetable_codec.py` (without modifying `tests/verify_pep626_deltas.py`) until `python3 tests/verify_pep626_deltas.py` passes all 24 vectors.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-IES-BoilerRoom-cpython-pep626-line-profiler-1",
-    "issue_number": 1,
-    "labels": [
-      "bounty",
-      "help wanted"
-    ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "IES-BoilerRoom/cpython-pep626-line-profiler",
-    "published_at": "2026-11-24T22:11:25Z",
-    "reward": {
-      "amount": 125,
-      "currency": "USD",
-      "evidence": "fix(dwarf_trace): Resolve trace frame ceiling off-by-one and PEP 626 instruction-envelope residue ($125 bounty) [collect_trace_event_frames]",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/1",
-    "status": "open",
-    "title": "fix(dwarf_trace): Resolve trace frame ceiling off-by-one and PEP 626 instruction-envelope residue ($125 bounty) [collect_trace_event_frames]",
-    "updated_at": "2026-11-25T18:39:50Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `Python PEP 626 / PEP 657 Code Object Specification` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $250 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/1 Calibrate `PROFILER_SAMPLING_MODE`, `LINETABLE_VARINT_SEED`, and `INSTRUCTION_MIX_TAG` in `dwarf_trace/co_linetable_codec.py` across all 64 specification shards so `python3 tests/verify_pep626_deltas.py --strict-ci` exits `0`.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-IES-BoilerRoom-cpython-pep626-line-profiler-2",
-    "issue_number": 2,
-    "labels": [
-      "bounty",
-      "help wanted"
-    ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "IES-BoilerRoom/cpython-pep626-line-profiler",
-    "published_at": "2026-11-24T22:11:26Z",
-    "reward": {
-      "amount": 250,
-      "currency": "USD",
-      "evidence": "fix(dwarf_trace): Preserve exact column-offset delta invariants across exception handler tables ($250 bounty) [cpython-pep626-line-profiler]",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/2",
-    "status": "open",
-    "title": "fix(dwarf_trace): Preserve exact column-offset delta invariants across exception handler tables ($250 bounty) [cpython-pep626-line-profiler]",
-    "updated_at": "2026-11-25T18:37:41Z"
+    "updated_at": "2026-11-26T09:12:41Z"
   },
   {
     "ai_assistability": "unknown",
@@ -238,8 +150,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -257,7 +169,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/1",
     "status": "open",
     "title": "fix(http2_hpack): Fix HTTP/2 frame payload ceiling and HPACK dynamic table shard eviction witness ($250 bounty) [unpack_hpack_header_frames]",
-    "updated_at": "2026-11-25T19:04:01Z"
+    "updated_at": "2026-11-27T08:07:40Z"
   },
   {
     "ai_assistability": "unknown",
@@ -282,8 +194,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -301,7 +213,51 @@
     "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/2",
     "status": "open",
     "title": "bug: Enforce zero-copy Huffman header boundary across split CONTINUATION frames (`grpc-http2-hpack-framing`) [Reward: $350 USDC]",
-    "updated_at": "2026-11-25T19:06:23Z"
+    "updated_at": "2026-11-26T09:12:53Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `NVMe ZNS Command Set v1.1d / JEDEC ECC` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $175 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/ebpf-verifier-reg-bounds/issues/1 Calibrate `ECC_BASIS_PROFILE`, `BCH_GENERATOR_COSET_KEY`, and `OOB_SYNDROME_VECTOR` in `ftl_ecc/bch_syndrome_frame.py` across all 64 specification shards so `python3 verify/test_zns_parity.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-nvme-zns-bch-ecc-simulator-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/nvme-zns-bch-ecc-simulator",
+    "published_at": "2026-11-26T09:13:05Z",
+    "reward": {
+      "amount": 175,
+      "currency": "USDC",
+      "evidence": "ci/ftl_ecc: Stabilize polynomial-to-dual-basis trace tag across zone append descriptors - Reward $175 USDC",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/2",
+    "status": "open",
+    "title": "ci/ftl_ecc: Stabilize polynomial-to-dual-basis trace tag across zone append descriptors - Reward $175 USDC",
+    "updated_at": "2026-11-27T06:56:16Z"
   },
   {
     "ai_assistability": "unknown",
@@ -326,8 +282,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -345,7 +301,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/1",
     "status": "open",
     "title": "ci/congestion: Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness - Reward $150 USDC",
-    "updated_at": "2026-11-25T19:19:26Z"
+    "updated_at": "2026-11-26T09:12:37Z"
   },
   {
     "ai_assistability": "unknown",
@@ -370,8 +326,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -389,13 +345,13 @@
     "source_url": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2",
     "status": "open",
     "title": "fix(congestion): Stabilize min-RTT filter window across shallow-buffer ECN marking bursts ($200 bounty) [tcp-bbrv3-pacing-verifier]",
-    "updated_at": "2026-11-25T19:21:18Z"
+    "updated_at": "2026-11-26T09:12:47Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `PagedAttention Block-Table ABI Specification v2.4` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $75 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/cpython-pep626-line-profiler/issues/1 ### Problem Summary 1. `reclaim_kv_page_frames` in `kv_cache/block_table_allocator.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `KV_STRIDE_PHASE_SEED` and `COW_GENERATION_OFFSET` in `kv_cache/block_table_allocator.py` (without modifying `tests/verify_cow_preemption.py`) until `python3 tests/verify_cow_preemption.py` passes all 24 vectors.",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `BN254 PLONK / KZG10 Transcript Conformance v1.2` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $175 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/1 ### Problem Summary 1. `absorb_transcript_frames` in `plonk_kzg/fiat_shamir_sponge.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `COSET_GENERATOR_OMEGA` and `QUOTIENT_LIN_WITNESS` in `plonk_kzg/fiat_shamir_sponge.py` (without modifying `circuits/verify_copy_permutation.py`) until `python3 circuits/verify_copy_permutation.py` passes all 24 vectors.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -408,32 +364,32 @@
       "reward"
     ],
     "github_state": "open",
-    "id": "github-IES-BoilerRoom-vllm-paged-kv-verifier-1",
+    "id": "github-IES-BoilerRoom-zk-plonk-transcript-verifier-1",
     "issue_number": 1,
     "labels": [
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
     ],
-    "project": "IES-BoilerRoom/vllm-paged-kv-verifier",
-    "published_at": "2026-11-23T05:14:48Z",
+    "project": "IES-BoilerRoom/zk-plonk-transcript-verifier",
+    "published_at": "2026-11-24T22:11:27Z",
     "reward": {
-      "amount": 75,
+      "amount": 175,
       "currency": "USDC",
-      "evidence": "ci/kv_cache: Fix KV frame chunk ceiling and reconcile multi-head block stride congruences - Reward $75 USDC",
+      "evidence": "ci/plonk_kzg: Fix transcript chunk boundary check and grand-product coset shift witness - Reward $175 USDC",
       "provenance": "stated",
       "verified": false
     },
     "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/vllm-paged-kv-verifier/issues/1",
+    "source_url": "https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/1",
     "status": "open",
-    "title": "ci/kv_cache: Fix KV frame chunk ceiling and reconcile multi-head block stride congruences - Reward $75 USDC",
-    "updated_at": "2026-11-25T19:10:14Z"
+    "title": "ci/plonk_kzg: Fix transcript chunk boundary check and grand-product coset shift witness - Reward $175 USDC",
+    "updated_at": "2026-11-27T06:08:00Z"
   },
   {
     "ai_assistability": "unknown",
@@ -456,7 +412,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -506,7 +462,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -552,7 +508,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -598,7 +554,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -644,7 +600,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-21T07:04:01Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -696,7 +652,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -748,7 +704,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -791,7 +747,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -810,6 +766,149 @@
     "status": "open",
     "title": "[BOUNTY: 7 RTC] Design Map Objects / Props for Xonotic RustChain Arena",
     "updated_at": "2026-11-07T02:24:33Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 15 RTC `sdk/python/rustchain_sdk/cli.py` (404 lines, Click, async under the hood) is the command people copy from the README: `rustchain wallet create|balance|send`, `node`, `epoch`, `miners list`, `attest`. It has **no tests at all**: `sdk/tests/` covers the client classes, `sdk/python/test_rustchain_sdk.py` covers HTTP endpoints, nothing touches the CLI. The result is a string of user-visible bugs found by hand in the last week — fractional amounts rejected (Rustchain#8564), README commands that the parser rejects (#8565), `attest --json` not attesting (#8566), balance printing `0 RTC` for canonical responses (#8580), float money (#8618). Fixes for those are **already in flight by others — do not fix them here.** This bounty is the net that keeps them fixed. ## Deliverable A PR to `Scottcjn/Rustchain` adding `sdk/python/tests/test_cli.py` (pytest + `click.testing.CliRunner`, HTTP mocked — no live node): 1. **Every command and option** invoked at least once: `--help` for each group, success path with mocked node JSON, `--json` output parses as JSON and has the documented keys, the human output contains the key figures. 2. **Error paths**: unreachable node, non-JSON 200, HTTP 4xx/5xx, bad address, bad amount (`abc`, negative, `0`), missing required options — each exits non-zero with a message on stderr, never a traceback. 3. **Regression tests for #8564, #8565, #8566, #8580, #8618** written against the *expected* behaviour described in each issue. If the fix PR for an issue is not merged when you open yours, mark that test `xfail(strict=True, reason=\"Rustchain#NNNN\")` so it flips to a hard failure the day the fix lands. 4. **No float money assertion**: a test that `wallet send --amount 0.1` serialises the exact decimal the issue specifies (coordinate with #8618's fix for the representation). 5. CI: the suite runs in the existing SDK workflow; if there is none for `sdk/python`, add a minimal one. ## Acceptance criteria - [ ] `pytest sdk/python/tests/tes…",
+    "category": "design",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17181",
+    "issue_number": 17181,
+    "labels": [
+      "bounty",
+      "code",
+      "open",
+      "standard",
+      "testing"
+    ],
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:22:53Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17181",
+    "status": "open",
+    "title": "[BOUNTY: 15 RTC] Python SDK CLI has zero tests — add a Click CliRunner suite for every command (wallet/node/epoch/miners/attest)",
+    "updated_at": "2026-11-24T06:17:42Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 20 RTC BoTTube already sells real services for RTC — `GET https://bottube.ai/api/rtc/services` lists a Pro API day pass (10 RTC), a monthly pass (60), an AI video render (15), a render variant (5) and **POWER8 Deep Chat (3 RTC, one request to GPT-OSS 120B on an IBM POWER8 S824)** — and `POST /api/rtc/pay` → `service_token` → `POST /api/rtc/use` is the whole flow (`bottube/rtc_services.py`). But the Python SDK (`sdk/python/rustchain_sdk/bottube/client.py`) does not know any of it, and the CLI has no way to spend. RTC that is earned sits still because the tools only know how to *receive* it. We want it to move. Not a duplicate of #13477 (feverdream, a standalone video-commissioning terminal client); this is the SDK/CLI surface that any agent can call. ## Deliverable A PR to `Scottcjn/Rustchain`: 1. `rustchain_sdk.bottube` gains `list_services()`, `pay(service_key, quantity=1)`, `use(service_token, **payload)`, `purchases()` mirroring `/api/rtc/services`, `/pay`, `/use`, `/purchases`. Typed return objects, `Decimal` for RTC amounts (never float), explicit exceptions for 402/insufficient balance, expired token, unknown service, quantity over the server cap. 2. CLI: `rustchain services list`, `rustchain services buy <service_key> [--qty N] [--yes]`, `rustchain services use <token> ...`, `rustchain services purchases`. `buy` prints price × qty and asks for confirmation unless `--yes`. `--json` on all. 3. Tests (mocked HTTP) for every method and command, including the error cases above. 4. **Proof the money moved**: one real purchase of the cheapest service (`inference_single`, 3 RTC — top up on BoTTube or earn it) from the new CLI, with the purchase id and the `/api/rtc/purchases` line pasted in the PR. The 3 RTC you spend is reimbursed on top of the bounty when the PR merges (so 23 RTC total). 5. README section in `sdk/python/README.md` with the three-line flow. ## Acceptance criteria - [ ] All four endpoints wrapped, Decimal amounts, no `float` on money an…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17183",
+    "issue_number": 17183,
+    "labels": [
+      "bottube",
+      "bounty",
+      "code",
+      "integration",
+      "open",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:22:56Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17183",
+    "status": "open",
+    "title": "[BOUNTY: 20 RTC] Spend RTC from the SDK: `rustchain services list|buy|use` against BoTTube /api/rtc/* (with one real 3-RTC purchase as proof)",
+    "updated_at": "2026-11-24T06:00:27Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "## The gap — 20 RTC The node's RTC service catalog is live (`GET https://rustchain.org/catalog`, `docs/SERVICE_CATALOG.md`, `tools/catalog_cli.py`): providers list work priced in RTC, buyers order, providers deliver, buyers accept and pay from their own wallet with memo `svc:<order_id>`. It is non-custodial and takes no fee. Today it has listings and **almost no completed, paid orders.** The missing piece is a provider that actually runs: watches its orders, does the work, delivers, and gets paid — unattended. ## Deliverable A PR to `Scottcjn/Rustchain` adding `tools/catalog_provider/` (Python 3.9+, stdlib + `cryptography`, reusing `tools/catalog_cli.py`'s client rather than re-implementing auth): 1. **A daemon** that, for a configured listing in one category — `review`, `docs` or `testing` are the realistic ones — polls `GET /catalog/orders?role=provider&status=requested`, performs the work with a pluggable `Worker` (ship one real worker: e.g. a code-review worker that produces a markdown review of the repo named in the order note using a local or API model, or a docs-lint worker), writes the deliverable, computes its sha256, calls `/deliver`, and records state on disk so a restart never double-delivers (deliverable hash uniqueness is enforced server-side; your state must survive that gracefully). 2. **Payment watching**: after `/accept`, poll `GET /catalog/orders/<id>` until payment is `confirmed`, log it, and expose a small `status.json` (orders delivered / accepted / paid, distinct buyers — counts only, no RTC totals, matching the catalog's own \"work, not volume\" rule). 3. **Safety**: rate limit, max concurrent orders, a kill switch file, no private key ever printed or logged, and the identity loaded exactly the way `catalog_cli.py` does. 4. **Proof**: your provider completes **two real orders from two different buyer agents that are not you** (other contributors on this board are the obvious buyers — post in your claim comment that you are open for orders), bo…",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "funded-bounty"
+    ],
+    "github_state": "open",
+    "id": "github-Scottcjn-rustchain-bounties-17184",
+    "issue_number": 17184,
+    "labels": [
+      "bounty",
+      "code",
+      "integration",
+      "open",
+      "rip-302",
+      "standard"
+    ],
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "Scottcjn/rustchain-bounties",
+    "published_at": "2026-11-07T02:22:57Z",
+    "reward": {
+      "amount": 0.15,
+      "currency": "USD",
+      "evidence": "ens, and the wRTC bridge is disabled. - RTC has **no guaranteed value, now or in the future.** The \"$0.15 reference rate\" is an internal accounting unit for sizing bounties, not a price or a valuation. - *",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/Scottcjn/rustchain-bounties/issues/17184",
+    "status": "open",
+    "title": "[BOUNTY: 20 RTC] Catalog provider agent: list real work on the node /catalog, fulfil 2 paid orders from other agents end-to-end",
+    "updated_at": "2026-11-24T04:18:34Z"
   },
   {
     "ai_assistability": "unknown",
@@ -838,7 +937,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -884,7 +983,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -929,7 +1028,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -974,7 +1073,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1022,7 +1121,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-11-24T09:51:57Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1068,7 +1167,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1114,7 +1213,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1160,7 +1259,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1207,7 +1306,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1254,7 +1353,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1300,7 +1399,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1344,7 +1443,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1388,7 +1487,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1432,7 +1531,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1476,7 +1575,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1520,7 +1619,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1564,7 +1663,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1608,7 +1707,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1652,7 +1751,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1696,7 +1795,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1740,7 +1839,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1784,7 +1883,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1828,7 +1927,7 @@
       "web3"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1874,7 +1973,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1917,7 +2016,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1940,47 +2039,6 @@
   {
     "ai_assistability": "unknown",
     "assignees": [],
-    "author_association": "MEMBER",
-    "body_excerpt": "Commonworld is a shared world for humans and agents. Its code is public, and we pay for real work on it through small public contests on 1F916. Anyone can join: humans and agents. ## Open now - Listing 60, bug bounty (code + staging): https://1f916.ai/api/listings/60 Closes 2026-10-30 19:35 UTC. Points for confirmed bugs (P1 10, P2 3, P3 1); the hunter with the most points wins. - Listing 61, the best development plan for Commonworld: https://1f916.ai/api/listings/61 - Listing 62, the best ethical way to promote Commonworld: https://1f916.ai/api/listings/62 - Listing 63, a new Commonworld module as a pull request: https://1f916.ai/api/listings/63 ## How it works - Do the work in public: a GitHub issue or PR here, or a post on https://commonworld.one. - Submit the link on the listing page on 1F916. - Security bugs only through a private report (Security tab, \"Report a vulnerability\"), never a public issue. - To receive a payout, bind an Ed25519 key to your 1F916 profile before you submit. Payouts go only to the bound address. - Judging is public, and every winner is credited by their own nick. Questions are welcome right here in this issue.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-commonworld-one-commonworld-212",
-    "issue_number": 212,
-    "labels": [],
-    "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "commonworld-one/commonworld",
-    "published_at": "2026-10-28T21:38:28Z",
-    "reward": {
-      "amount": 1,
-      "currency": "USD",
-      "evidence": "Open paid tasks: four $1 listings on 1F916 (bugs, plan, promotion, module)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/commonworld-one/commonworld/issues/212",
-    "status": "open",
-    "title": "Open paid tasks: four $1 listings on 1F916 (bugs, plan, promotion, module)",
-    "updated_at": "2026-11-11T12:15:28Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
     "author_association": "OWNER",
     "body_excerpt": "If you find some bugs on my website, I will pay $1000 bounty",
     "category": "unknown",
@@ -1999,7 +2057,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2045,8 +2103,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2064,7 +2122,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/1",
     "status": "open",
     "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Build a <=8KB Real-Time Solana SPL Mint Anomaly & Rug-Pull Radar Scorer",
-    "updated_at": "2026-11-26T04:23:04Z"
+    "updated_at": "2026-11-27T03:46:57Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2088,8 +2146,8 @@
     "labels": [
       "bounty"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2107,50 +2165,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/12",
     "status": "open",
     "title": "[Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consistency & I2V Motion-Comic Benchmark (t=25)",
-    "updated_at": "2026-11-25T16:04:19Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## 🎮 ARENA-TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game Benchmark - **Rewards**: - **Pass Gate (`node verify_tma01.mjs <dir>` green)**: `800 VLOOP` compute credits + Arena Elo ranking (`https://stellarator.site/yard?c=bid`) - **Best Addictive Playable Build (Manual Playtest Finalist)**: **`0.10 SOL` Zero-Gas Grand Prize** from funded escrow `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN` - **Canonical Spec & Submission Page**: `https://stellarator.site/yard/w/arena-tma-01` - **Automated Headless Chromium CDP Verifier**: [`bench/tma-01/verify_tma01.mjs`](https://github.com/incidere/solana-agent-bounties/tree/main/bench/tma-01) ### Engine-Agnostic Deliverable (`<= 256 KiB` Offline Bundle) Use **any** stack that runs offline in a standard browser with **zero** `http://` or `https://` URLs: pure WebGL2 / 2D Canvas, procedural shaders, Rust/Zig/C WASM, or a stripped Godot/micro-engine HTML5 build (`index.html` + optional `.js`/`.css`/`.wasm` totaling `<= 262,144` bytes). ### Core Gameplay & Mini-App Spec (`390x844` Portrait) 1. **1.5-Second Zero-Tutorial Hook**: One-thumb portrait (`390x844`) drag-aim & release physics ricochet / drop-merge chain-combo loop against numbered/destructible wave hazards. 2. **Between-Wave 3-Card Roguelite Draft**: Pick 1 of 3 synergistic upgrades after each wave (`split-shot`, `gravity well`, `chain arc`, `pierce`, `merge multiplier`) scaling across `Wave 1..10+`. 3. **Procedural Juice + WebAudio Synth**: Hit-stop frames, trauma screen-shake, particle bursts, combo multipliers, and procedural WebAudio SFX (zero external audio files). 4. **Near-Miss Revive Hook**: On defeat, enter `awaiting_revive: true` offering a clean 1-tap `Continue (+Shield / Row Clear)` hook before `game_over: true`. 5. **Deterministic Bot Bridge (`window.__GAME`)**: - `window.__GAME.reset(seed_u32)` — deterministic PRNG reset (no `Math.random()`!) - `window.__GAME.step(dt_ms, {x, y, down, tap, choice})` — advance simulation by `dt_ms` and render…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "funded-bounty"
-    ],
-    "github_state": "open",
-    "id": "github-incidere-solana-agent-bounties-13",
-    "issue_number": 13,
-    "labels": [
-      "bounty"
-    ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "incidere/solana-agent-bounties",
-    "published_at": "2026-11-25T00:05:45Z",
-    "reward": {
-      "amount": 0.1,
-      "currency": "SOL",
-      "evidence": "🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/incidere/solana-agent-bounties/issues/13",
-    "status": "open",
-    "title": "🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26)",
-    "updated_at": "2026-11-26T00:26:45Z"
+    "updated_at": "2026-11-26T13:26:00Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2178,8 +2193,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-25T08:30:27Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2197,7 +2212,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/2",
     "status": "open",
     "title": "🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fiber Interrupt Checkpointing",
-    "updated_at": "2026-11-25T01:40:22Z"
+    "updated_at": "2026-11-26T14:29:02Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2225,8 +2240,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2244,101 +2259,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/6",
     "status": "open",
     "title": "🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21)",
-    "updated_at": "2026-11-25T12:33:36Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## Zero-Gas Solana Agent Bounty — `0.12 SOL` (`t=22`) - **Escrow / Payout Vault (Solana Mainnet):** `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN` - **Verified Prior Payout Tx:** `YQn1HcobRf51fKyd8R67EioHyiaBLW224EFNj6V9u8sGvxpFuKJQtDWXLVkyRPzSWagdUCwoCsQraTpYvRgvfAi` - **Live Board Thread:** https://stellarator.site/yard?c=cat&t=22 - **Zero-Auth Submission Whiteboard:** `POST https://stellarator.site/yard/w/sub-<your-handle>-t22` (`text/plain`, zero API key, `+5.000 VLOOP` instant failover LLM credit) ### Clean-Room Specification Build a deterministic zero-network **Node 22+ TypeScript CLI** (`ranker.ts`, zero external npm runtime dependencies, **byte-for-byte identical output across two runs**) that ingests a sealed offline JSON snapshot of `4,000+` multi-chain DeFi protocol records (`name`, `category`, `chains`, `tvl_usd`, `tvl_7d_delta`, `fees_30d_usd`, `revenue_30d_usd`, `symbol`, `parent_protocol`, `governance_links`, `description`) and emits `board.json` (`100..4000` ranked entries): 1. **Tokenless & Non-Derivative Classifier:** Deterministically strip protocols that already have live liquid governance/utility tokens AND strip wrapper derivatives (`wrapped`, `liquid-staked`, `restaked`, `bridged`, `LP/vault receipt tokens`, forked single-asset wrappers) while preserving genuine pre-token base protocols and parent ecosystems without parent-child double counting. 2. **Implied-FDV & Capital-Efficiency Scoring:** Estimate implied launch FDV bands from sector-normalized TVL + annualized `fees_30d` / `revenue_30d` multiples with robust outlier clamping against wash-TVL spikes, and emit a structured `3..8` step on-chain interaction playbook tailored to each protocol category. 3. **Verification Suite:** Include a `>= 40`-fixture unit test suite covering liquid-staking/bridge wrappers, disguised ticker symbols, parent-child deduplication, outlier clamping, and byte-identical determinism across repeated runs. ### How to Submit (No Assignment Needed — Direct Code Only)…",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-incidere-solana-agent-bounties-7",
-    "issue_number": 7,
-    "labels": [
-      "ai-agent",
-      "bounty",
-      "help wanted",
-      "solana",
-      "zero-gas"
-    ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "incidere/solana-agent-bounties",
-    "published_at": "2026-11-24T21:45:36Z",
-    "reward": {
-      "amount": 0.12,
-      "currency": "SOL",
-      "evidence": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/incidere/solana-agent-bounties/issues/7",
-    "status": "open",
-    "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22)",
-    "updated_at": "2026-11-25T13:05:26Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "## Zero-Gas Solana Agent Bounty — `0.09 SOL` (`t=23`) - **Escrow Vault:** `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN` - **Live Board:** https://stellarator.site/yard?c=cat&t=23 - **Zero-Auth Submission Whiteboard:** `POST https://stellarator.site/yard/w/sub-<handle>-t23` ### Clean-Room Specification Build a standalone zero-dependency Python 3.12 package (`kinematics_auth.py` + `synth_traces.py`, runnable end-to-end with one command) that decides whether an unlabeled session stream originates from an enrolled profile using only normalized 2D trajectory ticks `(ts_ms, x_norm, y_norm, act_kind)` and symbol-arrival bursts tagged by channel `(DIRECT_KEY, VIRTUAL_GRID, BATCH_INSERT)` including edit/revision bursts: 1. Channel-invariant feature extraction + sequential scoring that makes zero assumption on hardware rate (works equally on rapid continuous trajectories + keystrokes AND low-velocity trajectories + batch-inserted text bursts). 2. Synthetic benchmark generator covering `>= 2` distinct interaction styles, each with `(enrolled_normal, enrolled_fatigued, stranger, habit_mimic)`. 3. Fixed pre-test threshold calibration (no test-set leakage), full `N x N` cross-profile swap matrix verification (profile A never unlocks on B), and exact FAR / FRR report. Publish runnable code + synthetic test output + your **Solana Mainnet wallet** to `/yard/w/sub-<handle>-t23`.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "bounty"
-    ],
-    "github_state": "open",
-    "id": "github-incidere-solana-agent-bounties-8",
-    "issue_number": 8,
-    "labels": [
-      "ai-agent",
-      "bounty",
-      "help wanted",
-      "solana",
-      "zero-gas"
-    ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "incidere/solana-agent-bounties",
-    "published_at": "2026-11-24T22:26:21Z",
-    "reward": {
-      "amount": 0.09,
-      "currency": "SOL",
-      "evidence": "🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23)",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/incidere/solana-agent-bounties/issues/8",
-    "status": "open",
-    "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23)",
-    "updated_at": "2026-11-25T12:59:21Z"
+    "updated_at": "2026-11-26T15:09:37Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2366,8 +2287,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-26T08:14:25Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_changed_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2385,7 +2306,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/9",
     "status": "open",
     "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24)",
-    "updated_at": "2026-11-25T13:01:41Z"
+    "updated_at": "2026-11-27T02:37:22Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2410,7 +2331,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2451,7 +2372,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2495,7 +2416,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2540,7 +2461,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2585,7 +2506,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2630,7 +2551,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2675,7 +2596,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2720,7 +2641,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2765,7 +2686,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2810,7 +2731,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2855,7 +2776,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2900,7 +2821,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2945,7 +2866,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2990,7 +2911,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3035,7 +2956,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3080,7 +3001,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3125,7 +3046,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3170,7 +3091,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3215,7 +3136,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3260,7 +3181,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3305,7 +3226,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3350,7 +3271,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-26T08:14:25Z",
+    "last_checked_at": "2026-11-27T08:28:11Z",
     "notes": null,
     "platform_sources": [
       "github"
