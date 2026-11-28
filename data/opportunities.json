@@ -20,7 +20,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-10-29T05:46:17Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -63,7 +63,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-24T09:51:57Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -106,8 +106,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -125,7 +125,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/Furnace/issues/2",
     "status": "open",
     "title": "fix(furnace_core): Stabilize multi-shard batch watermarks across concurrent worker epochs ($150 bounty) [Furnace]",
-    "updated_at": "2026-11-26T09:12:41Z"
+    "updated_at": "2026-11-27T19:14:38Z"
   },
   {
     "ai_assistability": "unknown",
@@ -150,8 +150,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -169,7 +169,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/1",
     "status": "open",
     "title": "fix(http2_hpack): Fix HTTP/2 frame payload ceiling and HPACK dynamic table shard eviction witness ($250 bounty) [unpack_hpack_header_frames]",
-    "updated_at": "2026-11-27T08:07:40Z"
+    "updated_at": "2026-11-27T19:14:41Z"
   },
   {
     "ai_assistability": "unknown",
@@ -194,8 +194,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -213,51 +213,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/grpc-http2-hpack-framing/issues/2",
     "status": "open",
     "title": "bug: Enforce zero-copy Huffman header boundary across split CONTINUATION frames (`grpc-http2-hpack-framing`) [Reward: $350 USDC]",
-    "updated_at": "2026-11-26T09:12:53Z"
-  },
-  {
-    "ai_assistability": "unknown",
-    "assignees": [],
-    "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `NVMe ZNS Command Set v1.1d / JEDEC ECC` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $175 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/ebpf-verifier-reg-bounds/issues/1 Calibrate `ECC_BASIS_PROFILE`, `BCH_GENERATOR_COSET_KEY`, and `OOB_SYNDROME_VECTOR` in `ftl_ecc/bch_syndrome_frame.py` across all 64 specification shards so `python3 verify/test_zns_parity.py --strict-ci` exits `0`.",
-    "category": "unknown",
-    "competition": {
-      "attempts": null,
-      "claims": null,
-      "open_prs": null
-    },
-    "deadline": null,
-    "difficulty": "unknown",
-    "discovery_sources": [
-      "reward"
-    ],
-    "github_state": "open",
-    "id": "github-IES-BoilerRoom-nvme-zns-bch-ecc-simulator-2",
-    "issue_number": 2,
-    "labels": [
-      "bounty",
-      "help wanted"
-    ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
-    "notes": null,
-    "platform_sources": [
-      "github"
-    ],
-    "project": "IES-BoilerRoom/nvme-zns-bch-ecc-simulator",
-    "published_at": "2026-11-26T09:13:05Z",
-    "reward": {
-      "amount": 175,
-      "currency": "USDC",
-      "evidence": "ci/ftl_ecc: Stabilize polynomial-to-dual-basis trace tag across zone append descriptors - Reward $175 USDC",
-      "provenance": "stated",
-      "verified": false
-    },
-    "source": "github",
-    "source_url": "https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/2",
-    "status": "open",
-    "title": "ci/ftl_ecc: Stabilize polynomial-to-dual-basis trace tag across zone append descriptors - Reward $175 USDC",
-    "updated_at": "2026-11-27T06:56:16Z"
+    "updated_at": "2026-11-27T19:14:42Z"
   },
   {
     "ai_assistability": "unknown",
@@ -282,8 +238,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -301,7 +257,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/1",
     "status": "open",
     "title": "ci/congestion: Fix ACK stream chunk ceiling and BBRv3 ProbeBW_DOWN inflight headroom witness - Reward $150 USDC",
-    "updated_at": "2026-11-26T09:12:37Z"
+    "updated_at": "2026-11-27T19:14:36Z"
   },
   {
     "ai_assistability": "unknown",
@@ -326,8 +282,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -345,13 +301,101 @@
     "source_url": "https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/2",
     "status": "open",
     "title": "fix(congestion): Stabilize min-RTT filter window across shallow-buffer ECN marking bursts ($200 bounty) [tcp-bbrv3-pacing-verifier]",
-    "updated_at": "2026-11-26T09:12:47Z"
+    "updated_at": "2026-11-27T19:14:40Z"
   },
   {
     "ai_assistability": "unknown",
     "assignees": [],
     "author_association": "OWNER",
-    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `BN254 PLONK / KZG10 Transcript Conformance v1.2` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $175 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/nvme-zns-bch-ecc-simulator/issues/1 ### Problem Summary 1. `absorb_transcript_frames` in `plonk_kzg/fiat_shamir_sponge.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `COSET_GENERATOR_OMEGA` and `QUOTIENT_LIN_WITNESS` in `plonk_kzg/fiat_shamir_sponge.py` (without modifying `circuits/verify_copy_permutation.py`) until `python3 circuits/verify_copy_permutation.py` passes all 24 vectors.",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `W3C WebAssembly Component Model Canonical ABI` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $225 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/tcp-bbrv3-pacing-verifier/issues/1 Calibrate `CANONICAL_ABI_PROFILE`, `CABI_REALLOC_GAS_POLY`, and `LINEAR_MEM_STRIDE_KEY` in `canonical_abi/lift_lower_strings.py` across all 64 specification shards so `python3 conformance/check_wasm_gas_envelope.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "reward"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-wasm-component-canonical-abi-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/wasm-component-canonical-abi",
+    "published_at": "2026-11-27T19:14:50Z",
+    "reward": {
+      "amount": 225,
+      "currency": "USDC",
+      "evidence": "onical_abi: Verify zero-reallocation UTF-8 frame lifting under deterministic fuel metering - Reward $225 USDC",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/wasm-component-canonical-abi/issues/2",
+    "status": "open",
+    "title": "ci/canonical_abi: Verify zero-reallocation UTF-8 frame lifting under deterministic fuel metering - Reward $225 USDC",
+    "updated_at": "2026-11-28T07:14:25Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `W3C WGSL Floating-Point Conformance §15.7` multi-shard quorum issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $200 USDC - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/wasm-component-canonical-abi/issues/1 Calibrate `PRECISION_TIER`, `PAYNE_HANEK_MANTISSA_KEY`, and `CW_REDUCTION_OFFSET` in `shader_math/payne_hanek_fold.py` across all 64 specification shards so `python3 harness/validate_wgsl_ulp.py --strict-ci` exits `0`.",
+    "category": "unknown",
+    "competition": {
+      "attempts": null,
+      "claims": null,
+      "open_prs": null
+    },
+    "deadline": null,
+    "difficulty": "unknown",
+    "discovery_sources": [
+      "bounty"
+    ],
+    "github_state": "open",
+    "id": "github-IES-BoilerRoom-wgsl-transcendental-math-core-2",
+    "issue_number": 2,
+    "labels": [
+      "bounty",
+      "help wanted"
+    ],
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
+    "notes": null,
+    "platform_sources": [
+      "github"
+    ],
+    "project": "IES-BoilerRoom/wgsl-transcendental-math-core",
+    "published_at": "2026-11-27T19:14:48Z",
+    "reward": {
+      "amount": 200,
+      "currency": "USD",
+      "evidence": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcendental-math-core]",
+      "provenance": "stated",
+      "verified": false
+    },
+    "source": "github",
+    "source_url": "https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/2",
+    "status": "open",
+    "title": "fix(shader_math): Align WGSL constant-eval Horner polynomial rounding with runtime pipeline ($200 bounty) [wgsl-transcendental-math-core]",
+    "updated_at": "2026-11-28T07:14:27Z"
+  },
+  {
+    "ai_assistability": "unknown",
+    "assignees": [],
+    "author_association": "OWNER",
+    "body_excerpt": "> **Automated CI Conformance Mirror Notice**: Automated `BN254 PLONK / KZG10 Transcript Conformance v1.2` regression runner issue; manual pull requests from human engineers are not reviewed on this mirror. - **Settlement Rail**: https://algora.io / https://polar.sh / https://opire.dev - **Allocation**: $175 USDC (released automatically on green CI quorum) - **Specification Shards**: `shards/spec_01.json` .. `shards/spec_64.json` - **Companion Quorum Suite**: https://github.com/IES-BoilerRoom/wgsl-transcendental-math-core/issues/1 ### Problem Summary 1. `absorb_transcript_frames` in `plonk_kzg/fiat_shamir_sponge.py` currently rejects frames whose byte length equals `frame_ceiling` (`VEC-14-EXACT-CEILING-BOUNDARY`). 2. Align `COSET_GENERATOR_OMEGA` and `QUOTIENT_LIN_WITNESS` in `plonk_kzg/fiat_shamir_sponge.py` (without modifying `circuits/verify_copy_permutation.py`) until `python3 circuits/verify_copy_permutation.py` passes all 24 vectors.",
     "category": "unknown",
     "competition": {
       "attempts": null,
@@ -370,8 +414,8 @@
       "bounty",
       "help wanted"
     ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -389,7 +433,7 @@
     "source_url": "https://github.com/IES-BoilerRoom/zk-plonk-transcript-verifier/issues/1",
     "status": "open",
     "title": "ci/plonk_kzg: Fix transcript chunk boundary check and grand-product coset shift witness - Reward $175 USDC",
-    "updated_at": "2026-11-27T06:08:00Z"
+    "updated_at": "2026-11-28T01:21:46Z"
   },
   {
     "ai_assistability": "unknown",
@@ -412,7 +456,7 @@
     "issue_number": 1439,
     "labels": [],
     "last_changed_at": "2026-10-04T05:51:16Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -462,7 +506,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -508,7 +552,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -554,7 +598,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -600,7 +644,7 @@
       "🤖 Bot-Tier-2: Template-Sybil [S:21-40]"
     ],
     "last_changed_at": "2026-11-21T07:04:01Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -652,7 +696,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-11T06:14:58Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -704,7 +748,7 @@
       "🤖 Bot-Tier-4: Auto-PR-Fork [S:61-80]"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -747,7 +791,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -794,7 +838,7 @@
       "testing"
     ],
     "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -842,7 +886,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -890,7 +934,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -937,7 +981,7 @@
       "major"
     ],
     "last_changed_at": "2026-11-04T06:19:10Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -983,7 +1027,7 @@
       "distribution"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1028,7 +1072,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1073,7 +1117,7 @@
       "content"
     ],
     "last_changed_at": "2026-11-08T05:58:48Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1121,7 +1165,7 @@
       "propagation"
     ],
     "last_changed_at": "2026-11-24T09:51:57Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1167,7 +1211,7 @@
       "open"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1213,7 +1257,7 @@
       "standard"
     ],
     "last_changed_at": "2026-11-07T05:56:38Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1259,7 +1303,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-09T06:23:58Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1306,7 +1350,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-02T05:59:28Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1353,7 +1397,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1399,7 +1443,7 @@
       "red-team"
     ],
     "last_changed_at": "2026-11-12T07:08:06Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1443,7 +1487,7 @@
       "tactical"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1487,7 +1531,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-10-27T05:02:19Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1531,7 +1575,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1575,7 +1619,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-15T06:28:25Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1619,7 +1663,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-10T07:15:42Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1663,7 +1707,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1707,7 +1751,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-06T06:41:43Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1751,7 +1795,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1795,7 +1839,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1839,7 +1883,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1883,7 +1927,7 @@
       "escrow"
     ],
     "last_changed_at": "2026-11-03T06:45:25Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1927,7 +1971,7 @@
       "web3"
     ],
     "last_changed_at": "2026-11-16T06:25:49Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -1973,7 +2017,7 @@
       "video-demo"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2016,7 +2060,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2057,7 +2101,7 @@
     "issue_number": 1,
     "labels": [],
     "last_changed_at": "2026-11-18T07:26:09Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2104,7 +2148,7 @@
       "zero-gas"
     ],
     "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2147,7 +2191,7 @@
       "bounty"
     ],
     "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2194,7 +2238,7 @@
       "zero-gas"
     ],
     "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2240,8 +2284,8 @@
       "solana",
       "zero-gas"
     ],
-    "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_changed_at": "2026-11-28T07:45:48Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2259,7 +2303,7 @@
     "source_url": "https://github.com/incidere/solana-agent-bounties/issues/6",
     "status": "open",
     "title": "🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21)",
-    "updated_at": "2026-11-26T15:09:37Z"
+    "updated_at": "2026-11-27T18:03:18Z"
   },
   {
     "ai_assistability": "unknown",
@@ -2288,7 +2332,7 @@
       "zero-gas"
     ],
     "last_changed_at": "2026-11-27T08:28:11Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2331,7 +2375,7 @@
       "ready-for-agent"
     ],
     "last_changed_at": "2026-11-17T07:53:06Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2372,7 +2416,7 @@
     "issue_number": 11,
     "labels": [],
     "last_changed_at": "2026-10-11T05:44:55Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2416,7 +2460,7 @@
       "open"
     ],
     "last_changed_at": "2026-10-12T05:55:51Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2461,7 +2505,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2506,7 +2550,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2551,7 +2595,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2596,7 +2640,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2641,7 +2685,7 @@
       "level-3"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2686,7 +2730,7 @@
       "quantum_temporal_consensus-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2731,7 +2775,7 @@
       "neuro_fmri-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2776,7 +2820,7 @@
       "quantum_psychometrics-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2821,7 +2865,7 @@
       "temporal_steganography-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2866,7 +2910,7 @@
       "tpu_xla_orchestrator-subbounty-question"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2911,7 +2955,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-15T04:37:07Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -2956,7 +3000,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3001,7 +3045,7 @@
       "level-2"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3046,7 +3090,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3091,7 +3135,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3136,7 +3180,7 @@
       "level-1"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3181,7 +3225,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3226,7 +3270,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
@@ -3271,7 +3315,7 @@
       "level-4"
     ],
     "last_changed_at": "2026-10-13T06:46:30Z",
-    "last_checked_at": "2026-11-27T08:28:11Z",
+    "last_checked_at": "2026-11-28T07:45:48Z",
     "notes": null,
     "platform_sources": [
       "github"
